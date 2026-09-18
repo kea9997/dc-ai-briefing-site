@@ -6,11 +6,18 @@
   <description>국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork의 AI 인사이트 채널.</description>
   <language>ko</language>
   <item>
-  <title><![CDATA[2026년 9월 18일 AI 커뮤니티 동향]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-18/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/</guid>
+  <title><![CDATA[2026년 9월 18일 · 고급 브리핑]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</guid>
   <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[옵티 AI 데일리 실운전 브리핑: 웹쫀쿠·권한, Astra·Codex 쿼터, Jev·OpenRouter, 슬롭 규범, Astra for Law·Claude Projects, 로컬 Bonsai 압축까지 국내·해외 교차.]]></description>
+  <description><![CDATA[옵티 AI 데일리 고급: 웹쫀쿠·권한 리스크, Astra·Codex 쿼터 병목, Jev·OpenRouter, 슬롭 규범, Astra for Law·Claude Projects, Bonsai 압축까지 국내·해외 교차 심화.]]></description>
+</item>
+<item>
+  <title><![CDATA[2026년 9월 18일 · 초보 브리핑]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-18/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/beginner/</guid>
+  <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[옵티 AI 데일리 초보: 웹쫀쿠가 뭔지, 사용량이 왜 빨리 닳는지, Jev·슬롭·법률용 Astra·장기 에이전트·로컬 압축까지 같은 날 이슈를 쉬운 말로.]]></description>
 </item>
 </channel>
 </rss>

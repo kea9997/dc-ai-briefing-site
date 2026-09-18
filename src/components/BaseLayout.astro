@@ -4,6 +4,7 @@ import BrandMark from './BrandMark.astro';
 import TermTooltipScript from './TermTooltipScript.astro';
 import { SITE } from '../lib/site';
 import NetworkStrip from './NetworkStrip.astro';
+import Analytics from './Analytics.astro';
 
 interface Props {
   title: string;
@@ -79,6 +80,7 @@ const payload = [orgLd, ...graph];
     {datePublished && <meta property="article:published_time" content={datePublished} />}
     {dateModified && <meta property="article:modified_time" content={dateModified} />}
     <script type="application/ld+json" set:html={JSON.stringify(payload)} />
+    <Analytics />
   </head>
   <body>
     <a class="skip" href="#main">본문으로 건너뛰기</a>

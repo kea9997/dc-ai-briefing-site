@@ -11,6 +11,12 @@ export const SITE = {
   locale: 'ko-KR',
   twitter: '',
   ogImage: '/og-default.png',
+  analytics: {
+    /** Cloudflare Web Analytics beacon token */
+    cloudflareBeacon: '9a74a246645d43b8bb3bb291566feb71',
+    /** GA4 measurement ID, e.g. G-XXXXXXXX */
+    ga4MeasurementId: 'G-XG5G6DGSWX',
+  },
 } as const;
 
 export type NetworkItem = {

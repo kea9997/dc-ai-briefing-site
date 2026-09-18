@@ -1,0 +1,33 @@
+---
+import { NETWORK } from '../lib/site';
+
+function hostLabel(url: string, name: string) {
+  try {
+    const h = new URL(url).host;
+    if (h.startsWith('xn--')) return name;
+    return h;
+  } catch {
+    return name;
+  }
+}
+---
+<section class="net" aria-labelledby="net-heading">
+  <div class="net-head">
+    <p class="net-kicker">Optiwork</p>
+    <h2 id="net-heading">함께 보면 좋은 사이트</h2>
+    <p class="net-lead">같은 팀이 만드는 서비스입니다. 용도에 맞는 곳으로 바로 이동하세요.</p>
+  </div>
+
+  <div class="net-grid">
+    {NETWORK.map((s) => (
+      <a class="net-card" href={s.url} rel="noopener noreferrer">
+        <div class="net-card-top">
+          <strong class="net-name">{s.name}</strong>
+          <span class="net-arrow" aria-hidden="true">↗</span>
+        </div>
+        <span class="net-host">{hostLabel(s.url, s.name)}</span>
+        <p class="net-blurb">{s.blurb}</p>
+      </a>
+    ))}
+  </div>
+</section>

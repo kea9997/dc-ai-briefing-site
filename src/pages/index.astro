@@ -7,39 +7,86 @@ const posts = (await getCollection('posts'))
   .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const latest = posts[0];
+type DayGroup = {
+  dateKey: string;
+  date: Date;
+  beginner?: (typeof posts)[number];
+  advanced?: (typeof posts)[number];
+};
+
+const byDate = new Map<string, DayGroup>();
+for (const post of posts) {
+  const dateKey = post.data.date.toISOString().slice(0, 10);
+  let g = byDate.get(dateKey);
+  if (!g) {
+    g = { dateKey, date: post.data.date };
+    byDate.set(dateKey, g);
+  }
+  if (post.data.level === 'beginner') g.beginner = post;
+  else g.advanced = post;
+}
+const days = Array.from(byDate.values()).sort(
+  (a, b) => b.date.valueOf() - a.date.valueOf()
+);
+const latest = days[0];
+const versionCount = posts.length;
 ---
 <BaseLayout title={SITE.name} description={SITE.description} type="website">
   <section class="hero">
     <div class="eyebrow">Daily AI Community Briefing</div>
-    <h1>디시와 해외 AI 커뮤니티,<br />하루에 한 번 신호만 모읍니다.</h1>
+    <h1>국내와 해외 AI 커뮤니티,<br />하루에 한 번 신호만 모읍니다.</h1>
     <p>
-      {SITE.name}는 디시인사이드 AI 관련 갤러리의 개념글·고조회와 Reddit·Hacker News 등 해외 논의를
-      교차 확인해, 안 읽어도 오늘 판이 보이게 한국어로 정리합니다.
+      {SITE.name}는 국내 AI 커뮤니티의 개념글·고조회와 Reddit·Hacker News 등 해외 논의를
+      교차 확인해, 안 읽어도 오늘 판이 보이게 한국어로 정리합니다. 매일 <strong>초보</strong>와
+      <strong>고급</strong> 두 버전을 함께 발행합니다.
     </p>
     <div class="hero-meta">
-      <span class="chip">국내 갤 우선</span>
+      <span class="chip">국내 우선</span>
       <span class="chip">해외 교차</span>
+      <span class="chip">초보 · 고급</span>
       <span class="chip">확인/루머 구분</span>
       <span class="chip">용어 클릭 설명</span>
     </div>
   </section>
 
   {latest && (
-    <p class="prose-note">최신: {latest.data.date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })} · {posts.length}건</p>
+    <p class="prose-note">최신: {latest.date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })} · {days.length}일 · {versionCount}버전</p>
   )}
 
   <section class="card-list" aria-label="브리핑 목록">
-    {posts.length === 0 ? (
+    {days.length === 0 ? (
       <p>아직 발행된 브리핑이 없습니다.</p>
     ) : (
-      posts.map((post) => (
-        <a class="card" href={`/posts/${post.id}/`}>
-          <h2>{post.data.title}</h2>
-          <div class="meta">{post.data.date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Seoul' })}</div>
-          <p>{post.data.description}</p>
-        </a>
-      ))
+      days.map((day) => {
+        const dateLabel = day.date.toLocaleDateString('ko-KR', {
+          year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Seoul',
+        });
+        const desc =
+          day.beginner?.data.description ||
+          day.advanced?.data.description ||
+          '';
+        return (
+          <div class="card day-card">
+            <h2>{dateLabel} 브리핑</h2>
+            <div class="meta">초보 · 고급 두 버전</div>
+            <p>{desc}</p>
+            <div class="day-links">
+              {day.beginner && (
+                <a class="level-link level-beginner" href={`/posts/${day.beginner.id}/`}>
+                  <span class="level-badge level-beginner">초보</span>
+                  쉬운 말로 읽기
+                </a>
+              )}
+              {day.advanced && (
+                <a class="level-link level-advanced" href={`/posts/${day.advanced.id}/`}>
+                  <span class="level-badge level-advanced">고급</span>
+                  심화로 읽기
+                </a>
+              )}
+            </div>
+          </div>
+        );
+      })
     )}
   </section>
 </BaseLayout>

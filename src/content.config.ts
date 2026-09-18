@@ -7,6 +7,7 @@ const posts = defineCollection({
     title: z.string(),
     date: z.coerce.date(),
     description: z.string(),
+    level: z.enum(['beginner', 'advanced']),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),

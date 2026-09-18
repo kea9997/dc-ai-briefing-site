@@ -21,7 +21,13 @@ const iso = post.data.date.toISOString();
 const md = post.body ?? '';
 const html = renderTerms(await marked.parse(md));
 
-// crude TL;DR: first h2 section bullets from "오늘 핵심"
+const level = post.data.level;
+const levelKo = level === 'beginner' ? '초보' : '고급';
+const siblingLevel = level === 'beginner' ? 'advanced' : 'beginner';
+const siblingKo = level === 'beginner' ? '고급' : '초보';
+const dateId = post.data.date.toISOString().slice(0, 10);
+const siblingHref = `/posts/${dateId}/${siblingLevel}/`;
+
 const articleLd = {
   '@context': 'https://schema.org',
   '@type': 'NewsArticle',
@@ -50,8 +56,12 @@ const articleLd = {
 >
   <a class="back" href="/">← 목록</a>
   <article class="post">
+    <div class="post-level-row">
+      <span class={`level-badge level-${level}`}>{levelKo}</span>
+      <a class="sibling-link" href={siblingHref}>같은 날 {siblingKo} 버전 보기 →</a>
+    </div>
     <h1>{post.data.title}</h1>
-    <p class="meta">{dateLabel} · {SITE.name}</p>
+    <p class="meta">{dateLabel} · {SITE.name} · {levelKo}</p>
     <div class="tldr">
       <strong>한 줄 요약 (GEO)</strong>
       {post.data.description}

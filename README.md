@@ -1,6 +1,6 @@
 # 옵티 AI 데일리 (Opti AI Daily)
 
-디시·해외 AI 커뮤니티 일일 브리핑 사이트.
+국내·해외 AI 커뮤니티 일일 브리핑 사이트.
 
 - 프로덕션 도메인: `https://ai.optiwork.co.kr`
 - 저장소: GitHub Pages (`gh-pages` 브랜치에 `dist` 배포)

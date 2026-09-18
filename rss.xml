@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>옵티 AI 데일리</title>
+  <link>https://ai.optiwork.co.kr</link>
+  <description>국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork의 AI 인사이트 채널.</description>
+  <language>ko</language>
+  <item>
+  <title><![CDATA[2026년 9월 18일 AI 커뮤니티 동향]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-18/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/</guid>
+  <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[옵티 AI 데일리 실운전 브리핑: 웹쫀쿠·권한, Astra·Codex 쿼터, Jev·OpenRouter, 슬롭 규범, Astra for Law·Claude Projects, 로컬 Bonsai 압축까지 국내·해외 교차.]]></description>
+</item>
+</channel>
+</rss>

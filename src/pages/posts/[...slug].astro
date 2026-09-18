@@ -1,8 +1,9 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/BaseLayout.astro';
 import { renderTerms } from '../../components/renderTerms';
 import { marked } from 'marked';
+import { SITE } from '../../lib/site';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -14,19 +15,47 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const dateLabel = post.data.date.toLocaleDateString('ko-KR', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-  timeZone: 'Asia/Seoul',
+  year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Seoul',
 });
+const iso = post.data.date.toISOString();
 const md = post.body ?? '';
 const html = renderTerms(await marked.parse(md));
+
+// crude TL;DR: first h2 section bullets from "오늘 핵심"
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: iso,
+  dateModified: iso,
+  inLanguage: 'ko-KR',
+  mainEntityOfPage: `${SITE.domain}/posts/${post.id}/`,
+  author: { '@type': 'Organization', name: SITE.name, url: SITE.domain },
+  publisher: {
+    '@type': 'Organization',
+    name: SITE.parent.name,
+    url: SITE.parent.url,
+  },
+  isAccessibleForFree: true,
+};
 ---
-<BaseLayout title={post.data.title} description={post.data.description}>
-  <a class="back" href={import.meta.env.BASE_URL}>← 목록</a>
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  datePublished={iso}
+  dateModified={iso}
+  jsonLd={articleLd}
+>
+  <a class="back" href="/">← 목록</a>
   <article class="post">
     <h1>{post.data.title}</h1>
-    <p class="meta">{dateLabel}</p>
+    <p class="meta">{dateLabel} · {SITE.name}</p>
+    <div class="tldr">
+      <strong>한 줄 요약 (GEO)</strong>
+      {post.data.description}
+    </div>
     <div set:html={html} />
   </article>
 </BaseLayout>

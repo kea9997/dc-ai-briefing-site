@@ -15,10 +15,8 @@ document.addEventListener('click', (e) => {
   pop.querySelector('span').textContent = def;
   document.body.appendChild(pop);
   const r = btn.getBoundingClientRect();
-  const pw = pop.offsetWidth;
-  const ph = pop.offsetHeight;
-  let left = r.left;
-  let top = r.bottom + 8;
+  let left = r.left, top = r.bottom + 8;
+  const pw = pop.offsetWidth, ph = pop.offsetHeight;
   if (left + pw > window.innerWidth - 8) left = window.innerWidth - pw - 8;
   if (left < 8) left = 8;
   if (top + ph > window.innerHeight - 8) top = r.top - ph - 8;

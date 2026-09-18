@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+<BaseLayout title={`소개 · ${SITE.name}`} description={`${SITE.name} 소개 — 디시·해외 AI 커뮤니티 일일 브리핑`}>
+  <article class="post">
+    <h1>소개</h1>
+    <p class="meta">{SITE.nameEn} · Optiwork</p>
+    <p>
+      <strong>{SITE.name}</strong>는 Optiwork의 AI 인사이트 채널입니다. 디시인사이드 AI 관련 갤러리의
+      개념글·고조회를 우선하고, Reddit·Hacker News 등 해외 논의를 같은 축으로 묶어 매일 한국어 브리핑을 발행합니다.
+    </p>
+    <h2>읽는 방식</h2>
+    <ul>
+      <li>핫글·개념글이 본문입니다. 용어 사전으로 채우지 않습니다.</li>
+      <li>확인됨 / 준확인·데이터 / 체감 / 루머를 구분합니다.</li>
+      <li>점선 표시 용어는 클릭하면 쉬운 설명이 나옵니다.</li>
+    </ul>
+    <h2>브랜드 구조</h2>
+    <p>
+      대표 사이트 <a href="https://optiwork.co.kr">optiwork.co.kr</a> 아래 프로젝트 채널로
+      <code>ai.optiwork.co.kr</code>에 운영합니다.
+    </p>
+  </article>
+</BaseLayout>

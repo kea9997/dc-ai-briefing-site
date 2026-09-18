@@ -1,25 +1,45 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../components/BaseLayout.astro';
+import { SITE } from '../lib/site';
 
 const posts = (await getCollection('posts'))
   .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const base = import.meta.env.BASE_URL.endsWith('/')
-  ? import.meta.env.BASE_URL
-  : `${import.meta.env.BASE_URL}/`;
+const latest = posts[0];
 ---
-<BaseLayout title="디시 AI 동향 브리핑">
-  {posts.length === 0 ? (
-    <p>아직 발행된 브리핑이 없습니다.</p>
-  ) : (
-    posts.map((post) => (
-      <a class="card" href={`${base}posts/${post.id}/`}>
-        <h2>{post.data.title}</h2>
-        <div class="meta">{post.data.date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })}</div>
-        <p>{post.data.description}</p>
-      </a>
-    ))
+<BaseLayout title={SITE.name} description={SITE.description} type="website">
+  <section class="hero">
+    <div class="eyebrow">Daily AI Community Briefing</div>
+    <h1>디시와 해외 AI 커뮤니티,<br />하루에 한 번 신호만 모읍니다.</h1>
+    <p>
+      {SITE.name}는 디시인사이드 AI 관련 갤러리의 개념글·고조회와 Reddit·Hacker News 등 해외 논의를
+      교차 확인해, 안 읽어도 오늘 판이 보이게 한국어로 정리합니다.
+    </p>
+    <div class="hero-meta">
+      <span class="chip">국내 갤 우선</span>
+      <span class="chip">해외 교차</span>
+      <span class="chip">확인/루머 구분</span>
+      <span class="chip">용어 클릭 설명</span>
+    </div>
+  </section>
+
+  {latest && (
+    <p class="prose-note">최신: {latest.data.date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })} · {posts.length}건</p>
   )}
+
+  <section class="card-list" aria-label="브리핑 목록">
+    {posts.length === 0 ? (
+      <p>아직 발행된 브리핑이 없습니다.</p>
+    ) : (
+      posts.map((post) => (
+        <a class="card" href={`/posts/${post.id}/`}>
+          <h2>{post.data.title}</h2>
+          <div class="meta">{post.data.date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Seoul' })}</div>
+          <p>{post.data.description}</p>
+        </a>
+      ))
+    )}
+  </section>
 </BaseLayout>

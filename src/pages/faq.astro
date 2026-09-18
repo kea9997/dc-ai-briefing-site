@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import { SITE } from '../lib/site';
+
+const faqs = [
+  {
+    q: '옵티 AI 데일리는 무엇인가요?',
+    a: '디시인사이드 AI 갤러리와 해외 AI 커뮤니티 동향을 매일 한국어로 요약·교차 확인하는 Optiwork의 브리핑 사이트입니다.',
+  },
+  {
+    q: '어떤 소스를 보나요?',
+    a: '국내에서는 AI활용·챗지피티 갤의 개념글·고조회를 우선하고, 해외에서는 LocalLLaMA·MachineLearning·ChatGPT 관련 Reddit과 Hacker News 등을 봅니다. 핫이슈만 공식 릴리스로 교차 확인합니다.',
+  },
+  {
+    q: '루머와 확인된 사실을 어떻게 구분하나요?',
+    a: '본문에 확인됨, 준확인·데이터, 체감·가설, 루머(찌라시) 라벨을 붙입니다. OpenRouter 차트처럼 범위가 한정된 데이터는 그 범위를 명시합니다.',
+  },
+  {
+    q: '용어 설명은 어떻게 보나요?',
+    a: '본문 속 점선 표시 단어를 클릭하면 1~2문장 쉬운 설명이 뜹니다. 용어 사전이 글의 주가 되지 않도록 설계했습니다.',
+  },
+];
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+<BaseLayout title={`FAQ · ${SITE.name}`} description={`${SITE.name} 자주 묻는 질문`} jsonLd={faqLd}>
+  <article class="post">
+    <h1>자주 묻는 질문</h1>
+    <p class="meta">검색·AI 인용을 위한 FAQ</p>
+    {faqs.map((f) => (
+      <section>
+        <h2>{f.q}</h2>
+        <p>{f.a}</p>
+      </section>
+    ))}
+  </article>
+</BaseLayout>

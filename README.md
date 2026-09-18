@@ -1,18 +1,22 @@
-# 디시 AI 동향 브리핑 사이트
+# 옵티 AI 데일리 (Opti AI Daily)
 
-무료 정적 사이트(Astro)입니다. 글은 `src/content/posts/*.md`에 두고, `main`에 푸시하면 GitHub Pages로 배포됩니다.
+디시·해외 AI 커뮤니티 일일 브리핑 사이트.
+
+- 프로덕션 도메인: `https://ai.optiwork.co.kr`
+- 저장소: GitHub Pages (`gh-pages` 브랜치에 `dist` 배포)
+- 글: `src/content/posts/YYYY-MM-DD.md`
+- 용어: `[[용어|쉬운 설명]]`
 
 ## 로컬
 
 ```bash
 npm install
 npm run dev
+npm run build
 ```
 
-## 용어 툴팁
+## DNS (Cloudflare/가비아 등)
 
-본문에 `[[용어|쉬운 설명]]` 형식으로 쓰면 사이트에서 클릭 시 설명이 뜹니다.
+`ai.optiwork.co.kr` CNAME → `kea9997.github.io`
 
-## 이관
-
-저장소만 옮기면 Cloudflare Pages / Vercel 등 다른 무료 호스팅으로 옮길 수 있습니다. Grok Bot은 글을 쓰고 커밋하는 역할만 합니다.
+GitHub repo Settings → Pages → Custom domain에 `ai.optiwork.co.kr` 등록.

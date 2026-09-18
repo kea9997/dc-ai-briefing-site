@@ -3,6 +3,7 @@ import '../styles/global.css';
 import BrandMark from './BrandMark.astro';
 import TermTooltipScript from './TermTooltipScript.astro';
 import { SITE } from '../lib/site';
+import NetworkStrip from './NetworkStrip.astro';
 
 interface Props {
   title: string;
@@ -35,6 +36,16 @@ const orgLd = {
     '@type': 'Organization',
     name: SITE.parent.name,
     url: SITE.parent.url,
+    sameAs: [
+      'https://optiwork.co.kr',
+      'https://banpum.optiwork.co.kr',
+      'https://music.optiwork.co.kr',
+      'https://idea.optiwork.co.kr',
+      'https://llm.optiwork.co.kr',
+      'https://findmynote.com',
+      'https://xn--o80bm5r84ax63ci8b.com',
+      'https://xn--o39aum6g720h.com',
+    ],
   },
 };
 const graph = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
@@ -47,7 +58,8 @@ const payload = [orgLd, ...graph];
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#0B1220" />
+    <meta name="naver-site-verification" content="9bf07dca926d48d6d104d8db1a76b5cf8cb6eb6a" />
+<meta name="theme-color" content="#0B1220" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate" type="application/rss+xml" title={`${SITE.name} RSS`} href="/rss.xml" />
@@ -59,6 +71,8 @@ const payload = [orgLd, ...graph];
     <meta property="og:type" content={type} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="ko_KR" />
+    <meta property="og:image" content={new URL(SITE.ogImage, SITE.domain).toString()} />
+    <meta name="twitter:image" content={new URL(SITE.ogImage, SITE.domain).toString()} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
@@ -87,8 +101,9 @@ const payload = [orgLd, ...graph];
       <main id="main">
         <slot />
       </main>
+      <NetworkStrip />
       <footer class="footer">
-        <div><strong>{SITE.name}</strong> — 디시·해외 AI 커뮤니티 하루 동향</div>
+        <div><strong>{SITE.name}</strong> — 국내·해외 AI 커뮤니티 하루 동향</div>
         <div>본문 속 점선 용어는 클릭하면 쉬운 설명이 나옵니다. · <a href={SITE.parent.url}>Optiwork</a></div>
         <div>© {new Date().getFullYear()} Optiwork · <a href="https://optiwork.co.kr">optiwork.co.kr</a></div>
       </footer>

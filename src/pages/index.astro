@@ -5,13 +5,17 @@ import BaseLayout from '../components/BaseLayout.astro';
 const posts = (await getCollection('posts'))
   .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 ---
 <BaseLayout title="디시 AI 동향 브리핑">
   {posts.length === 0 ? (
     <p>아직 발행된 브리핑이 없습니다.</p>
   ) : (
     posts.map((post) => (
-      <a class="card" href={`${import.meta.env.BASE_URL}posts/${post.id}/`}>
+      <a class="card" href={`${base}posts/${post.id}/`}>
         <h2>{post.data.title}</h2>
         <div class="meta">{post.data.date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })}</div>
         <p>{post.data.description}</p>

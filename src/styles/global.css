@@ -1,0 +1,68 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0f1115;
+  --card: #181b22;
+  --text: #e8eaed;
+  --muted: #9aa0a6;
+  --accent: #7cb3ff;
+  --border: #2a2f3a;
+  --term: #c4a5ff;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  line-height: 1.7;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+header.site { border-bottom: 1px solid var(--border); margin-bottom: 2rem; padding-bottom: 1rem; }
+header.site h1 { font-size: 1.25rem; margin: 0 0 0.25rem; }
+header.site p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 0.75rem;
+  color: inherit;
+}
+.card:hover { border-color: var(--accent); text-decoration: none; }
+.card h2 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.85rem; }
+article.post h1 { font-size: 1.6rem; line-height: 1.3; margin-bottom: 0.35rem; }
+article.post .meta { color: var(--muted); margin-bottom: 1.5rem; }
+article.post h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+article.post h3 { font-size: 1.05rem; margin-top: 1.4rem; }
+article.post p, article.post li { color: #d5d8de; }
+.term {
+  color: var(--term);
+  border-bottom: 1px dotted var(--term);
+  cursor: help;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font: inherit;
+  padding: 0;
+}
+.term-pop {
+  position: fixed;
+  z-index: 50;
+  max-width: min(320px, calc(100vw - 2rem));
+  background: #1e2230;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.term-pop strong { display: block; margin-bottom: 0.25rem; color: var(--term); }
+.back { display: inline-block; margin-bottom: 1rem; color: var(--muted); }
+footer.site { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }

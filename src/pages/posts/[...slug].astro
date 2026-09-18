@@ -1,0 +1,32 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../components/BaseLayout.astro';
+import { renderTerms } from '../../components/renderTerms';
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const dateLabel = post.data.date.toLocaleDateString('ko-KR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'Asia/Seoul',
+});
+const md = post.body ?? '';
+const html = renderTerms(await marked.parse(md));
+---
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <a class="back" href={import.meta.env.BASE_URL}>← 목록</a>
+  <article class="post">
+    <h1>{post.data.title}</h1>
+    <p class="meta">{dateLabel}</p>
+    <div set:html={html} />
+  </article>
+</BaseLayout>

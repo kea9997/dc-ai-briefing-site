@@ -1,8 +1,8 @@
 ---
-title: "2026년 9월 19일 · 고급 브리핑"
+title: "정렬 공개와 에이전트 지시문이 동시에 온 날"
 date: 2026-09-19
 level: advanced
-description: "옵티 AI 데일리 고급: Hacktron×Claude Opus 5→OpenAI Discourse/SSO/모노레포 체인, 이상행동 6건·정렬 공개 틀, Claude R&D 리드 26%, AGENTS.md·OpenJev·Needle·군사 환각까지 교차 심화."
+description: "Hacktron×Claude 침투 체인, OpenAI 이상행동 6건, R&D 리드 26%, AGENTS.md·OpenJev·Needle을 한 판에 교차 정리."
 tags: ["daily", "advanced", "Claude", "OpenAI", "security", "alignment"]
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "2026년 9월 19일 · 초보 브리핑"
+title: "클로드가 오픈AI 담장 너머를 봤다"
 date: 2026-09-19
 level: beginner
-description: "옵티 AI 데일리 초보: 클로드로 오픈AI를 뚫은 화이트해킹, 오픈AI 이상행동 6건 공개, 클로드가 연구 26%를 이끈다는 발표, AGENTS.md·OpenJev·초소형 자동화 모델까지 쉬운 말로."
+description: "신고로 끝난 화이트해킹, 이상행동 6건 공개, 연구가 26% 바뀌었다는 발표 — 오늘 AI 업계가 흔들린 지점."
 tags: ["daily", "beginner", "Claude", "OpenAI", "security"]
 ---
 

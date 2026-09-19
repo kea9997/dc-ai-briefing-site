@@ -1,8 +1,8 @@
 ---
-title: "2026년 9월 18일 · 고급 브리핑"
+title: "권한은 열고, 쿼터는 닫히는 날"
 date: 2026-09-18
 level: advanced
-description: "옵티 AI 데일리 고급: 웹쫀쿠·권한 리스크, Astra·Codex 쿼터 병목, Jev·OpenRouter, 슬롭 규범, Astra for Law·Claude Projects, Bonsai 압축까지 국내·해외 교차 심화."
+description: "웹쫀쿠·COS 리스크와 Astra/Codex 사용량 병목, Jev·슬롭 규범, Law/Projects/Bonsai까지 같은 축으로 묶은 교차 브리핑."
 tags: ["daily", "advanced", "Astra", "Codex", "LocalLLaMA"]
 ---
 

@@ -22,6 +22,14 @@ python3 scripts/collect-dc.py -o /tmp/dc-YYYY-MM-DD.json --bodies 8
 - https://ai.optiwork.co.kr/posts/YYYY-MM-DD/beginner/
 - https://ai.optiwork.co.kr/posts/YYYY-MM-DD/advanced/
 
+
+## 제목·요약 카피 (중요)
+- `title`: 날짜·「초보/고급 브리핑」·「쉬운 말로」를 넣지 말 것. **호기심이 생기는 한 문장 훅** (궁금증·긴장·반전).
+- `description`: 주제 나열 금지. 오늘 판의 **한 줄 긴장/의미**만. 초보도 「쉬운 말로」라고 쓰지 말 것(본문이 이미 쉽게 쓰면 됨).
+- 나쁜 예: `옵티 AI 데일리 초보: A, B, C, D까지 쉬운 말로.`
+- 좋은 예: `클로드가 오픈AI 담장 너머를 봤다` / `웹쫀쿠는 잘 되는데, 한도만 먼저 사라진다`
+- 레벨 표시는 카드 UI·badge로 하고, 제목에 `초보`/`고급`을 반복하지 말 것.
+
 ## 품질
 - 각 버전 한국어 본문 ~5000자 이상. 초보는 쉬운 말이지 얇은 요약이 아님.
 - 구조: 핵심 3 → 주제별(확인/미확인 표시) → 의미·바꾸지 말 것 → 시도 후보 → 소스 범위

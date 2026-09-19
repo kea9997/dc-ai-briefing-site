@@ -1,4 +1,4 @@
-# 옵티 AI 데일리 (Opti AI Daily)
+# 옵티웍 AI 데일리 (Optiwork AI Daily)
 
 국내·해외 AI 커뮤니티 일일 브리핑 사이트.
 

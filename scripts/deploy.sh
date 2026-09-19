@@ -16,6 +16,6 @@ if git diff --cached --quiet; then
   echo "No changes to deploy"
   exit 0
 fi
-git -c user.email="kea9997@users.noreply.github.com" -c user.name="kea9997" commit -m "Deploy Opti AI Daily"
+git -c user.email="kea9997@users.noreply.github.com" -c user.name="kea9997" commit -m "Deploy Optiwork AI Daily"
 git push origin gh-pages
 echo "Deployed to gh-pages"

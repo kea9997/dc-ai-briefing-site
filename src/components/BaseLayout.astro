@@ -89,6 +89,9 @@ const payload = [orgLd, ...graph];
           <a href="/about/">소개</a>
           <a href="/faq/">FAQ</a>
           <a href="/rss.xml">RSS</a>
+          <a class="nav-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">
+            {SITE.telegram.label}
+          </a>
         </nav>
       </header>
       <main id="main">
@@ -97,6 +100,11 @@ const payload = [orgLd, ...graph];
       <NetworkStrip />
       <footer class="footer">
         <div><strong>{SITE.name}</strong> — 국내·해외 AI 커뮤니티 하루 동향</div>
+        <div class="footer-telegram">
+          <a class="btn-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">
+            텔레그램에서 매일 받기 · {SITE.telegram.handle}
+          </a>
+        </div>
         <div>본문 속 점선 용어는 클릭하면 쉬운 설명이 나옵니다. · <a href={SITE.parent.url}>Optiwork</a></div>
         <div>© {new Date().getFullYear()} Optiwork · <a href="https://optiwork.co.kr">optiwork.co.kr</a></div>
       </footer>

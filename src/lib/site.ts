@@ -1,6 +1,6 @@
 export const SITE = {
-  name: '옵티 AI 데일리',
-  nameEn: 'Opti AI Daily',
+  name: '옵티웍 AI 데일리',
+  nameEn: 'Optiwork AI Daily',
   domain: 'https://ai.optiwork.co.kr',
   description:
     '국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork의 AI 인사이트 채널.',
@@ -10,6 +10,11 @@ export const SITE = {
   },
   locale: 'ko-KR',
   twitter: '',
+  telegram: {
+    url: 'https://t.me/opti_ai_daily',
+    handle: '@opti_ai_daily',
+    label: '텔레그램',
+  },
   ogImage: '/og-default.png',
   analytics: {
     /** Cloudflare Web Analytics beacon token */

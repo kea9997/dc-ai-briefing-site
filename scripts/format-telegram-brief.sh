@@ -24,7 +24,7 @@ SITE_BEGINNER="${SITE_HOME}/posts/${DATE}/beginner/"
 SITE_ADVANCED="${SITE_HOME}/posts/${DATE}/advanced/"
 
 cat <<MSG
-📰 <b>옵티 AI 데일리</b> · ${DATE}
+📰 <b>옵티웍 AI 데일리</b> · ${DATE}
 
 <b>초보 핵심</b>
 • ${B1}

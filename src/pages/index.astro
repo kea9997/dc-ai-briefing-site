@@ -61,26 +61,33 @@ const versionCount = posts.length;
         const dateLabel = day.date.toLocaleDateString('ko-KR', {
           year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Seoul',
         });
+        const hookTitle =
+          day.beginner?.data.title ||
+          day.advanced?.data.title ||
+          `${dateLabel} 브리핑`;
         const desc =
           day.beginner?.data.description ||
           day.advanced?.data.description ||
           '';
         return (
           <div class="card day-card">
-            <h2>{dateLabel} 브리핑</h2>
-            <div class="meta">초보 · 고급 두 버전</div>
+            <div class="meta">{dateLabel} · 초보 · 고급</div>
+            <h2>{hookTitle}</h2>
+            {day.advanced && day.beginner && day.advanced.data.title !== day.beginner.data.title && (
+              <p class="day-advanced-hook"><span class="level-badge level-advanced">고급</span> {day.advanced.data.title}</p>
+            )}
             <p>{desc}</p>
             <div class="day-links">
               {day.beginner && (
                 <a class="level-link level-beginner" href={`/posts/${day.beginner.id}/`}>
                   <span class="level-badge level-beginner">초보</span>
-                  쉬운 말로 읽기
+                  읽기
                 </a>
               )}
               {day.advanced && (
                 <a class="level-link level-advanced" href={`/posts/${day.advanced.id}/`}>
                   <span class="level-badge level-advanced">고급</span>
-                  심화로 읽기
+                  읽기
                 </a>
               )}
             </div>

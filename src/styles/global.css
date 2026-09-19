@@ -262,3 +262,14 @@ article.post th { background: #f3ebe0; }
 }
 .card.day-card { cursor: default; }
 .card.day-card:hover { transform: none; }
+
+.day-card .day-advanced-hook {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 0.95rem;
+  color: var(--muted, #666);
+  line-height: 1.4;
+}
+.day-card .day-advanced-hook .level-badge {
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}

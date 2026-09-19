@@ -84,15 +84,17 @@ const payload = [orgLd, ...graph];
             <span>{SITE.nameEn} · by Optiwork</span>
           </span>
         </a>
-        <nav class="nav" aria-label="주요 메뉴">
-          <a href="/">브리핑</a>
-          <a href="/about/">소개</a>
-          <a href="/faq/">FAQ</a>
-          <a href="/rss.xml">RSS</a>
+        <div class="topbar-actions">
+          <nav class="nav" aria-label="주요 메뉴">
+            <a href="/">브리핑</a>
+            <a href="/about/">소개</a>
+            <a href="/faq/">FAQ</a>
+            <a href="/rss.xml">RSS</a>
+          </nav>
           <a class="nav-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">
             {SITE.telegram.label}
           </a>
-        </nav>
+        </div>
       </header>
       <main id="main">
         <slot />

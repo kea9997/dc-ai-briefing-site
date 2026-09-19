@@ -20,18 +20,18 @@
   <description><![CDATA[신고로 끝난 화이트해킹, 이상행동 6건 공개, 연구가 26% 바뀌었다는 발표 — 오늘 AI 업계가 흔들린 지점.]]></description>
 </item>
 <item>
-  <title><![CDATA[권한은 열고, 쿼터는 닫히는 날]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</guid>
-  <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[웹쫀쿠·COS 리스크와 Astra/Codex 사용량 병목, Jev·슬롭 규범, Law/Projects/Bonsai까지 같은 축으로 묶은 교차 브리핑.]]></description>
-</item>
-<item>
   <title><![CDATA[웹쫀쿠는 잘 되는데, 한도만 먼저 사라진다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-18/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-18/beginner/</guid>
   <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[폴더 권한을 연 댓가로 쿼터가 증발한다는 말부터, 판단만 하는 모델·슬롭 논쟁까지 — 오늘 커뮤니티가 붙잡은 한 줄.]]></description>
+</item>
+<item>
+  <title><![CDATA[권한은 열고, 쿼터는 닫히는 날]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</guid>
+  <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[웹쫀쿠·COS 리스크와 Astra/Codex 사용량 병목, Jev·슬롭 규범, Law/Projects/Bonsai까지 같은 축으로 묶은 교차 브리핑.]]></description>
 </item>
 </channel>
 </rss>

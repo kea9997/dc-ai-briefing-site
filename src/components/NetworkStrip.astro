@@ -14,12 +14,12 @@ function hostLabel(url: string, name: string) {
 <section class="net" aria-labelledby="net-heading">
   <div class="net-head">
     <p class="net-kicker">Optiwork</p>
-    <h2 id="net-heading">함께 보면 좋은 사이트</h2>
-    <p class="net-lead">같은 팀이 만드는 서비스입니다. 용도에 맞는 곳으로 바로 이동하세요.</p>
+    <h2 id="net-heading">AI 소식, 직접 활용해 보려면</h2>
+    <p class="net-lead">옵티웍이 함께 운영합니다. 실행 환경을 살펴보고, 아이디어를 검토하고, 실제 적용 사례로 이어가세요.</p>
   </div>
 
   <div class="net-grid">
-    {NETWORK.map((s) => (
+    {NETWORK.filter((s) => ['https://llm.optiwork.co.kr', 'https://idea.optiwork.co.kr', 'https://optiwork.co.kr'].includes(s.url)).map((s) => (
       <a class="net-card" href={s.url} rel="noopener noreferrer">
         <div class="net-card-top">
           <strong class="net-name">{s.name}</strong>
@@ -30,4 +30,5 @@ function hostLabel(url: string, name: string) {
       </a>
     ))}
   </div>
+  <p class="net-lead"><a href="https://optiwork.co.kr/projects">옵티웍 전체 서비스와 개발 사례 →</a></p>
 </section>

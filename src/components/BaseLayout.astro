@@ -35,18 +35,9 @@ const orgLd = {
   inLanguage: 'ko-KR',
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://optiwork.co.kr/#organization',
     name: SITE.parent.name,
     url: SITE.parent.url,
-    sameAs: [
-      'https://optiwork.co.kr',
-      'https://banpum.optiwork.co.kr',
-      'https://music.optiwork.co.kr',
-      'https://idea.optiwork.co.kr',
-      'https://llm.optiwork.co.kr',
-      'https://findmynote.com',
-      'https://xn--o80bm5r84ax63ci8b.com',
-      'https://xn--o39aum6g720h.com',
-    ],
   },
 };
 const graph = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];

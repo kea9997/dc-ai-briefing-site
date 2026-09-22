@@ -6,6 +6,20 @@
   <description>국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork의 AI 인사이트 채널.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[API는 반값, 채팅은 잠금 — 솔·루나·오푸스 5.5가 겹친 아침]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-23/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-23/advanced/</guid>
+  <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[토큰 단가 전쟁과 작업당 토큰·출전 표면(Chat vs Work/Codex) 분리가 같은 스냅샷에 들어왔다.]]></description>
+</item>
+<item>
+  <title><![CDATA[솔·루나는 반값인데, 채팅창은 아직 잠겨 있다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-23/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-23/beginner/</guid>
+  <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[같은 날 오푸스 5.5와 GPT-6 솔·루나가 겹쳤고, 국내 판은 가격표보다 출전권·토큰 먹는 속도를 먼저 센다.]]></description>
+</item>
+<item>
   <title><![CDATA[주간 예산 반토막 공식과, 에이전트가 C드라이브를 지운 아침]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-22/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-22/advanced/</guid>

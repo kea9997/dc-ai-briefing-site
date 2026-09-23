@@ -56,3 +56,7 @@
 
 - 텔레그램 채널: https://t.me/opti_ai_daily
 - RSS: https://ai.optiwork.co.kr/rss.xml
+
+## 색인
+
+- IndexNow key: https://ai.optiwork.co.kr/668c4bbea5bffba05949f9b0f495277b.txt

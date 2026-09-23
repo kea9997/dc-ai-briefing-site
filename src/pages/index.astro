@@ -2,6 +2,9 @@
 import BaseLayout from '../components/BaseLayout.astro';
 import { SITE } from '../lib/site';
 import { getPublishedPosts, groupPostsByDay, formatDateKo } from '../lib/posts';
+import ModelGoalPicker from '../components/ModelGoalPicker.astro';
+import ModelBoardChart from '../components/ModelBoardChart.astro';
+import board from '../data/model-board.json';
 
 const posts = await getPublishedPosts();
 const days = groupPostsByDay(posts);
@@ -9,6 +12,7 @@ const latest = days[0];
 const pastDays = days.slice(1);
 const versionCount = posts.length;
 ---
+
 <BaseLayout title={SITE.name} description={SITE.description} type="website">
   <section class="hero">
     <div class="eyebrow">Daily AI Community Briefing</div>
@@ -33,6 +37,19 @@ const versionCount = posts.length;
         <a class="hero-today-link" href="#today">오늘 브리핑 보기</a>
       )}
     </div>
+  </section>
+
+
+  <ModelGoalPicker variant="home" />
+
+  <section class="mb-evidence" aria-label="점수 근거 요약">
+    <div class="mb-evidence-top">
+      <h2 class="mb-evidence-title">점수 근거 (Intelligence Index)</h2>
+      <span class="mb-evidence-meta">{board.metric} · {board.updatedLabel}</span>
+    </div>
+    <p class="mb-evidence-note">영문 리더보드 숫자 요약입니다. 고를 때는 위 목적표를 먼저 보세요.</p>
+    <ModelBoardChart compact={true} limit={5} />
+    <a class="mb-home-cta" href="/models/">목적별 근거 · 전체 점수표 →</a>
   </section>
 
   {latest && (
@@ -64,6 +81,8 @@ const versionCount = posts.length;
       </div>
     </section>
   )}
+
+
 
   {latest && (
     <p class="prose-note">최신: {formatDateKo(latest.date)} · {days.length}일 · {versionCount}버전</p>
@@ -127,6 +146,7 @@ const versionCount = posts.length;
       <a href="/archive/">아카이브</a>
       <a href="/topics/">주제</a>
       <a href="/weekly/">주간</a>
+      <a href="/models/">모델 고르기</a>
     </div>
   </section>
 </BaseLayout>

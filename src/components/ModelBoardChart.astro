@@ -1,0 +1,93 @@
+---
+import board from '../data/model-board.json';
+
+interface Props {
+  /** Max rows to show; omit for all */
+  limit?: number;
+  /** compact = home card bars only */
+  compact?: boolean;
+}
+
+const { limit, compact = false } = Astro.props;
+const rows = typeof limit === 'number' ? board.rows.slice(0, limit) : board.rows;
+const maxIntel = Math.max(...board.rows.map((r) => r.intelligence), 1);
+---
+{compact ? (
+  <div class="mb-chart mb-chart-compact" role="img" aria-label="Artificial Analysis Intelligence Index 상위 모델">
+    {rows.map((row) => (
+      <div class="mb-bar-row">
+        <div class="mb-bar-label">
+          <span class="mb-rank">{row.rank}</span>
+          <span class="mb-name">{row.name}</span>
+        </div>
+        <div class="mb-bar-track" aria-hidden="true">
+          <div
+            class="mb-bar-fill"
+            style={`width: ${(row.intelligence / maxIntel) * 100}%`}
+          />
+        </div>
+        <div class="mb-bar-nums">
+          <span class="mb-intel">{row.intelligence}</span>
+          <span class="mb-cost">${row.costPerTask.toFixed(2)}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+) : (
+  <>
+    <div class="mb-chart" role="img" aria-label="Artificial Analysis Intelligence Index 막대 차트">
+      <div class="mb-chart-legend">
+        <span><i class="mb-swatch mb-swatch-intel" aria-hidden="true" /> Intelligence Index</span>
+        <span class="mb-muted">막대 길이 = 점수 · 숫자는 표에도 있음</span>
+      </div>
+      {rows.map((row) => (
+        <div class="mb-bar-row">
+          <div class="mb-bar-label">
+            <span class="mb-rank">{row.rank}</span>
+            <span class="mb-name">{row.name}</span>
+            <span class="mb-creator">{row.creator}</span>
+          </div>
+          <div class="mb-bar-track" aria-hidden="true">
+            <div
+              class="mb-bar-fill"
+              style={`width: ${(row.intelligence / maxIntel) * 100}%`}
+            />
+          </div>
+          <div class="mb-bar-nums">
+            <span class="mb-intel" title="Intelligence Index">{row.intelligence}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mb-table-wrap">
+      <table class="mb-table">
+        <caption class="mb-caption">
+          Intelligence Index · 작업당 비용(USD) — {board.source} 스냅샷 {board.updatedLabel}
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">모델</th>
+            <th scope="col">제작</th>
+            <th scope="col">Intelligence</th>
+            <th scope="col">작업당 $</th>
+            <th scope="col">메모</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr>
+              <td>{row.rank}</td>
+              <td>{row.name}</td>
+              <td>{row.creator}</td>
+              <td>{row.intelligence}</td>
+              <td>${row.costPerTask.toFixed(2)}</td>
+              <td>{row.note || '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </>
+)}

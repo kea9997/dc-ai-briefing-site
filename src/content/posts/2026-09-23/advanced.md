@@ -100,6 +100,24 @@ Muse 컨시어지 보도의 고급 독법: “완전 자율” 마케팅과 **�
 
 ---
 
+
+
+
+## 목적별 모델 고르기 (한국어 디스커버리)
+
+영문 AA/LMArena 붙여넣기 대신, 사이트 `/models/`에 **목적×(가성비·최고·최저가)** 매트릭스를 둡니다. 숫자는 AA 스냅샷(2026-09-23 KST) — **확인(벤치)**. 커뮤니티 환산·개인 벤치·라우팅 설은 **미확인**.
+
+| 목적 | 가성비 | 가장 좋음 | 가장 쌈 |
+|---|---|---|---|
+| 코딩·에이전트 | GPT-6 Sol (max) · CA≈57 · $1.06/task | Claude Opus 5.5 (max+fallback) · Intel 58 | GPT-6 Luna (max) · CA≈41 · $0.07 |
+| 글쓰기·긴 추론 | GPT-6 Sol (max) · Intel 48 · $1.06 | Claude Opus 5.5 · 58 · $5.98 | GPT-6 Luna (max) · 37 · $0.07 |
+| 싸게·대량 | Luna (max) · $0.07 | Sol (max) · 품질 바닥선 | Luna (low) · ~$0.0045 |
+| 오픈웨이트 관심 | MiMo-V2.6-Pro · 46 | MiMo-V2.6-Pro (앵커) | Luna (low) 클라우드 임시 |
+
+운영: (1) 목적표 → (2) `/models/`에서 why·근거 펼침 → (3) Intelligence 막대는 보조 증거. Vendor High-only 슬라이드와 AA mode 라벨을 같은 KPI에 넣지 말 것.
+
+→ [/models/](/models/) · [AA leaderboard](https://artificialanalysis.ai/leaderboards/models) · [cost-efficiency article](https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier)
+
 ## 오늘이 의미하는 것 · 바꾸지 말 것
 
 의미: 2026-09-22~23은 “더 큰 모델”보다 **단가 붕괴 × tokens/task × surface flag**의 삼중 이벤트입니다. 국내 판은 이를 출전권·불신 언어로, 해외는 cost-per-correct-task·open score gap으로 번역합니다. 전일의 allowance 정치경제학이 “표가 없어서 환산”이었다면, 오늘은 “표는 있는데 내 드롭다운이 비어 있고 출력은 길다”로 한 단계 구체화됐습니다.

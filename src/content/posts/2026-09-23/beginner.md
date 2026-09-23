@@ -86,6 +86,25 @@ HN·블로그 타이틀에 “Claude Opus 5.5 vs GPT-6 Sol: cost per correct tas
 
 ---
 
+
+
+
+## 목적별 모델 고르기 (한국어)
+
+영문 리더보드만 보면 헷갈립니다. 사이트에 **목적별 모델 고르기**를 두었습니다. 할 일(코딩·글쓰기·대량·오픈웨이트)을 고르면 **가성비 / 가장 좋음 / 가장 쌈**이 한눈에 나옵니다.
+
+**확인(벤치 스냅샷 2026-09-23 서울):**
+- 가장 좋음(종합): Claude Opus 5.5 (max+fallback) — Intelligence **58**, 작업당 약 **$5.98**
+- 코딩 가성비: GPT-6 Sol (max) — Coding Agent Index 약 **57**, 작업당 약 **$1.06**
+- 대량·초저가: GPT-6 Luna (max) 작업당 약 **$0.07** / Luna (low) 약 **$0.0045** 대역
+- 오픈웨이트 참고: MiMo-V2.6-Pro — Intelligence **46**
+
+한 줄: **점수는 Opus, 코딩 가성비는 Sol, 싸게 많이 돌리려면 Luna.** 표만 외우지 말고 [목적별 모델 고르기](/models/)에서 내 할 일에 맞춰 고르세요.
+
+**미확인:** 내 채팅·Work 드롭다운에 같은 모델이 보이는지, 갤 “토큰 괴물” 체감이 내 작업에서도 같은지.
+
+→ [목적별 모델 고르기](/models/) · [AA 리더보드](https://artificialanalysis.ai/leaderboards/models) · [Sol/Luna 비용 기사](https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier)
+
 ## 오늘이 의미하는 것 · 바꾸지 말 것
 
 의미: 프론티어가 “더 똑똑한가”보다 **같은 카드로 어디에 출전시키고, 말이 긴 모델이 총비용을 어떻게 뒤집는가**로 이동했습니다. 반값 API는 개발·Work·Codex 유저에게 먼저 열린 문에 가깝고, 일반 채팅 구독자는 “목록에 보이는 순간”이 진짜 출시입니다.

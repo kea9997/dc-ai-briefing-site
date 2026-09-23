@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../components/BaseLayout.astro';
+import ModelGoalPicker from '../../components/ModelGoalPicker.astro';
+import ModelBoardChart from '../../components/ModelBoardChart.astro';
+import { SITE } from '../../lib/site';
+import board from '../../data/model-board.json';
+
+const title = '목적별 모델 고르기';
+const description =
+  '할 일(코딩·글쓰기·대량·오픈웨이트)별로 가성비·가장 좋음·가장 쌈 모델을 한국어로 고릅니다. Artificial Analysis 스냅샷 근거 포함.';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: `${title} · ${SITE.name}`,
+  description,
+  url: `${SITE.domain}/models/`,
+  dateModified: board.updated,
+  isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.domain },
+  about: {
+    '@type': 'Dataset',
+    name: `${board.metric} 스냅샷`,
+    creator: board.source,
+    url: board.sourceUrl,
+    dateModified: board.updated,
+  },
+};
+---
+<BaseLayout title={title} description={description} type="website" jsonLd={jsonLd}>
+  <article class="post mb-page">
+    <ModelGoalPicker variant="full" />
+
+    <h2>점수 근거 (Intelligence Index)</h2>
+    <p class="prose-note">
+      아래는 영문 리더보드 숫자를 그대로 옮긴 보조 자료입니다. 고를 때는 위 목적표를 우선하세요.
+      스냅샷 {board.updatedLabel}.
+    </p>
+    <ModelBoardChart />
+
+    <h2>읽는 법</h2>
+    <ul>
+      <li><strong>가성비</strong> — 품질 대비 작업당 비용이 유리한 쪽 (코딩은 Sol의 Coding Agent 지수를 반영).</li>
+      <li><strong>가장 좋음</strong> — 이 스냅샷에서 품질·지능이 가장 높은 쪽 (종합 Intelligence 1위 Opus 5.5).</li>
+      <li><strong>가장 쌈</strong> — 단가·작업당 비용이 가장 낮은 쪽 (Luna). 품질 하한선을 함께 보세요.</li>
+      <li><strong>주의</strong> — 티어(max/high/low)와 모드가 다르면 점수·비용이 달라집니다. 셀을 열어 근거를 확인하세요.</li>
+    </ul>
+
+    {board.codingNote && (
+      <p class="prose-note">
+        {board.codingNote}{' '}
+        <a href={board.articleUrl} target="_blank" rel="noopener noreferrer">AA 기사</a>
+      </p>
+    )}
+
+    <h2>출처 · 면책</h2>
+    <ul>
+      <li>
+        수치 출처: <a href={board.sourceUrl} target="_blank" rel="noopener noreferrer">{board.source} Models Leaderboard</a>
+        · 스냅샷 {board.updatedLabel}
+      </li>
+      <li>
+        해설: <a href={board.articleUrl} target="_blank" rel="noopener noreferrer">GPT-6 Sol and Luna cost-efficiency</a>
+      </li>
+      <li>AA 수치는 벤치·확인. 커뮤니티 해석·개인 벤치·루머는 데일리 본문에서 별도 라벨.</li>
+      <li>이 페이지는 {SITE.name}의 한국어 선택 도우미이며, Artificial Analysis·LM Arena 공식 UI를 대체하지 않습니다.</li>
+    </ul>
+
+    <p class="mb-cta-row">
+      <a class="btn-read btn-read-outline" href="/">오늘 브리핑</a>
+      <a class="btn-read btn-read-solid" href="/topics/model-launch/">모델 출시·가격 주제</a>
+    </p>
+  </article>
+</BaseLayout>

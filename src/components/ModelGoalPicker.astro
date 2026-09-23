@@ -1,0 +1,81 @@
+---
+import board from '../data/model-board.json';
+
+interface Props {
+  variant?: 'home' | 'full';
+}
+
+const { variant = 'home' } = Astro.props;
+const columns = board.columns;
+const goals = board.goals;
+const isFull = variant === 'full';
+---
+<section class:list={['mg-picker', isFull && 'mg-picker-full']} aria-label="목적별 모델 고르기">
+  <div class="mg-head">
+    <div class="mg-head-text">
+      <p class="mg-eyebrow">한국어로 한눈에</p>
+      <h2 class="mg-title">목적별 모델 고르기</h2>
+      <p class="mg-lead">
+        영문 리더보드를 그대로 붙이지 않습니다. <strong>무엇을 할지</strong> 고르면
+        <strong>가성비 · 가장 좋음 · 가장 쌈</strong> 후보가 바로 보입니다.
+      </p>
+    </div>
+    <p class="mg-snap">스냅샷 {board.updatedLabel} · 근거 {board.source}</p>
+  </div>
+
+  <div class="mg-grid" role="table" aria-label="목적별 추천 모델">
+    <div class="mg-row mg-row-head" role="row">
+      <div class="mg-cell mg-goal-h" role="columnheader">목적</div>
+      {columns.map((col) => (
+        <div class="mg-cell mg-col-h" role="columnheader">{col.label}</div>
+      ))}
+    </div>
+
+    {goals.map((goal) => (
+      <div class="mg-row" role="row">
+        <div class="mg-cell mg-goal" role="rowheader">
+          <strong>{goal.label}</strong>
+          <span class="mg-blurb">{goal.blurb}</span>
+        </div>
+        {columns.map((col) => {
+          const pick = goal.picks[col.id as 'value' | 'best' | 'cheap'];
+          return (
+            <div class={`mg-cell mg-pick mg-pick-${col.id}`} role="cell">
+              <span class="mg-chip">{col.label}</span>
+              <span class="mg-model">{pick.short}</span>
+              {isFull && <span class="mg-model-full">{pick.name}</span>}
+              {isFull ? (
+                <details class="mg-details">
+                  <summary>왜 · 근거</summary>
+                  <p class="mg-why">{pick.why}</p>
+                  <p class="mg-evidence"><strong>근거</strong> {pick.evidence}</p>
+                  {pick.caveat && <p class="mg-caveat"><strong>주의</strong> {pick.caveat}</p>}
+                </details>
+              ) : (
+                <span class="mg-evidence-short">{pick.evidence}</span>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    ))}
+  </div>
+
+  <p class="mg-footnote">
+    {board.takeaway}
+    {!isFull && (
+      <>
+        {' '}
+        <a href="/models/">자세히 · 근거·점수표 →</a>
+      </>
+    )}
+    {isFull && (
+      <>
+        {' '}
+        <a href={board.sourceUrl} target="_blank" rel="noopener noreferrer">Artificial Analysis 리더보드</a>
+        {' · '}
+        <a href={board.articleUrl} target="_blank" rel="noopener noreferrer">Sol/Luna 비용 기사</a>
+      </>
+    )}
+  </p>
+</section>

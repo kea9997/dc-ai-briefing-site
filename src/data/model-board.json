@@ -1,0 +1,201 @@
+{
+  "updated": "2026-09-23",
+  "updatedLabel": "2026-09-23 (서울)",
+  "source": "Artificial Analysis",
+  "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
+  "articleUrl": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+  "metric": "Intelligence Index",
+  "costMetric": "작업당 비용 (USD)",
+  "takeaway": "할 일부터 고르세요. 지능 1위는 Opus 5.5, 코딩 가성비는 Sol, 대량·초저가는 Luna — 점수표만 보지 말고 목적·비용을 같이 봅니다.",
+  "codingNote": "Coding Agent Index(AA 기사): Sol ~57(상승), Luna ~41(하락) — 기사 인용. Opus의 코딩 전용 지수는 이 스냅샷에 없어 종합 Intelligence로 표시합니다.",
+  "columns": [
+    {
+      "id": "value",
+      "label": "가성비"
+    },
+    {
+      "id": "best",
+      "label": "가장 좋음"
+    },
+    {
+      "id": "cheap",
+      "label": "가장 쌈"
+    }
+  ],
+  "goals": [
+    {
+      "id": "coding",
+      "label": "코딩·에이전트",
+      "blurb": "코드·도구 호출·에이전트 루프",
+      "picks": {
+        "best": {
+          "name": "Claude Opus 5.5 (max+fallback)",
+          "short": "Opus 5.5",
+          "why": "종합 Intelligence 1위(58). 코딩 전용 지수는 미기재라 일반 지능·고난도 작업 기준으로 ‘가장 좋음’.",
+          "evidence": "AA Intelligence 58 · 작업당 $5.98",
+          "caveat": "비쌈. tokens/task가 길면 총비용이 더 불어날 수 있음."
+        },
+        "value": {
+          "name": "GPT-6 Sol (max)",
+          "short": "Sol (max)",
+          "why": "Coding Agent Index 약 57로 코딩 효율이 두드러지고, 작업당 약 $1.06.",
+          "evidence": "AA Coding Agent ~57(기사) · Intelligence 48 · 작업당 $1.06",
+          "caveat": "절대 지능은 Opus·Astra보다 낮음. ‘싸면서 코딩에 쓸 만함’."
+        },
+        "cheap": {
+          "name": "GPT-6 Luna (max)",
+          "short": "Luna (max)",
+          "why": "작업당 약 $0.07로 저렴. 초안·반복 수정용.",
+          "evidence": "AA Coding Agent ~41(기사) · Intelligence 37 · 작업당 $0.07",
+          "caveat": "코딩 지수가 Sol보다 낮음. 어려운 에이전트는 Sol/Opus로 올리는 편이 안전."
+        }
+      }
+    },
+    {
+      "id": "writing",
+      "label": "글쓰기·긴 추론",
+      "blurb": "일반 채팅·지식·긴 논리",
+      "picks": {
+        "best": {
+          "name": "Claude Opus 5.5 (max+fallback)",
+          "short": "Opus 5.5",
+          "why": "Intelligence 58로 스냅샷 최고. 깊은 추론·긴 글에 우선.",
+          "evidence": "AA Intelligence 58 · 작업당 $5.98",
+          "caveat": "단가·작업당 비용 모두 상위. 초안은 싼 모델로 빼고 마무리만 Opus도 방법."
+        },
+        "value": {
+          "name": "GPT-6 Sol (max)",
+          "short": "Sol (max)",
+          "why": "Intelligence 48에 작업당 $1.06 — 비슷한 지능대에서 비용 우위.",
+          "evidence": "AA Intelligence 48 · 작업당 $1.06",
+          "caveat": "Opus high(54·$1.82)도 가성비 후보. 품질이 더 필요하면 Opus high를 검토."
+        },
+        "cheap": {
+          "name": "GPT-6 Luna (max)",
+          "short": "Luna (max)",
+          "why": "짧은 답·초안·요약형 글에 초저가.",
+          "evidence": "AA Intelligence 37 · 작업당 $0.07",
+          "caveat": "긴 추론 품질은 상위 모델 대비 약함. 최종본은 Sol/Opus 권장."
+        }
+      }
+    },
+    {
+      "id": "bulk",
+      "label": "싸게·대량",
+      "blurb": "요약·추출·짧은 작업·반복 호출",
+      "picks": {
+        "best": {
+          "name": "GPT-6 Sol (max)",
+          "short": "Sol (max)",
+          "why": "대량이어도 품질 바닥선이 필요할 때. Luna보다 비싸지만 실수·재시도가 줄면 총비용이 나을 수 있음.",
+          "evidence": "AA Intelligence 48 · 작업당 $1.06",
+          "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음."
+        },
+        "value": {
+          "name": "GPT-6 Luna (max)",
+          "short": "Luna (max)",
+          "why": "작업당 약 $0.07 — 대량 구간의 기본 가성비.",
+          "evidence": "AA Intelligence 37 · 작업당 $0.07",
+          "caveat": "실패·재시도가 잦으면 Sol로 올리는 편이 쌀 수 있음."
+        },
+        "cheap": {
+          "name": "GPT-6 Luna (low)",
+          "short": "Luna (low)",
+          "why": "가장 싼 티어. 초단문·분류·단순 추출용.",
+          "evidence": "AA 기사 기준 작업당 약 $0.0045 대역(티어·모드에 따라 다름)",
+          "caveat": "Intelligence 수치는 max 티어(37)와 다름. 품질 민감 작업에는 비권장."
+        }
+      }
+    },
+    {
+      "id": "open",
+      "label": "오픈웨이트·로컬 관심",
+      "blurb": "가중치 공개·자체 호스팅 참고",
+      "picks": {
+        "best": {
+          "name": "MiMo-V2.6-Pro (open weights ref)",
+          "short": "MiMo-V2.6-Pro",
+          "why": "이 스냅샷에서 오픈 웨이트 참고 앵커(Intelligence 46).",
+          "evidence": "AA Intelligence 46 · 작업당 $0.13(호스팅 참고가)",
+          "caveat": "클라우드 Opus/Astra를 대체하라는 신호가 아님. 추격 격차 측정용."
+        },
+        "value": {
+          "name": "MiMo-V2.6-Pro (open weights ref)",
+          "short": "MiMo-V2.6-Pro",
+          "why": "같은 앵커를 가성비·참고로 둡니다. 로컬·프라이버시 축과 함께 볼 때.",
+          "evidence": "AA Intelligence 46 · 작업당 $0.13",
+          "caveat": "실제 로컬 VRAM·양자화 품질은 별도 측정 필요."
+        },
+        "cheap": {
+          "name": "GPT-6 Luna (low)",
+          "short": "Luna (low) · 클라우드",
+          "why": "로컬을 아직 안 쓸 때, 대량 전처리를 클라우드 초저가로 빼는 현실적 대안.",
+          "evidence": "작업당 약 $0.0045 대역(AA 기사)",
+          "caveat": "오픈웨이트가 아님. ‘로컬 대체’가 아니라 ‘대기 중 임시 카드’."
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "rank": 1,
+      "name": "Claude Opus 5.5 (max+fallback)",
+      "creator": "Anthropic",
+      "intelligence": 58,
+      "costPerTask": 5.98,
+      "note": "Intelligence Index 1위"
+    },
+    {
+      "rank": 2,
+      "name": "Claude Opus 5.5 (xhigh)",
+      "creator": "Anthropic",
+      "intelligence": 56,
+      "costPerTask": 3.46
+    },
+    {
+      "rank": 3,
+      "name": "Claude Opus 5.5 (high)",
+      "creator": "Anthropic",
+      "intelligence": 54,
+      "costPerTask": 1.82
+    },
+    {
+      "rank": 4,
+      "name": "Claude Fable 5.1 (max)",
+      "creator": "Anthropic",
+      "intelligence": 53,
+      "costPerTask": 7.63
+    },
+    {
+      "rank": 5,
+      "name": "GPT-6 Astra (max)",
+      "creator": "OpenAI",
+      "intelligence": 53,
+      "costPerTask": 3.26
+    },
+    {
+      "rank": 6,
+      "name": "GPT-6 Sol (max)",
+      "creator": "OpenAI",
+      "intelligence": 48,
+      "costPerTask": 1.06,
+      "note": "Coding Agent ~57 · 가성비"
+    },
+    {
+      "rank": 7,
+      "name": "MiMo-V2.6-Pro (open weights ref)",
+      "creator": "Xiaomi",
+      "intelligence": 46,
+      "costPerTask": 0.13,
+      "note": "오픈 웨이트 참고"
+    },
+    {
+      "rank": 8,
+      "name": "GPT-6 Luna (max)",
+      "creator": "OpenAI",
+      "intelligence": 37,
+      "costPerTask": 0.07,
+      "note": "초저가·대량"
+    }
+  ]
+}

@@ -40,3 +40,19 @@ python3 scripts/collect-dc.py -o /tmp/dc-YYYY-MM-DD.json --bodies 8
 ## 소스 우선
 1. 국내: collect-dc.py 결과 (chatgpt, ai_utilize 개념/추천·고조회)
 2. 해외: r/LocalLLaMA, r/MachineLearning, HN AI, r/ChatGPT (Reddit은 RSS; JSON 403 주의)
+
+
+## 목적별 모델 고르기 (Artificial Analysis 근거)
+대형 모델 출시·가격 개편 직후, 또는 **주 1회**:
+1. https://artificialanalysis.ai/leaderboards/models 에서 Intelligence Index·작업당 비용·(가능하면) Coding Agent Index를 확인한다.
+2. `src/data/model-board.json`을 갱신한다.
+   - `rows[]`: 점수표(막대 차트용)
+   - `goals[]`: 목적별 셀 — `value`(가성비) / `best`(가장 좋음) / `cheap`(가장 쌈) 각각 `name`·`short`·`why`·`evidence`·`caveat`
+3. 홈·`/models/`는 JSON을 읽는다. **홈 주인공은 목적 매트릭스**, Intelligence 막대는 보조 근거.
+4. 그날 초보·고급 브리핑에 목적별 고르기 소절을 넣고 AA 수치는 **확인(벤치)**, 커뮤니티 해석은 **미확인**. `/models/` 링크를 건다.
+5. 영문 리더보드를 그대로 붙여 넣지 말 것. 한국어 목적·한줄 why가 먼저.
+
+### Routine instruction addendum (Grok Bot `ai` 루틴에 추가할 문단)
+```
+목적별 모델 고르기: 대형 모델 출시·가격 개편 직후 또는 주 1회, Artificial Analysis 리더보드에서 Intelligence Index·작업당 비용·Coding Agent Index를 확인해 src/data/model-board.json의 rows와 goals(가성비/가장 좋음/가장 쌈)를 갱신하고 홈·/models/와 동기화한다. 홈 주인공은 한국어 목적 매트릭스이고 Intelligence 막대는 보조 근거다. 그날 초보·고급 브리핑에 목적별 고르기 소절을 넣되 AA 수치는 확인(벤치), 커뮤니티 해석은 미확인으로 구분하고 /models/와 AA 원문 링크를 포함한다. 영문 리더보드 붙여넣기 금지. 텔레그램은 기존처럼 하루 1통(초보·고급 URL)만 — 모델판만 바뀐 중간 배포에서는 재전송하지 않는다.
+```

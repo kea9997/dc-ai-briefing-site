@@ -11,6 +11,7 @@ export async function buildSitemapXml(): Promise<string> {
     '/archive/',
     '/topics/',
     '/weekly/',
+    '/models/',
     ...TOPICS.map((t) => `/topics/${t.slug}/`),
   ];
   const urls = [

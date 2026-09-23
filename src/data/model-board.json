@@ -6,8 +6,25 @@
   "articleUrl": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 지능 1위는 Opus 5.5, 코딩 가성비는 Sol, 대량·초저가는 Luna — 점수표만 보지 말고 목적·비용을 같이 봅니다.",
+  "takeaway": "할 일부터 고르세요. 구독 탭(전체·Claude만·GPT만)으로 후보를 좁힐 수 있습니다. 지능 1위는 Opus 5.5, 코딩 가성비는 Sol, 대량·초저가는 Luna — 점수표만 보지 말고 목적·비용을 같이 봅니다.",
   "codingNote": "Coding Agent Index(AA 기사): Sol ~57(상승), Luna ~41(하락) — 기사 인용. Opus의 코딩 전용 지수는 이 스냅샷에 없어 종합 Intelligence로 표시합니다.",
+  "lanes": [
+    {
+      "id": "all",
+      "label": "전체",
+      "hint": "벤더 무관 · 현재 기본"
+    },
+    {
+      "id": "claude",
+      "label": "Claude만",
+      "hint": "Anthropic / Claude 구독"
+    },
+    {
+      "id": "openai",
+      "label": "GPT만",
+      "hint": "OpenAI / ChatGPT 구독"
+    }
+  ],
   "columns": [
     {
       "id": "value",
@@ -27,27 +44,75 @@
       "id": "coding",
       "label": "코딩·에이전트",
       "blurb": "코드·도구 호출·에이전트 루프",
-      "picks": {
-        "best": {
-          "name": "Claude Opus 5.5 (max+fallback)",
-          "short": "Opus 5.5",
-          "why": "종합 Intelligence 1위(58). 코딩 전용 지수는 미기재라 일반 지능·고난도 작업 기준으로 ‘가장 좋음’.",
-          "evidence": "AA Intelligence 58 · 작업당 $5.98",
-          "caveat": "비쌈. tokens/task가 길면 총비용이 더 불어날 수 있음."
+      "lanes": {
+        "all": {
+          "best": {
+            "name": "Claude Opus 5.5 (max+fallback)",
+            "short": "Opus 5.5",
+            "why": "종합 Intelligence 1위(58). 코딩 전용 지수는 미기재라 일반 지능·고난도 작업 기준으로 ‘가장 좋음’.",
+            "evidence": "AA Intelligence 58 · 작업당 $5.98",
+            "caveat": "비쌈. tokens/task가 길면 총비용이 더 불어날 수 있음."
+          },
+          "value": {
+            "name": "GPT-6 Sol (max)",
+            "short": "Sol (max)",
+            "why": "Coding Agent Index 약 57로 코딩 효율이 두드러지고, 작업당 약 $1.06.",
+            "evidence": "AA Coding Agent ~57(기사) · Intelligence 48 · 작업당 $1.06",
+            "caveat": "절대 지능은 Opus·Astra보다 낮음. ‘싸면서 코딩에 쓸 만함’."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (max)",
+            "short": "Luna (max)",
+            "why": "작업당 약 $0.07로 저렴. 초안·반복 수정용.",
+            "evidence": "AA Coding Agent ~41(기사) · Intelligence 37 · 작업당 $0.07",
+            "caveat": "코딩 지수가 Sol보다 낮음. 어려운 에이전트는 Sol/Opus로 올리는 편이 안전."
+          }
         },
-        "value": {
-          "name": "GPT-6 Sol (max)",
-          "short": "Sol (max)",
-          "why": "Coding Agent Index 약 57로 코딩 효율이 두드러지고, 작업당 약 $1.06.",
-          "evidence": "AA Coding Agent ~57(기사) · Intelligence 48 · 작업당 $1.06",
-          "caveat": "절대 지능은 Opus·Astra보다 낮음. ‘싸면서 코딩에 쓸 만함’."
+        "claude": {
+          "best": {
+            "name": "Claude Opus 5.5 (max+fallback)",
+            "short": "Opus 5.5",
+            "why": "Claude 패밀리·이 스냅샷에서 종합 Intelligence 최고(58). 고난도 코딩·에이전트에 우선.",
+            "evidence": "AA Intelligence 58 · 작업당 $5.98",
+            "caveat": "Claude 구독 안에서도 가장 비싼 티어. 일상 코딩은 high부터 검토."
+          },
+          "value": {
+            "name": "Claude Opus 5.5 (high)",
+            "short": "Opus high",
+            "why": "Intelligence 54에 작업당 $1.82 — Claude 패밀리 안에서 IQ/$가 가장 유리한 구간.",
+            "evidence": "AA Intelligence 54 · 작업당 $1.82",
+            "caveat": "max(58)보다 점수는 낮음. 품질이 더 필요하면 max로 올리세요."
+          },
+          "cheap": {
+            "name": "Claude Opus 5.5 (low)",
+            "short": "Opus low",
+            "why": "Claude 구독만 쓸 때 초안·반복용 저티어. Sonnet 점수는 이 스냅샷에 없어 넣지 않았습니다.",
+            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55 (low 티어)",
+            "caveat": "본표 상위 rows에 없던 저티어라 보조 행으로 표기. Haiku는 미검증이라 제외."
+          }
         },
-        "cheap": {
-          "name": "GPT-6 Luna (max)",
-          "short": "Luna (max)",
-          "why": "작업당 약 $0.07로 저렴. 초안·반복 수정용.",
-          "evidence": "AA Coding Agent ~41(기사) · Intelligence 37 · 작업당 $0.07",
-          "caveat": "코딩 지수가 Sol보다 낮음. 어려운 에이전트는 Sol/Opus로 올리는 편이 안전."
+        "openai": {
+          "best": {
+            "name": "GPT-6 Astra (max)",
+            "short": "Astra (max)",
+            "why": "GPT 패밀리 종합 Intelligence 최고(53). ‘가장 좋음’ 기본값. 코딩 전용 지수만 보면 Sol(Coding Agent ~57)이 더 나을 수 있어 가성비 칸에 Sol을 둡니다.",
+            "evidence": "AA Intelligence 53 · 작업당 $3.26",
+            "caveat": "코딩 에이전트 루프·도구 호출 비중면 Sol이 실무 ‘베스트’에 가깝습니다."
+          },
+          "value": {
+            "name": "GPT-6 Sol (max)",
+            "short": "Sol (max)",
+            "why": "Coding Agent ~57에 작업당 $1.06 — GPT 구독 코딩 가성비·실무 주력.",
+            "evidence": "AA Coding Agent ~57(기사) · Intelligence 48 · 작업당 $1.06",
+            "caveat": "절대 종합 지능은 Astra보다 낮음."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (max)",
+            "short": "Luna (max)",
+            "why": "작업당 약 $0.07. 초안·반복 수정용. 더 싸면 Luna (low).",
+            "evidence": "AA Coding Agent ~41(기사) · Intelligence 37 · 작업당 $0.07",
+            "caveat": "어려운 에이전트는 Sol/Astra로."
+          }
         }
       }
     },
@@ -55,27 +120,75 @@
       "id": "writing",
       "label": "글쓰기·긴 추론",
       "blurb": "일반 채팅·지식·긴 논리",
-      "picks": {
-        "best": {
-          "name": "Claude Opus 5.5 (max+fallback)",
-          "short": "Opus 5.5",
-          "why": "Intelligence 58로 스냅샷 최고. 깊은 추론·긴 글에 우선.",
-          "evidence": "AA Intelligence 58 · 작업당 $5.98",
-          "caveat": "단가·작업당 비용 모두 상위. 초안은 싼 모델로 빼고 마무리만 Opus도 방법."
+      "lanes": {
+        "all": {
+          "best": {
+            "name": "Claude Opus 5.5 (max+fallback)",
+            "short": "Opus 5.5",
+            "why": "Intelligence 58로 스냅샷 최고. 깊은 추론·긴 글에 우선.",
+            "evidence": "AA Intelligence 58 · 작업당 $5.98",
+            "caveat": "단가·작업당 비용 모두 상위. 초안은 싼 모델로 빼고 마무리만 Opus도 방법."
+          },
+          "value": {
+            "name": "GPT-6 Sol (max)",
+            "short": "Sol (max)",
+            "why": "Intelligence 48에 작업당 $1.06 — 비슷한 지능대에서 비용 우위.",
+            "evidence": "AA Intelligence 48 · 작업당 $1.06",
+            "caveat": "Opus high(54·$1.82)도 가성비 후보. 품질이 더 필요하면 Opus high를 검토."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (max)",
+            "short": "Luna (max)",
+            "why": "짧은 답·초안·요약형 글에 초저가.",
+            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "caveat": "긴 추론 품질은 상위 모델 대비 약함. 최종본은 Sol/Opus 권장."
+          }
         },
-        "value": {
-          "name": "GPT-6 Sol (max)",
-          "short": "Sol (max)",
-          "why": "Intelligence 48에 작업당 $1.06 — 비슷한 지능대에서 비용 우위.",
-          "evidence": "AA Intelligence 48 · 작업당 $1.06",
-          "caveat": "Opus high(54·$1.82)도 가성비 후보. 품질이 더 필요하면 Opus high를 검토."
+        "claude": {
+          "best": {
+            "name": "Claude Opus 5.5 (max+fallback)",
+            "short": "Opus 5.5",
+            "why": "Claude 구독 안·스냅샷 최고 지능(58). 긴 글·깊은 추론.",
+            "evidence": "AA Intelligence 58 · 작업당 $5.98",
+            "caveat": "비용 부담이 크면 high로 내리고 마무리만 max."
+          },
+          "value": {
+            "name": "Claude Opus 5.5 (high)",
+            "short": "Opus high",
+            "why": "54점·$1.82 — Claude 패밀리 글쓰기 가성비의 실무 기본값.",
+            "evidence": "AA Intelligence 54 · 작업당 $1.82",
+            "caveat": "max 대비 품질 하한이 있음. 중요 원고는 max 검토."
+          },
+          "cheap": {
+            "name": "Claude Opus 5.5 (low)",
+            "short": "Opus low",
+            "why": "초안·요약·짧은 답용. Claude만 쓸 때의 저비용 티어.",
+            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
+            "caveat": "긴 추론 최종본에는 high/max 권장. Sonnet 미기재."
+          }
         },
-        "cheap": {
-          "name": "GPT-6 Luna (max)",
-          "short": "Luna (max)",
-          "why": "짧은 답·초안·요약형 글에 초저가.",
-          "evidence": "AA Intelligence 37 · 작업당 $0.07",
-          "caveat": "긴 추론 품질은 상위 모델 대비 약함. 최종본은 Sol/Opus 권장."
+        "openai": {
+          "best": {
+            "name": "GPT-6 Astra (max)",
+            "short": "Astra (max)",
+            "why": "GPT 패밀리 종합 Intelligence 최고(53). 글쓰기·일반 추론의 ‘가장 좋음’.",
+            "evidence": "AA Intelligence 53 · 작업당 $3.26",
+            "caveat": "코딩 전용은 Sol(Coding Agent ~57)이 나을 수 있음."
+          },
+          "value": {
+            "name": "GPT-6 Sol (max)",
+            "short": "Sol (max)",
+            "why": "48점·$1.06 — GPT 구독에서 품질·비용 균형.",
+            "evidence": "AA Intelligence 48 · 작업당 $1.06",
+            "caveat": "최고 품질이 필요하면 Astra."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (max)",
+            "short": "Luna (max)",
+            "why": "짧은 글·초안·요약 초저가.",
+            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "caveat": "긴 논리 최종본은 Sol/Astra 권장."
+          }
         }
       }
     },
@@ -83,27 +196,75 @@
       "id": "bulk",
       "label": "싸게·대량",
       "blurb": "요약·추출·짧은 작업·반복 호출",
-      "picks": {
-        "best": {
-          "name": "GPT-6 Sol (max)",
-          "short": "Sol (max)",
-          "why": "대량이어도 품질 바닥선이 필요할 때. Luna보다 비싸지만 실수·재시도가 줄면 총비용이 나을 수 있음.",
-          "evidence": "AA Intelligence 48 · 작업당 $1.06",
-          "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음."
+      "lanes": {
+        "all": {
+          "best": {
+            "name": "GPT-6 Sol (max)",
+            "short": "Sol (max)",
+            "why": "대량이어도 품질 바닥선이 필요할 때. Luna보다 비싸지만 실수·재시도가 줄면 총비용이 나을 수 있음.",
+            "evidence": "AA Intelligence 48 · 작업당 $1.06",
+            "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음."
+          },
+          "value": {
+            "name": "GPT-6 Luna (max)",
+            "short": "Luna (max)",
+            "why": "작업당 약 $0.07 — 대량 구간의 기본 가성비.",
+            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "caveat": "실패·재시도가 잦으면 Sol로 올리는 편이 쌀 수 있음."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (low)",
+            "short": "Luna (low)",
+            "why": "가장 싼 티어. 초단문·분류·단순 추출용.",
+            "evidence": "AA 기사 기준 작업당 약 $0.0045 대역(티어·모드에 따라 다름)",
+            "caveat": "Intelligence 수치는 max 티어(37)와 다름. 품질 민감 작업에는 비권장."
+          }
         },
-        "value": {
-          "name": "GPT-6 Luna (max)",
-          "short": "Luna (max)",
-          "why": "작업당 약 $0.07 — 대량 구간의 기본 가성비.",
-          "evidence": "AA Intelligence 37 · 작업당 $0.07",
-          "caveat": "실패·재시도가 잦으면 Sol로 올리는 편이 쌀 수 있음."
+        "claude": {
+          "best": {
+            "name": "Claude Opus 5.5 (high)",
+            "short": "Opus high",
+            "why": "대량이어도 품질 바닥선이 필요할 때 Claude 쪽 현실적 상한. max는 대량에 과함.",
+            "evidence": "AA Intelligence 54 · 작업당 $1.82",
+            "caveat": "양만 많으면 low가 맞음. 재시도가 줄면 high가 총비용에 유리할 수 있음."
+          },
+          "value": {
+            "name": "Claude Opus 5.5 (low)",
+            "short": "Opus low",
+            "why": "Claude 구독 안 대량·반복의 가성비 기본.",
+            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
+            "caveat": "실패가 잦으면 high로. GPT Luna급 초저가는 Claude 패밀리에 없음."
+          },
+          "cheap": {
+            "name": "Claude Opus 5.5 (low)",
+            "short": "Opus low",
+            "why": "이 스냅샷에서 방어 가능한 Claude 최저가 티어. Haiku·Sonnet 점수는 미검증·미기재.",
+            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
+            "caveat": "Luna (low)급 단가는 아님. 초저가 대량은 GPT 탭 또는 전체 탭을 보세요."
+          }
         },
-        "cheap": {
-          "name": "GPT-6 Luna (low)",
-          "short": "Luna (low)",
-          "why": "가장 싼 티어. 초단문·분류·단순 추출용.",
-          "evidence": "AA 기사 기준 작업당 약 $0.0045 대역(티어·모드에 따라 다름)",
-          "caveat": "Intelligence 수치는 max 티어(37)와 다름. 품질 민감 작업에는 비권장."
+        "openai": {
+          "best": {
+            "name": "GPT-6 Sol (max)",
+            "short": "Sol (max)",
+            "why": "대량이어도 품질 바닥선이 필요할 때 GPT 쪽 상한.",
+            "evidence": "AA Intelligence 48 · 작업당 $1.06",
+            "caveat": "양 위주면 Luna. 재시도 비용까지 보면 Sol이 쌀 수 있음."
+          },
+          "value": {
+            "name": "GPT-6 Luna (max)",
+            "short": "Luna (max)",
+            "why": "대량 구간의 GPT 기본 가성비.",
+            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "caveat": "실패·재시도가 잦으면 Sol."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (low)",
+            "short": "Luna (low)",
+            "why": "가장 싼 티어. 초단문·분류·단순 추출.",
+            "evidence": "AA 기사 기준 작업당 약 $0.0045 대역",
+            "caveat": "품질 민감 작업 비권장."
+          }
         }
       }
     },
@@ -111,27 +272,75 @@
       "id": "open",
       "label": "오픈웨이트·로컬 관심",
       "blurb": "가중치 공개·자체 호스팅 참고",
-      "picks": {
-        "best": {
-          "name": "MiMo-V2.6-Pro (open weights ref)",
-          "short": "MiMo-V2.6-Pro",
-          "why": "이 스냅샷에서 오픈 웨이트 참고 앵커(Intelligence 46).",
-          "evidence": "AA Intelligence 46 · 작업당 $0.13(호스팅 참고가)",
-          "caveat": "클라우드 Opus/Astra를 대체하라는 신호가 아님. 추격 격차 측정용."
+      "lanes": {
+        "all": {
+          "best": {
+            "name": "MiMo-V2.6-Pro (open weights ref)",
+            "short": "MiMo-V2.6-Pro",
+            "why": "이 스냅샷에서 오픈 웨이트 참고 앵커(Intelligence 46).",
+            "evidence": "AA Intelligence 46 · 작업당 $0.13(호스팅 참고가)",
+            "caveat": "클라우드 Opus/Astra를 대체하라는 신호가 아님. 추격 격차 측정용."
+          },
+          "value": {
+            "name": "MiMo-V2.6-Pro (open weights ref)",
+            "short": "MiMo-V2.6-Pro",
+            "why": "같은 앵커를 가성비·참고로 둡니다. 로컬·프라이버시 축과 함께 볼 때.",
+            "evidence": "AA Intelligence 46 · 작업당 $0.13",
+            "caveat": "실제 로컬 VRAM·양자화 품질은 별도 측정 필요."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (low)",
+            "short": "Luna (low) · 클라우드",
+            "why": "로컬을 아직 안 쓸 때, 대량 전처리를 클라우드 초저가로 빼는 현실적 대안.",
+            "evidence": "작업당 약 $0.0045 대역(AA 기사)",
+            "caveat": "오픈웨이트가 아님. ‘로컬 대체’가 아니라 ‘대기 중 임시 카드’."
+          }
         },
-        "value": {
-          "name": "MiMo-V2.6-Pro (open weights ref)",
-          "short": "MiMo-V2.6-Pro",
-          "why": "같은 앵커를 가성비·참고로 둡니다. 로컬·프라이버시 축과 함께 볼 때.",
-          "evidence": "AA Intelligence 46 · 작업당 $0.13",
-          "caveat": "실제 로컬 VRAM·양자화 품질은 별도 측정 필요."
+        "claude": {
+          "best": {
+            "name": "오픈웨이트 해당 없음 (Claude 구독)",
+            "short": "해당 없음",
+            "why": "Claude 구독만으로는 오픈웨이트·로컬 가중치 공개 모델이 해당되지 않습니다.",
+            "evidence": "Anthropic 제품군은 클로즈드 웨이트(AA 리더보드 Claude 행)",
+            "caveat": "오픈웨이트를 보려면 전체 탭(MiMo 등)을 쓰세요."
+          },
+          "value": {
+            "name": "Claude Opus 5.5 (low)",
+            "short": "Opus low · 실무 대안",
+            "why": "오픈웨이트 대기는 아니지만, Claude만 쓸 때 초안·반복용으로 쓸 실무 대안.",
+            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
+            "caveat": "오픈웨이트·로컬이 아님. 프라이버시·자체 호스팅 목적이면 불충분."
+          },
+          "cheap": {
+            "name": "Claude Opus 5.5 (low)",
+            "short": "Opus low · 초안",
+            "why": "같은 Claude 패밀리에서 가장 싸게 초안을 뽑는 카드.",
+            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
+            "caveat": "오픈웨이트 아님을 caveat로 명시. 로컬 대체 신호 아님."
+          }
         },
-        "cheap": {
-          "name": "GPT-6 Luna (low)",
-          "short": "Luna (low) · 클라우드",
-          "why": "로컬을 아직 안 쓸 때, 대량 전처리를 클라우드 초저가로 빼는 현실적 대안.",
-          "evidence": "작업당 약 $0.0045 대역(AA 기사)",
-          "caveat": "오픈웨이트가 아님. ‘로컬 대체’가 아니라 ‘대기 중 임시 카드’."
+        "openai": {
+          "best": {
+            "name": "오픈웨이트 해당 없음 (ChatGPT 구독)",
+            "short": "해당 없음",
+            "why": "ChatGPT/GPT 구독만으로는 오픈웨이트·로컬 가중치 공개 모델이 해당되지 않습니다.",
+            "evidence": "OpenAI GPT-6 계열은 클로즈드 웨이트(AA 리더보드)",
+            "caveat": "오픈웨이트는 전체 탭(MiMo 등)을 보세요."
+          },
+          "value": {
+            "name": "GPT-6 Luna (max)",
+            "short": "Luna (max) · 실무 대안",
+            "why": "로컬 대기 중 클라우드로 초안·전처리할 때 GPT 쪽 실무 대안.",
+            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "caveat": "오픈웨이트·로컬이 아님."
+          },
+          "cheap": {
+            "name": "GPT-6 Luna (low)",
+            "short": "Luna (low) · 초안",
+            "why": "가장 싼 클라우드 전처리 카드.",
+            "evidence": "AA 기사 기준 작업당 약 $0.0045 대역",
+            "caveat": "오픈웨이트 아님. ‘로컬 대체’ 신호 아님."
+          }
         }
       }
     }
@@ -196,6 +405,14 @@
       "intelligence": 37,
       "costPerTask": 0.07,
       "note": "초저가·대량"
+    },
+    {
+      "rank": 9,
+      "name": "Claude Opus 5.5 (low)",
+      "creator": "Anthropic",
+      "intelligence": 42,
+      "costPerTask": 0.55,
+      "note": "저티어 보조 행 · AA 스냅샷 참고(~42·~$0.55)"
     }
   ]
 }

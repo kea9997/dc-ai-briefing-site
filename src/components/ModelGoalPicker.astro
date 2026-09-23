@@ -5,12 +5,28 @@ interface Props {
   variant?: 'home' | 'full';
 }
 
+type PickCol = 'value' | 'best' | 'cheap';
+type LaneId = 'all' | 'claude' | 'openai';
+
 const { variant = 'home' } = Astro.props;
 const columns = board.columns;
 const goals = board.goals;
+const laneMeta = board.lanes;
 const isFull = variant === 'full';
+const defaultLane: LaneId = 'all';
+
+const lanePayload = {
+  columns,
+  goals: goals.map((g) => ({ id: g.id, lanes: g.lanes })),
+  isFull,
+};
 ---
-<section class:list={['mg-picker', isFull && 'mg-picker-full']} aria-label="목적별 모델 고르기">
+<section
+  class:list={['mg-picker', isFull && 'mg-picker-full']}
+  aria-label="목적별 모델 고르기"
+  data-mg-picker
+  data-mg-lane={defaultLane}
+>
   <div class="mg-head">
     <div class="mg-head-text">
       <p class="mg-eyebrow">한국어로 한눈에</p>
@@ -23,7 +39,37 @@ const isFull = variant === 'full';
     <p class="mg-snap">스냅샷 {board.updatedLabel} · 근거 {board.source}</p>
   </div>
 
-  <div class="mg-grid" role="table" aria-label="목적별 추천 모델">
+  <div class="mg-lane-bar">
+    <div
+      class="mg-lane-tabs"
+      role="tablist"
+      aria-label="구독 레인"
+    >
+      {laneMeta.map((lane) => (
+        <button
+          type="button"
+          class:list={['mg-lane-tab', lane.id === defaultLane && 'is-active']}
+          role="tab"
+          id={`mg-tab-${lane.id}-${variant}`}
+          aria-selected={lane.id === defaultLane ? 'true' : 'false'}
+          aria-controls={`mg-grid-${variant}`}
+          data-lane={lane.id}
+        >
+          {lane.label}
+        </button>
+      ))}
+    </div>
+    <p class="mg-lane-help" data-mg-lane-help>
+      구독 중인 쪽만 보기 · 지금: {laneMeta.find((l) => l.id === defaultLane)?.hint}
+    </p>
+  </div>
+
+  <div
+    class="mg-grid"
+    role="table"
+    aria-label="목적별 추천 모델"
+    id={`mg-grid-${variant}`}
+  >
     <div class="mg-row mg-row-head" role="row">
       <div class="mg-cell mg-goal-h" role="columnheader">목적</div>
       {columns.map((col) => (
@@ -31,34 +77,53 @@ const isFull = variant === 'full';
       ))}
     </div>
 
-    {goals.map((goal) => (
-      <div class="mg-row" role="row">
-        <div class="mg-cell mg-goal" role="rowheader">
-          <strong>{goal.label}</strong>
-          <span class="mg-blurb">{goal.blurb}</span>
+    {goals.map((goal) => {
+      const picks = goal.lanes[defaultLane];
+      return (
+        <div class="mg-row" role="row" data-goal={goal.id}>
+          <div class="mg-cell mg-goal" role="rowheader">
+            <strong>{goal.label}</strong>
+            <span class="mg-blurb">{goal.blurb}</span>
+          </div>
+          {columns.map((col) => {
+            const pick = picks[col.id as PickCol];
+            return (
+              <div
+                class={`mg-cell mg-pick mg-pick-${col.id}`}
+                role="cell"
+                data-col={col.id}
+              >
+                <span class="mg-chip">{col.label}</span>
+                <span class="mg-model" data-field="short">{pick.short}</span>
+                {isFull && (
+                  <span class="mg-model-full" data-field="name">{pick.name}</span>
+                )}
+                {isFull ? (
+                  <details class="mg-details">
+                    <summary>왜 · 근거</summary>
+                    <p class="mg-why" data-field="why">{pick.why}</p>
+                    <p class="mg-evidence">
+                      <strong>근거</strong>{' '}
+                      <span data-field="evidence">{pick.evidence}</span>
+                    </p>
+                    <p
+                      class="mg-caveat"
+                      data-field-wrap="caveat"
+                      hidden={!pick.caveat}
+                    >
+                      <strong>주의</strong>{' '}
+                      <span data-field="caveat">{pick.caveat || ''}</span>
+                    </p>
+                  </details>
+                ) : (
+                  <span class="mg-evidence-short" data-field="evidence">{pick.evidence}</span>
+                )}
+              </div>
+            );
+          })}
         </div>
-        {columns.map((col) => {
-          const pick = goal.picks[col.id as 'value' | 'best' | 'cheap'];
-          return (
-            <div class={`mg-cell mg-pick mg-pick-${col.id}`} role="cell">
-              <span class="mg-chip">{col.label}</span>
-              <span class="mg-model">{pick.short}</span>
-              {isFull && <span class="mg-model-full">{pick.name}</span>}
-              {isFull ? (
-                <details class="mg-details">
-                  <summary>왜 · 근거</summary>
-                  <p class="mg-why">{pick.why}</p>
-                  <p class="mg-evidence"><strong>근거</strong> {pick.evidence}</p>
-                  {pick.caveat && <p class="mg-caveat"><strong>주의</strong> {pick.caveat}</p>}
-                </details>
-              ) : (
-                <span class="mg-evidence-short">{pick.evidence}</span>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    ))}
+      );
+    })}
   </div>
 
   <p class="mg-footnote">
@@ -78,4 +143,132 @@ const isFull = variant === 'full';
       </>
     )}
   </p>
+
+  <script type="application/json" data-mg-payload set:html={JSON.stringify(lanePayload)} />
 </section>
+
+<script>
+  type LaneId = 'all' | 'claude' | 'openai';
+  type Pick = {
+    short: string;
+    name: string;
+    why: string;
+    evidence: string;
+    caveat?: string;
+  };
+  type Payload = {
+    columns: { id: string; label: string }[];
+    goals: { id: string; lanes: Record<LaneId, Record<string, Pick>> }[];
+    isFull: boolean;
+  };
+
+  const STORAGE_KEY = 'optiwork-mg-lane';
+  const LANE_HINTS: Record<LaneId, string> = {
+    all: '벤더 무관 · 현재 기본',
+    claude: 'Anthropic / Claude 구독',
+    openai: 'OpenAI / ChatGPT 구독',
+  };
+
+  function normalizeLane(raw: string | null | undefined): LaneId | null {
+    if (raw === 'all' || raw === 'claude' || raw === 'openai') return raw;
+    if (raw === 'gpt') return 'openai';
+    return null;
+  }
+
+  function readDesiredLane(): LaneId {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const fromQuery = normalizeLane(params.get('lane'));
+      if (fromQuery) return fromQuery;
+      const hash = window.location.hash.replace(/^#/, '');
+      const fromHash = normalizeLane(hash.startsWith('lane=') ? hash.slice(5) : hash);
+      if (fromHash) return fromHash;
+      const fromStore = normalizeLane(sessionStorage.getItem(STORAGE_KEY));
+      if (fromStore) return fromStore;
+    } catch {
+      /* ignore */
+    }
+    return 'all';
+  }
+
+  function persistLane(lane: LaneId) {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, lane);
+    } catch {
+      /* ignore */
+    }
+    try {
+      const url = new URL(window.location.href);
+      if (lane === 'all') {
+        url.searchParams.delete('lane');
+      } else {
+        url.searchParams.set('lane', lane);
+      }
+      history.replaceState(null, '', url.pathname + url.search + url.hash);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function applyLane(root: HTMLElement, payload: Payload, lane: LaneId) {
+    root.dataset.mgLane = lane;
+    root.querySelectorAll<HTMLButtonElement>('.mg-lane-tab').forEach((btn) => {
+      const active = btn.dataset.lane === lane;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    const help = root.querySelector('[data-mg-lane-help]');
+    if (help) {
+      help.textContent = `구독 중인 쪽만 보기 · 지금: ${LANE_HINTS[lane]}`;
+    }
+    for (const goal of payload.goals) {
+      const row = root.querySelector<HTMLElement>(`.mg-row[data-goal="${goal.id}"]`);
+      if (!row) continue;
+      const picks = goal.lanes[lane];
+      if (!picks) continue;
+      for (const col of payload.columns) {
+        const cell = row.querySelector<HTMLElement>(`.mg-pick[data-col="${col.id}"]`);
+        if (!cell) continue;
+        const pick = picks[col.id];
+        if (!pick) continue;
+        const set = (field: string, value: string) => {
+          const el = cell.querySelector(`[data-field="${field}"]`);
+          if (el) el.textContent = value;
+        };
+        set('short', pick.short);
+        set('name', pick.name);
+        set('why', pick.why);
+        set('evidence', pick.evidence);
+        set('caveat', pick.caveat || '');
+        const caveatWrap = cell.querySelector<HTMLElement>('[data-field-wrap="caveat"]');
+        if (caveatWrap) {
+          caveatWrap.hidden = !pick.caveat;
+        }
+      }
+    }
+  }
+
+  function boot(root: HTMLElement) {
+    const raw = root.querySelector('[data-mg-payload]')?.textContent;
+    if (!raw) return;
+    let payload: Payload;
+    try {
+      payload = JSON.parse(raw) as Payload;
+    } catch {
+      return;
+    }
+    const initial = readDesiredLane();
+    applyLane(root, payload, initial);
+    if (initial !== 'all') persistLane(initial);
+
+    root.querySelectorAll<HTMLButtonElement>('.mg-lane-tab').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const lane = normalizeLane(btn.dataset.lane) || 'all';
+        applyLane(root, payload, lane);
+        persistLane(lane);
+      });
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-mg-picker]').forEach(boot);
+</script>

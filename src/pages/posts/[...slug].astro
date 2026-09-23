@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/BaseLayout.astro';
+import ShareBar from '../../components/ShareBar.astro';
 import { renderTerms } from '../../components/renderTerms';
 import { marked } from 'marked';
 import { SITE } from '../../lib/site';
@@ -28,7 +29,6 @@ const siblingKo = level === 'beginner' ? '고급' : '초보';
 const dateId = post.data.date.toISOString().slice(0, 10);
 const siblingHref = `/posts/${dateId}/${siblingLevel}/`;
 const pageUrl = `${SITE.domain}/posts/${post.id}/`;
-const twitterShare = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title + ' · ' + SITE.name)}&url=${encodeURIComponent(pageUrl)}`;
 
 const articleLd = {
   '@context': 'https://schema.org',
@@ -64,41 +64,61 @@ const articleLd = {
     </div>
     <h1>{post.data.title}</h1>
     <p class="meta">{dateLabel} · {SITE.name} · {levelKo}</p>
-    <div class="share-row" data-share-url={pageUrl}>
-      <a class="share-link share-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">텔레그램 구독</a>
-      <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button>
-      <a class="share-link share-x" href={twitterShare} target="_blank" rel="noopener noreferrer">X에 공유</a>
-    </div>
+    <ShareBar title={post.data.title} pageUrl={pageUrl} placement="top" />
     <div class="tldr">
       <strong>한 줄 요약 (GEO)</strong>
       {post.data.description}
     </div>
     <div set:html={html} />
+    <ShareBar title={post.data.title} pageUrl={pageUrl} placement="bottom" />
+    <div class="post-end-cta">
+      <p class="post-end-cta-label">내일 아침에도 보려면</p>
+      <a class="btn-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">
+        텔레그램으로 매일 받기
+      </a>
+    </div>
   </article>
 </BaseLayout>
 
 <script is:inline>
   (function () {
-    function wireCopy() {
-      document.querySelectorAll('[data-copy-link]').forEach(function (btn) {
-        if (btn.dataset.wired === '1') return;
-        btn.dataset.wired = '1';
-        btn.addEventListener('click', async function () {
-          var row = btn.closest('[data-share-url]');
-          var url = (row && row.dataset.shareUrl) || window.location.href;
-          var label = btn.textContent;
-          try {
-            await navigator.clipboard.writeText(url);
-            btn.textContent = '복사됨';
-          } catch (e) {
-            btn.textContent = '복사 실패';
-          }
-          window.setTimeout(function () {
-            btn.textContent = label || '링크 복사';
-          }, 1600);
-        });
+    function wireShareBars() {
+      document.querySelectorAll('[data-share-url]').forEach(function (bar) {
+        if (bar.dataset.wired === '1') return;
+        bar.dataset.wired = '1';
+
+        var live = bar.querySelector('[data-share-live]');
+        var copyBtn = bar.querySelector('[data-copy-link]');
+        var nativeBtn = bar.querySelector('[data-native-share]');
+        var url = bar.dataset.shareUrl || window.location.href;
+        var title = bar.dataset.shareTitle || document.title;
+
+        if (nativeBtn && typeof navigator.share === 'function') {
+          nativeBtn.hidden = false;
+          nativeBtn.addEventListener('click', function () {
+            navigator.share({ title: title, url: url, text: title }).catch(function () {});
+          });
+        }
+
+        if (copyBtn) {
+          copyBtn.addEventListener('click', async function () {
+            var label = copyBtn.textContent;
+            try {
+              await navigator.clipboard.writeText(url);
+              copyBtn.textContent = '복사됨';
+              if (live) live.textContent = '링크가 복사되었습니다';
+            } catch (e) {
+              copyBtn.textContent = '복사 실패';
+              if (live) live.textContent = '복사에 실패했습니다';
+            }
+            window.setTimeout(function () {
+              copyBtn.textContent = label || '링크 복사';
+              if (live) live.textContent = '';
+            }, 1600);
+          });
+        }
       });
     }
-    wireCopy();
+    wireShareBars();
   })();
 </script>

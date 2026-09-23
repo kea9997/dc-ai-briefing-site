@@ -566,3 +566,230 @@ article.post .btn-telegram {
   color: #3d4550;
   font-size: 0.92rem;
 }
+
+/* featured today panel */
+.today-panel {
+  background: var(--bg-elev);
+  border: 1.5px solid #c9b79a;
+  border-radius: calc(var(--radius) + 4px);
+  padding: 1.35rem 1.25rem 1.3rem;
+  box-shadow: 0 14px 36px rgba(20, 24, 32, 0.09);
+  margin: 0 0 1.5rem;
+}
+.today-panel-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.55rem;
+}
+.today-chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  background: #e8f3ec;
+  color: var(--ok);
+  border: 1px solid #c5ddd0;
+}
+.today-panel-title {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 3vw, 1.55rem);
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  margin: 0 0 0.45rem;
+}
+.today-panel-desc {
+  margin: 0 0 1rem;
+  color: #3d4550;
+  max-width: 42rem;
+}
+.today-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.85rem;
+}
+.btn-read {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.55rem;
+  padding: 0 1.15rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.btn-read-solid {
+  background: var(--accent-2);
+  color: #fff !important;
+  border: 1px solid var(--accent-2);
+  box-shadow: 0 6px 18px rgba(31, 75, 122, 0.22);
+}
+.btn-read-solid:hover {
+  background: #183a5f;
+  color: #fff !important;
+  border-color: #183a5f;
+}
+.btn-read-outline {
+  background: #fff;
+  color: var(--accent-2) !important;
+  border: 1.5px solid #a8bdd4;
+}
+.btn-read-outline:hover {
+  border-color: var(--accent-2);
+  color: #183a5f !important;
+  background: #f3f7fb;
+}
+.today-panel-secondary {
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+.hero-today-link {
+  color: var(--accent-2);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.hero-today-link:hover {
+  color: var(--accent);
+  border-bottom-color: currentColor;
+}
+.section-heading {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  margin: 0.25rem 0 0.15rem;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+/* upgraded stay strip card */
+.stay-strip.stay-strip-card {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.85rem;
+  padding: 1.25rem 1.2rem 1.2rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow);
+}
+.stay-strip-copy {
+  display: grid;
+  gap: 0.25rem;
+}
+.stay-strip-title {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.stay-strip-lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.stay-strip-links a[href*="t.me"] {
+  background: #e8f6fc;
+  border-color: #b7dced;
+  color: #1b8bc0;
+}
+
+/* ShareBar */
+.share-bar {
+  margin: 0 0 1.15rem;
+}
+.share-bar-bottom {
+  margin: 1.75rem 0 0.85rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+}
+.share-bar-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  margin-bottom: 0.45rem;
+}
+.share-bar .share-row {
+  margin: 0;
+}
+.share-live {
+  display: block;
+  min-height: 1.1em;
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--ok);
+}
+.share-link.share-telegram-share {
+  background: #e8f6fc;
+  border-color: #b7dced;
+  color: #1b8bc0;
+}
+.share-link.share-telegram-share:hover {
+  color: #14739f;
+}
+.share-link.share-native {
+  background: #f3ebe0;
+  border-color: #e0d2bc;
+  color: var(--ink);
+}
+.share-link.share-native:hover {
+  border-color: #c9b79a;
+  color: var(--ink);
+}
+.post-end-cta {
+  margin-top: 0.5rem;
+  padding: 1rem 1.05rem;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #f8f2e9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem 1rem;
+}
+.post-end-cta-label {
+  margin: 0;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.post-end-cta .btn-telegram {
+  margin-top: 0;
+  font-size: 0.9rem;
+  min-height: 2.35rem;
+  padding: 0 1rem;
+  box-shadow: none;
+}
+@media (max-width: 640px) {
+  .today-panel {
+    padding: 1.15rem 1rem 1.1rem;
+  }
+  .today-panel-actions {
+    flex-direction: column;
+  }
+  .btn-read {
+    width: 100%;
+  }
+  .today-panel-secondary .btn-telegram {
+    width: 100%;
+  }
+  .post-end-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .post-end-cta .btn-telegram {
+    width: 100%;
+  }
+  .share-bar .share-row {
+    gap: 0.4rem;
+  }
+}

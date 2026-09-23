@@ -6,6 +6,7 @@ import { getPublishedPosts, groupPostsByDay, formatDateKo } from '../lib/posts';
 const posts = await getPublishedPosts();
 const days = groupPostsByDay(posts);
 const latest = days[0];
+const pastDays = days.slice(1);
 const versionCount = posts.length;
 ---
 <BaseLayout title={SITE.name} description={SITE.description} type="website">
@@ -28,62 +29,104 @@ const versionCount = posts.length;
       <a class="btn-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">
         텔레그램으로 매일 받기
       </a>
-      <span class="hero-telegram-note">아침 브리핑 · {SITE.telegram.handle}</span>
+      {latest && (
+        <a class="hero-today-link" href="#today">오늘 브리핑 보기</a>
+      )}
     </div>
   </section>
+
+  {latest && (
+    <section class="today-panel" id="today" aria-label="오늘의 브리핑">
+      <div class="today-panel-meta">
+        <span class="today-chip">오늘</span>
+        <span class="meta">{formatDateKo(latest.date)}</span>
+      </div>
+      <h2 class="today-panel-title">
+        {latest.beginner?.data.title || latest.advanced?.data.title || `${formatDateKo(latest.date)} 브리핑`}
+      </h2>
+      {(latest.beginner?.data.description || latest.advanced?.data.description) && (
+        <p class="today-panel-desc">
+          {latest.beginner?.data.description || latest.advanced?.data.description}
+        </p>
+      )}
+      <div class="today-panel-actions">
+        {latest.beginner && (
+          <a class="btn-read btn-read-solid" href={`/posts/${latest.beginner.id}/`}>초보 읽기</a>
+        )}
+        {latest.advanced && (
+          <a class="btn-read btn-read-outline" href={`/posts/${latest.advanced.id}/`}>고급 읽기</a>
+        )}
+      </div>
+      <div class="today-panel-secondary">
+        <a class="btn-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">
+          텔레그램으로 매일 받기
+        </a>
+      </div>
+    </section>
+  )}
 
   {latest && (
     <p class="prose-note">최신: {formatDateKo(latest.date)} · {days.length}일 · {versionCount}버전</p>
   )}
 
-  <section class="card-list" aria-label="브리핑 목록">
+  <section class="card-list" aria-label="지난 브리핑">
     {days.length === 0 ? (
       <p>아직 발행된 브리핑이 없습니다.</p>
+    ) : pastDays.length === 0 ? (
+      <p class="prose-note">지난 브리핑이 아직 없습니다. 위에서 오늘 브리핑을 읽어 보세요.</p>
     ) : (
-      days.map((day) => {
-        const dateLabel = formatDateKo(day.date);
-        const hookTitle =
-          day.beginner?.data.title ||
-          day.advanced?.data.title ||
-          `${dateLabel} 브리핑`;
-        const desc =
-          day.beginner?.data.description ||
-          day.advanced?.data.description ||
-          '';
-        return (
-          <div class="card day-card">
-            <div class="meta">{dateLabel} · 초보 · 고급</div>
-            <h2>{hookTitle}</h2>
-            {day.advanced && day.beginner && day.advanced.data.title !== day.beginner.data.title && (
-              <p class="day-advanced-hook"><span class="level-badge level-advanced">고급</span> {day.advanced.data.title}</p>
-            )}
-            <p>{desc}</p>
-            <div class="day-links">
-              {day.beginner && (
-                <a class="level-link level-beginner" href={`/posts/${day.beginner.id}/`}>
-                  <span class="level-badge level-beginner">초보</span>
-                  읽기
-                </a>
+      <>
+        <h2 class="section-heading">지난 브리핑</h2>
+        {pastDays.map((day) => {
+          const dateLabel = formatDateKo(day.date);
+          const hookTitle =
+            day.beginner?.data.title ||
+            day.advanced?.data.title ||
+            `${dateLabel} 브리핑`;
+          const desc =
+            day.beginner?.data.description ||
+            day.advanced?.data.description ||
+            '';
+          return (
+            <div class="card day-card">
+              <div class="meta">{dateLabel} · 초보 · 고급</div>
+              <h2>{hookTitle}</h2>
+              {day.advanced && day.beginner && day.advanced.data.title !== day.beginner.data.title && (
+                <p class="day-advanced-hook"><span class="level-badge level-advanced">고급</span> {day.advanced.data.title}</p>
               )}
-              {day.advanced && (
-                <a class="level-link level-advanced" href={`/posts/${day.advanced.id}/`}>
-                  <span class="level-badge level-advanced">고급</span>
-                  읽기
-                </a>
-              )}
+              <p>{desc}</p>
+              <div class="day-links">
+                {day.beginner && (
+                  <a class="level-link level-beginner" href={`/posts/${day.beginner.id}/`}>
+                    <span class="level-badge level-beginner">초보</span>
+                    읽기
+                  </a>
+                )}
+                {day.advanced && (
+                  <a class="level-link level-advanced" href={`/posts/${day.advanced.id}/`}>
+                    <span class="level-badge level-advanced">고급</span>
+                    읽기
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
-        );
-      })
+          );
+        })}
+      </>
     )}
   </section>
 
-  <section class="stay-strip" aria-label="구독·다시 찾기">
-    <p class="stay-strip-label">매일 텔레그램 · RSS · 아카이브</p>
+  <section class="stay-strip stay-strip-card" aria-label="구독·다시 찾기">
+    <div class="stay-strip-copy">
+      <h2 class="stay-strip-title">놓치기 싫다면</h2>
+      <p class="stay-strip-lead">아침마다 같은 브리핑을 텔레그램·RSS로 보냅니다.</p>
+    </div>
     <div class="stay-strip-links">
       <a href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">텔레그램</a>
       <a href="/rss.xml">RSS</a>
       <a href="/archive/">아카이브</a>
+      <a href="/topics/">주제</a>
+      <a href="/weekly/">주간</a>
     </div>
   </section>
 </BaseLayout>

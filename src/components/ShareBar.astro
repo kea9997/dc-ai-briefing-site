@@ -1,0 +1,24 @@
+---
+import { SITE } from '../lib/site';
+
+interface Props {
+  title: string;
+  pageUrl: string;
+  placement?: 'top' | 'bottom';
+}
+
+const { title, pageUrl, placement = 'top' } = Astro.props;
+const telegramShare = `https://t.me/share/url?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(title + ' · ' + SITE.name)}`;
+const twitterShare = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title + ' · ' + SITE.name)}&url=${encodeURIComponent(pageUrl)}`;
+---
+<div class={`share-bar share-bar-${placement}`} data-share-url={pageUrl} data-share-title={title}>
+  <span class="share-bar-label">공유 · 구독</span>
+  <div class="share-row" role="group" aria-label="공유 · 구독">
+    <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button>
+    <a class="share-link share-telegram-share" href={telegramShare} target="_blank" rel="noopener noreferrer">텔레그램에 공유</a>
+    <a class="share-link share-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">채널 구독</a>
+    <a class="share-link share-x" href={twitterShare} target="_blank" rel="noopener noreferrer">X에 공유</a>
+    <button type="button" class="share-link share-native" data-native-share hidden>공유하기</button>
+  </div>
+  <span class="share-live" data-share-live aria-live="polite"></span>
+</div>

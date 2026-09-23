@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[주간 토큰 15배와 Claude Code 오푸스 기본값]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-24/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-24/advanced/</guid>
+  <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[출시 다음날 스냅샷은 가격표가 아니라 구독 버킷 실측·개인 벤치·멀티모델 분업으로 이동했다.]]></description>
+</item>
+<item>
+  <title><![CDATA[루나 low로 끝나는 사람이, 채팅창보다 먼저 이긴다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-24/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-24/beginner/</guid>
+  <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[반값 축제가 하루 지나자 국내 판은 모델 자랑보다 한도·분업·채팅 잠금부터 다시 잰다.]]></description>
+</item>
+<item>
   <title><![CDATA[API는 반값, 채팅은 잠금 — 솔·루나·오푸스 5.5가 겹친 아침]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-23/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-23/advanced/</guid>

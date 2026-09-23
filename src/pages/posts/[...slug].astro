@@ -27,6 +27,8 @@ const siblingLevel = level === 'beginner' ? 'advanced' : 'beginner';
 const siblingKo = level === 'beginner' ? '고급' : '초보';
 const dateId = post.data.date.toISOString().slice(0, 10);
 const siblingHref = `/posts/${dateId}/${siblingLevel}/`;
+const pageUrl = `${SITE.domain}/posts/${post.id}/`;
+const twitterShare = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title + ' · ' + SITE.name)}&url=${encodeURIComponent(pageUrl)}`;
 
 const articleLd = {
   '@context': 'https://schema.org',
@@ -36,7 +38,7 @@ const articleLd = {
   datePublished: iso,
   dateModified: iso,
   inLanguage: 'ko-KR',
-  mainEntityOfPage: `${SITE.domain}/posts/${post.id}/`,
+  mainEntityOfPage: pageUrl,
   author: { '@type': 'Organization', name: SITE.name, url: SITE.domain },
   publisher: {
     '@type': 'Organization',
@@ -62,6 +64,11 @@ const articleLd = {
     </div>
     <h1>{post.data.title}</h1>
     <p class="meta">{dateLabel} · {SITE.name} · {levelKo}</p>
+    <div class="share-row" data-share-url={pageUrl}>
+      <a class="share-link share-telegram" href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">텔레그램 구독</a>
+      <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button>
+      <a class="share-link share-x" href={twitterShare} target="_blank" rel="noopener noreferrer">X에 공유</a>
+    </div>
     <div class="tldr">
       <strong>한 줄 요약 (GEO)</strong>
       {post.data.description}
@@ -69,3 +76,29 @@ const articleLd = {
     <div set:html={html} />
   </article>
 </BaseLayout>
+
+<script is:inline>
+  (function () {
+    function wireCopy() {
+      document.querySelectorAll('[data-copy-link]').forEach(function (btn) {
+        if (btn.dataset.wired === '1') return;
+        btn.dataset.wired = '1';
+        btn.addEventListener('click', async function () {
+          var row = btn.closest('[data-share-url]');
+          var url = (row && row.dataset.shareUrl) || window.location.href;
+          var label = btn.textContent;
+          try {
+            await navigator.clipboard.writeText(url);
+            btn.textContent = '복사됨';
+          } catch (e) {
+            btn.textContent = '복사 실패';
+          }
+          window.setTimeout(function () {
+            btn.textContent = label || '링크 복사';
+          }, 1600);
+        });
+      });
+    }
+    wireCopy();
+  })();
+</script>

@@ -1,33 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../components/BaseLayout.astro';
 import { SITE } from '../lib/site';
+import { getPublishedPosts, groupPostsByDay, formatDateKo } from '../lib/posts';
 
-const posts = (await getCollection('posts'))
-  .filter((p) => !p.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-
-type DayGroup = {
-  dateKey: string;
-  date: Date;
-  beginner?: (typeof posts)[number];
-  advanced?: (typeof posts)[number];
-};
-
-const byDate = new Map<string, DayGroup>();
-for (const post of posts) {
-  const dateKey = post.data.date.toISOString().slice(0, 10);
-  let g = byDate.get(dateKey);
-  if (!g) {
-    g = { dateKey, date: post.data.date };
-    byDate.set(dateKey, g);
-  }
-  if (post.data.level === 'beginner') g.beginner = post;
-  else g.advanced = post;
-}
-const days = Array.from(byDate.values()).sort(
-  (a, b) => b.date.valueOf() - a.date.valueOf()
-);
+const posts = await getPublishedPosts();
+const days = groupPostsByDay(posts);
 const latest = days[0];
 const versionCount = posts.length;
 ---
@@ -56,7 +33,7 @@ const versionCount = posts.length;
   </section>
 
   {latest && (
-    <p class="prose-note">최신: {latest.date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })} · {days.length}일 · {versionCount}버전</p>
+    <p class="prose-note">최신: {formatDateKo(latest.date)} · {days.length}일 · {versionCount}버전</p>
   )}
 
   <section class="card-list" aria-label="브리핑 목록">
@@ -64,9 +41,7 @@ const versionCount = posts.length;
       <p>아직 발행된 브리핑이 없습니다.</p>
     ) : (
       days.map((day) => {
-        const dateLabel = day.date.toLocaleDateString('ko-KR', {
-          year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Seoul',
-        });
+        const dateLabel = formatDateKo(day.date);
         const hookTitle =
           day.beginner?.data.title ||
           day.advanced?.data.title ||
@@ -101,5 +76,14 @@ const versionCount = posts.length;
         );
       })
     )}
+  </section>
+
+  <section class="stay-strip" aria-label="구독·다시 찾기">
+    <p class="stay-strip-label">매일 텔레그램 · RSS · 아카이브</p>
+    <div class="stay-strip-links">
+      <a href={SITE.telegram.url} target="_blank" rel="noopener noreferrer">텔레그램</a>
+      <a href="/rss.xml">RSS</a>
+      <a href="/archive/">아카이브</a>
+    </div>
   </section>
 </BaseLayout>

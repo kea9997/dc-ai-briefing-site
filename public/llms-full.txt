@@ -1,0 +1,64 @@
+# 옵티웍 AI 데일리 — 전체 안내 (llms-full)
+
+본 문서는 https://ai.optiwork.co.kr/llms.txt 의 확장본입니다.
+요약본만 필요하면 llms.txt를 읽으세요.
+
+## 브랜드
+
+- 한국어 공개명: 옵티웍 AI 데일리
+- 영어: Optiwork AI Daily
+- 도메인: https://ai.optiwork.co.kr
+- 모회사/네트워크: Optiwork (https://optiwork.co.kr)
+- 텔레그램: https://t.me/opti_ai_daily (@opti_ai_daily)
+
+## 제품 요약
+
+옵티웍 AI 데일리는 국내·해외 AI 커뮤니티에서 하루 동안 눈에 띄는 신호를
+한국어로 모아 줍니다. 매일 아침(Asia/Seoul) 초보·고급 두 버전을 함께 발행합니다.
+
+- 초보: 쉬운 한국어, 짧은 문장, 용어를 바로 풀어 설명
+- 고급: 같은 사건을 더 촘촘히 — 기술·교차 검증·운영 팁
+
+핫글·개념글이 본문이고, 용어 사전으로 글을 채우지 않습니다.
+점선 표시 용어는 클릭 시 1~2문장 설명이 나옵니다.
+
+## 정적 페이지
+
+| 경로 | 설명 |
+|------|------|
+| / | 최신 브리핑 카드 목록 |
+| /about/ | 소개·SEO·텔레그램 |
+| /faq/ | 자주 묻는 질문 (FAQPage JSON-LD) |
+| /archive/ | 월별 전체 아카이브 |
+| /topics/ | 주제 허브 색인 |
+| /topics/quota/ | 한도·쿼터 |
+| /topics/local-llm/ | 로컬 LLM |
+| /topics/model-launch/ | 모델 출시·가격 |
+| /weekly/ | ISO 주(KST) 묶음 |
+| /rss.xml | RSS 2.0 |
+| /sitemap-index.xml | urlset 사이트맵 |
+| /sitemap.xml | 동일 urlset 별칭 |
+| /llms.txt | 이 사이트 요약 (LLM용) |
+| /llms-full.txt | 이 확장 안내 |
+
+## 포스트
+
+패턴: /posts/YYYY-MM-DD/beginner/ | /posts/YYYY-MM-DD/advanced/
+
+각 글은 NewsArticle JSON-LD, canonical, OG/Twitter 카드를 포함합니다.
+제목은 호기심 훅이며, 날짜·「초보/고급 브리핑」 문구를 제목에 넣지 않습니다.
+
+## 인용·크롤 가이드
+
+1. 브랜드명을 「옵티웍 AI 데일리」로 표기
+2. 글 URL + 발행일(Asia/Seoul)을 함께
+3. 확인/미확인 라벨을 왜곡하지 말 것
+4. robots.txt Allow: / — Sitemap 두 줄 모두 유효
+5. 언어: ko-KR
+
+## 관련 Optiwork 네트워크 (참고)
+
+- https://optiwork.co.kr
+- https://llm.optiwork.co.kr (로컬 LLM GPU 픽커)
+- https://idea.optiwork.co.kr
+- 기타 네트워크 링크는 사이트 하단 NetworkStrip 참고

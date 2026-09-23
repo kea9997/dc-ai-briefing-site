@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import { SITE } from '../lib/site';
+import {
+  getPublishedPosts,
+  groupPostsByDay,
+  monthKeyKST,
+  formatDateKo,
+  formatMonthKo,
+  type DayGroup,
+} from '../lib/posts';
+
+const posts = await getPublishedPosts();
+const days = groupPostsByDay(posts);
+
+const byMonth = new Map<string, DayGroup[]>();
+for (const day of days) {
+  const mk = monthKeyKST(day.date);
+  const list = byMonth.get(mk) ?? [];
+  list.push(day);
+  byMonth.set(mk, list);
+}
+const months = Array.from(byMonth.entries()).sort((a, b) => b[0].localeCompare(a[0]));
+---
+<BaseLayout
+  title={`아카이브 · ${SITE.name}`}
+  description={`${SITE.name} 전체 브리핑 아카이브 — 월별로 초보·고급 글을 모아 봅니다.`}
+>
+  <section class="hero hero-compact">
+    <div class="eyebrow">Archive</div>
+    <h1>아카이브</h1>
+    <p>
+      발행된 날을 월별로 모았습니다. 카드에서 초보·고급을 골라 읽으세요.
+      주제별로는 <a href="/topics/">주제 허브</a>, 주 단위로는 <a href="/weekly/">주간 묶음</a>도 있습니다.
+    </p>
+  </section>
+
+  {months.length === 0 ? (
+    <p>아직 발행된 브리핑이 없습니다.</p>
+  ) : (
+    months.map(([mk, monthDays]) => (
+      <section class="archive-month" aria-labelledby={`month-${mk}`}>
+        <h2 id={`month-${mk}`} class="archive-month-title">{formatMonthKo(mk)}</h2>
+        <div class="card-list">
+          {monthDays.map((day) => {
+            const dateLabel = formatDateKo(day.date);
+            const hookTitle =
+              day.beginner?.data.title ||
+              day.advanced?.data.title ||
+              `${dateLabel} 브리핑`;
+            const desc =
+              day.beginner?.data.description ||
+              day.advanced?.data.description ||
+              '';
+            return (
+              <div class="card day-card">
+                <div class="meta">{dateLabel} · 초보 · 고급</div>
+                <h2>{hookTitle}</h2>
+                {day.advanced && day.beginner && day.advanced.data.title !== day.beginner.data.title && (
+                  <p class="day-advanced-hook">
+                    <span class="level-badge level-advanced">고급</span>
+                    {day.advanced.data.title}
+                  </p>
+                )}
+                <p>{desc}</p>
+                <div class="day-links">
+                  {day.beginner && (
+                    <a class="level-link level-beginner" href={`/posts/${day.beginner.id}/`}>
+                      <span class="level-badge level-beginner">초보</span>
+                      읽기
+                    </a>
+                  )}
+                  {day.advanced && (
+                    <a class="level-link level-advanced" href={`/posts/${day.advanced.id}/`}>
+                      <span class="level-badge level-advanced">고급</span>
+                      읽기
+                    </a>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    ))
+  )}
+</BaseLayout>

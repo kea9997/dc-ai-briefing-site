@@ -3,7 +3,7 @@ export const SITE = {
   nameEn: 'Optiwork AI Daily',
   domain: 'https://ai.optiwork.co.kr',
   description:
-    '국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork의 AI 인사이트 채널.',
+    '옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.',
   parent: {
     name: 'Optiwork',
     url: 'https://optiwork.co.kr',

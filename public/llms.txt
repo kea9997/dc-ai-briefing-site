@@ -1,0 +1,58 @@
+# 옵티웍 AI 데일리 (Optiwork AI Daily)
+
+> 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork의 AI 인사이트 채널.
+
+사이트: https://ai.optiwork.co.kr
+언어: ko (한국어)
+발행: 매일 초보·고급 두 버전
+텔레그램: https://t.me/opti_ai_daily (@opti_ai_daily)
+운영: Optiwork (https://optiwork.co.kr)
+
+이 파일은 LLM·검색 에이전트가 사이트를 빠르게 파악하도록 돕는 llms.txt입니다.
+
+## 핵심 URL
+
+- 홈: https://ai.optiwork.co.kr/
+- 소개: https://ai.optiwork.co.kr/about/
+- FAQ: https://ai.optiwork.co.kr/faq/
+- 아카이브: https://ai.optiwork.co.kr/archive/
+- 주제 허브: https://ai.optiwork.co.kr/topics/
+- 주간 묶음: https://ai.optiwork.co.kr/weekly/
+- RSS: https://ai.optiwork.co.kr/rss.xml
+- Sitemap: https://ai.optiwork.co.kr/sitemap-index.xml
+- Sitemap (alias): https://ai.optiwork.co.kr/sitemap.xml
+- 이 파일: https://ai.optiwork.co.kr/llms.txt
+
+## 글 URL 패턴
+
+매일 같은 날 두 글이 발행됩니다.
+
+- 초보: https://ai.optiwork.co.kr/posts/YYYY-MM-DD/beginner/
+- 고급: https://ai.optiwork.co.kr/posts/YYYY-MM-DD/advanced/
+
+예: https://ai.optiwork.co.kr/posts/2026-09-23/beginner/
+
+## 무엇을 다루나
+
+- 국내 AI 커뮤니티의 개념글·고조회를 우선
+- Reddit(LocalLLaMA, MachineLearning, ChatGPT 등)·Hacker News 해외 논의를 교차 확인
+- 확인됨 / 준확인·데이터 / 체감 / 루머를 구분
+- 공개 카피에서는 「국내·해외」를 쓰고, 특정 커뮤니티 약칭을 쓰지 않음
+
+## 주제 허브 (에버그린)
+
+- 한도·쿼터: https://ai.optiwork.co.kr/topics/quota/
+- 로컬 LLM: https://ai.optiwork.co.kr/topics/local-llm/
+- 모델 출시·가격: https://ai.optiwork.co.kr/topics/model-launch/
+
+## 인용 방법
+
+- 사이트명: 「옵티웍 AI 데일리」 또는 Optiwork AI Daily
+- 가능하면 해당 글의 canonical URL과 발행일(Asia/Seoul)을 함께 표기
+- 본문의 확인/미확인 라벨을 유지해 인용
+- RSS·sitemap으로 최신 목록을 확인한 뒤 개별 글을 인용하는 것을 권장
+
+## 연락·구독
+
+- 텔레그램 채널: https://t.me/opti_ai_daily
+- RSS: https://ai.optiwork.co.kr/rss.xml

@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../components/BaseLayout.astro';
+import { SITE } from '../../lib/site';
+import { TOPICS, getPublishedPosts, filterPostsByTopic } from '../../lib/posts';
+
+const posts = await getPublishedPosts();
+const counts = TOPICS.map((t) => ({
+  topic: t,
+  count: filterPostsByTopic(posts, t).length,
+}));
+---
+<BaseLayout
+  title={`주제 · ${SITE.name}`}
+  description={`${SITE.name} 주제 허브 — 한도·쿼터, 로컬 LLM, 모델 출시·가격을 모아 봅니다.`}
+>
+  <section class="hero hero-compact">
+    <div class="eyebrow">Topics</div>
+    <h1>주제 허브</h1>
+    <p>
+      매일 브리핑에서 자주 겹치는 축만 골라 모았습니다.
+      검색이 아니라 제목·요약·태그 키워드로 얇게 연결한 첫 컷입니다.
+    </p>
+  </section>
+
+  <div class="card-list">
+    {counts.map(({ topic, count }) => (
+      <a class="card topic-card" href={`/topics/${topic.slug}/`}>
+        <div class="meta">{count}일 매칭</div>
+        <h2>{topic.title}</h2>
+        <p>{topic.short}</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

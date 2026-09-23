@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import { SITE } from '../lib/site';
+import {
+  getPublishedPosts,
+  groupPostsByDay,
+  isoWeekKeyKST,
+  formatDateKo,
+  type DayGroup,
+} from '../lib/posts';
+
+const posts = await getPublishedPosts();
+const days = groupPostsByDay(posts);
+
+type WeekGroup = {
+  weekKey: string;
+  days: DayGroup[];
+  blurb: string;
+};
+
+const byWeek = new Map<string, DayGroup[]>();
+for (const day of days) {
+  const wk = isoWeekKeyKST(day.date);
+  const list = byWeek.get(wk) ?? [];
+  list.push(day);
+  byWeek.set(wk, list);
+}
+
+const weeks: WeekGroup[] = Array.from(byWeek.entries())
+  .sort((a, b) => b[0].localeCompare(a[0]))
+  .map(([weekKey, weekDays]) => {
+    const sorted = [...weekDays].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+    const latest = sorted[0];
+    const blurb =
+      latest?.beginner?.data.description ||
+      latest?.advanced?.data.description ||
+      `${sorted.length}일 브리핑`;
+    return { weekKey, days: sorted, blurb };
+  });
+
+function weekLabel(weekKey: string, weekDays: DayGroup[]): string {
+  const [y, w] = weekKey.split('-W');
+  const first = weekDays[weekDays.length - 1];
+  const last = weekDays[0];
+  const range =
+    first && last
+      ? `${formatDateKo(first.date)} – ${formatDateKo(last.date)}`
+      : '';
+  return `${y}년 ${Number(w)}주차${range ? ` · ${range}` : ''}`;
+}
+---
+<BaseLayout
+  title={`주간 묶음 · ${SITE.name}`}
+  description={`${SITE.name} 주간 묶음 — ISO 주(KST)로 모아 다시 읽기.`}
+>
+  <section class="hero hero-compact">
+    <div class="eyebrow">Weekly</div>
+    <h1>주간 묶음</h1>
+    <p>
+      Asia/Seoul 기준 ISO 주로 묶었습니다. 한 줄 소개는 그 주 가장 최근 초보 글의 요약입니다.
+      전체 목록은 <a href="/archive/">아카이브</a>에서 볼 수 있습니다.
+    </p>
+  </section>
+
+  {weeks.length === 0 ? (
+    <p>아직 발행된 브리핑이 없습니다.</p>
+  ) : (
+    <div class="card-list">
+      {weeks.map((week) => (
+        <section class="card week-card" aria-labelledby={`week-${week.weekKey}`}>
+          <div class="meta">{week.weekKey} · {week.days.length}일</div>
+          <h2 id={`week-${week.weekKey}`}>{weekLabel(week.weekKey, week.days)}</h2>
+          <p class="week-blurb">{week.blurb}</p>
+          <ul class="week-days">
+            {week.days.map((day) => {
+              const label = formatDateKo(day.date);
+              const title =
+                day.beginner?.data.title ||
+                day.advanced?.data.title ||
+                label;
+              return (
+                <li>
+                  <span class="week-day-date">{label}</span>
+                  <span class="week-day-title">{title}</span>
+                  <span class="week-day-links">
+                    {day.beginner && (
+                      <a href={`/posts/${day.beginner.id}/`}>초보</a>
+                    )}
+                    {day.advanced && (
+                      <a href={`/posts/${day.advanced.id}/`}>고급</a>
+                    )}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ))}
+    </div>
+  )}
+</BaseLayout>

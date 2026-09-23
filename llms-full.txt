@@ -35,6 +35,7 @@
 | /topics/local-llm/ | 로컬 LLM |
 | /topics/model-launch/ | 모델 출시·가격 |
 | /weekly/ | ISO 주(KST) 묶음 |
+| /models/ | Artificial Analysis 기반 모델 판세(Intelligence Index·작업당 비용) |
 | /rss.xml | RSS 2.0 |
 | /sitemap-index.xml | urlset 사이트맵 |
 | /sitemap.xml | 동일 urlset 별칭 |

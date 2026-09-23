@@ -18,6 +18,7 @@
 - 아카이브: https://ai.optiwork.co.kr/archive/
 - 주제 허브: https://ai.optiwork.co.kr/topics/
 - 주간 묶음: https://ai.optiwork.co.kr/weekly/
+- 모델 판세: https://ai.optiwork.co.kr/models/
 - RSS: https://ai.optiwork.co.kr/rss.xml
 - Sitemap: https://ai.optiwork.co.kr/sitemap-index.xml
 - Sitemap (alias): https://ai.optiwork.co.kr/sitemap.xml

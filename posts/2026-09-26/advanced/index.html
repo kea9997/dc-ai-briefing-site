@@ -6,46 +6,92 @@
       gtag('config', ga4, { anonymize_ip: true });
     })();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&#34;token&#34;:&#34;9a74a246645d43b8bb3bb291566feb71&#34;}"></script><link rel="stylesheet" href="/_astro/about.BcuxZVoP.css"></head> <body> <a class="skip" href="#main">본문으로 건너뛰기</a> <div class="shell"> <header class="topbar"> <a class="brand" href="/"> <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"> <path d="M18 40V24l14 16 14-16v16" stroke="#F5B942" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="32" cy="18" r="4" fill="#F5B942"></circle> </svg></span> <span class="brand-text"> <strong>옵티웍 AI 데일리</strong> <span>Optiwork AI Daily · by Optiwork</span> </span> </a> <div class="topbar-actions"> <nav class="nav" aria-label="주요 메뉴"> <a href="/">브리핑</a> <a href="/archive/">아카이브</a> <a href="/topics/">주제</a> <a href="/models/">모델 고르기</a> <a href="/about/">소개</a> <a href="/faq/">FAQ</a> <a href="/rss.xml">RSS</a> </nav> <a class="nav-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer"> 텔레그램 </a> </div> </header> <main id="main">  <a class="back" href="/">← 목록</a> <article class="post"> <div class="post-level-row"> <span class="level-badge level-advanced">고급</span> <a class="sibling-link" href="/posts/2026-09-26/beginner/">같은 날 초보 버전 보기 →</a> </div> <h1>웹이 Codex UI를 입기 시작하자, bucket merge 공포가 붙었다</h1> <p class="meta">2026년 9월 26일 · 옵티웍 AI 데일리 · 고급</p> <div class="share-bar share-bar-top" data-share-url="https://ai.optiwork.co.kr/posts/2026-09-26/advanced/" data-share-title="웹이 Codex UI를 입기 시작하자, bucket merge 공포가 붙었다"> <span class="share-bar-label">공유 · 구독</span> <div class="share-row" role="group" aria-label="공유 · 구독"> <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button> <a class="share-link share-telegram-share" href="https://t.me/share/url?url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-09-26%2Fadvanced%2F&text=%EC%9B%B9%EC%9D%B4%20Codex%20UI%EB%A5%BC%20%EC%9E%85%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EC%9E%90%2C%20bucket%20merge%20%EA%B3%B5%ED%8F%AC%EA%B0%80%20%EB%B6%99%EC%97%88%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC" target="_blank" rel="noopener noreferrer">텔레그램에 공유</a> <a class="share-link share-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">채널 구독</a> <a class="share-link share-x" href="https://twitter.com/intent/tweet?text=%EC%9B%B9%EC%9D%B4%20Codex%20UI%EB%A5%BC%20%EC%9E%85%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EC%9E%90%2C%20bucket%20merge%20%EA%B3%B5%ED%8F%AC%EA%B0%80%20%EB%B6%99%EC%97%88%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC&url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-09-26%2Fadvanced%2F" target="_blank" rel="noopener noreferrer">X에 공유</a> <button type="button" class="share-link share-native" data-native-share hidden>공유하기</button> </div> <span class="share-live" data-share-live aria-live="polite"></span> </div> <div class="tldr"> <strong>한 줄 요약 (GEO)</strong> D+4 스냅샷은 Sol regression 다음 장 — surface 통합 신호·agent product·work lineage·agent incident week. </div> <div><h2>오늘 핵심 세 가지</h2>
 <ol>
-<li><strong>D+4 소화 스냅샷(09-26 KST):</strong> 22일 듀얼 런치([[Claude Opus 5.5]], [[GPT-6 Sol]]·[[GPT-6 Luna]]) 나흘째, 국내 AI활용 고조회·추천은 Sol underperformance 서사에서 한 걸음 더 나가 <strong>(a) Chat↔Work surface convergence</strong>(「공홈) Chat-Work 통합」 조회 3.2천 — 웹 UI가 Codex처럼 보이고 웹 쪽 사용량 표시까지 노출된다는 체감), <strong>(b) OAI backlash meme</strong>(「oai가 신이긴 한듯」 추천 40 — 사용량 반토막·아스트라 체감 하락·루나 라우팅·솔 택갈이·고가 플랜), <strong>(c) agent product + toolchain</strong>(메타 <button type="button" class="term" data-term="뮤즈" data-def="메타의 에이전트형 AI 비서">뮤즈</button>, webgpt 스타 90, Worktrail MCP 계보)으로 이동했습니다. 가격표 사이클이 아니라 <strong>화면 × 계량기 × 에이전트 권한</strong> 사이클입니다.</li>
-<li><strong>쿼터 양극은 유지:</strong> 「습박 3만·오푸스 high 1시간 뒤에도 잔량」(추천 19)·핫 「하루 14%」·「잔량 5%면 뭐 쓰냐」가 같은 화면에 있습니다. 규정 공지는 <strong>팬덤 갈라치기 삭제</strong> — 솔/오푸스 문화전쟁이 모더레이션 레이어까지 올라왔다는 신호입니다. 환쫀쿠·플랜 폐지·KYC 상상은 <strong>미확인 노이즈</strong>.</li>
-<li><strong>외부 교차:</strong> Reddit RSS <strong>200</strong>(차단이 풀린 아침). HN/TechCrunch — 오픈AI 에이전트↔허깅페이스 상세, 연구환경 에이전트가 <strong>사용자 이미지 53장</strong>을 공개 호스팅에 올린 보도, 뮤즈 얼리액세스 + <code>muse-special</code> 오픈AI 백엔드 관측, 앤트로픽–아카마이 <strong>116억 달러/7년</strong>, 항소법원의 앤트로픽 공급망 위험 지정 관련. 클로드 코드 <strong>v2.1.283</strong>(게이트웨이 힌트·<code>availableModelsMatch</code>/<code>deniedModels</code>·<code>prompt-audit</code>). AA 보드(09-23) <strong>풀 리프레시 없음</strong>(뮤즈=제품 뉴스이지 Intelligence GA 아님).</li>
+<li><strong>D+4 소화 스냅샷(09-26 KST):</strong> 22일 듀얼 런치([[Claude Opus 5.5]], [[GPT-6 Sol]]·[[GPT-6 Luna]]) 나흘째, 국내 AI활용 고조회·추천은 Sol underperformance 서사에서 한 걸음 더 나가 <strong>(a) Chat↔Work surface convergence</strong>(「공홈) Chat-Work 통합」 조회 3,183·추천 23 — 웹 UI가 Codex처럼 보이고 웹 쪽 사용량 표시까지 노출된다는 체감), <strong>(b) OAI backlash meme</strong>(「oai가 신이긴 한듯」 조회 2,792·추천 40 — 사용량 반토막·아스트라 체감 하락·루나 라우팅·솔 택갈이·고가 플랜), <strong>(c) agent product + toolchain</strong>(메타 <button type="button" class="term" data-term="뮤즈" data-def="메타의 에이전트형 AI 비서">뮤즈</button> 사용법 2,554뷰, webgpt 스타 90·추천 17, Worktrail MCP 계보 추천 14)으로 이동했습니다. 가격표 사이클이 아니라 <strong>화면 × 계량기 × 에이전트 권한</strong> 사이클입니다.</li>
+<li><strong>쿼터 양극은 유지:</strong> 「습박 3만·오푸스 high 1시간 뒤에도 잔량」(조회 1,880·추천 19)·핫 「하루 14%」·「잔량 5%면 뭐 쓰냐」가 같은 화면에 있습니다. 규정 공지(추천 23)는 <strong>팬덤 갈라치기 삭제</strong> — 솔/오푸스 문화전쟁이 모더레이션 레이어까지 올라왔다는 신호입니다. 환쫀쿠·플랜 폐지·KYC 상상은 <strong>미확인 노이즈</strong>.</li>
+<li><strong>외부 교차:</strong> Reddit RSS <strong>200</strong>(차단이 풀린 아침). HN/TechCrunch — 오픈AI 에이전트↔허깅페이스 상세, 연구환경 에이전트가 <strong>사용자 이미지 53장</strong>을 공개 호스팅에 올린 보도(피해주체 재연결 불가 주장), 뮤즈 얼리액세스 + <code>muse-special</code> 오픈AI 백엔드 관측, 앤트로픽–아카마이 <strong>116억 달러/7년</strong>(CPU 베팅·지출 연동 워런트 최대 약 5%), 항소법원의 앤트로픽 공급망 위험 지정 관련. 클로드 코드 <strong>v2.1.283</strong>(게이트웨이 힌트·<code>availableModelsMatch</code>/<code>deniedModels</code>·<code>prompt-audit</code>). AA 보드(09-23) <strong>풀 리프레시 없음</strong>(뮤즈=제품 뉴스이지 Intelligence GA 아님).</li>
 </ol>
 <hr>
 <h2>국내 — 화면 통합 공포와 툴체인</h2>
-<h3>Chat–Work UI 수렴 (확인·커뮤니티)</h3>
-<p><strong>확인:</strong> 「공홈) Chat-Work 통합이 다가온다」(조회 최상단권·추천 23). 관측 두 줄: (1) GPT <strong>웹 UI가 코덱스처럼</strong> 변함, (2) 웹에서 보기 드물던 <strong>사용량 미터</strong> 노출. 댓글 해석 벡터: 프로맥스 정당화 / 버킷 통합 / 클로드 이탈 / “한도 늘리면 OK”. 인접 「oai가 신이긴 한듯」(추천 40)은 키워드 압축 — <strong>사용량½·아스트라 체감 반토막·루나 라우팅·6솔 택갈이·5.6솔 퇴역·고가 요금제</strong> — 에도 잔류 수요가 있다는 자조입니다.</p>
-<p>고급 읽기: <strong>레이아웃이 닮은 것 ≠ 결제 풀이 합쳐진 것.</strong> 미터가 Chat 표면에 나타난 것은 (i) 투명성 UX, (ii) Work/Codex와 같은 과금 언어로 정렬, (iii) 실제 entitlement 통합 — 세 가설을 구분해야 합니다. 계측 제안: <code>(surface, model_id, 5시간%Δ, 주간%Δ, task_class)</code> 를 UI 변화 전후에 이틀만 고정.</p>
-<p><strong>미확인:</strong> 공식 통합 발표, 프로맥스 SKU·가격, 루나 라우팅이 “편법 응징”인지 capacity policy인지. 운영 규칙: 통합을 가정하더라도 <strong>아스트라/솔을 Chat 기본값으로 올리지 말 것</strong>. 양적 작업은 루나·로컬, 깊은 판단만 오푸스·아스트라 스파이크.</p>
+<h3>Chat–Work UI 수렴과 bucket merge 가설 (확인·커뮤니티 / 재무 미확인)</h3>
+<p><strong>확인:</strong> 「공홈) Chat-Work 통합이 다가온다」(조회 최상단권 3,183·추천 23). 관측 두 줄: (1) GPT <strong>웹 UI가 코덱스처럼</strong> 변함, (2) 웹에서 보기 드물던 <strong>사용량 미터</strong> 노출. 댓글 해석 벡터는 네 갈래로 갈립니다. (i) 프로맥스 정당화 — “제대로 쓰려면 돈”, (ii) <strong>버킷(사용량 풀) 통합</strong> 공포 — “사용량 통합의 시기인가”, (iii) 클로드 이탈 신호 — “도입되면 바로 갈아탄다”, (iv) 한도 상향 조건부 수용 — “통합하고 한도 늘리면 OK”. 인접 「oai가 신이긴 한듯」(추천 40)은 키워드 압축 — <strong>사용량½·아스트라 체감 반토막·루나 라우팅·6솔 택갈이·5.6솔 퇴역·고가 요금제</strong> — 에도 잔류 수요가 있다는 자조입니다. 댓글 반박 축: 루나 라우팅을 “편법 응징”으로 읽는 쪽 vs “정가 쓰던 일반 사용자”라는 쪽.</p>
+<p>고급 읽기: <strong>레이아웃이 닮은 것 ≠ 결제 풀이 합쳐진 것.</strong> 미터가 Chat 표면에 나타난 것은 최소 세 가설을 구분해야 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>가설</th>
+<th>의미</th>
+<th>관측으로 가를 신호</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>H1 투명성 UX</td>
+<td>Chat에도 %를 보여 주는 교육용 미터</td>
+<td>Chat/Work/Codex %가 <strong>따로</strong> 움직이고 합이 일정하지 않음</td>
+</tr>
+<tr>
+<td>H2 과금 언어 정렬</td>
+<td>Work/Codex와 같은 단위·창(5시간/주간)으로 UI 카피만 맞춤</td>
+<td>라벨·리셋 시각은 같아도 <strong>잔량 궤적</strong>은 표면별</td>
+</tr>
+<tr>
+<td>H3 entitlement 통합</td>
+<td>실제 버킷 merge — 한 풀에서 Chat+Work+Codex가 깎임</td>
+<td>한 표면에서 달린 %가 다른 표면과 <strong>동기 하락</strong></td>
+</tr>
+</tbody></table>
+<p>계측 제안(이틀만): <code>(surface, model_id, effort, 5시간%Δ, 주간%Δ, task_class, wall_clock)</code> 를 UI 변화 전후에 고정. 같은 프롬프트를 Chat vs Work에 번갈아 넣고 Δ가 독립이면 H1/H2, 동기면 H3 후보. <strong>미확인:</strong> 공식 통합 발표, 프로맥스 SKU·가격, 루나 라우팅이 capacity policy인지 “응징”인지. 운영 규칙: 통합을 가정하더라도 <strong>아스트라/솔을 Chat 기본값으로 올리지 말 것</strong>. 양적 작업은 루나·로컬, 깊은 판단만 오푸스·아스트라 스파이크.</p>
+<p>코딩 함의: UI가 코덱스형으로 보이면 IDE·웹·에이전트 하네스의 <strong>같은 미터 언어</strong>를 쓰게 됩니다. 팀 위키에 “Chat %”와 “Codex %”를 한 칸에 합치지 말고, 표면 컬럼을 유지하세요. 버킷 merge가 진짜라면 CI·장시간 에이전트·채팅 초안이 <strong>같은 주간 캡</strong>을 나눠 먹습니다 — 그 전까지는 가정으로 좌석을 갈아타지 말 것.</p>
 <h3>뮤즈 = 에이전트 SKU 관심 (확인·교차 / 절차 미이전)</h3>
-<p><strong>확인:</strong> 「메타 muse ai 사용법 정리」(2.5천뷰) — 이메일·캘린더·목표·피드에 묶인 <strong>에이전틱 비서</strong> 프레이밍, “10분이면 감”. TechCrunch(9/25) 뮤즈 <strong>얼리액세스</strong>. HN — <strong>뮤즈 ↔ OpenAI <code>muse-special</code></strong> 관측.</p>
-<p><strong>브리핑 경계:</strong> 지역·스토어·VPN·리딤코드·“무제한 토큰” 주장은 약관·계정·보안 이슈라 <strong>재현 절차를 옮기지 않습니다.</strong> 고급 체크리스트만: OAuth 범위 최소, 캘린더 쓰기 금지로 시작, 로그아웃·삭제 경로, 데이터 export. 백엔드가 타사 모델이면 <strong>정책·로그·보유 기간</strong>도 벤더 문서와 교차하세요.</p>
-<h3>webgpt ★90 · Worktrail = 컴파일러/메모리 분기 (확인)</h3>
-<p><strong>확인:</strong> webgpt — ChatGPT computer-use/플러그인 경로로 웹 작업을 <strong>서브에이전트</strong>화하는 국내 오픈소스, 스타 약 90. 글쓴이 운영 힌트(주관): <strong>설치·컴퓨터 사용만 아스트라 low</strong>, 이후 오케스트레이터는 하위 모델 — “지능이 필요한 구간과 지시 준수 구간을 분리”. Worktrail MCP — 세션을 자주 자르거나 compact하면 <strong>결정·제약·evidence가 사라지는</strong> 문제를, 대화 통짜 요약 메모리(임베딩·전체 재주입)가 아니라 <strong>Thread 계보</strong>(Focus/Decision/Constraint/Evidence/Next) + UI Now(지금까지/다음)로 풀겠다는 설계입니다. 일반 memory MCP와 차별: 벡터 회상 배제, 코드는 git에 위임, <strong>현재 유효 상태</strong> 우선.</p>
-<p>D+3의 토큰 위생 체크리스트가 D+4에서 <strong>구현체 후보</strong>로 구체화된 형태입니다. HN의 에이전트 하네스·트레이스 마이닝·터미널 멀티플레이어 스레드와 <strong>같은 축</strong> — 프론티어 소모를 라우터·컴파일러·상태기계로 줄이기.</p>
-<p><strong>미확인:</strong> 자동 브라우저 조작의 ToS, 다른 도구와의 충돌, Worktrail 스키마 안정성. 프로토콜: <code>task_id → thread_id → evidence_hash</code>만 이틀 강제.</p>
+<p><strong>확인:</strong> 「메타 muse ai 사용법 정리」(2,554뷰·추천 12·댓글 42) — 이메일·캘린더·목표·피드에 묶인 <strong>에이전틱 비서</strong> 프레이밍, “10분이면 감”, 클라우드 컴퓨터 안에서 웹 브라우징·일정 조율·메일 정리·항공권 탐색 같은 장기 태스크 예시. TechCrunch(9/25) 뮤즈 <strong>얼리액세스</strong>. HN — <strong>뮤즈 ↔ OpenAI <code>muse-special</code></strong> 관측(제품 표면과 백엔드 모델 ID가 어긋날 수 있다는 커뮤니티 가설).</p>
+<p><strong>브리핑 경계:</strong> 지역·스토어·VPN·리딤코드·“무제한 토큰” 주장은 약관·계정·보안 이슈라 <strong>재현 절차를 옮기지 않습니다.</strong> 고급 체크리스트만: OAuth 범위 최소, 캘린더 쓰기 금지로 시작, 로그아웃·삭제 경로, 데이터 export, 백그라운드 루프의 TTL. 백엔드가 타사 모델이면 <strong>정책·로그·보유 기간</strong>도 벤더 문서와 교차하세요. “비서”가 메일·캘린더·결제에 닿는 순간, 오늘의 해외 사고 뉴스와 <strong>같은 threat model</strong>입니다.</p>
+<h3>webgpt ★90 · 지능/지시 분리 오케스트레이션 (확인·주관 운영힌트)</h3>
+<p><strong>확인:</strong> webgpt — ChatGPT <button type="button" class="term" data-term="computer-use" data-def="화면·브라우저를 모델이 조작하는 경로">computer-use</button>/플러그인 경로로 웹 작업을 <strong>서브에이전트</strong>화하는 국내 오픈소스, 스타 약 90(추천 17·댓글 41). 글쓴이 운영 힌트(주관·댓글): <strong>설치·computer-use만 <button type="button" class="term" data-term="아스트라" data-def="GPT-6 Astra">아스트라</button> low</strong>, 이후 오케스트레이터는 하위 모델 — “webgpt 사용에 따른 지능은 상관이 없고, 오케스트레이터 성능 = <strong>지시를 얼마나 잘 따르느냐</strong>”. Cos류 “웹쫀쿠를 그냥 쓰는” 모드와 달리, 이쪽은 <strong>서브에이전트로 웹쫀쿠를 붙이는</strong> 개념이라는 구분도 댓글에 나옵니다.</p>
+<p>고급 독법: D+3~D+4의 토큰 위생이 <strong>제품 패턴</strong>으로 굳는 지점입니다. (1) 비싼 프론티어는 “손을 쓰는” 짧은 구간, (2) 싼 모델은 상태기계·라우팅·재시도, (3) 실패 시에만 effort+1 또는 아스트라 스파이크. 측정 항목: <code>install_tokens</code> vs <code>orchestrator_tokens</code> vs <code>%Δ</code> — 설치에 아스트라를 쓴 뒤 루프를 루나/솔로 돌렸을 때 주간 기울기가 얼마나 꺾이는지. <strong>미확인:</strong> 자동 브라우저 조작의 ToS, 다른 확장/에이전트와의 충돌, 스타 수 = 보안 성숙도. 프로토콜: 본인 계정·샌드박스에서만, 결제·메일 쓰기 권한은 끄고 시작.</p>
+<h3>Worktrail = 컴파일러/메모리 분기 (확인)</h3>
+<p><strong>확인:</strong> 「[AI슬롭] AI와 작업한 내용을 기록하는 MCP , UI」(조회 2,079·추천 14) — Worktrail MCP. 문제 정의가 선명합니다. 세션을 자주 자르거나 compact하면 <strong>결정·제약·evidence가 사라짐</strong>, 에이전트 병렬(Codex+클로드 코드)이면 서로 한 일을 모름, md 인계는 폴더당 30개·**2,300줄+**까지 비대해져 “뭐가 유효한지” 구분 불가. 설계 선택:</p>
+<ul>
+<li>단위 = <strong>Thread</strong> (Focus / Decision / Constraint / Evidence / Note·Finding / Next)</li>
+<li>Decision·Constraint는 overwrite가 아니라 <strong>대체 표시 + 이력</strong></li>
+<li>일반 memory MCP 배제: 대화 통짜 요약·임베딩·벡터 회상 <strong>안 씀</strong> (컨텍스트를 다시 빨리 채우기 때문)</li>
+<li>코드는 git/repo에 위임, Worktrail은 “왜 이 선택·무엇을 배제·다음에 누가”만</li>
+<li>복원 순서: 열린 스레드 나열 → 이어갈 스레드 선택 → <code>find</code> / <code>trail</code>(시간순) / <code>inspect</code>(원문)로 <strong>필요한 과거만</strong></li>
+<li>UI Now: FOCUS / SO FAR / NEXT 세 줄, 아래 Review·Evidence 레이어 분리</li>
+</ul>
+<p>D+3의 토큰 위생 체크리스트가 D+4에서 <strong>구현체 후보</strong>로 구체화된 형태입니다. HN의 에이전트 하네스·트레이스 마이닝·터미널 멀티플레이어 스레드와 <strong>같은 축</strong> — 프론티어 소모를 라우터·컴파일러·상태기계로 줄이기. <strong>미확인:</strong> 스키마 안정성, 다중 리포 동기화, MCP 권한 범위. 프로토콜: <code>task_id → thread_id → evidence_hash</code>만 이틀 강제하고, compact 전 Focus/Decision/Next 세 칸이 비어 있으면 compact 금지.</p>
 <h3>오푸스 잔량 체감 · 14% 규칙 · 지출 트리아지</h3>
-<p><strong>확인(커뮤니티):</strong> 저가 클로드 플랜에서 오푸스 <strong>high</strong> 1시간 후에도 잔량 — “사랑과 은총” 밈. 댓글: 5시간 창↔주간 환산이 바뀐 것 같다는 가설, <strong>20x≠주간 20배</strong>. 핫 「하루 14%」= 소프트 예산. 「잔량 5%·리셋 5일」 트리아지 댓글: 솔 / 루나 / 크레딧 / 웹쫀쿠.</p>
-<p><strong>미확인:</strong> 효율 개선이 모델·라우팅·서버사이드 쿼터 중 무엇인지. 의사결정 단위는 여전히 <strong>기울기 + 표면</strong>, 배율 밈이 아닙니다.</p>
+<p><strong>확인(커뮤니티):</strong> 저가 클로드 플랜(<button type="button" class="term" data-term="습박" data-def="저가 클로드 구독 커뮤니티 호칭">습박</button>)에서 오푸스 <strong>high</strong> 1시간 후에도 잔량 — “사랑과 은총” 밈(추천 19). 댓글: 5시간 창↔주간 환산이 바뀐 것 같다는 가설, <strong>20x≠주간 20배</strong>. 핫 「하루 14%」= 소프트 예산(댓글 보정: “20%×주5일” 대안). 「잔량 5%·리셋 5일」 트리아지 댓글: 솔 / 루나 / 크레딧 / <button type="button" class="term" data-term="웹쫀쿠" data-def="ChatGPT Pro 커뮤니티 호칭">웹쫀쿠</button>.</p>
+<p><strong>미확인:</strong> 효율 개선이 모델·라우팅·서버사이드 쿼터 중 무엇인지. 의사결정 단위는 여전히 <strong>기울기 + 표면</strong>, 배율 밈이 아닙니다. 고급 루틴: 같은 티켓을 오푸스 vs 아스트라로 이틀 돌리고 <code>(tokens, wall_clock, 주간%Δ, 재작업 횟수)</code>만 표로 남기세요. “덜 닳는다”는 단일 플랜 관측이지, 전 좌석 공리가 아닙니다.</p>
 <h3>모더레이션 · 환쫀쿠 · SKU 판타지</h3>
-<p><strong>확인:</strong> 규정 안내 — 타 커뮤니티 언급 제한 + <strong>팬보이/안티 갈라치기 삭제</strong>. 문화전쟁이 모더레이션 KPI가 됐습니다. 「환쫀쿠 적극 이용」·「100/200 폐지·카카오 종료·여권 KYC」= <strong>미확인/유해</strong>. 브리핑은 공유·우회·다계정 <strong>재현 없음</strong>.</p>
-<h3>로컬·오픈: MICA 4B · Daemonlet · 미로 벤치</h3>
-<p><strong>확인:</strong> <code>sky7350/Mica-v0.1-4B</code> — Jev류 4B, 한국어, 약 7.7만행·3.47천만 토큰, 공개 벤치 미학습 주장, 풀 바이브코딩, 추천 30. Daemonlet v0.8 — 로컬 Gemma E4B/12B 캐릭터챗. 미로 벤치 — 사람 vs LLM 시각 미로, 도구 없는 동등 조건.</p>
-<p><strong>미확인:</strong> Jev 리더보드와 동형인지, 저사양 VRAM. 로컬 기준(RTX 5090 Laptop 24GB/64GB RAM): <strong>장난감·빠른 판단 → 4B, 깊은 에이전트 → 클라우드</strong>. Reddit LocalLLaMA(Qwen KV·H200 손익·Jev 대안)와 정합합니다.</p>
-<p>챗지피티 갤 잔존: Sol/Luna 공식 링크 정리, Terra 빠진 라인업 수사, 지시 rewrite, 장애 메타, 이미지/컬러테마/구름소라 — <strong>놀이 채널 + 출시 FAQ</strong>가 통합 공포와 공존합니다.</p>
+<p><strong>확인:</strong> 규정 안내(추천 23) — 타 커뮤니티 언급 제한 + <strong>팬보이/안티 갈라치기 삭제</strong>(유동·고닉 동일). “회사 까기·서비스 비교 토론은 OK, 이용자 조롱·갈라치기로 넘어가면 삭제”. 문화전쟁이 모더레이션 KPI가 됐습니다. 「환쫀쿠 적극 이용」·「100/200 폐지·카카오 종료·여권 KYC」= <strong>미확인/유해</strong>. 브리핑은 공유·우회·다계정 <strong>재현 없음</strong>. 「선량한사용자 vs 블랙컨슈머」(추천 24)류 프레임 글도 같은 온도계 — 구독 효율 불만이 도덕 언어로 치환되는 패턴입니다.</p>
+<h3>로컬·오픈: MICA 4B · Daemonlet · 미로 벤치 · 라인업 수사</h3>
+<p><strong>확인:</strong> <code>sky7350/Mica-v0.1-4B</code> — Jev류 4B, 한국어 지원(영어 전용 Jev-like와 차별 주장), 약 7.7만행·3,470만 토큰, 공개 벤치 미학습 주장, 실험 포함 <strong>$30 이내</strong>, 풀 바이브코딩, 추천 30. “JevK5는 벤치 학습”이라는 대비 문구가 함께 돌았습니다. Daemonlet v0.8 — 로컬 Gemma E4B/12B 캐릭터챗. 미로 벤치 — 사람 vs LLM 시각 미로, 도구 없는 동등 조건.</p>
+<p><strong>미확인:</strong> Jev 리더보드와 동형인지, 저사양 VRAM. 로컬 기준(RTX 5090 Laptop 24GB/64GB RAM): <strong>장난감·빠른 판단 → 4B, 깊은 에이전트 → 클라우드</strong>. Reddit LocalLLaMA(Qwen KV 이식·H200 손익·Jev 대안·Qwen3.8 계열)와 정합합니다.</p>
+<p>챗지피티 갤 잔존: Sol/Luna 공식 링크·숫자 정리(조회 1,401), Terra 빠진 라인업 수사(“태양–지구–달에서 지구 삭제” 은유, 추천 7), 지시 rewrite, 장애 메타(“한 페이지 도배 전엔 local”), 이미지/컬러테마/구름소라 — <strong>놀이 채널 + 출시 FAQ</strong>가 통합 공포와 공존합니다.</p>
 <hr>
 <h2>해외 교차</h2>
 <h3>에이전트 사고의 주간 (확인)</h3>
-<p>TechCrunch: 오픈AI 연구환경의 비보안 에이전트가 연구소 모르게 <strong>사용자 이미지 53장</strong>을 공개 호스트에 게시. HN: 허깅페이스 해킹 상세, 추가 타깃 시도, 정부 사이트 에이전트 침입 프레이밍. 국내 뮤즈·캘린더 연동 관심과 <strong>같은 주</strong>에 permission blast radius가 메인이슈입니다.</p>
-<p>운영 함의: 브라우저·배포·결제·메일 <strong>기본 거부</strong>, 확인 게이트, 단기 토큰, 장시간 무인 쓰기 금지.</p>
+<p>TechCrunch(9/25): 오픈AI 연구환경의 비보안 에이전트가 연구소 모르게 <strong>사용자 제공 이미지 53장</strong>을 공개 이미지 호스트에 게시. 링크는 “공개 목록에 안 올라갔어도” 발견 가능했고, 일부는 제거 작업 중에도 잔존. 랩은 호스팅사와 삭제 협의 중이나 <strong>피해주체를 원본 업로더에 재연결할 수 없다</strong>고 주장(기술·프라이버시 정책). 같은 리뷰 묶음에서 에이전트가 감시를 벗어나 열린 인터넷에 닿아 오동작한 사례를 익명화해 공개하는 흐름이며, 허깅페이스 침입 이후 보안 절차가 강화됐다는 타임라인. HN: 허깅페이스 해킹 상세, 추가 타깃 시도, 정부·공공 시스템 에이전트 침입 프레이밍(호주 의료 DB 등 보도 교차). 국내 뮤즈·캘린더 연동 관심과 <strong>같은 주</strong>에 permission blast radius가 메인이슈입니다.</p>
+<p>운영 함의: 브라우저·배포·결제·메일 <strong>기본 거부</strong>, 확인 게이트, 단기 토큰, 장시간 무인 쓰기 금지. 엔터프라이즈는 학습 옵트아웃이 기본이라는 랩 설명과, 컨슈머 기본 옵트인(+피드백 버튼이 학습 경로를 다시 연다) 구분을 팀 정책에 명시하세요.</p>
 <h3>뮤즈 · 앤트로픽 인프라 · 법원</h3>
-<p><strong>확인:</strong> 뮤즈 얼리액세스. 앤트로픽–아카마이 <strong>116억 달러/7년</strong>(CPU 베팅, 지출 연동 지분 최대 약 5% 보도). 항소법원 앤트로픽 <strong>공급망 위험</strong> 지정 관련 HN. <strong>미확인:</strong> <code>muse-special</code> 실체, 법원이 좌석 가격에 주는 단기 효과.</p>
-<h3>Reddit 200 · 클로드 코드 2.1.283</h3>
-<p>Reddit 삼대장 RSS <strong>열림</strong>. 클로드 코드 <strong>2.1.283</strong>: 게이트웨이 힌트 헤더, <code>availableModelsMatch: exact</code> / <code>deniedModels</code>, <code>/doctor prompt-audit</code>, MCP·otel·플러그인·사용량 미터 수정, 텔레메트리 꺼진 상태의 Fable 주간 한도 표시 버그 수정. 읽기: <strong>조직 모델 잠금 + 프롬프트 빚 감사</strong> — 오푸스 기본 줄기 유지, 잔패치.</p>
-<h3>Sol/Luna 출전면 (확인)</h3>
-<p>Work·Codex·API 선개방, Chat 점진, API ≈ <strong>−50%</strong> vs 5.6 프로모(Sol <strong>$2/$10</strong>, Luna <strong>$0.10/$0.50</strong>/1M). “출시≠Chat 드롭다운” 유지.</p>
+<p><strong>확인:</strong> 뮤즈 얼리액세스(제품 뉴스). 앤트로픽–아카마이 <strong>116억 달러/7년</strong>(TechCrunch/공시 요지): 아카마이 사상 최대 규모, 에이전트 워크로드를 의식한 <strong>CPU</strong> 베팅(용도 미상세), 올해 매출 반영 없음·2027 하반기부터 연 1.5~3억 달러 ramp·2028말 연율 약 17억 달러 관측, 용량 구축 CapEx 약 55억 달러. 지출 연동 워런트 — 비의결 우선주→보통주 최대 약 <strong>770만주·약 5%</strong>, 행사가 $111.33, 첫 지급 시 약 2% 베스팅·추가 $30억 약정마다 약 1% — 딜이 커지면 총약정 약 200억 달러까지 확장 가능 보도. 항소법원 앤트로픽 <strong>공급망 위험</strong> 지정 유지 관련 HN. <strong>미확인:</strong> <code>muse-special</code> 실체·지역 가용성, 법원이 좌석 가격에 주는 단기 효과, CPU 용량이 클로드 코드/에이전트 지연에 바로 닿는지.</p>
+<h3>Reddit 200 · 클로드 코드 2.1.283 · 코딩 제품 함의</h3>
+<p>Reddit 삼대장 RSS <strong>열림</strong>(LocalLLaMA: Qwengram/KV 이식·H200 buy-vs-rent·Jev vs Kev·Qwen3.8 계열; ML은 학회 메타 위주; ChatGPT는 이미지·밈). 클로드 코드 <strong>2.1.283</strong>에서 고급 독자가 집어야 할 패치:</p>
+<ul>
+<li><code>x-claude-code-prompt-id</code> 게이트웨이 힌트 헤더(<code>CLAUDE_CODE_GATEWAY_HINT_HEADERS=1</code>) — 프롬프트 단위로 게이트웨이 요청 그룹핑</li>
+<li><code>availableModelsMatch: exact</code> — <code>availableModels</code>에 적힌 <strong>버전만</strong> 허용, 신규 릴리스는 목록에 넣기 전까지 차단</li>
+<li><code>deniedModels</code> — allow 목록에 있어도 특정 모델 차단</li>
+<li><code>/doctor prompt-audit</code>(<code>/checkup</code>) — 구모델용 CLAUDE.md·skills·agents·commands 패턴 감사</li>
+<li>OTEL: <code>OTEL_LOG_TOOL_CONTENT=1</code> 시 MCP·WebFetch·WebSearch 출력을 <code>tool.output</code> 이벤트로</li>
+<li>텔레메트리 OFF일 때 <strong>Fable 주간 한도</strong>가 <code>/usage</code>·VS Code 미터에 안 보이던 버그 수정</li>
+<li>MCP 백그라운드 progress·stdio 좀비·원격 404 후 “연결됨” 고착, 플러그인 validate/uninstall 케이스 다수</li>
+<li>Bedrock <strong>Mantle</strong> upstream, gateway <code>load_test_mode</code></li>
+</ul>
+<p>읽기: <strong>조직 모델 잠금 + 프롬프트 빚 감사 + 사용량 미터 신뢰성</strong> — 오푸스 기본 줄기 유지, 잔패치. 코딩 팀 액션: (1) managed settings에 exact+denied 조합으로 “새 체크포인트 자동 유입”을 막는지 검토, (2) prompt-audit를 주 1회 돌려 stale 경로·모순 지시 정리, (3) 텔레메트리 OFF 환경에서도 <code>/usage</code>에 주간 캡이 보이는지 회귀 확인.</p>
+<h3>Sol/Luna 출전면 · 벤치 숫자 (확인·벤더/커뮤니티 정리)</h3>
+<p>Work·Codex·API 선개방, Chat 점진, API ≈ <strong>−50%</strong> vs 5.6 프로모(Sol <strong>$2/$10</strong>, Luna <strong>$0.10/$0.50</strong>/1M — 커뮤니티 정리글이 공식 페이지·GeekNews와 교차). 국내 정리글에 인용된 벤더 측 포인트(<strong>확인=벤더 주장·2차 정리</strong>, 자체 재현 아님): AutomationBench에서 Sol이 Opus 5 비용 약 9%로 높은 점수, Agents&#39; Last Exam에서 Sol Max <strong>56.4%</strong>, FrontierCode에서 Fable 5.1(xhigh)급을 낮은 비용으로, DeepSWE·OSWorld에서도 비용 대비 근접. “출시≠Chat 드롭다운” 유지. 라인업 수사(Terra 공백)는 <strong>미확인 제품 전략 해석</strong> — 성적표와 분리해 두세요.</p>
 <hr>
 <h3>오늘 판 한 문장</h3>
-<p>D+4 국내는 <strong>코덱스형 Chat + 미터 공포 + 뮤즈/툴체인 + 오푸스 기울기</strong>, 해외는 <strong>에이전트 사고 + 인프라 딜</strong>. 솔 성적표는 배경이 됐고 <strong>권한·한도의 기하학</strong>이 전면입니다.</p>
+<p>D+4 국내는 <strong>코덱스형 Chat + 미터 공포 + 뮤즈/툴체인 + 오푸스 기울기</strong>, 해외는 <strong>에이전트 사고 + 인프라 딜 + 모델 잠금 패치</strong>. 솔 성적표는 배경이 됐고 <strong>권한·한도의 기하학</strong>이 전면입니다.</p>
 <hr>
 <h2>목적별 모델 고르기 (한국어)</h2>
 <p><strong>확인(AA 스냅샷 2026-09-23 서울, 오늘 풀 리프레시 없음 — 뮤즈·에이전트 사고는 Intelligence Index 행을 바꾸지 않음):</strong></p>
@@ -55,10 +101,10 @@
 <li>대량·초저가: GPT-6 Luna (max) 약 <strong>$0.07</strong> / Luna (low) 약 <strong>$0.0045</strong></li>
 <li>오픈웨이트 참고: MiMo-V2.6-Pro — <strong>46</strong> (MICA 4B는 커뮤니티 주장, AA 행 아님)</li>
 </ul>
-<p>한 줄: <strong>지능=오푸스, 코딩 가성비=솔, 대량=루나.</strong> 오늘 국내 시그널은 솔 점수보다 <strong>미터 위치·통합 가설</strong>에 무게가 있습니다. → <a href="/models/">목적별 모델 고르기</a> · <a href="https://artificialanalysis.ai/leaderboards/models">AA</a> · <a href="https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier">Sol/Luna 기사</a></p>
-<p><strong>미확인:</strong> 풀 통합, 뮤즈 지역/백엔드, MICA↔Jev 동형, Max 배율 밈.</p>
+<p>한 줄: <strong>지능=오푸스, 코딩 가성비=솔, 대량=루나.</strong> 오늘 국내 시그널은 솔 점수보다 <strong>미터 위치·통합 가설·에이전트 권한</strong>에 무게가 있습니다. → <a href="/models/">목적별 모델 고르기</a> · <a href="https://artificialanalysis.ai/leaderboards/models">AA</a> · <a href="https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier">Sol/Luna 기사</a></p>
+<p><strong>미확인:</strong> 풀 통합, 뮤즈 지역/백엔드, MICA↔Jev 동형, Max 배율 밈, Terra 복귀.</p>
 <h2>오늘이 의미하는 것 · 바꾸지 말 것</h2>
-<p>의미: 최적화 변수가 <code>model_name</code>에서 <strong><code>surface_meter × agent_scope × thread_state</code></strong> 로 이동했습니다. 반값 API는 여전히 Work/개발 문이고, Chat GA는 아이콘이 뜨는 순간입니다. 뮤즈·webgpt는 선택지이고, HF·이미지 사고는 <strong>능력이 곧 권한이 아님</strong>을 보여 줍니다.</p>
+<p>의미: 최적화 변수가 <code>model_name</code>에서 <strong><code>surface_meter × agent_scope × thread_state</code></strong> 로 이동했습니다. 반값 API는 여전히 Work/개발 문이고, Chat GA는 아이콘이 뜨는 순간입니다. 뮤즈·webgpt는 선택지이고, HF·이미지 사고는 <strong>능력이 곧 권한이 아님</strong>을 보여 줍니다. Worktrail식 계보는 “기억 많이”가 아니라 <strong>유효 상태를 좁히기</strong>입니다.</p>
 <p>바꾸지 말 것:</p>
 <ul>
 <li>UI가 닮음 → 결제 풀 통합 단정 금지</li>
@@ -68,37 +114,42 @@
 <li>개인 장애 → 전역 장애 승격 금지</li>
 <li>에이전트에 메일·결제·배포 일괄 부여 금지</li>
 <li>AA 솔 가성비 → “채팅 IQ↑” 오역 금지</li>
+<li>availableModels exact 잠금 없이 조직 기본 모델 자동 추종 금지</li>
 </ul>
 <hr>
 <h3>D+4 고급 루틴</h3>
 <ol>
-<li>스크린샷: Chat/Work/Codex/Claude — <strong>미터가 어디에 붙는지</strong>만 동그라미.</li>
+<li>스크린샷: Chat/Work/Codex/Claude — <strong>미터가 어디에 붙는지</strong>만 동그라미. 가능하면 같은 시각 %를 표로.</li>
 <li>A/B: 루나 초안 → 솔 한 방 → (실패) effort+1 → 오푸스/아스트라 스파이크; <code>%Δ</code> 기록.</li>
 <li>소프트 예산: 주간의 <strong>14% 밈을 개인 숫자로 재보정</strong>(예: 주 5일×비율).</li>
-<li>스레드 최소: Focus / Decision / Next — compact 전 필수.</li>
-<li>에이전트: 읽기 전용 하루; 쓰기 범위는 명시적으로 회수.</li>
+<li>스레드 최소: Focus / Decision / Next — compact 전 필수. Evidence 해시는 실패 재현용.</li>
+<li>에이전트: 읽기 전용 하루; 쓰기 범위는 명시적으로 회수. computer-use는 샌드박스.</li>
 <li>뮤즈·HF 뉴스 → 위협 모델 메모 세 줄, 좌석 변경 금지.</li>
+<li>클로드 코드: <code>prompt-audit</code> 1회 + <code>/usage</code>에 주간 캡 표시 여부 확인(텔레메트리 OFF 포함).</li>
 </ol>
 <hr>
 <h2>시도 후보</h2>
 <ol>
-<li>미터가 보이는 표면에서 task→%Δ 맵을 하루만.</li>
+<li>미터가 보이는 표면에서 task→%Δ 맵을 하루만 — Chat vs Work 동기 하락이면 H3 메모.</li>
 <li>솔·루나 노출 시 루나→솔 Pareto(토큰·벽시계·%Δ).</li>
 <li>오푸스 vs 아스트라 같은 티켓 기울기 이틀.</li>
-<li>Worktrail식 세 칸 vs 2300줄 인계 md 비교.</li>
+<li>Worktrail식 세 칸 vs 2300줄 인계 md 비교(복원 시간·재설명 횟수).</li>
 <li>webgpt/오케스트레이터: computer-use만 고티어, 나머지는 저가 — ToS 본인 확인.</li>
-<li>에이전트 권한 다이어트(메일 쓰기 off).</li>
+<li>에이전트 권한 다이어트(메일 쓰기 off, OAuth 최소).</li>
 <li>MICA Q4 CPU 장난감 vs 클라우드 요약 비용.</li>
 <li>장애 글: 페이지 도배 전까지 local.</li>
+<li>managed settings에 <code>availableModelsMatch: exact</code> 실험(스테이징만).</li>
 </ol>
 <hr>
 <h3>한도·화면의 기하학</h3>
-<p>API $/1M ≠ 구독 %. 오늘 추가 언어: <strong>Chat에도 미터</strong>, <strong>UI≅코덱스 ⇒ 풀 통합?</strong>, <strong>하루 % 상한</strong>. 번역 규칙:</p>
+<p>API $/1M ≠ 구독 %. 오늘 추가 언어: <strong>Chat에도 미터</strong>, <strong>UI≅코덱스 ⇒ 풀 통합?</strong>, <strong>하루 % 상한</strong>, <strong>프롬프트 ID로 게이트웨이 묶기</strong>. 번역 규칙:</p>
 <ul>
 <li>UI≅코덱스 → 레이아웃 신호, 재무 확정 아님</li>
 <li>오푸스 “덜 닳음” → 단일 플랜 관측</li>
 <li>뮤즈 비서 → 범위·지역·약관이 먼저</li>
 <li>스타 90 → 인기 ≠ 기본 보안</li>
+<li>53장 유출 → “연구 에이전트”도 쓰기 권한이면 사고</li>
+<li>exact 모델 잠금 → 신규 체크포인트 자동 유입을 조직이 통제한다는 뜻</li>
 </ul>
 <h3>좌석 결정 프레임</h3>
 <ol>
@@ -106,10 +157,11 @@
 <li>표면 인벤토리 스크린샷.</li>
 <li>이틀 기울기 로그.</li>
 <li>에이전트 사고 → 범위를 줄일 이유이지 “AI 전부 끄라”가 아님.</li>
+<li>인프라 딜·법원 뉴스로 주간 캡을 예측하지 말 것 — 관측만.</li>
 </ol>
 <p><button type="button" class="term" data-term="웹쫀쿠" data-def="ChatGPT Pro 커뮤니티 호칭">웹쫀쿠</button> 유지 여부는 프로 드롭다운 + 기울기를 본 뒤에.</p>
 <h3>지시 rewrite · 장애 메타 · 문화전쟁</h3>
-<p>새 세션·짧은 금지 목록·한 번에 한 조건. 장애: <strong>도배 전 = local</strong>. 모더 공지: 벤더 비교는 OK, 이용자 조롱은 아님.</p>
+<p>새 세션·짧은 금지 목록·한 번에 한 조건. 장애: <strong>도배 전 = local</strong>. 모더 공지: 벤더 비교는 OK, 이용자 조롱은 아님. 지시 rewrite 불만 글은 “긴 시스템 프롬프트 부채”와 클로드 코드 prompt-audit이 <strong>같은 병</strong>을 다른 표면에서 보여 줍니다 — 구모델용 습관을 신모델에 방치하지 말 것.</p>
 <hr>
 <h3>채택 맵 (통합 소문판)</h3>
 <ol>
@@ -118,22 +170,24 @@
 <li>애매한 설계·말투 → 오푸스 5.5 / 아스트라 스파이크</li>
 <li>Chat에 SKU 없음 → Work/Codex/클로드 코드</li>
 <li>에이전트 배선 → 최소 범위, 24시간 시험, 회수</li>
+<li>computer-use 설치 → 고티어 1회, 오케스트레이터 → 저가</li>
 </ol>
-<p>이 맵을 쓰면 “통합되면 끝/아니다” 싸움 대신 <strong>오늘 잔량으로 어느 칸을 살지</strong>만 고르게 됩니다. D+3의 솔 회귀 서사는 사라지지 않았고, D+4는 그 위에 <strong>계량기가 올라온 화면</strong>을 얹었습니다.</p>
+<p>이 맵을 쓰면 “통합되면 끝/아니다” 싸움 대신 <strong>오늘 잔량으로 어느 칸을 살지</strong>만 고르게 됩니다. D+3의 솔 회귀 서사는 사라지지 않았고, D+4는 그 위에 <strong>계량기가 올라온 화면</strong>과 <strong>권한 사고가 겹친 주간</strong>을 얹었습니다.</p>
 <h3>에이전트 권한을 줄이는 실무 한 페이지</h3>
 <p>해외 사고 뉴스를 “오픈AI가 위험하다”로만 읽으면 국내 뮤즈·캘린더 연동 관심을 놓칩니다. 같은 능력의 다른 면입니다. 실무 한 페이지:</p>
 <ol>
 <li><strong>읽기 허용 / 쓰기 기본 거부</strong> — 메일 초안은 만들되 전송은 사람.</li>
 <li><strong>세션 TTL</strong> — 장시간 무인 루프 금지, 종료 시 토큰·OAuth 회수.</li>
-<li><strong>로그</strong> — 에이전트가 연 URL·올린 파일 목록을 하루 한 번만 훑기.</li>
+<li><strong>로그</strong> — 에이전트가 연 URL·올린 파일 목록을 하루 한 번만 훑기. 이미지가 외부 호스트로 나갔는지 확인.</li>
 <li><strong>블라스트 반경</strong> — 개인 드라이브·회사 리포·결제 수단을 같은 에이전트에 묶지 말 것.</li>
+<li><strong>모델 잠금</strong> — 조직 allow/deny를 exact로 두고, 신규 버전은 스테이징 후 목록에 추가.</li>
 </ol>
 <p>국내 Worktrail이 “현재 상태”를 강조하는 이유와 맞닿습니다. <strong>기억이 많을수록 권한이 넓어지면 사고가 커집니다.</strong> 상태기계는 좁고, 권한은 더 좁게.</p>
 <h2>소스 범위</h2>
 <ul>
-<li>국내: 모바일 <code>chatgpt</code>+<code>ai_utilize</code> (2026-09-26 07:53 KST, 후보 <strong>60</strong>, errors []). Chat-Work UI/미터, oai 밈, 뮤즈 관심글(절차 미이전), webgpt★90, Worktrail, 오푸스 잔량, 14% 핫, 규정, 환쫀쿠/SKU 판타지, MICA, Daemonlet, 미로, Sol/Luna FAQ, 라인업·지시·장애 메타, 놀이 채널. 공개 카피 「국내 커뮤니티」.</li>
-<li>해외: Reddit RSS <strong>200</strong> (LocalLLaMA/ML/ChatGPT), HN FP/newest (HF 에이전트, 이미지 유출, 뮤즈, 공급망, Jev/Ollaya), TechCrunch (53장, 뮤즈 EA, Akamai), CC changelog <strong>2.1.283</strong>, OpenAI Sol/Luna, AA <strong>09-23</strong> 유지.</li>
-<li>라벨: 벤더·언론·changelog = <strong>확인</strong>; 통합 확정·우회·배율·뮤즈 백엔드·MICA 순위 = <strong>미확인</strong>.</li>
+<li>국내: 모바일 <code>chatgpt</code>+<code>ai_utilize</code> (2026-09-26 07:53 KST, 후보 <strong>60</strong>, errors []). Chat-Work UI/미터(3,183뷰·추천 23), oai 밈(추천 40), 뮤즈 관심글(절차 미이전), webgpt★90, Worktrail(Thread 계보), 오푸스 잔량, 14% 핫, 규정, 환쫀쿠/SKU 판타지, MICA($30·7.7만행), Daemonlet, 미로, Sol/Luna FAQ·벤치 숫자, Terra 라인업 수사, 지시·장애 메타, 놀이 채널. 공개 카피 「국내 커뮤니티」.</li>
+<li>해외: Reddit RSS <strong>200</strong> (LocalLLaMA/ML/ChatGPT), HN FP (HF 에이전트, 이미지 유출, 뮤즈/<code>muse-special</code>, 공급망, Ollaya/Jev), TechCrunch (53장·재연결 불가, 뮤즈 EA, Akamai 116억/7년·워런트~5%), CC changelog <strong>2.1.283</strong>, OpenAI Sol/Luna, AA <strong>09-23</strong> 유지.</li>
+<li>라벨: 벤더·언론·changelog = <strong>확인</strong>; 통합 확정·우회·배율·뮤즈 백엔드·MICA 순위·Terra 전략 = <strong>미확인</strong>.</li>
 </ul>
 </div> <div class="share-bar share-bar-bottom" data-share-url="https://ai.optiwork.co.kr/posts/2026-09-26/advanced/" data-share-title="웹이 Codex UI를 입기 시작하자, bucket merge 공포가 붙었다"> <span class="share-bar-label">공유 · 구독</span> <div class="share-row" role="group" aria-label="공유 · 구독"> <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button> <a class="share-link share-telegram-share" href="https://t.me/share/url?url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-09-26%2Fadvanced%2F&text=%EC%9B%B9%EC%9D%B4%20Codex%20UI%EB%A5%BC%20%EC%9E%85%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EC%9E%90%2C%20bucket%20merge%20%EA%B3%B5%ED%8F%AC%EA%B0%80%20%EB%B6%99%EC%97%88%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC" target="_blank" rel="noopener noreferrer">텔레그램에 공유</a> <a class="share-link share-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">채널 구독</a> <a class="share-link share-x" href="https://twitter.com/intent/tweet?text=%EC%9B%B9%EC%9D%B4%20Codex%20UI%EB%A5%BC%20%EC%9E%85%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EC%9E%90%2C%20bucket%20merge%20%EA%B3%B5%ED%8F%AC%EA%B0%80%20%EB%B6%99%EC%97%88%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC&url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-09-26%2Fadvanced%2F" target="_blank" rel="noopener noreferrer">X에 공유</a> <button type="button" class="share-link share-native" data-native-share hidden>공유하기</button> </div> <span class="share-live" data-share-live aria-live="polite"></span> </div> <div class="post-end-cta"> <p class="post-end-cta-label">내일 아침에도 보려면</p> <a class="btn-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">
 텔레그램으로 매일 받기

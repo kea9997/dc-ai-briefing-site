@@ -1,13 +1,13 @@
 {
-  "updated": "2026-09-23",
-  "updatedLabel": "2026-09-23 (서울)",
+  "updated": "2026-09-29",
+  "updatedLabel": "2026-09-29 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
-  "articleUrl": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+  "articleUrl": "https://artificialanalysis.ai/articles/claude-sonnet-5-5",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 구독 탭(전체·Claude만·GPT만)으로 후보를 좁힐 수 있습니다. 지능 1위는 Opus 5.5, 코딩 가성비는 Sol, 대량·초저가는 Luna — 점수표만 보지 말고 목적·비용을 같이 봅니다.",
-  "codingNote": "Coding Agent Index(AA 기사): Sol ~57(상승), Luna ~41(하락) — 기사 인용. Opus의 코딩 전용 지수는 이 스냅샷에 없어 종합 Intelligence로 표시합니다.",
+  "takeaway": "할 일부터 고르세요. 구독 탭(전체·Claude만·GPT만)으로 후보를 좁힐 수 있습니다. 지능 1위는 여전히 Opus 5.5(58), 바로 아래 새 카드가 Sonnet 5.5(max·56·작업당 약 $7.60)입니다. 코딩 가성비 표는 Sol, 대량·초저가는 Luna — max 소넷은 토큰을 많이 써서 단가표만 보면 싸 보여도 작업당 비용이 큽니다.",
+  "codingNote": "Coding Agent Index(AA 기존 기사): Sol ~57(상승), Luna ~41(하락) — 기사 인용. Sonnet 5.5는 AA Intelligence Index #2(56)이며, Anthropic·AA 모두 에이전트 터미널·지식업무에서 Opus에 근접한다고 밝힘. 다만 max effort 작업당 ~$7.60·출력 토큰이 매우 많아 Pareto에서 밀릴 수 있음(AA 09-28 기사).",
   "lanes": [
     {
       "id": "all",
@@ -49,16 +49,16 @@
           "best": {
             "name": "Claude Opus 5.5 (max+fallback)",
             "short": "Opus 5.5",
-            "why": "종합 Intelligence 1위(58). 코딩 전용 지수는 미기재라 일반 지능·고난도 작업 기준으로 ‘가장 좋음’.",
+            "why": "종합 Intelligence 1위(58). Sonnet 5.5(56)가 바짝 쫓지만, 절대 지능·깊은 에이전트는 여전히 Opus 우선.",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
-            "caveat": "비쌈. tokens/task가 길면 총비용이 더 불어날 수 있음."
+            "caveat": "비쌈. Sonnet max는 점수는 가깝지만 작업당 ~$7.60으로 더 비쌀 수 있음."
           },
           "value": {
             "name": "GPT-6 Sol (max)",
             "short": "Sol (max)",
-            "why": "Coding Agent Index 약 57로 코딩 효율이 두드러지고, 작업당 약 $1.06.",
+            "why": "Coding Agent Index 약 57·작업당 약 $1.06. AA는 Sonnet high가 Sol과 비슷한 Cost/Task 구간에 있다고 보지만, 표의 코딩 가성비 앵커는 Sol.",
             "evidence": "AA Coding Agent ~57(기사) · Intelligence 48 · 작업당 $1.06",
-            "caveat": "절대 지능은 Opus·Astra보다 낮음. ‘싸면서 코딩에 쓸 만함’."
+            "caveat": "절대 지능은 Opus·Sonnet max·Astra보다 낮음. 채팅 미노출 이슈와 별개로 API/Work·Codex 축."
           },
           "cheap": {
             "name": "GPT-6 Luna (max)",
@@ -72,23 +72,23 @@
           "best": {
             "name": "Claude Opus 5.5 (max+fallback)",
             "short": "Opus 5.5",
-            "why": "Claude 패밀리·이 스냅샷에서 종합 Intelligence 최고(58). 고난도 코딩·에이전트에 우선.",
+            "why": "Claude 패밀리 최고 지능(58). 고난도·긴 에이전트.",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
-            "caveat": "Claude 구독 안에서도 가장 비싼 티어. 일상 코딩은 high부터 검토."
+            "caveat": "일상 코딩·에이전트 루프는 Sonnet 5.5 또는 Opus high부터 검토."
           },
           "value": {
-            "name": "Claude Opus 5.5 (high)",
-            "short": "Opus high",
-            "why": "Intelligence 54에 작업당 $1.82 — Claude 패밀리 안에서 IQ/$가 가장 유리한 구간.",
-            "evidence": "AA Intelligence 54 · 작업당 $1.82",
-            "caveat": "max(58)보다 점수는 낮음. 품질이 더 필요하면 max로 올리세요."
+            "name": "Claude Sonnet 5.5 (max+fallback)",
+            "short": "Sonnet 5.5",
+            "why": "Intelligence 56으로 Opus에 2점차. Anthropic·AA 모두 에이전트 코딩·지식업무에서 Opus에 근접한다고 밝힘. Claude 구독 코딩의 새 실무 후보.",
+            "evidence": "AA Intelligence 56 · 작업당 $7.60(max) · AA 기사: high effort가 Sol max와 비슷한 Cost/Task 구간",
+            "caveat": "max는 출력 토큰이 매우 많아 작업당 비용이 Opus보다 클 수 있음. 구독 UI의 잔량%로 먼저 재세요."
           },
           "cheap": {
-            "name": "Claude Opus 5.5 (low)",
-            "short": "Opus low",
-            "why": "Claude 구독만 쓸 때 초안·반복용 저티어. Sonnet 점수는 이 스냅샷에 없어 넣지 않았습니다.",
-            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55 (low 티어)",
-            "caveat": "본표 상위 rows에 없던 저티어라 보조 행으로 표기. Haiku는 미검증이라 제외."
+            "name": "Claude Sonnet 5.5 (low) / Opus low",
+            "short": "Sonnet·Opus low",
+            "why": "Claude만 쓸 때 초안·반복용. Sonnet low Intelligence ~36, Opus low ~42.",
+            "evidence": "AA Sonnet 5.5 low ~36 · Opus 5.5 low ~42 · 작업당은 티어·토큰에 따라 변동",
+            "caveat": "어려운 에이전트는 Sonnet high/max 또는 Opus로."
           }
         },
         "openai": {
@@ -125,7 +125,7 @@
           "best": {
             "name": "Claude Opus 5.5 (max+fallback)",
             "short": "Opus 5.5",
-            "why": "Intelligence 58로 스냅샷 최고. 깊은 추론·긴 글에 우선.",
+            "why": "Intelligence 58로 스냅샷 최고. 깊은 추론·긴 글에 우선. Sonnet 5.5(56)도 지식업무에서 Opus에 근접(AA).",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
             "caveat": "단가·작업당 비용 모두 상위. 초안은 싼 모델로 빼고 마무리만 Opus도 방법."
           },
@@ -148,16 +148,16 @@
           "best": {
             "name": "Claude Opus 5.5 (max+fallback)",
             "short": "Opus 5.5",
-            "why": "Claude 구독 안·스냅샷 최고 지능(58). 긴 글·깊은 추론.",
+            "why": "Claude 구독 안·스냅샷 최고 지능(58). 긴 글·깊은 추론. Sonnet 5.5는 문서·슬라이드·일상 지식업무 후보.",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
             "caveat": "비용 부담이 크면 high로 내리고 마무리만 max."
           },
           "value": {
-            "name": "Claude Opus 5.5 (high)",
-            "short": "Opus high",
-            "why": "54점·$1.82 — Claude 패밀리 글쓰기 가성비의 실무 기본값.",
-            "evidence": "AA Intelligence 54 · 작업당 $1.82",
-            "caveat": "max 대비 품질 하한이 있음. 중요 원고는 max 검토."
+            "name": "Claude Sonnet 5.5 (max+fallback)",
+            "short": "Sonnet 5.5",
+            "why": "56점·지식업무(GDPval/AA-Briefcase)에서 Opus와 거의 동률(AA). Claude 글쓰기·문서 작업의 새 가성비·실무 카드.",
+            "evidence": "AA Intelligence 56 · 작업당 $7.60(max) · GDPval-AA 1844 vs Opus 1846(AA 기사)",
+            "caveat": "max 토큰 다소비. 초안은 low/medium, 마무리는 high/max 또는 Opus."
           },
           "cheap": {
             "name": "Claude Opus 5.5 (low)",
@@ -356,34 +356,42 @@
     },
     {
       "rank": 2,
+      "name": "Claude Sonnet 5.5 (max+fallback)",
+      "creator": "Anthropic",
+      "intelligence": 56,
+      "costPerTask": 7.6,
+      "note": "09-28 출시 · AA #2 · 토큰 다소비"
+    },
+    {
+      "rank": 3,
       "name": "Claude Opus 5.5 (xhigh)",
       "creator": "Anthropic",
       "intelligence": 56,
       "costPerTask": 3.46
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Claude Opus 5.5 (high)",
       "creator": "Anthropic",
       "intelligence": 54,
       "costPerTask": 1.82
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Claude Fable 5.1 (max)",
       "creator": "Anthropic",
       "intelligence": 53,
       "costPerTask": 7.63
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "GPT-6 Astra (max)",
       "creator": "OpenAI",
       "intelligence": 53,
       "costPerTask": 3.26
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "GPT-6 Sol (max)",
       "creator": "OpenAI",
       "intelligence": 48,
@@ -391,7 +399,7 @@
       "note": "Coding Agent ~57 · 가성비"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "MiMo-V2.6-Pro (open weights ref)",
       "creator": "Xiaomi",
       "intelligence": 46,
@@ -399,7 +407,7 @@
       "note": "오픈 웨이트 참고"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "GPT-6 Luna (max)",
       "creator": "OpenAI",
       "intelligence": 37,
@@ -407,7 +415,7 @@
       "note": "초저가·대량"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Claude Opus 5.5 (low)",
       "creator": "Anthropic",
       "intelligence": 42,

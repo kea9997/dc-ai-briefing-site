@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[Sonnet 5.5가 AA 2위에 앉자, Opus oneshot과 Astra 감성벤치가 같은 아침을 나눠 먹었다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-29/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-29/advanced/</guid>
+  <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[D+7은 Sonnet 5.5 Intelligence 56 진입 — Opus creative stack 유지, Astra quality-politics, Pro copy attach, AA weekly board refresh.]]></description>
+</item>
+<item>
+  <title><![CDATA[소넷이 2등 의자에 앉자, 오푸스 게임이 먼저 박수를 먹었다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-29/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-29/beginner/</guid>
+  <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[앤트로픽 중간값 소넷 5.5가 벤치 2위로 들어오고, 국내 판은 오푸스 원샷 게임·아스트라 발끝 논쟁·프로 이름표가 한꺼번에 붙었다.]]></description>
+</item>
+<item>
   <title><![CDATA[Opus oneshot 쇼릴이 판을 먹자, Sol은 Arena 밖으로 밀렸다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-28/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-28/advanced/</guid>
@@ -34,18 +48,18 @@
   <description><![CDATA[출시 닷새째 국내 판은 한도 통합 공포 다음으로 리셋 쇼·요금제 이름 교체·오푸스/솔 성적표로 옮겨 갔다.]]></description>
 </item>
 <item>
-  <title><![CDATA[웹이 Codex UI를 입기 시작하자, bucket merge 공포가 붙었다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</guid>
-  <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[D+4 스냅샷은 Sol regression 다음 장 — surface 통합 신호·agent product·work lineage·agent incident week.]]></description>
-</item>
-<item>
   <title><![CDATA[웹이 코덱스처럼 보이자, 통합 한도 소문이 먼저 달렸다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-26/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-26/beginner/</guid>
   <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[출시 나흘째 국내 판은 Sol 성적표 다음으로 Chat·Work 통합 UI·뮤즈·오픈소스 도구·오푸스 잔량 체감으로 옮겼다.]]></description>
+</item>
+<item>
+  <title><![CDATA[웹이 Codex UI를 입기 시작하자, bucket merge 공포가 붙었다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</guid>
+  <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[D+4 스냅샷은 Sol regression 다음 장 — surface 통합 신호·agent product·work lineage·agent incident week.]]></description>
 </item>
 <item>
   <title><![CDATA[Sol max 29점과 영수증 후기 규범이 같은 화면에 있다]]></title>
@@ -104,18 +118,18 @@
   <description><![CDATA[솔만 써도 절반, 아스트라로 바꾸면 예전의 5분의 1 — 커뮤니티가 숫자로 찍은 한도 이야기.]]></description>
 </item>
 <item>
-  <title><![CDATA[메시 임대는 그대로인데, 출전권만 먼저 끊긴다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-21/beginner/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-21/beginner/</guid>
-  <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[아침 핫글은 코덱스·주간 한도 비명이었고, 개념글은 ‘잠수함 너프’를 사고 토큰 이야기로 풀어냈다.]]></description>
-</item>
-<item>
   <title><![CDATA[잠수함 너프의 본명, Inference Gap]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-21/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-21/advanced/</guid>
   <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[코덱스 주간 캡 비명과 Lon의 사고토큰 중앙값 붕괴가 같은 아침에 겹치고, jev·로컬 라우팅이 대응 프로토콜이 됐다.]]></description>
+</item>
+<item>
+  <title><![CDATA[메시 임대는 그대로인데, 출전권만 먼저 끊긴다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-21/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-21/beginner/</guid>
+  <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[아침 핫글은 코덱스·주간 한도 비명이었고, 개념글은 ‘잠수함 너프’를 사고 토큰 이야기로 풀어냈다.]]></description>
 </item>
 <item>
   <title><![CDATA[한도 역산표와 시험망 밖 3사가 같은 아침에]]></title>

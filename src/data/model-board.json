@@ -1,13 +1,13 @@
 {
-  "updated": "2026-09-29",
-  "updatedLabel": "2026-09-29 (서울)",
+  "updated": "2026-09-30",
+  "updatedLabel": "2026-09-30 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
-  "articleUrl": "https://artificialanalysis.ai/articles/claude-sonnet-5-5",
+  "articleUrl": "https://artificialanalysis.ai/models/gpt-6-1-sol",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 구독 탭(전체·Claude만·GPT만)으로 후보를 좁힐 수 있습니다. 지능 1위는 여전히 Opus 5.5(58), 바로 아래 새 카드가 Sonnet 5.5(max·56·작업당 약 $7.60)입니다. 코딩 가성비 표는 Sol, 대량·초저가는 Luna — max 소넷은 토큰을 많이 써서 단가표만 보면 싸 보여도 작업당 비용이 큽니다.",
-  "codingNote": "Coding Agent Index(AA 기존 기사): Sol ~57(상승), Luna ~41(하락) — 기사 인용. Sonnet 5.5는 AA Intelligence Index #2(56)이며, Anthropic·AA 모두 에이전트 터미널·지식업무에서 Opus에 근접한다고 밝힘. 다만 max effort 작업당 ~$7.60·출력 토큰이 매우 많아 Pareto에서 밀릴 수 있음(AA 09-28 기사).",
+  "takeaway": "할 일부터 고르세요. DevDay(09-29) 직후 스냅샷: GPT-6.1 Sol (max)이 Intelligence Index 약 52·작업당 약 $0.72로 보드에 올랐고, Astra(max·53)에 바짝 붙으면서 $/task는 훨씬 낮습니다. 종합 1위는 여전히 Opus 5.5(58), 2위 Sonnet 5.5(56·max 작업당 약 $7.60 주의). 코딩 가성비 앵커를 6.1 Sol로 옮겼고, 대량·초저가는 Luna. 채팅에 6.1 Sol이 아직 없으면 Work/Codex를 보세요.",
+  "codingNote": "AA 라이브(09-30 서울): GPT-6.1 Sol (max) Intelligence ~52 · Cost/Task ~$0.72 · API $2/$10 /1M in/out · 캐시 입력 $0.10/1M(벤더·AA). 구 GPT-6 Sol (max) ~48·~$1.05대. Astra (max) ~53·단가 $10/$50. Coding Agent Index 전용 6.1 숫자는 이 스냅샷에서 미확인 — Intelligence·벤더 에이전트 코딩 주장으로 보조. Sonnet 5.5 max는 II 56이지만 작업당 ~$7.60 Pareto 주의(09-29 보드 유지).",
   "lanes": [
     {
       "id": "all",
@@ -54,11 +54,11 @@
             "caveat": "비쌈. Sonnet max는 점수는 가깝지만 작업당 ~$7.60으로 더 비쌀 수 있음."
           },
           "value": {
-            "name": "GPT-6 Sol (max)",
-            "short": "Sol (max)",
-            "why": "Coding Agent Index 약 57·작업당 약 $1.06. AA는 Sonnet high가 Sol과 비슷한 Cost/Task 구간에 있다고 보지만, 표의 코딩 가성비 앵커는 Sol.",
-            "evidence": "AA Coding Agent ~57(기사) · Intelligence 48 · 작업당 $1.06",
-            "caveat": "절대 지능은 Opus·Sonnet max·Astra보다 낮음. 채팅 미노출 이슈와 별개로 API/Work·Codex 축."
+            "name": "GPT-6.1 Sol (max)",
+            "short": "6.1 Sol",
+            "why": "AA Intelligence ~52(Astra max 53 근접), 작업당 약 $0.72. 벤더도 에이전트 코딩·프로 업무에서 Astra에 가깝다고 주장(확인=벤더·AA 수치 분리).",
+            "evidence": "AA Intelligence ~52 · 작업당 ~$0.72 · $2/$10 /1M",
+            "caveat": "Work/Codex 우선. 채팅 아이콘 없으면 문 옮기기. 자사 “near-Astra” ≠ 내 티켓 승률."
           },
           "cheap": {
             "name": "GPT-6 Luna (max)",
@@ -100,11 +100,11 @@
             "caveat": "코딩 에이전트 루프·도구 호출 비중면 Sol이 실무 ‘베스트’에 가깝습니다."
           },
           "value": {
-            "name": "GPT-6 Sol (max)",
-            "short": "Sol (max)",
-            "why": "Coding Agent ~57에 작업당 $1.06 — GPT 구독 코딩 가성비·실무 주력.",
-            "evidence": "AA Coding Agent ~57(기사) · Intelligence 48 · 작업당 $1.06",
-            "caveat": "절대 종합 지능은 Astra보다 낮음."
+            "name": "GPT-6.1 Sol (max)",
+            "short": "6.1 Sol",
+            "why": "AA Intelligence ~52(Astra max 53 근접), 작업당 약 $0.72. 벤더도 에이전트 코딩·프로 업무에서 Astra에 가깝다고 주장(확인=벤더·AA 수치 분리).",
+            "evidence": "AA Intelligence ~52 · 작업당 ~$0.72 · $2/$10 /1M",
+            "caveat": "Work/Codex 우선. 채팅 아이콘 없으면 문 옮기기. 자사 “near-Astra” ≠ 내 티켓 승률."
           },
           "cheap": {
             "name": "GPT-6 Luna (max)",
@@ -130,11 +130,11 @@
             "caveat": "단가·작업당 비용 모두 상위. 초안은 싼 모델로 빼고 마무리만 Opus도 방법."
           },
           "value": {
-            "name": "GPT-6 Sol (max)",
-            "short": "Sol (max)",
-            "why": "Intelligence 48에 작업당 $1.06 — 비슷한 지능대에서 비용 우위.",
-            "evidence": "AA Intelligence 48 · 작업당 $1.06",
-            "caveat": "Opus high(54·$1.82)도 가성비 후보. 품질이 더 필요하면 Opus high를 검토."
+            "name": "GPT-6.1 Sol (max)",
+            "short": "6.1 Sol",
+            "why": "글·문서 실무에서 Astra급에 가까운 지능을 낮은 작업당 비용으로 — 보드 코딩 가성비와 같은 카드.",
+            "evidence": "AA Intelligence ~52 · 작업당 ~$0.72",
+            "caveat": "말맛·창작은 별도 A/B. 채팅 노출 여부는 화면 확인."
           },
           "cheap": {
             "name": "GPT-6 Luna (max)",
@@ -176,11 +176,11 @@
             "caveat": "코딩 전용은 Sol(Coding Agent ~57)이 나을 수 있음."
           },
           "value": {
-            "name": "GPT-6 Sol (max)",
-            "short": "Sol (max)",
-            "why": "48점·$1.06 — GPT 구독에서 품질·비용 균형.",
-            "evidence": "AA Intelligence 48 · 작업당 $1.06",
-            "caveat": "최고 품질이 필요하면 Astra."
+            "name": "GPT-6.1 Sol (max)",
+            "short": "6.1 Sol",
+            "why": "글·문서 실무에서 Astra급에 가까운 지능을 낮은 작업당 비용으로 — 보드 코딩 가성비와 같은 카드.",
+            "evidence": "AA Intelligence ~52 · 작업당 ~$0.72",
+            "caveat": "말맛·창작은 별도 A/B. 채팅 노출 여부는 화면 확인."
           },
           "cheap": {
             "name": "GPT-6 Luna (max)",
@@ -391,12 +391,20 @@
       "costPerTask": 3.26
     },
     {
+      "name": "GPT-6.1 Sol (max)",
+      "short": "6.1 Sol",
+      "vendor": "openai",
+      "intelligence": 52,
+      "cost": 0.72,
+      "note": "DevDay 09-29 · Astra(53) 근접 · $/task 대폭↓ · Work/Codex 우선(채팅 미노출 가능)"
+    },
+    {
       "rank": 7,
       "name": "GPT-6 Sol (max)",
       "creator": "OpenAI",
       "intelligence": 48,
       "costPerTask": 1.06,
-      "note": "Coding Agent ~57 · 가성비"
+      "note": "Coding Agent ~57 · 가성비 · 후속은 6.1 Sol"
     },
     {
       "rank": 8,

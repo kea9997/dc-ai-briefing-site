@@ -391,15 +391,15 @@
       "costPerTask": 3.26
     },
     {
+      "rank": 7,
       "name": "GPT-6.1 Sol (max)",
-      "short": "6.1 Sol",
-      "vendor": "openai",
+      "creator": "OpenAI",
       "intelligence": 52,
-      "cost": 0.72,
-      "note": "DevDay 09-29 · Astra(53) 근접 · $/task 대폭↓ · Work/Codex 우선(채팅 미노출 가능)"
+      "costPerTask": 0.72,
+      "note": "DevDay 09-29 · Astra(53) 근접 · $/task↓ · Work/Codex 우선(채팅 미노출 가능) · 코딩 가성비 앵커"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "GPT-6 Sol (max)",
       "creator": "OpenAI",
       "intelligence": 48,
@@ -407,7 +407,7 @@
       "note": "Coding Agent ~57 · 가성비 · 후속은 6.1 Sol"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "MiMo-V2.6-Pro (open weights ref)",
       "creator": "Xiaomi",
       "intelligence": 46,
@@ -415,7 +415,7 @@
       "note": "오픈 웨이트 참고"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "GPT-6 Luna (max)",
       "creator": "OpenAI",
       "intelligence": 37,
@@ -423,7 +423,7 @@
       "note": "초저가·대량"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Claude Opus 5.5 (low)",
       "creator": "Anthropic",
       "intelligence": 42,

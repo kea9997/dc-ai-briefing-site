@@ -8,7 +8,7 @@ tags: ["daily", "advanced", "Gemini4Argon", "1Moutput", "Dots", "FTC", "Australi
 
 ## 오늘 핵심 세 가지
 
-1. **로컬 KPI #1 = Argon output-headroom folklore:** AI활용 「젬황 1백만 토큰 출력 가능 ㄷㄷ」(≈**4,639**·**18**)이 D+2 최고조회. 요지 — context window ≠ **single-trajectory output cap 1M**(벤더 주장, 구글 블로그 64K→1M). 병행 「lm아레나 웹데브 8위」(≈**1,666**·**10**, 본문 “6솔 바로 밑”), 「젬황한테 말싸움 짐」(≈**3,191**·**42**), 핫 「잼황4 아르곤」「젬민이4프로 안 줌」= *announce/bench curiosity vs seat presence* 분리. AA Argon (High) **II~53 · Cost/Task~$1.99 · $2/$10** · phased Fairwind — **coding.value는 6.1 Sol 유지 이유 불변**.
+1. **로컬 KPI #1 = Argon output-headroom folklore:** AI활용 「젬황 1백만 토큰 출력 가능 ㄷㄷ」(≈**4,639**·**18**)이 D+2 최고조회. 요지 — context window ≠ **single-trajectory output cap 1M**(벤더 주장, 구글 블로그 64K→1M). 병행 「lm아레나 웹데브 8위」(≈**1,666**·**10**, 본문 “6솔 바로 밑”), 「젬황한테 말싸움 짐」(≈**3,191**·**42**), 핫 「잼황4 아르곤」「젬민이4프로 안 줌」= *announce/bench curiosity vs seat presence* 분리. AA Argon (High) **II≈53 · Cost/Task≈$1.99 · $2/$10** · phased Fairwind — **coding.value는 6.1 Sol 유지 이유 불변**.
 2. **Dot sticky-quota politics:** 「티보) 닷 때문에 리셋 못해」(≈**2,795**·**13**) — X 공유: primary Dot usage “virtually unlimited at the moment” → reset 손잡이 부재. 「캘린더 정보」(≈**2,468**·**20**)·「목소리 변조」(≈**1,834**·**13**, Chrome ext + local TTS)·「그림 그리며 웃음」(≈**3,875**·**22**) = companion SKU **밀착 UX**. 핫 「공짜워크네」「성능 실화」. D+1의 3-바구니(dot_chat / deeper_work / Codex·Work bleed) 위에 **ops: reset_denied** 레이어가 붙음.
 3. **규제·안전·SKU 교차 + Reddit 전면 차단:** FTC probe(OpenAI/Anthropic+, agent-hack lineage) · AU Senate CEO 출석 요청(Medicare DB breach 잔향) · TechCrunch/WSJ: OpenAI safety researchers ×3 “sensitive info” 결별 · ChatGPT virtual try-on + Favorites · CNBC/Verge: Google **Project Suncatcher** TPU satellite launch. Reddit RSS/HTML **403·network policy**(LocalLLaMA·ML·ChatGPT 모두) → HN/언론만. `model-board.json` **2026-10-01 유지**(오늘 major model/price 변경 없음).
 
@@ -18,9 +18,9 @@ tags: ["daily", "advanced", "Gemini4Argon", "1Moutput", "Dots", "FTC", "Australi
 
 ### Argon 1M-out · LM Arena · seat ETA (확인·벤더·AA / GA·아레나 스냅샷 미확인)
 
-**확인:** D+2 최고조회가 “언제 seat?” 탄식이 아니라 **output headroom 스펙 자랑**. 벤더: DeepSWE v1.1 77.9%(주장), Vals Index lead 주장, CWE-bench tie 68%, intro **$2/$10** → post-intro **$4/$20** 예고, Fairwind cyber defenders 우선. AA High: **53 / ~$1.99**. 국내 아레나 웹데브 8위 스레드는 *leaderboard temperature*. 말싸움·“제미나이 멍청/지피티 막하막” = `community_eval_temp`.
+**확인:** D+2 최고조회가 “언제 seat?” 탄식이 아니라 **output headroom 스펙 자랑**. 벤더: DeepSWE v1.1 77.9%(주장), Vals Index lead 주장, CWE-bench tie 68%, intro **$2/$10** → post-intro **$4/$20** 예고, Fairwind cyber defenders 우선. AA High: **53 / ≈$1.99**. 국내 아레나 웹데브 8위 스레드는 *leaderboard temperature*. 말싸움·“제미나이 멍청/지피티 막하막” = `community_eval_temp`.
 
-고급 읽기: **II 53 동대(Astra) ≠ default swap.** Argon Cost/Task(~$1.99) ≫ 6.1 Sol(~$0.72) → `goals.coding.value` 유지. 1M output은 **long-horizon trajectory budget** 주장이지, 구독 UI에 백만이 찍힌다는 뜻이 아님. “4프로 안 줌” 핫글 = *phased SKU · Ultra/API waitlist folklore*.
+고급 읽기: **II 53 동대(Astra) ≠ default swap.** Argon Cost/Task(≈$1.99) ≫ 6.1 Sol(≈$0.72) → `goals.coding.value` 유지. 1M output은 **long-horizon trajectory budget** 주장이지, 구독 UI에 백만이 찍힌다는 뜻이 아님. “4프로 안 줌” 핫글 = *phased SKU · Ultra/API waitlist folklore*.
 
 계측: `argon_icon?`, `api_model_id`, `arena_snapshot_ts`, `same_ticket_vs_sol`, `hallucination_notes`(방법론 없으면 `community_temp`).
 
@@ -57,12 +57,12 @@ tags: ["daily", "advanced", "Gemini4Argon", "1Moutput", "Dots", "FTC", "Australi
 
 | 모델 | II (대략) | 작업당 $ | 비고 |
 |------|-----------|----------|------|
-| Opus 5.5 max+fallback | **~58** | **~5.98** | #1 |
-| Sonnet 5.5 max+fallback | **~56** | **~7.60** | 토큰 다소비 |
-| **Gemini 4 Argon (High)** | **~53** | **~1.99** | phased · 1M-out 주장 |
-| Astra max | **~53** | ~3.26 | Dots engine |
-| **GPT-6.1 Sol max** | **~52** | **~0.72** | **코딩 가성비 유지** |
-| Luna max | **~37** | ~0.07 | 대량 |
+| Opus 5.5 max+fallback | **≈58** | **≈5.98** | #1 |
+| Sonnet 5.5 max+fallback | **≈56** | **≈7.60** | 토큰 다소비 |
+| **Gemini 4 Argon (High)** | **≈53** | **≈1.99** | phased · 1M-out 주장 |
+| Astra max | **≈53** | ≈3.26 | Dots engine |
+| **GPT-6.1 Sol max** | **≈52** | **≈0.72** | **코딩 가성비 유지** |
+| Luna max | **≈37** | ≈0.07 | 대량 |
 
 Coding Agent Index 전용 Argon 수치 **미확인**. `goals.coding.value` → 6.1 Sol.
 
@@ -89,12 +89,12 @@ Reddit: **r/LocalLLaMA · r/MachineLearning · r/ChatGPT 모두 403/block page**
 ## 목적별 모델 고르기 (한국어)
 
 **확인(벤치 스냅샷 2026-10-01 서울 · 오늘 보드 유지):**
-- 가장 좋음: Opus 5.5 max+fallback — II **~58** · ~$5.98/task
-- 추격: Sonnet 5.5 max+fallback — **~56** · ~$7.60 (max 토큰 다소비)
-- 구글: Argon (High) — **~53** · ~$1.99 · $2/$10 · **phased** · 1M-out 주장
-- GPT 상단: Astra max — **~53** · ~$3.26
-- **코딩 가성비 앵커:** GPT-6.1 Sol max — **~52** · ~$0.72
-- 대량: Luna max ~$0.07
+- 가장 좋음: Opus 5.5 max+fallback — II **≈58** · ≈$5.98/task
+- 추격: Sonnet 5.5 max+fallback — **≈56** · ≈$7.60 (max 토큰 다소비)
+- 구글: Argon (High) — **≈53** · ≈$1.99 · $2/$10 · **phased** · 1M-out 주장
+- GPT 상단: Astra max — **≈53** · ≈$3.26
+- **코딩 가성비 앵커:** GPT-6.1 Sol max — **≈52** · ≈$0.72
+- 대량: Luna max ≈$0.07
 
 운영 한 줄: **II는 Opus, Argon은 announce+bench(seat 전 shadow), coding value는 6.1 Sol, bulk는 Luna.** 로컬 KPI는 `argon_icon?` · `dot_reset_available?` · `calendar_scope` · `wall_clock_s@6.1`. → [/models/](/models/) · [AA](https://artificialanalysis.ai/leaderboards/models) · [Argon](https://artificialanalysis.ai/models/gemini-4-argon) · [6.1 Sol](https://artificialanalysis.ai/models/gpt-6-1-sol)
 
@@ -183,7 +183,7 @@ Orbital TPU = infra narrative. Try-on = consumer image SKU. 둘 다 `goals.codin
 
 ### D+2 읽기 체크리스트 (고급)
 
-1. Argon = 1M-out folklore + II~53; seat gate 유지; coding.value=6.1 Sol.
+1. Argon = 1M-out folklore + II≈53; seat gate 유지; coding.value=6.1 Sol.
 2. Dot = reset_denied + PII calendar; 3-바구니 + permission freeze.
 3. FTC/AU/safety-exit = compliance_watch; churn SLA 금지.
 4. try-on/Suncatcher = SKU/infra; router 0.

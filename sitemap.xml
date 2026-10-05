@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ai.optiwork.co.kr/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/about/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/faq/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/archive/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/topics/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/weekly/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/models/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/topics/quota/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/topics/local-llm/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
-  <url><loc>https://ai.optiwork.co.kr/topics/model-launch/</loc><lastmod>2026-10-04T22:58:39.570Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/about/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/faq/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/archive/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/topics/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/weekly/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/models/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/topics/quota/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/topics/local-llm/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/topics/model-launch/</loc><lastmod>2026-10-05T23:01:02.232Z</lastmod></url>
   <url><loc>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</loc><lastmod>2026-09-18T00:00:00.000Z</lastmod></url>
   <url><loc>https://ai.optiwork.co.kr/posts/2026-09-18/beginner/</loc><lastmod>2026-09-18T00:00:00.000Z</lastmod></url>
   <url><loc>https://ai.optiwork.co.kr/posts/2026-09-19/beginner/</loc><lastmod>2026-09-19T00:00:00.000Z</lastmod></url>
@@ -46,4 +46,6 @@
   <url><loc>https://ai.optiwork.co.kr/posts/2026-10-04/beginner/</loc><lastmod>2026-10-04T00:00:00.000Z</lastmod></url>
   <url><loc>https://ai.optiwork.co.kr/posts/2026-10-05/advanced/</loc><lastmod>2026-10-05T00:00:00.000Z</lastmod></url>
   <url><loc>https://ai.optiwork.co.kr/posts/2026-10-05/beginner/</loc><lastmod>2026-10-05T00:00:00.000Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/posts/2026-10-06/advanced/</loc><lastmod>2026-10-06T00:00:00.000Z</lastmod></url>
+  <url><loc>https://ai.optiwork.co.kr/posts/2026-10-06/beginner/</loc><lastmod>2026-10-06T00:00:00.000Z</lastmod></url>
 </urlset>

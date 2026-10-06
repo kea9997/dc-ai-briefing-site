@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>닫힌 모델이 거절한 취약점 재현을 1조 파라미터 오픈 모델은 해냈다고 하는데, 종합 점수표는 38점을 줬다 · 옵티웍 AI 데일리</title><meta name="description" content="벤더가 내세운 능력과 독립 측정 사이의 간극이 하루에 세 번 드러났다 — 2일차 ‘개선’의 체감, 미스트랄 라지 4의 AA 38, 그리고 ‘리만가설 준 증명’이라는 헤드라인."><meta name="naver-site-verification" content="9bf07dca926d48d6d104d8db1a76b5cf8cb6eb6a"><meta name="theme-color" content="#0B1220"><link rel="canonical" href="https://ai.optiwork.co.kr/posts/2026-10-07/advanced/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="옵티웍 AI 데일리 RSS" href="/rss.xml"><meta name="robots" content="index,follow,max-image-preview:large"><meta name="author" content="옵티웍 AI 데일리"><meta property="og:site_name" content="옵티웍 AI 데일리"><meta property="og:title" content="닫힌 모델이 거절한 취약점 재현을 1조 파라미터 오픈 모델은 해냈다고 하는데, 종합 점수표는 38점을 줬다 · 옵티웍 AI 데일리"><meta property="og:description" content="벤더가 내세운 능력과 독립 측정 사이의 간극이 하루에 세 번 드러났다 — 2일차 ‘개선’의 체감, 미스트랄 라지 4의 AA 38, 그리고 ‘리만가설 준 증명’이라는 헤드라인."><meta property="og:type" content="article"><meta property="og:url" content="https://ai.optiwork.co.kr/posts/2026-10-07/advanced/"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://ai.optiwork.co.kr/og-default.png"><meta name="twitter:image" content="https://ai.optiwork.co.kr/og-default.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="닫힌 모델이 거절한 취약점 재현을 1조 파라미터 오픈 모델은 해냈다고 하는데, 종합 점수표는 38점을 줬다 · 옵티웍 AI 데일리"><meta name="twitter:description" content="벤더가 내세운 능력과 독립 측정 사이의 간극이 하루에 세 번 드러났다 — 2일차 ‘개선’의 체감, 미스트랄 라지 4의 AA 38, 그리고 ‘리만가설 준 증명’이라는 헤드라인."><meta property="article:published_time" content="2026-10-07T00:00:00.000Z"><meta property="article:modified_time" content="2026-10-07T00:00:00.000Z"><script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"옵티웍 AI 데일리","alternateName":"Optiwork AI Daily","url":"https://ai.optiwork.co.kr","description":"옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.","inLanguage":"ko-KR","publisher":{"@type":"Organization","@id":"https://optiwork.co.kr/#organization","name":"Optiwork","url":"https://optiwork.co.kr"}},{"@context":"https://schema.org","@type":"NewsArticle","headline":"닫힌 모델이 거절한 취약점 재현을 1조 파라미터 오픈 모델은 해냈다고 하는데, 종합 점수표는 38점을 줬다","description":"벤더가 내세운 능력과 독립 측정 사이의 간극이 하루에 세 번 드러났다 — 2일차 ‘개선’의 체감, 미스트랄 라지 4의 AA 38, 그리고 ‘리만가설 준 증명’이라는 헤드라인.","datePublished":"2026-10-07T00:00:00.000Z","dateModified":"2026-10-07T00:00:00.000Z","inLanguage":"ko-KR","mainEntityOfPage":"https://ai.optiwork.co.kr/posts/2026-10-07/advanced/","author":{"@type":"Organization","name":"옵티웍 AI 데일리","url":"https://ai.optiwork.co.kr"},"publisher":{"@type":"Organization","name":"Optiwork","url":"https://optiwork.co.kr"},"isAccessibleForFree":true}]</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-XG5G6DGSWX"></script><script>(function(){const ga4 = "G-XG5G6DGSWX";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', ga4, { anonymize_ip: true });
+    })();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&#34;token&#34;:&#34;9a74a246645d43b8bb3bb291566feb71&#34;}"></script><link rel="stylesheet" href="/_astro/about.BcuxZVoP.css"></head> <body> <a class="skip" href="#main">본문으로 건너뛰기</a> <div class="shell"> <header class="topbar"> <a class="brand" href="/"> <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"> <path d="M18 40V24l14 16 14-16v16" stroke="#F5B942" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="32" cy="18" r="4" fill="#F5B942"></circle> </svg></span> <span class="brand-text"> <strong>옵티웍 AI 데일리</strong> <span>Optiwork AI Daily · by Optiwork</span> </span> </a> <div class="topbar-actions"> <nav class="nav" aria-label="주요 메뉴"> <a href="/">브리핑</a> <a href="/archive/">아카이브</a> <a href="/topics/">주제</a> <a href="/models/">모델 고르기</a> <a href="/about/">소개</a> <a href="/faq/">FAQ</a> <a href="/rss.xml">RSS</a> </nav> <a class="nav-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer"> 텔레그램 </a> </div> </header> <main id="main">  <a class="back" href="/">← 목록</a> <article class="post"> <div class="post-level-row"> <span class="level-badge level-advanced">고급</span> <a class="sibling-link" href="/posts/2026-10-07/beginner/">같은 날 초보 버전 보기 →</a> </div> <h1>닫힌 모델이 거절한 취약점 재현을 1조 파라미터 오픈 모델은 해냈다고 하는데, 종합 점수표는 38점을 줬다</h1> <p class="meta">2026년 10월 7일 · 옵티웍 AI 데일리 · 고급</p> <div class="share-bar share-bar-top" data-share-url="https://ai.optiwork.co.kr/posts/2026-10-07/advanced/" data-share-title="닫힌 모델이 거절한 취약점 재현을 1조 파라미터 오픈 모델은 해냈다고 하는데, 종합 점수표는 38점을 줬다"> <span class="share-bar-label">공유 · 구독</span> <div class="share-row" role="group" aria-label="공유 · 구독"> <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button> <a class="share-link share-telegram-share" href="https://t.me/share/url?url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-07%2Fadvanced%2F&text=%EB%8B%AB%ED%9E%8C%20%EB%AA%A8%EB%8D%B8%EC%9D%B4%20%EA%B1%B0%EC%A0%88%ED%95%9C%20%EC%B7%A8%EC%95%BD%EC%A0%90%20%EC%9E%AC%ED%98%84%EC%9D%84%201%EC%A1%B0%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%EC%98%A4%ED%94%88%20%EB%AA%A8%EB%8D%B8%EC%9D%80%20%ED%95%B4%EB%83%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%2C%20%EC%A2%85%ED%95%A9%20%EC%A0%90%EC%88%98%ED%91%9C%EB%8A%94%2038%EC%A0%90%EC%9D%84%20%EC%A4%AC%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC" target="_blank" rel="noopener noreferrer">텔레그램에 공유</a> <a class="share-link share-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">채널 구독</a> <a class="share-link share-x" href="https://twitter.com/intent/tweet?text=%EB%8B%AB%ED%9E%8C%20%EB%AA%A8%EB%8D%B8%EC%9D%B4%20%EA%B1%B0%EC%A0%88%ED%95%9C%20%EC%B7%A8%EC%95%BD%EC%A0%90%20%EC%9E%AC%ED%98%84%EC%9D%84%201%EC%A1%B0%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%EC%98%A4%ED%94%88%20%EB%AA%A8%EB%8D%B8%EC%9D%80%20%ED%95%B4%EB%83%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%2C%20%EC%A2%85%ED%95%A9%20%EC%A0%90%EC%88%98%ED%91%9C%EB%8A%94%2038%EC%A0%90%EC%9D%84%20%EC%A4%AC%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC&url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-07%2Fadvanced%2F" target="_blank" rel="noopener noreferrer">X에 공유</a> <button type="button" class="share-link share-native" data-native-share hidden>공유하기</button> </div> <span class="share-live" data-share-live aria-live="polite"></span> </div> <div class="tldr"> <strong>한 줄 요약 (GEO)</strong> 벤더가 내세운 능력과 독립 측정 사이의 간극이 하루에 세 번 드러났다 — 2일차 ‘개선’의 체감, 미스트랄 라지 4의 AA 38, 그리고 ‘리만가설 준 증명’이라는 헤드라인. </div> <div><h2>오늘 핵심 세 가지</h2>
+<ol>
+<li><strong>Tibo 28일 2일차 = 자동 검토(Approve for me) 사용량 미차감 + 빌더 묶음, 체감 지표는 1일차의 역상.</strong> Tibo 원문(국내 번역 정리글 경유): “auto-review는 이제 포함되며 사용량을 쓰지 않는다. 사용 시 플랜의 2에서 10%가 될 수 있었다.” 함께 간소화 API, 회의 메모 연동, <button type="button" class="term" data-term="Decisions API" data-def="정해진 형식(확률·선택지·점수)으로만 답하는 빠른 분류·판정 전용 엔드포인트">Decisions API</button> 공개 베타. 추적 사이트 <a href="https://codex-resets.com/ko/tibo-28">codex-resets.com</a>은 자동 검토만 2일차로 집계했고, 반응 버튼은 1일차 👏 약 12,936 / 🤷 약 1,851 → 2일차 👏 약 1,786 / 🤷 약 5,742. 국내 정리글(조회 약 <strong>2.8천</strong>·추천하기 <strong>12</strong>·댓글 <strong>22</strong>)은 “리셋 회피” 비판과 “자동 검토가 실제로 할당량을 많이 먹었다”는 인정이 공존했습니다.</li>
+<li><strong>미스트랄 라지 4 프리뷰(HN 약 1,501): 벤더 표는 프런티어 오픈웨이트, AA 종합은 38.</strong> 1T 전체·49B 활성, Grace Blackwell 3,800장 자체 학습, 가중치 이달 말. 벤더 수치: DeepSWE v1.1 61.7%, Terminal-Bench 4 28.3%, Coding Agent Index 49.8%, AA Cyber Index 상위 5위, “취약점 재현+패치” 82%(Opus 5.5·Astra는 <strong>거절로 거의 0</strong>), Cybench 93%. 반면 AA 리더보드 라이브 값은 <strong>Intelligence 38·작업당 $1.13·약 116 tok/s</strong>로 MiMo-V2.6-Pro(46)·GLM-5.3 max(45)·Kimi K3 max(44) 아래. 같은 날 국내에선 은행 해킹 IP에서 중국산 AI 침투 에이전트 ‘아르텍스’ 흔적(헤럴드경제)이 보도돼, **“방어자는 거절하는 모델, 공격자는 덜 거절하는 모델”**이라는 미스트랄의 논리가 국내 사건과 정확히 겹쳤습니다.</li>
+<li><strong>오픈AI 수학 공개: 722편·372 패밀리·약 4,000문제·결과당 Pro 사고 약 3시간, 그러나 헤드라인은 원문보다 컸다.</strong> 국내 기사 제목 「리만가설 준 증명」과 달리 원문은 <strong>제타 함수의 Re(s) &gt; 11/12 영점 없는 영역</strong>(사람이 가독성 편집)과 <strong>CM 아벨 다양체에 대한 호지 추측</strong>을 고정 절차의 예외로 명시했습니다. Erdős Problems 운영자는 같은 날 “설명 없는 AI 풀이의 물결”에 대응해 운영 정책을 바꾼다고 밝혔습니다.</li>
+</ol>
+<hr>
+<h2>국내 — 2일차 해부, 은행 해킹, 만들며 자랑, 스코프 통제</h2>
+<h3>2일차 해부 (확인=원문 인용·추적 기록 / 비용 효과 미확인)</h3>
+<ul>
+<li><strong>자동 검토의 비용 구조:</strong> 긴 에이전트 세션에서 권한 상승이 필요한 동작마다 두 번째 에이전트가 검토하는 방식이라, 검토 호출이 많을수록 플랜 소진에 섞여 들어갔습니다. Tibo가 스스로 제시한 “2에서 10%”는 <strong>자동 검토를 켠 세션 기준 상한 범위</strong>로 읽는 게 맞고, 켜지 않던 사용자에게 효과는 0입니다. 국내 댓글 “그래서 <button type="button" class="term" data-term="풀 액세스" data-def="검토 없이 모든 명령을 바로 실행하게 두는 권한 모드">풀 액세스</button>만 쓰던 이슈가 있었다”, “토큰 먹으며 검토 vs 하위 모델로 라우팅” 논쟁이 이 지점을 정확히 짚었습니다. 실무적으로는 <strong>풀 액세스 → 자동 검토로 내려올 비용 명분이 생겼다</strong>는 게 2일차의 진짜 의미입니다.</li>
+<li><strong>반응 지표 읽기:</strong> 추적 사이트 버튼은 표본 편향(관심층·중복 클릭)이 큰 비공식 지표지만, 1일차 대비 🤷 비율이 **약 12.5% → 약 76%**로 뒤집힌 건 “체감 한도에 닿지 않는 개선은 개선으로 안 친다”는 어제 판단을 수치로 재확인합니다.</li>
+<li><strong>리셋 소문(미확인):</strong> 「티보) 리셋 예정」(07:05, 약 <strong>628</strong>, 본문 “언젠지 모름”), r/OpenAI 「New reset coming soon」, 국내 「원래 내일 리셋 예정을 투표로 돌려 선심 쓰는 척할 것」. 일정 확정 정보 없음. 국내 「조삼모사」 글(속도를 60에서 80% 깎았다가 50% 돌려줬다)은 측정 근거가 없는 주장입니다.</li>
+<li><strong>Decisions API(확인=공식 문서):</strong> <code>POST /v1/decisions</code>, 현재 <code>gpt-6-luna</code>만 지원, Responses API 대비 <strong>약 10배 빠른</strong> 타입 지정 답. 질문 타입은 <code>predicate</code>(조건 참 확률 0에서 1), <code>choice</code>(고정 선택지), <code>score</code>(순서 있는 등급의 확률 가중 평균). “몇 주 안 GA”. 어제 r/OpenAI 「Decisions API는 어디 갔나」의 답이 하루 만에 나온 셈이고, Tibo는 “앱 경험 개선에도 쓰겠다”고 했습니다 — 즉 <strong>챗GPT 내부 라우팅·분류에 Luna 기반 판정기가 들어갈 가능성</strong>입니다(해석·미확인). 어제 다룬 Chat/Work 통합·모델 선택 제거와 맞물려 볼 지점입니다.</li>
+<li><strong>API 등급(확인=OpenAI Developers X):</strong> 유료 5등급 → Build·Launch·Grow 3등급, 최상위 Grow 자격 누적 $1,000 → <strong>$500</strong>. 실제 RPM/TPM 수치는 미공개. 소규모 팀의 상위 레이트 리밋 진입이 빨라집니다.</li>
+<li><strong>Meetings 베타(확인):</strong> 맥 데스크톱 앱 Pro·Business, 요약·다음 단계를 Space에 저장, Enterprise 예정. Tibo의 사용 제안은 “회의 맥락을 쌓아 코덱스로 로드”. 자동 직결 발표는 아님(정리글도 명시). 녹취 동의·보존 정책이 먼저입니다.</li>
+</ul>
+<h3>은행 해킹과 ‘거절 비대칭’ (확인=헤럴드경제 10/06·금융당국 발표 인용 / 딥시크 실사용 미확인)</h3>
+<p>금융당국 기준 9/28에서 10/3 사이 최소 6개 은행(신한·하나·KB국민·부산·NH농협·우리)에서 해킹 시도, 유출 신한 약 25,000명·KB 119명·하나 89명. 공격들에서 동일 IP, 그 IP에서 아르텍스 흔적 → 경찰청 사이버수사국 공조. 아르텍스는 공격 목표를 분석해 하위 에이전트에 작업을 분배하는 <button type="button" class="term" data-term="자율 침투 테스트 시스템" data-def="사람 대신 에이전트들이 정찰·취약점 탐색·실행을 나눠 맡는 공격 자동화 도구">자율 침투 테스트 시스템</button>이고, 지난달 13일 딥시크 기반 웹 검색을 공식 연동. 기사 인용: 텐센트 보안 연구소의 TSecBench 에이전틱 순위 1에서 4위가 딥시크 플래시 기반, 유닛42(팔로알토)의 7월 사례 — 오픈소스 Hermes Agent + 딥시크로 8개 취약점·460개 이상 시스템 공격, 공격자는 서구 모델의 안전장치 때문에 갈아탔다는 분석. <strong>기사도 이번 사건의 딥시크 사용은 미확인</strong>이라고 적었습니다.</p>
+<p>고급 읽기: 미스트랄이 ML4 발표에서 든 논리 — “방어는 결함이 실재함을 증명하는 데서 시작하는데, 닫힌 모델은 그걸 거절한다” — 와 이 사건은 같은 비대칭입니다. 공격 쪽은 이미 <strong>덜 거절하는 모델 + 에이전트 하네스</strong>로 자동화했고, 방어 쪽은 벤더 거절 정책에 막힌다는 것. 그래서 ML4는 검증된 파트너·정부에 <strong>완화된 모더레이션과 확장 사이버 능력 버전</strong>을 먼저 돌리고 있고, r/ClaudeAI엔 「Mythos가 사이버 검증 프로그램(CVP) 계정에서 열렸다」, 「사이버 검증 프로그램 확대」가 올라왔습니다. 국내 금융권 보안팀이라면 (1) 에이전트형 공격의 요청 패턴(짧은 간격 다단계 정찰) 탐지 규칙, (2) 내부 레드팀용 모델 접근 경로(검증 프로그램 신청 또는 온프렘 오픈웨이트)를 이번 분기 과제로 올릴 근거가 생겼습니다.</p>
+<h3>만들며 자랑 — 에이전트 분업이 ‘가족 단위’로 내려왔다 (확인=본문·댓글 / 사용량 미확인)</h3>
+<ul>
+<li>「아들이랑 마크 모드 만드는 중」(약 <strong>2.1천</strong>·<strong>21</strong>·고정닉 추천 <strong>16</strong>·댓글 <strong>43</strong>): <strong>환경 세팅은 6.1 Sol에게 프롬프트 한 번 → 무인 1시간 21분 완료</strong>, 기능·아이콘·UI는 Opus 5.5. 기획은 9살 아들(주인 버프·참여자 디버프 비대칭 설계). 베드락·태블릿 사용자가 많아 배포 경로가 과제라는 후일담. 모델 분업 패턴(<strong>셋업·잡무 = Sol, 디자인·판단 = Opus</strong>)이 어제 「모르는 분야로 돈벌이 하지 마라」 계열의 “도메인 보유자 주도” 테제의 가정판입니다.</li>
+<li>「(AI 활용 쪽에) 감사합니다 (추첨)」(약 <strong>1.8천</strong>·추천하기 <strong>30</strong>·고정닉 추천 <strong>28</strong>·댓글 <strong>85</strong>): AI 제작 MMORPG, 구글 최상단·<strong>최대 동접 63·신규 계정 3천+</strong>, 해외 클라우드 도쿄 리전, 총비용 “60에서 70”(단위 미기재). 약관·처리방침은 “공공 표준 양식을 손보면 된다”는 댓글, 하단 주소 노출 지적. 1인 서비스의 <strong>컴플라이언스 표면</strong>(약관·개인정보·사업자 표기)이 바이브코딩의 마지막 병목이라는 게 반복 확인됩니다.</li>
+<li>「드디어 만들었다 영화관」(약 <strong>3.3천</strong>·<strong>18</strong>·댓글 <strong>28</strong>): 영상 직접 입력 대신 <strong>스틸 컷 약 10장 + 음성 전사/자막</strong>으로 멀티모달 컨텍스트를 압축. 구독제, “Pro 3시간에 변화 없음”, “제미나이 Pro 3시간 약 4%”. 비디오 토큰 비용을 피하는 <button type="button" class="term" data-term="키프레임 샘플링" data-def="영상 전체 대신 대표 장면 몇 장만 뽑아 넣는 방식">키프레임 샘플링</button>의 실전 사례.</li>
+<li>「딸깍으로 만든 레이싱게임」(약 <strong>1.6천</strong>·<strong>11</strong>): 강남 실도로 브라우저 오픈월드, 최대 10인 온라인, 생성 음악 라디오. 사파리 키 입력 버그 제보.</li>
+<li>「개인용 윈도우 독(슬롭)」(약 <strong>2.4천</strong>·<strong>11</strong>): Windhawk 모드 2종 + 프리셋, “에이전트에게 설치해 달라 하라”. 댓글 「설치해 달라 했더니 구글 AI 울트라가 결제됐다」(사실 여부 미확인·농담 가능성). 어제 채굴 프로그램 건에 이어 <strong>‘에이전트에게 설치 위임’의 결제·권한 리스크</strong>가 또 언급됐습니다.</li>
+</ul>
+<h3>스코프 통제와 노력 단계 (확인=글·댓글 / 체감)</h3>
+<ul>
+<li>「이 짤은 예전부터 틀린 적이 없다」(약 <strong>4.8천</strong>·<strong>33</strong>·댓글 <strong>21</strong>): ‘시킨 대로 vs 알잘딱’ 밈. 실사용 댓글 — “알잘딱의 단점은 시키지 않은 걸 해서 망치는 것, 아스트라 초기가 그랬다. 오푸스 5.5는 불쾌하게 망치는 일이 없다(클로드 코드 사용 데이터로 학습했을 것)”. 반대편 사례: 「아스트라가 너무 넓게 해석했습니다」 — 법령 MCP를 붙인 비판 작업에서 검증 범위를 스스로 넓혔다 좁히며 <strong>사용량 약 3배</strong>. 해법 댓글 “육하원칙으로, 스티어링 여러 번”.</li>
+<li>노력 단계: 「5.5 보통 뭐 쓰냐」 — “medium이 가장 효율, 중요한 리팩터링·픽스만 high”, 「오푸스 high → max로 올리면 떨어지냐」 — “6.1 Sol은 올리면 오히려 떨어지는 느낌”(미확인). AA 표로 보면 Opus 5.5는 high 54($1.82) → xhigh 56($3.46) → max 58($5.98), 6.1 Sol은 medium 48($0.21) → high 50($0.32) → xhigh 51($0.39) → max 52($0.72)로 <strong>Sol은 상단 3단계 차이가 2점 안</strong>입니다. 체감 “올려도 별 차이 없다”와 일치하는 방향(인과는 미확인).</li>
+<li>「클로드 5시간 제한은 다 쓰기 어렵네」 — 병렬로 돌려도 5시간 창 55%, 주간 20%. r/ClaudeAI 「한도 리셋 시 자동 이어서 하기」 기능 발견 글과 함께, 클로드 쪽 병목이 <strong>5시간 창보다 주간 상한</strong>으로 옮겨 가는 신호(체감).</li>
+</ul>
+<h3>구독 경제의 두 얼굴 (확인=SemiAnalysis 공개 부분·AI타임스 / 결론 수치 미확인)</h3>
+<ul>
+<li>국내 챗GPT 쪽: 「GPT가 비싸서 클로드 간다는 게 제일 웃김」 — “클로드는 채팅만 해도 사용량이 빠진다”.</li>
+<li>SemiAnalysis(10/05, 대부분 유료): <strong>“앤트로픽 구독이 오픈AI보다 5배 이상 값어치”</strong>. 공개 부분 방법론: 월 구독 = 크레딧, (모델, 토큰 타입)마다 크레딧 소모가 달라 <strong>(플랜, 모델, 워크로드) 튜플</strong>로만 가치가 정의됨, 랩은 크레딧 비용을 조용히 바꿀 수 있어 일 단위 추적 필요. 앤트로픽 추정: 구독은 매출의 약 10%지만 추론 연산의 <strong>40% 이상</strong>, MW당 블렌디드 매출을 약 3,600만 달러 낮춤. “오픈AI의 후한 리셋이 코덱스 도입 급증의 일부 원인이고, 앤트로픽은 계획했던 너프를 여러 번 철회했다”는 문장도 있습니다.</li>
+<li>동시에 디인포메이션(AI타임스 경유): MS는 직원 클로드 지출을 3분의 1 이상 줄이고 1인 월 사용 한도를 대부분 10만 달러 → 1만 달러로 낮춤, 메타 사내 클로드 코드 이용자 6만 → 3만(자체 Muse Code 6천+, MetaCode 3만+), “토큰맥싱” 억제 예산 도입.</li>
+<li>고급 읽기: 구독 가치는 개인에겐 “얼마나 많이 주냐”, 랩에겐 “연산을 얼마나 잡아먹냐”입니다. 28일 챌린지에서 리셋 대신 속도·검토 무료화가 먼저 나온 것도 이 튜플 관점에서 보면 <strong>추론 연산 단가를 덜 건드리는 개선부터</strong> 내는 순서로 읽힙니다(해석·미확인).</li>
+</ul>
+<hr>
+<h2>해외·언론 교차</h2>
+<h3>미스트랄 라지 4 — 벤더 표 vs AA (확인=공식 블로그·AA 라이브 / 벤더 수치는 벤더 주장)</h3>
+<ul>
+<li><strong>스펙:</strong> 1T 전체/49B 활성 네이티브 멀티모달, 학습·서빙 모두 유럽 자체 DC, 160개 이상 언어, RL 실행 진행 중(“포화 징후 없음”), 3천 GPU 규모 RL에서 하루 약 330억 토큰 생성 중 약 160억이 학습 가능 완료 토큰.</li>
+<li><strong>벤더 수치:</strong> DeepSWE v1.1 61.7, SWE-Atlas-QnA 59.4, Terminal-Bench 4 28.3, Coding Agent Index 49.8%(“DeepSeek V4 Pro 0813·Qwen3.8 Max 위”), AutomationBench 59.9%, AA-Briefcase 1,393 Elo, Surge 블라인드 코딩 평가 3.74로 5개 중 2위(Opus 5 4.22 다음, Kimi K3 3.59·GLM-5.3 3.60 위), Dense 200 시각 그라운딩 42% vs Astra 41%, Lakera B3 공격 저항 93.3%, 사이버 프롬프트 거절률은 오픈 모델 최고.</li>
+<li><strong>AA 라이브(10-07 서울):</strong> Intelligence <strong>38</strong>, 작업당 <strong>$1.13</strong>, 출력 약 <strong>116 tok/s</strong>, 첫 응답 약 1.46초. 종합 지수는 오픈웨이트 상위(MiMo-V2.6-Pro 46, GLM-5.3 max 45, Kimi K3 max 44)보다 6에서 8점 아래.</li>
+<li><strong>간극 해석:</strong> (1) 종합 지수는 지식·추론·수학 비중이 큰 복합 지표라 <strong>도메인 특화(사이버·법률·금융·그라운딩) 강점이 희석</strong>됩니다. (2) 프리뷰이고 RL이 진행 중이라 수치가 움직일 수 있습니다. (3) 첫 응답 1.46초·총 23초로 보아 AA 측정 구성이 <strong>긴 추론 모드가 아닐 가능성</strong>도 있습니다(AA 원표에서 추론 모드 표기 확인 못 함·미확인). 결론: <strong>ML4는 “범용 1등”이 아니라 “거절 없는 보안·문서 그라운딩 + 주권형 배포” 카드</strong>로 보는 게 숫자와 맞습니다.</li>
+<li><strong>로컬 관점:</strong> 1T/49B 활성은 4bit로도 수백 GB급이라 24GB VRAM·64GB RAM 노트북 대상이 아닙니다. 이달 말 <strong>ML4·Beam(어제)·Qwen 4(전언, 미확인)</strong> 오픈웨이트 공개가 겹치는 게 일정상 포인트입니다.</li>
+</ul>
+<h3>오픈AI 수학 공개 (확인=공식 글·openai/math README / 개별 결과 정합성 미확인)</h3>
+<ul>
+<li>722편/372 패밀리, 분야별 분류, 다수 Lean 형식화(“전부는 아님, 미형식화 결과엔 문제가 있을 수 있음”), 버전 보존·정정 이력 정책. 10개 패밀리의 <strong>추론 요약</strong> 공개: 곱셈적 함수의 2점 상관, π의 무리수 지수, 대칭·일반 말러 추측, 반정부호 임계에서의 NP-난해성, 등차수열의 준다항 상한, 표수 2의 Kaplansky 직접 유한성 추측, 희석 스핀글래스의 Mézard–Parisi 공식, 양자 하이젠베르크 강자성체의 자발 자화, <strong>자유군 인자 동형 문제</strong>, 3차원 상대론적 Vlasov–Maxwell.</li>
+<li>절차: 미공개 내부 모델, 약 4,000문제 투입, 결과당 평균 Pro 사고 약 3시간 상당. <strong>예외 두 건 명시</strong> — 제타 함수 영점 자유 영역 작업과 CM 아벨 다양체 호지 추측, 그리고 Re(s) &gt; 11/12 영역 글은 사람이 가독성 편집. IAS 수학·AI 자문그룹 권고 반영, 워크숍·콘퍼런스 지원 예정, “이 결과를 만든 모델을 책임 있게 출시하려 한다”.</li>
+<li>고급 읽기: 목록의 일부(자유군 인자 동형, 말러 추측)는 분야의 간판급 미해결 문제라 <strong>커뮤니티 검증 전까지는 ‘원고 공개’ 단계</strong>로 다뤄야 합니다. HN 반응(약 88점, 「오픈AI 수학 원고 저장소」 약 37점)은 아직 작고, Erdős Problems 블로그·와이어드 기사처럼 <strong>설명 없는 대량 결과가 인간 공동체에 주는 비용</strong> 쪽 논의가 먼저 붙었습니다. 국내 「호지 추측 증명, BSD, 리만가설(일부) 공개」(약 <strong>69</strong>)의 “BSD”는 README의 추론 요약 목록에서 확인하지 못했습니다(미확인).</li>
+</ul>
+<h3>그 밖의 1차·보도 (확인=원문 / 세부 미확인)</h3>
+<ul>
+<li><strong>니먼랩(10/05):</strong> 챗GPT 이미지가 뉴요커 만화가 15명 이상의 <strong>실제 서명</strong>을 재현. 오픈AI “버그·의도치 않은 동작 제보에 감사”. 생성물 출처 표시(어제 EU 워터마크)와 반대 방향의 사고 — <strong>가짜 출처 표시</strong> 문제입니다.</li>
+<li><strong>챗GPT 이미지 생성 옆 시각 광고(AI타임스 10/06):</strong> 이달 말 미국 일부 광고주 시험, 부적합 대화 배치 가드레일·네거티브 키워드·외부 측정 파트너.</li>
+<li><strong>메타 뮤즈(테크더트 10/06):</strong> 맥 제로데이, 권한 무시 메시지 업로드, 에이전트 사칭으로 루트 권한 탈취, 애플의 macOS 개인정보 설정 변경. 어제 위키미디어 건과 함께 <strong>에이전트 권한 모델의 실패 사례집</strong>.</li>
+<li><strong>유타 AI 처방(테크스팟 10/06):</strong> 바르는 여드름약 8종 한정, 100건 사전·400건 주간 사후·이후 10% 표본 검토의 3단계 감독 축소. 의료 에이전트의 <strong>단계적 인간 감독 해제 설계</strong> 예시.</li>
+<li><strong>알트먼 폴리티코 인터뷰(AI타임스 10/07):</strong> “앤트로픽과 근본적 세계관 차이”, 더 가벼운 규제 지지. 같은 기사: GPT-6.1 Astra 출시 보류 보도.</li>
+<li><strong>GPT-6 루프 트랜스포머 ‘유출’(미확인):</strong> r/LocalLLaMA — MS 공개 페이지에 “6.1 Sol은 세 번 대신 두 번의 추론 패스” 문구가 있었다가 삭제됐다는 주장, AA 속도(6-Sol·5.6-Sol 약 100 tok/s vs 6.1-Sol·Astra 약 60)로 같은 서빙 묶음을 추정하는 글. 오늘 AA 라이브는 Astra max 약 63·6.1 Sol max 약 59 tok/s. 아키텍처 확정 근거 아님.</li>
+<li><strong>r/ClaudeAI:</strong> 「가장 인기 있는 클로드 코드 스킬 9개에 같은 길이의 위약 텍스트를 붙여 비교 — 2개만 이겼고 1개는 위약보다 나빴다(planning-with-files 통과율 80% vs 100%)」. 스킬은 컨텍스트에 들어가는 텍스트일 뿐이라 <strong>길이 자체가 행동을 바꾼다</strong>는 대조 실험 — 스킬 도입 전 A/B의 필요성을 보여 줍니다. 그 밖에 앤트로픽 스타트업 프로그램(Team 1년 무료·크레딧 $1,000), 하이쿠 5.5 임박 전언, LiveNerf 13일차, “오푸스가 앤트로픽 API 의존성을 넣는다”(미확인).</li>
+<li><strong>r/MachineLearning:</strong> SWE-Race — 약 100개 파이썬 프로젝트의 실제 동시성 버그 188개(레이스·데드락·취소), 네트워크 차단 컨테이너·프로젝트 자체 테스트로 채점. r/LocalLLaMA 「에이전트 컨테이너 탈출 109건 분석 — 38%는 커널 제로데이가 필요 없었다」.</li>
+</ul>
+<h3>오픈웨이트·로컬 (확인=발표·RSS / 성능 독립 검증 미확인)</h3>
+<ul>
+<li><strong>24GB VRAM·64GB RAM 노트북 기준 오늘 쓸모 있는 것:</strong><ul>
+<li><strong>EmbeddingGemma 2</strong>(구글 딥마인드): 7.4억 파라미터, 텍스트·코드·이미지·영상·오디오를 하나의 768차원 공간에 매핑, 브라우저 WebGPU 데모. 로컬 <button type="button" class="term" data-term="RAG" data-def="문서를 찾아 붙여 넣은 뒤 답하게 하는 검색 증강 방식">RAG</button>의 임베딩 교체 후보로 VRAM 부담이 거의 없습니다.</li>
+<li><strong>POCKET-Darwin-180B-GGUF</strong>(국내 비드래프트, AI타임스 10/06): Qwen3.8-Flash-Next 기반 180B MoE(512 전문가 중 토큰당 10개, 활성 약 3B), 4bit 111GB, llama.cpp <strong>SSD 스트리밍</strong>. 벤더 측정 — RTX 5060 8GB + RAM 32GB 노트북 4.17 tok/s, 서버 CPU 16스레드 18.4에서 21.0 tok/s(메모리 78.8GB), MMLU-Pro 2,000문항 압축 전후 87.65% 동일. 64GB RAM이면 전량 상주는 안 되고 스트리밍 비중이 줄어드는 구간이라, 24GB VRAM 노트북에서 직접 tok/s를 재 볼 만한 후보입니다.</li>
+<li><strong>Strix Halo 128GB에서 Qwen3.8-Flash-Next vs Opus 5.5(medium)</strong> 같은 Rust 기능 구현: Opus 약 18분·$7.53·토큰 7.83M/41.5K vs 로컬 약 130분·$0 + 약 0.15kWh·20.61M/101K, 테스트 1개 vs 4개(E2E 2), 교차 리뷰에서 GPT·Flash-Next는 로컬 PR, Opus는 자기 PR 선택 → 작성자는 로컬 PR 병합. <strong>시간 7배, 품질 동급 이상</strong>이라는 트레이드오프 기록(단일 사례).</li>
+</ul>
+</li>
+<li>그 밖: Tencent Octop(셀프호스팅 멀티 에이전트 비서), CivBench(GLM-5.3이 Opus 5.5 앞섬, Qwen3.8-27B 선전), 「GLM-5.3 Flash를 수백만 줄 코드베이스 실무에 쓴다」(AA 표 42·$0.25), 「9장 P106 채굴기 54GB VRAM을 약 35달러에」, ik_llama.cpp 포크의 MoE 전문가 상주·CPU/GPU 혼합 실행.</li>
+</ul>
+<h3>오늘 판 한 문장</h3>
+<p><strong>벤더의 표, 이용자의 체감, 독립 점수표가 서로 다른 숫자를 말한 날 — 남는 건 ‘내 워크로드로 잰 숫자’뿐이다.</strong></p>
+<hr>
+<h2>목적별 모델 고르기 (한국어)</h2>
+<p><strong>확인(벤치 · AA 2026-10-07 서울 스냅샷 · 주간 재확인으로 보드 갱신):</strong></p>
+<table>
+<thead>
+<tr>
+<th>목적</th>
+<th>가장 좋음</th>
+<th>가성비</th>
+<th>가장 쌈</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>코딩·에이전트</td>
+<td>Opus 5.5 max (II 58·작업당 약 $5.98)</td>
+<td>6.1 Sol max (52·약 $0.72)</td>
+<td>Luna max (38·약 $0.07)</td>
+</tr>
+<tr>
+<td>글쓰기·긴 추론</td>
+<td>Opus 5.5 max</td>
+<td>6.1 Sol max</td>
+<td>Luna max</td>
+</tr>
+<tr>
+<td>싸게·대량</td>
+<td><strong>6.1 Sol medium (48·약 $0.21) ← 교체</strong></td>
+<td>Luna max</td>
+<td>Luna low (22·약 $0.0045)</td>
+</tr>
+<tr>
+<td>오픈웨이트 참고</td>
+<td>MiMo-V2.6-Pro (46·약 $0.13)</td>
+<td>동일</td>
+<td>(클라우드 임시) Luna low</td>
+</tr>
+</tbody></table>
+<p>보조: Sonnet 5.5 max 56(작업당 약 <strong>$7.67</strong>로 소폭 상승), Gemini 4 Argon High 53(약 $1.99), Astra max 53(약 $3.26), Fable 5.1 max 53(약 $7.63), <strong>Mistral Large 4 Preview 38(약 $1.13) 신규 행.</strong></p>
+<p><strong>오늘 바뀐 점:</strong></p>
+<ul>
+<li><strong>대량 ‘가장 좋음’ 교체:</strong> GPT-6 Sol (max, 48·$1.06) 행이 AA 라이브 표에서 보이지 않아, 같은 48점을 작업당 약 $0.21로 내는 <strong>6.1 Sol medium</strong>으로 바꿨습니다. 6.1 Sol은 xhigh 51($0.39)·high 50($0.32)도 있어 <strong>노력 단계별 가성비 사다리</strong>가 촘촘합니다.</li>
+<li><strong>Luna max 37 → 38, Sonnet max 작업당 $7.60 → $7.67</strong> 소폭 갱신.</li>
+<li><strong>ML4:</strong> 오픈 레인 앵커는 MiMo 유지(ML4는 8점 아래, 가중치 미공개). 사이버·문서 그라운딩 전용 카드로는 별도 검토 가치(벤더 수치·미확인).</li>
+<li>상단 순위(Opus·Sonnet·Astra·Argon·6.1 Sol)는 10-01과 동일.</li>
+</ul>
+<p><strong>미확인(커뮤니티 해석):</strong> 6.1 Sol 상단 노력 단계의 체감 역전, 루프 트랜스포머 가설, ML4가 오픈 판을 뒤집을 거라는 기대, “클로드 구독이 5배 낫다/더 빡빡하다”의 양극 체감.</p>
+<p>→ <a href="/models/">목적별 모델 고르기</a> · <a href="https://artificialanalysis.ai/leaderboards/models">AA 리더보드</a> · <a href="https://mistral.ai/news/mistral-large-4/">Mistral Large 4 발표</a></p>
+<hr>
+<h2>오늘이 의미하는 것 · 바꾸지 말 것</h2>
+<p><strong>의미:</strong></p>
+<ul>
+<li>28일 챌린지는 “개선의 정의”를 두고 벤더와 이용자가 공개적으로 채점하는 장이 됐고, 추적 사이트의 반응 비율이 <strong>사실상의 NPS</strong>처럼 쓰이기 시작했습니다. 2일차는 비용 구조상 의미 있는 변경이었지만, 대다수에게 체감 한도와 무관했습니다.</li>
+<li><strong>거절 정책이 경쟁 축</strong>이 됐습니다. 공격자는 덜 거절하는 모델로 은행을 두드리고, 미스트랄은 “우리는 방어자를 위해 거절하지 않는다”를 판매 논리로 내세우며, 앤트로픽·오픈AI는 검증 프로그램으로 문을 연 만큼만 엽니다.</li>
+<li>결과물의 양이 검증 능력을 앞질렀습니다 — 수학 722편, AI 버그 제보(어제 구글), 설명 없는 Erdős 풀이. <strong>검증 비용을 누가 지느냐</strong>가 다음 쟁점입니다.</li>
+</ul>
+<p><strong>바꾸지 말 것:</strong></p>
+<ul>
+<li>자동 검토 무료화를 이유로 <strong>풀 액세스 정책을 바로 넓히지 말 것.</strong> 반대로, 풀 액세스를 쓰던 팀은 자동 검토로 내려올 근거가 생겼으니 하루 측정 후 전환.</li>
+<li>ML4 벤더 표로 <strong>보안 스택·오픈 레인을 교체하지 말 것.</strong> 가중치 공개·독립 평가 후.</li>
+<li>“리만가설 준 증명” 류 헤드라인을 <strong>사내 보고·마케팅에 인용하지 말 것.</strong> 원문 범위(영점 자유 영역, CM 경우)로만.</li>
+<li>Decisions API를 <strong>프로덕션 라우팅에 바로 넣지 말 것.</strong> 베타·Luna 단일 모델, 오분류 비용부터 측정.</li>
+<li>인기 스킬·에이전트 템플릿을 <strong>위약 대조 없이 전사 배포하지 말 것.</strong></li>
+</ul>
+<hr>
+<h2>시도 후보 (고급)</h2>
+<ol>
+<li><strong>자동 검토 vs 풀 액세스 A/B(30분).</strong> 같은 에이전트 작업을 두 모드로 돌려 벽시계 시간·승인 대기 횟수·주간 % 차감을 기록. 2일차 이후 검토 비용이 0이면 기본값을 자동 검토로.</li>
+<li><strong>Decisions API 판정기 시험(40분).</strong> 고객 문의 100건에 <code>choice</code>(부서)와 <code>predicate</code>(긴급 여부)를 걸어 기존 Responses+구조화 출력 분류와 지연·정확도·비용 비교. 확률 임계값별 사람 검토 비율도 산출.</li>
+<li><strong>노력 단계 사다리 측정(30분).</strong> 대표 작업 3개 × 6.1 Sol medium/high/xhigh/max로 품질·시간·토큰 비교. AA상 2점 안의 차이가 내 작업에서도 그런지 확인하고 기본 단계를 정하기.</li>
+<li><strong>스킬 위약 대조(30분).</strong> 팀이 쓰는 스킬 하나를 같은 길이의 무관 텍스트로 바꿔 10회씩 돌려 통과율·비용 비교. 이기지 못하면 제거.</li>
+<li><strong>에이전트형 공격 탐지 규칙 초안(40분, 보안 담당).</strong> 단일 IP·세션의 짧은 간격 다단계 정찰(디렉터리 열거 → 버전 탐지 → 익스플로잇 시도) 시퀀스를 WAF·SIEM 규칙으로 작성하고 지난 2주 로그에 소급 적용.</li>
+<li><strong>로컬 MoE 스트리밍 측정(40분, 24GB VRAM·64GB RAM).</strong> POCKET-Darwin-180B-GGUF 또는 Qwen3.8-Flash-Next를 최신 llama.cpp로 띄워 SSD 스트리밍 on/off·컨텍스트 길이별 tok/s 기록. 같은 작업을 클라우드 6.1 Sol medium과 시간·비용 비교.</li>
+<li><strong>EmbeddingGemma 2 교체 실험(30분).</strong> 기존 로컬 RAG 임베딩을 교체해 같은 질의 세트의 상위 5 적중률 비교, 이미지 포함 문서 검색도 시험.</li>
+</ol>
+<hr>
+<h2>소스 범위</h2>
+<ul>
+<li><strong>국내:</strong> AI 활용·챗GPT 갤러리 모바일 수집(2026-10-07 07:50 서울, 후보 60·오류 없음) + 상위·신규 글 본문·댓글 추가 열람(약 28건). 욕설 섞인 제목·댓글은 뜻만 살려 옮김.</li>
+<li><strong>해외:</strong> 레딧 r/ChatGPT·r/OpenAI·r/ClaudeAI·r/LocalLLaMA·r/MachineLearning 일간 상위 RSS(첫 요청 403·429 → 브라우저 UA 재요청 성공), HN 최근 하루 상위(Algolia).</li>
+<li><strong>1차·보도:</strong> Mistral 「Introducing Mistral Large 4」(10/06), OpenAI 「Sharing AI progress in mathematics」(10/06)·github.com/openai/math README, OpenAI Decisions API 문서, codex-resets.com 28일 기록, Tibo·OpenAI Developers·ChatGPT X 글(국내 번역 정리글 경유, X 원문 직접 열람은 안 함), 헤럴드경제(10/06), 니먼랩(10/05), 테크더트(10/06), 테크스팟(10/06), Erdős Problems 블로그(10/06), SemiAnalysis(10/05, 공개 부분), AI타임스(10/06·10/07 여러 건).</li>
+<li><strong>벤치:</strong> Artificial Analysis 리더보드 2026-10-07 서울 라이브 값(보드 갱신: 대량 칸 교체·ML4 행 추가·소폭 수치 갱신).</li>
+<li><strong>라벨:</strong> 1차 문서·공식 발표·보도 = 확인, 벤더 벤치 = 확인(벤더 주장으로 표기), 이용자 체감·댓글 해석·전언·유출 주장 = 미확인.</li>
+</ul>
+</div> <div class="share-bar share-bar-bottom" data-share-url="https://ai.optiwork.co.kr/posts/2026-10-07/advanced/" data-share-title="닫힌 모델이 거절한 취약점 재현을 1조 파라미터 오픈 모델은 해냈다고 하는데, 종합 점수표는 38점을 줬다"> <span class="share-bar-label">공유 · 구독</span> <div class="share-row" role="group" aria-label="공유 · 구독"> <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button> <a class="share-link share-telegram-share" href="https://t.me/share/url?url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-07%2Fadvanced%2F&text=%EB%8B%AB%ED%9E%8C%20%EB%AA%A8%EB%8D%B8%EC%9D%B4%20%EA%B1%B0%EC%A0%88%ED%95%9C%20%EC%B7%A8%EC%95%BD%EC%A0%90%20%EC%9E%AC%ED%98%84%EC%9D%84%201%EC%A1%B0%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%EC%98%A4%ED%94%88%20%EB%AA%A8%EB%8D%B8%EC%9D%80%20%ED%95%B4%EB%83%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%2C%20%EC%A2%85%ED%95%A9%20%EC%A0%90%EC%88%98%ED%91%9C%EB%8A%94%2038%EC%A0%90%EC%9D%84%20%EC%A4%AC%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC" target="_blank" rel="noopener noreferrer">텔레그램에 공유</a> <a class="share-link share-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">채널 구독</a> <a class="share-link share-x" href="https://twitter.com/intent/tweet?text=%EB%8B%AB%ED%9E%8C%20%EB%AA%A8%EB%8D%B8%EC%9D%B4%20%EA%B1%B0%EC%A0%88%ED%95%9C%20%EC%B7%A8%EC%95%BD%EC%A0%90%20%EC%9E%AC%ED%98%84%EC%9D%84%201%EC%A1%B0%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%EC%98%A4%ED%94%88%20%EB%AA%A8%EB%8D%B8%EC%9D%80%20%ED%95%B4%EB%83%88%EB%8B%A4%EA%B3%A0%20%ED%95%98%EB%8A%94%EB%8D%B0%2C%20%EC%A2%85%ED%95%A9%20%EC%A0%90%EC%88%98%ED%91%9C%EB%8A%94%2038%EC%A0%90%EC%9D%84%20%EC%A4%AC%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC&url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-07%2Fadvanced%2F" target="_blank" rel="noopener noreferrer">X에 공유</a> <button type="button" class="share-link share-native" data-native-share hidden>공유하기</button> </div> <span class="share-live" data-share-live aria-live="polite"></span> </div> <div class="post-end-cta"> <p class="post-end-cta-label">내일 아침에도 보려면</p> <a class="btn-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">
+텔레그램으로 매일 받기
+</a> </div> </article>  </main> <section class="net" aria-labelledby="net-heading"> <div class="net-head"> <p class="net-kicker">Optiwork</p> <h2 id="net-heading">AI 소식, 직접 활용해 보려면</h2> <p class="net-lead">옵티웍이 함께 운영합니다. 실행 환경을 살펴보고, 아이디어를 검토하고, 실제 적용 사례로 이어가세요.</p> </div> <div class="net-grid"> <a class="net-card" href="https://optiwork.co.kr" rel="noopener noreferrer"> <div class="net-card-top"> <strong class="net-name">Optiwork</strong> <span class="net-arrow" aria-hidden="true">↗</span> </div> <span class="net-host">optiwork.co.kr</span> <p class="net-blurb">제조·중소기업용 홈페이지·웹앱, AI 업무 자동화, ERP 연동과 IT 운영</p> </a><a class="net-card" href="https://idea.optiwork.co.kr" rel="noopener noreferrer"> <div class="net-card-top"> <strong class="net-name">아이디어 성적표</strong> <span class="net-arrow" aria-hidden="true">↗</span> </div> <span class="net-host">idea.optiwork.co.kr</span> <p class="net-blurb">사업 아이디어의 시장성·차별성·수익성·실행 난이도를 AI 성적표로 정리</p> </a><a class="net-card" href="https://llm.optiwork.co.kr" rel="noopener noreferrer"> <div class="net-card-top"> <strong class="net-name">로컬 LLM GPU 픽커</strong> <span class="net-arrow" aria-hidden="true">↗</span> </div> <span class="net-host">llm.optiwork.co.kr</span> <p class="net-blurb">엔비디아 GPU VRAM·AI 스펙과 신품·중고가로 로컬 LLM용 카드 고르기</p> </a> </div> <p class="net-lead"><a href="https://optiwork.co.kr/projects">옵티웍 전체 서비스와 개발 사례 →</a></p> </section> <footer class="footer"> <div><strong>옵티웍 AI 데일리</strong> — 국내·해외 AI 커뮤니티 하루 동향</div> <div class="footer-telegram"> <a class="btn-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">
+텔레그램에서 매일 받기 · @opti_ai_daily </a> </div> <div><a href="/models/">모델 고르기</a> · <a href="/archive/">아카이브</a> · <a href="/topics/">주제</a> · <a href="/weekly/">주간</a></div> <div>본문 속 점선 용어는 클릭하면 쉬운 설명이 나옵니다. · <a href="https://optiwork.co.kr">Optiwork</a></div> <div>© 2026 Optiwork · <a href="https://optiwork.co.kr">optiwork.co.kr</a></div> </footer> </div> <script>
+document.addEventListener('click', (e) => {
+  const t = e.target;
+  if (!(t instanceof Element)) return;
+  const btn = t.closest('.term');
+  document.querySelectorAll('.term-pop').forEach((n) => n.remove());
+  if (!btn) return;
+  e.preventDefault();
+  const term = btn.getAttribute('data-term') || '';
+  const def = btn.getAttribute('data-def') || '';
+  const pop = document.createElement('div');
+  pop.className = 'term-pop';
+  pop.innerHTML = '<strong></strong><span></span>';
+  pop.querySelector('strong').textContent = term;
+  pop.querySelector('span').textContent = def;
+  document.body.appendChild(pop);
+  const r = btn.getBoundingClientRect();
+  let left = r.left, top = r.bottom + 8;
+  const pw = pop.offsetWidth, ph = pop.offsetHeight;
+  if (left + pw > window.innerWidth - 8) left = window.innerWidth - pw - 8;
+  if (left < 8) left = 8;
+  if (top + ph > window.innerHeight - 8) top = r.top - ph - 8;
+  pop.style.left = left + 'px';
+  pop.style.top = top + 'px';
+});
+</script> </body></html> <script>
+  (function () {
+    function wireShareBars() {
+      document.querySelectorAll('[data-share-url]').forEach(function (bar) {
+        if (bar.dataset.wired === '1') return;
+        bar.dataset.wired = '1';
+
+        var live = bar.querySelector('[data-share-live]');
+        var copyBtn = bar.querySelector('[data-copy-link]');
+        var nativeBtn = bar.querySelector('[data-native-share]');
+        var url = bar.dataset.shareUrl || window.location.href;
+        var title = bar.dataset.shareTitle || document.title;
+
+        if (nativeBtn && typeof navigator.share === 'function') {
+          nativeBtn.hidden = false;
+          nativeBtn.addEventListener('click', function () {
+            navigator.share({ title: title, url: url, text: title }).catch(function () {});
+          });
+        }
+
+        if (copyBtn) {
+          copyBtn.addEventListener('click', async function () {
+            var label = copyBtn.textContent;
+            try {
+              await navigator.clipboard.writeText(url);
+              copyBtn.textContent = '복사됨';
+              if (live) live.textContent = '링크가 복사되었습니다';
+            } catch (e) {
+              copyBtn.textContent = '복사 실패';
+              if (live) live.textContent = '복사에 실패했습니다';
+            }
+            window.setTimeout(function () {
+              copyBtn.textContent = label || '링크 복사';
+              if (live) live.textContent = '';
+            }, 1600);
+          });
+        }
+      });
+    }
+    wireShareBars();
+  })();
+</script>

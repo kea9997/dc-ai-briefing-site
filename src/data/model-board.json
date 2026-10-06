@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-01",
-  "updatedLabel": "2026-10-01 (서울)",
+  "updated": "2026-10-07",
+  "updatedLabel": "2026-10-07 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "articleUrl": "https://artificialanalysis.ai/models/gemini-4-argon",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. DevDay D+1(10-01) 스냅샷: 구글 Gemini 4 Argon (High)이 AA Intelligence Index 약 53·작업당 약 $1.99·API $2/$10로 보드에 올랐고, GPT-6 Astra(max·53)와 점수대는 겹칩니다. 다만 공개는 신뢰 사이버 파트너·정부 사전평가 중심의 **단계 롤아웃**이라 일반 채팅/API 전면 개방은 아직 아닙니다. 코딩 가성비 앵커는 여전히 GPT-6.1 Sol (max·약 52·작업당 약 $0.72). 종합 1위 Opus 5.5(58), 2위 Sonnet 5.5(56·max 작업당 약 $7.60 주의). 대량·초저가는 Luna.",
-  "codingNote": "AA 라이브(10-01 서울): Gemini 4 Argon (High) Intelligence ~53 · Cost/Task ~$1.99 · API $2/$10 /1M in/out(벤더 도입가·AA 페이지). GPT-6.1 Sol (max) ~52 · ~$0.72 · $2/$10 — 코딩 가성비 앵커 유지. Astra (max) ~53. Argon은 긴 출력(벤더 주장 최대 1M output)·사이버/실세계 SWE 강점 주장(벤더). Coding Agent Index 전용 Argon 수치는 이 스냅샷에서 미확인. Sonnet 5.5 max II 56·작업당 ~$7.60 Pareto 주의(09-29 보드 유지).",
+  "takeaway": "할 일부터 고르세요. 10-07 주간 재확인: 순위표 상단은 그대로입니다 — 종합 1위 Opus 5.5(58), 2위 Sonnet 5.5(56·max 작업당 약 $7.67 주의), GPT 쪽 최고 Astra(max·53), 코딩 가성비 앵커 GPT-6.1 Sol(max·약 52·작업당 약 $0.72). 새로 올라온 Mistral Large 4 Preview(10-06 공개 프리뷰·1T/49B 활성·가중치 이달 말 예정)는 AA 종합 지수 약 38·작업당 약 $1.13으로 벤더가 강조한 사이버·법률·금융 강점과 달리 종합 점수는 오픈웨이트 앵커 MiMo-V2.6-Pro(46)보다 아래입니다. 대량 작업의 품질 바닥선 카드는 AA 표에서 더 이상 보이지 않는 GPT-6 Sol(max) 대신 GPT-6.1 Sol(medium·48·작업당 약 $0.21)로 교체했습니다. 초저가 대량은 여전히 Luna.",
+  "codingNote": "AA 라이브(10-07 서울): GPT-6.1 Sol (max) II ~52 · 작업당 ~$0.72 — 코딩 가성비 앵커 유지(xhigh 51·$0.39, high 50·$0.32, medium 48·$0.21). Opus 5.5 max 58·$5.98, Sonnet 5.5 max 56·$7.67, Astra max 53·$3.26, Gemini 4 Argon (High) 53·$1.99. Mistral Large 4 Preview II ~38·$1.13·약 116 tok/s — 벤더는 Coding Agent Index 49.8%·AA Cyber Index 상위 5위를 주장(벤더 수치, 이 스냅샷에서 AA 원표로 별도 확인 못 함). Tibo 28일 1일차 ‘속도 50%↑’ 뒤 AA 중앙값 출력 속도는 Astra max 약 63 tok/s, 6.1 Sol max 약 59 tok/s로 표시(측정 시점 혼재 가능).",
   "lanes": [
     {
       "id": "all",
@@ -51,7 +51,7 @@
             "short": "Opus 5.5",
             "why": "종합 Intelligence 1위(58). Sonnet 5.5(56)가 바짝 쫓지만, 절대 지능·깊은 에이전트는 여전히 Opus 우선.",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
-            "caveat": "비쌈. Sonnet max는 점수는 가깝지만 작업당 ~$7.60으로 더 비쌀 수 있음."
+            "caveat": "비쌈. Sonnet max는 점수는 가깝지만 작업당 ~$7.67으로 더 비쌀 수 있음."
           },
           "value": {
             "name": "GPT-6.1 Sol (max)",
@@ -64,7 +64,7 @@
             "name": "GPT-6 Luna (max)",
             "short": "Luna (max)",
             "why": "작업당 약 $0.07로 저렴. 초안·반복 수정용.",
-            "evidence": "AA Coding Agent ~41(기사) · Intelligence 37 · 작업당 $0.07",
+            "evidence": "AA Coding Agent ~41(기사) · Intelligence 38 · 작업당 $0.07",
             "caveat": "코딩 지수가 Sol보다 낮음. 어려운 에이전트는 Sol/Opus로 올리는 편이 안전."
           }
         },
@@ -80,7 +80,7 @@
             "name": "Claude Sonnet 5.5 (max+fallback)",
             "short": "Sonnet 5.5",
             "why": "Intelligence 56으로 Opus에 2점차. Anthropic·AA 모두 에이전트 코딩·지식업무에서 Opus에 근접한다고 밝힘. Claude 구독 코딩의 새 실무 후보.",
-            "evidence": "AA Intelligence 56 · 작업당 $7.60(max) · AA 기사: high effort가 Sol max와 비슷한 Cost/Task 구간",
+            "evidence": "AA Intelligence 56 · 작업당 $7.67(max) · AA 기사: high effort가 Sol max와 비슷한 Cost/Task 구간",
             "caveat": "max는 출력 토큰이 매우 많아 작업당 비용이 Opus보다 클 수 있음. 구독 UI의 잔량%로 먼저 재세요."
           },
           "cheap": {
@@ -110,7 +110,7 @@
             "name": "GPT-6 Luna (max)",
             "short": "Luna (max)",
             "why": "작업당 약 $0.07. 초안·반복 수정용. 더 싸면 Luna (low).",
-            "evidence": "AA Coding Agent ~41(기사) · Intelligence 37 · 작업당 $0.07",
+            "evidence": "AA Coding Agent ~41(기사) · Intelligence 38 · 작업당 $0.07",
             "caveat": "어려운 에이전트는 Sol/Astra로."
           }
         }
@@ -140,7 +140,7 @@
             "name": "GPT-6 Luna (max)",
             "short": "Luna (max)",
             "why": "짧은 답·초안·요약형 글에 초저가.",
-            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "evidence": "AA Intelligence 38 · 작업당 $0.07",
             "caveat": "긴 추론 품질은 상위 모델 대비 약함. 최종본은 Sol/Opus 권장."
           }
         },
@@ -156,7 +156,7 @@
             "name": "Claude Sonnet 5.5 (max+fallback)",
             "short": "Sonnet 5.5",
             "why": "56점·지식업무(GDPval/AA-Briefcase)에서 Opus와 거의 동률(AA). Claude 글쓰기·문서 작업의 새 가성비·실무 카드.",
-            "evidence": "AA Intelligence 56 · 작업당 $7.60(max) · GDPval-AA 1844 vs Opus 1846(AA 기사)",
+            "evidence": "AA Intelligence 56 · 작업당 $7.67(max) · GDPval-AA 1844 vs Opus 1846(AA 기사)",
             "caveat": "max 토큰 다소비. 초안은 low/medium, 마무리는 high/max 또는 Opus."
           },
           "cheap": {
@@ -186,7 +186,7 @@
             "name": "GPT-6 Luna (max)",
             "short": "Luna (max)",
             "why": "짧은 글·초안·요약 초저가.",
-            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "evidence": "AA Intelligence 38 · 작업당 $0.07",
             "caveat": "긴 논리 최종본은 Sol/Astra 권장."
           }
         }
@@ -199,25 +199,25 @@
       "lanes": {
         "all": {
           "best": {
-            "name": "GPT-6 Sol (max)",
-            "short": "Sol (max)",
-            "why": "대량이어도 품질 바닥선이 필요할 때. Luna보다 비싸지만 실수·재시도가 줄면 총비용이 나을 수 있음.",
-            "evidence": "AA Intelligence 48 · 작업당 $1.06",
-            "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음."
+            "name": "GPT-6.1 Sol (medium)",
+            "short": "6.1 Sol (medium)",
+            "why": "대량이어도 품질 바닥선이 필요할 때. 10-07 AA 표에서 GPT-6 Sol(max)이 보이지 않아 같은 점수대(48)를 훨씬 싼 작업당 비용으로 내는 6.1 Sol medium으로 교체.",
+            "evidence": "AA Intelligence 48 · 작업당 $0.21",
+            "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음. 구독 화면에서 medium 선택지가 보이는지 먼저 확인."
           },
           "value": {
             "name": "GPT-6 Luna (max)",
             "short": "Luna (max)",
             "why": "작업당 약 $0.07 — 대량 구간의 기본 가성비.",
-            "evidence": "AA Intelligence 37 · 작업당 $0.07",
-            "caveat": "실패·재시도가 잦으면 Sol로 올리는 편이 쌀 수 있음."
+            "evidence": "AA Intelligence 38 · 작업당 $0.07",
+            "caveat": "실패·재시도가 잦으면 6.1 Sol (medium)로 올리는 편이 쌀 수 있음."
           },
           "cheap": {
             "name": "GPT-6 Luna (low)",
             "short": "Luna (low)",
             "why": "가장 싼 티어. 초단문·분류·단순 추출용.",
             "evidence": "AA 기사 기준 작업당 약 $0.0045 대역(티어·모드에 따라 다름)",
-            "caveat": "Intelligence 수치는 max 티어(37)와 다름. 품질 민감 작업에는 비권장."
+            "caveat": "Intelligence 수치는 max 티어(38)와 다름. 품질 민감 작업에는 비권장."
           }
         },
         "claude": {
@@ -245,18 +245,18 @@
         },
         "openai": {
           "best": {
-            "name": "GPT-6 Sol (max)",
-            "short": "Sol (max)",
-            "why": "대량이어도 품질 바닥선이 필요할 때 GPT 쪽 상한.",
-            "evidence": "AA Intelligence 48 · 작업당 $1.06",
-            "caveat": "양 위주면 Luna. 재시도 비용까지 보면 Sol이 쌀 수 있음."
+            "name": "GPT-6.1 Sol (medium)",
+            "short": "6.1 Sol (medium)",
+            "why": "대량이어도 품질 바닥선이 필요할 때. 10-07 AA 표에서 GPT-6 Sol(max)이 보이지 않아 같은 점수대(48)를 훨씬 싼 작업당 비용으로 내는 6.1 Sol medium으로 교체.",
+            "evidence": "AA Intelligence 48 · 작업당 $0.21",
+            "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음. 구독 화면에서 medium 선택지가 보이는지 먼저 확인."
           },
           "value": {
             "name": "GPT-6 Luna (max)",
             "short": "Luna (max)",
             "why": "대량 구간의 GPT 기본 가성비.",
-            "evidence": "AA Intelligence 37 · 작업당 $0.07",
-            "caveat": "실패·재시도가 잦으면 Sol."
+            "evidence": "AA Intelligence 38 · 작업당 $0.07",
+            "caveat": "실패·재시도가 잦으면 6.1 Sol (medium)."
           },
           "cheap": {
             "name": "GPT-6 Luna (low)",
@@ -279,7 +279,7 @@
             "short": "MiMo-V2.6-Pro",
             "why": "이 스냅샷에서 오픈 웨이트 참고 앵커(Intelligence 46).",
             "evidence": "AA Intelligence 46 · 작업당 $0.13(호스팅 참고가)",
-            "caveat": "클라우드 Opus/Astra를 대체하라는 신호가 아님. 추격 격차 측정용."
+            "caveat": "클라우드 Opus/Astra를 대체하라는 신호가 아님. 10-06 공개 프리뷰 Mistral Large 4는 AA 약 38(작업당 약 $1.13)로 아직 이 앵커 아래이고 가중치는 이달 말 예정."
           },
           "value": {
             "name": "MiMo-V2.6-Pro (open weights ref)",
@@ -331,7 +331,7 @@
             "name": "GPT-6 Luna (max)",
             "short": "Luna (max) · 실무 대안",
             "why": "로컬 대기 중 클라우드로 초안·전처리할 때 GPT 쪽 실무 대안.",
-            "evidence": "AA Intelligence 37 · 작업당 $0.07",
+            "evidence": "AA Intelligence 38 · 작업당 $0.07",
             "caveat": "오픈웨이트·로컬이 아님."
           },
           "cheap": {
@@ -366,7 +366,7 @@
       "name": "Claude Sonnet 5.5 (max+fallback)",
       "creator": "Anthropic",
       "intelligence": 56,
-      "costPerTask": 7.6,
+      "costPerTask": 7.67,
       "note": "09-28 출시 · AA #2 · 토큰 다소비"
     },
     {
@@ -404,15 +404,15 @@
       "creator": "OpenAI",
       "intelligence": 52,
       "costPerTask": 0.72,
-      "note": "DevDay 09-29 · Astra(53) 근접 · $/task↓ · Work/Codex 우선(채팅 미노출 가능) · 코딩 가성비 앵커"
+      "note": "DevDay 09-29 · Astra(53) 근접 · $/task↓ · 코딩 가성비 앵커 · 10-05 기본 속도 약 50%↑(Tibo)"
     },
     {
       "rank": 9,
-      "name": "GPT-6 Sol (max)",
+      "name": "GPT-6.1 Sol (medium)",
       "creator": "OpenAI",
       "intelligence": 48,
-      "costPerTask": 1.06,
-      "note": "Coding Agent ~57 · 가성비 · 후속은 6.1 Sol"
+      "costPerTask": 0.21,
+      "note": "10-07 교체 · 대량 품질 바닥선 · GPT-6 Sol(max) 행은 AA 표에서 미표시"
     },
     {
       "rank": 10,
@@ -432,9 +432,17 @@
     },
     {
       "rank": 12,
+      "name": "Mistral Large 4 Preview",
+      "creator": "Mistral",
+      "intelligence": 38,
+      "costPerTask": 1.13,
+      "note": "10-06 공개 프리뷰 · 1T 전체/49B 활성 · 가중치 이달 말 예정 · 벤더 벤치 강점 vs AA 종합 38"
+    },
+    {
+      "rank": 13,
       "name": "GPT-6 Luna (max)",
       "creator": "OpenAI",
-      "intelligence": 37,
+      "intelligence": 38,
       "costPerTask": 0.07,
       "note": "초저가·대량"
     }

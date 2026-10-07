@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-07",
-  "updatedLabel": "2026-10-07 (서울)",
+  "updated": "2026-10-08",
+  "updatedLabel": "2026-10-08 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
-  "articleUrl": "https://artificialanalysis.ai/models/gemini-4-argon",
+  "articleUrl": "https://www.anthropic.com/claude-haiku-5-5",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 10-07 주간 재확인: 순위표 상단은 그대로입니다 — 종합 1위 Opus 5.5(58), 2위 Sonnet 5.5(56·max 작업당 약 $7.67 주의), GPT 쪽 최고 Astra(max·53), 코딩 가성비 앵커 GPT-6.1 Sol(max·약 52·작업당 약 $0.72). 새로 올라온 Mistral Large 4 Preview(10-06 공개 프리뷰·1T/49B 활성·가중치 이달 말 예정)는 AA 종합 지수 약 38·작업당 약 $1.13으로 벤더가 강조한 사이버·법률·금융 강점과 달리 종합 점수는 오픈웨이트 앵커 MiMo-V2.6-Pro(46)보다 아래입니다. 대량 작업의 품질 바닥선 카드는 AA 표에서 더 이상 보이지 않는 GPT-6 Sol(max) 대신 GPT-6.1 Sol(medium·48·작업당 약 $0.21)로 교체했습니다. 초저가 대량은 여전히 Luna.",
-  "codingNote": "AA 라이브(10-07 서울): GPT-6.1 Sol (max) II ~52 · 작업당 ~$0.72 — 코딩 가성비 앵커 유지(xhigh 51·$0.39, high 50·$0.32, medium 48·$0.21). Opus 5.5 max 58·$5.98, Sonnet 5.5 max 56·$7.67, Astra max 53·$3.26, Gemini 4 Argon (High) 53·$1.99. Mistral Large 4 Preview II ~38·$1.13·약 116 tok/s — 벤더는 Coding Agent Index 49.8%·AA Cyber Index 상위 5위를 주장(벤더 수치, 이 스냅샷에서 AA 원표로 별도 확인 못 함). Tibo 28일 1일차 ‘속도 50%↑’ 뒤 AA 중앙값 출력 속도는 Astra max 약 63 tok/s, 6.1 Sol max 약 59 tok/s로 표시(측정 시점 혼재 가능).",
+  "takeaway": "할 일부터 고르세요. 10-08 갱신(신규 모델·가격 개편): 앤트로픽이 10-07 Claude Haiku 5.5를 내고 Sonnet 5.5 캐시 읽기 가격을 절반으로 내렸습니다. AA 라이브 기준 Haiku 5.5(max)는 지능 지수 43·작업당 약 $0.21, xhigh 41·약 $0.12, high 38·약 $0.08 — Claude만 쓰는 사람의 ‘싸게·대량’ 칸이 처음으로 Opus low($0.55)에서 Haiku로 내려왔습니다. Sonnet 5.5(max)는 점수 56 그대로에 작업당 약 $7.67 → 약 $5.46으로 낮아져 Opus max($5.98)보다 싸졌습니다. 종합 1위 Opus 5.5(58), GPT 쪽 최고 Astra(max·53), 코딩 가성비 앵커 GPT-6.1 Sol(max·52·약 $0.72), 대량 품질 바닥선 6.1 Sol(medium·48·약 $0.21), 초저가 Luna는 그대로입니다. 전체 탭 대량 칸은 같은 $0.21에 6.1 Sol medium(48)이 Haiku max(43)보다 높아 유지합니다.",
+  "codingNote": "AA 라이브(10-08 서울): GPT-6.1 Sol (max) II ~52 · 작업당 ~$0.72 — 코딩 가성비 앵커 유지(xhigh 51·$0.39, high 50·$0.32, medium 48·$0.21). Opus 5.5 max 58·$5.98, Sonnet 5.5 max 56·$5.46(10-07 캐시 읽기 가격 절반 뒤 $7.67에서 하락), Astra max 53·$3.26, Gemini 4 Argon (High) 53·$1.99(여전히 단계 롤아웃). 신규 Claude Haiku 5.5: max 43·$0.21 · xhigh 41·$0.12 · high 38·$0.08 · medium 34·$0.05 · low 29·$0.02, 출력 약 137~243 tok/s. 벤더 표: Terminal-Bench 4.0 39.2%(Sonnet 5.5 70.6%), FrontierCode 1.1 46.4%(GPT-6 Luna 42.4%) — 복잡한 에이전트 코딩은 여전히 Sonnet·Opus, Haiku는 서브에이전트·요약·분류용(벤더 설명). 가격: 입력 $0.10·출력 $0.50 /1M(프롬프트 10만 토큰 이하), 10만 초과 시 5배($0.50·$2.50).",
   "lanes": [
     {
       "id": "all",
@@ -51,7 +51,7 @@
             "short": "Opus 5.5",
             "why": "종합 Intelligence 1위(58). Sonnet 5.5(56)가 바짝 쫓지만, 절대 지능·깊은 에이전트는 여전히 Opus 우선.",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
-            "caveat": "비쌈. Sonnet max는 점수는 가깝지만 작업당 ~$7.67으로 더 비쌀 수 있음."
+            "caveat": "비쌈. Sonnet max는 10-08 기준 작업당 ~$5.46으로 Opus보다 약간 싸고 점수는 2점 아래."
           },
           "value": {
             "name": "GPT-6.1 Sol (max)",
@@ -80,15 +80,15 @@
             "name": "Claude Sonnet 5.5 (max+fallback)",
             "short": "Sonnet 5.5",
             "why": "Intelligence 56으로 Opus에 2점차. Anthropic·AA 모두 에이전트 코딩·지식업무에서 Opus에 근접한다고 밝힘. Claude 구독 코딩의 새 실무 후보.",
-            "evidence": "AA Intelligence 56 · 작업당 $7.67(max) · AA 기사: high effort가 Sol max와 비슷한 Cost/Task 구간",
-            "caveat": "max는 출력 토큰이 매우 많아 작업당 비용이 Opus보다 클 수 있음. 구독 UI의 잔량%로 먼저 재세요."
+            "evidence": "AA Intelligence 56 · 작업당 $5.46(max, 10-07 캐시 읽기 가격 절반 뒤 $7.67에서 하락) · high 47·$0.88",
+            "caveat": "max는 출력 토큰이 많음. 이제 Opus max($5.98)보다 약간 쌈 — 그래도 구독 UI 잔량%로 먼저 재세요."
           },
           "cheap": {
-            "name": "Claude Sonnet 5.5 (low) / Opus low",
-            "short": "Sonnet·Opus low",
-            "why": "Claude만 쓸 때 초안·반복용. Sonnet low Intelligence ~36, Opus low ~42.",
-            "evidence": "AA Sonnet 5.5 low ~36 · Opus 5.5 low ~42 · 작업당은 티어·토큰에 따라 변동",
-            "caveat": "어려운 에이전트는 Sonnet high/max 또는 Opus로."
+            "name": "Claude Haiku 5.5 (max+fallback)",
+            "short": "Haiku 5.5 (max)",
+            "why": "10-07 출시. Claude 패밀리에서 처음으로 작업당 $0.2대 코딩 보조 카드. 서브에이전트·반복 수정·코드 검색용.",
+            "evidence": "AA Intelligence 43 · 작업당 $0.21 · 벤더 FrontierCode 1.1 46.4% / Terminal-Bench 4.0 39.2%",
+            "caveat": "벤더도 ‘복잡한 에이전트 코딩은 Sonnet·Opus’라고 명시. 프롬프트 10만 토큰 초과 시 단가 5배."
           }
         },
         "openai": {
@@ -156,15 +156,15 @@
             "name": "Claude Sonnet 5.5 (max+fallback)",
             "short": "Sonnet 5.5",
             "why": "56점·지식업무(GDPval/AA-Briefcase)에서 Opus와 거의 동률(AA). Claude 글쓰기·문서 작업의 새 가성비·실무 카드.",
-            "evidence": "AA Intelligence 56 · 작업당 $7.67(max) · GDPval-AA 1844 vs Opus 1846(AA 기사)",
+            "evidence": "AA Intelligence 56 · 작업당 $5.46(max) · GDPval-AA 1844 vs Opus 1846(AA 기사)",
             "caveat": "max 토큰 다소비. 초안은 low/medium, 마무리는 high/max 또는 Opus."
           },
           "cheap": {
-            "name": "Claude Opus 5.5 (low)",
-            "short": "Opus low",
-            "why": "초안·요약·짧은 답용. Claude만 쓸 때의 저비용 티어.",
-            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
-            "caveat": "긴 추론 최종본에는 high/max 권장. Sonnet 미기재."
+            "name": "Claude Haiku 5.5 (high)",
+            "short": "Haiku 5.5 (high)",
+            "why": "초안·요약·짧은 답용 Claude 최저가 실무 카드로 교체(10-08). Opus low(42·$0.55)와 비슷한 품질대를 훨씬 싸게.",
+            "evidence": "AA Intelligence 38 · 작업당 $0.08 (max 43·$0.21)",
+            "caveat": "긴 추론 최종본은 Sonnet·Opus. 10만 토큰 넘는 긴 문서는 단가 5배 할증."
           }
         },
         "openai": {
@@ -203,7 +203,7 @@
             "short": "6.1 Sol (medium)",
             "why": "대량이어도 품질 바닥선이 필요할 때. 10-07 AA 표에서 GPT-6 Sol(max)이 보이지 않아 같은 점수대(48)를 훨씬 싼 작업당 비용으로 내는 6.1 Sol medium으로 교체.",
             "evidence": "AA Intelligence 48 · 작업당 $0.21",
-            "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음. 구독 화면에서 medium 선택지가 보이는지 먼저 확인."
+            "caveat": "진짜 ‘양만 많은’ 작업이면 Luna가 더 맞음. 같은 작업당 $0.21이면 Haiku 5.5 max(43)보다 6.1 Sol medium(48)이 점수가 높음(AA)."
           },
           "value": {
             "name": "GPT-6 Luna (max)",
@@ -229,18 +229,18 @@
             "caveat": "양만 많으면 low가 맞음. 재시도가 줄면 high가 총비용에 유리할 수 있음."
           },
           "value": {
-            "name": "Claude Opus 5.5 (low)",
-            "short": "Opus low",
-            "why": "Claude 구독 안 대량·반복의 가성비 기본.",
-            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
-            "caveat": "실패가 잦으면 high로. GPT Luna급 초저가는 Claude 패밀리에 없음."
+            "name": "Claude Haiku 5.5 (max+fallback)",
+            "short": "Haiku 5.5 (max)",
+            "why": "Claude 구독·API 안 대량·반복의 새 가성비 기본(10-08 교체). Opus low보다 점수는 비슷하거나 높고 작업당 비용은 절반 이하.",
+            "evidence": "AA Intelligence 43 · 작업당 $0.21 (xhigh 41·$0.12)",
+            "caveat": "첫 응답까지 오래 생각할 수 있음(max). 빠른 응답이 중요하면 high·medium."
           },
           "cheap": {
-            "name": "Claude Opus 5.5 (low)",
-            "short": "Opus low",
-            "why": "이 스냅샷에서 방어 가능한 Claude 최저가 티어. Haiku·Sonnet 점수는 미검증·미기재.",
-            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
-            "caveat": "Luna (low)급 단가는 아님. 초저가 대량은 GPT 탭 또는 전체 탭을 보세요."
+            "name": "Claude Haiku 5.5 (low)",
+            "short": "Haiku 5.5 (low)",
+            "why": "Claude 패밀리 최저가 티어. 분류·추출·짧은 요약.",
+            "evidence": "AA Intelligence 29 · 작업당 $0.02 · 입력 $0.10/출력 $0.50 per 1M(10만 토큰 이하)",
+            "caveat": "Luna (low)($0.0045)보다는 비쌈. 품질 민감 작업 비권장. 10만 토큰 초과 시 5배."
           }
         },
         "openai": {
@@ -305,18 +305,18 @@
             "caveat": "오픈웨이트를 보려면 전체 탭(MiMo 등)을 쓰세요."
           },
           "value": {
-            "name": "Claude Opus 5.5 (low)",
-            "short": "Opus low · 실무 대안",
-            "why": "오픈웨이트 대기는 아니지만, Claude만 쓸 때 초안·반복용으로 쓸 실무 대안.",
-            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
+            "name": "Claude Haiku 5.5 (max+fallback)",
+            "short": "Haiku 5.5 · 실무 대안",
+            "why": "오픈웨이트는 아니지만, Claude만 쓸 때 초안·반복·전처리의 가장 싼 실무 대안(10-08 교체).",
+            "evidence": "AA Intelligence 43 · 작업당 $0.21",
             "caveat": "오픈웨이트·로컬이 아님. 프라이버시·자체 호스팅 목적이면 불충분."
           },
           "cheap": {
-            "name": "Claude Opus 5.5 (low)",
-            "short": "Opus low · 초안",
+            "name": "Claude Haiku 5.5 (low)",
+            "short": "Haiku 5.5 low · 초안",
             "why": "같은 Claude 패밀리에서 가장 싸게 초안을 뽑는 카드.",
-            "evidence": "AA 스냅샷 참고 Intelligence ~42 · 작업당 ~$0.55",
-            "caveat": "오픈웨이트 아님을 caveat로 명시. 로컬 대체 신호 아님."
+            "evidence": "AA Intelligence 29 · 작업당 $0.02",
+            "caveat": "오픈웨이트 아님. 로컬 대체 신호 아님."
           }
         },
         "openai": {
@@ -366,8 +366,8 @@
       "name": "Claude Sonnet 5.5 (max+fallback)",
       "creator": "Anthropic",
       "intelligence": 56,
-      "costPerTask": 7.67,
-      "note": "09-28 출시 · AA #2 · 토큰 다소비"
+      "costPerTask": 5.46,
+      "note": "09-28 출시 · AA #2 · 10-07 캐시 읽기 가격 절반 → 작업당 $7.67→$5.46"
     },
     {
       "rank": 4,
@@ -424,19 +424,19 @@
     },
     {
       "rank": 11,
+      "name": "Claude Haiku 5.5 (max+fallback)",
+      "creator": "Anthropic",
+      "intelligence": 43,
+      "costPerTask": 0.21,
+      "note": "10-07 출시 · Claude 최저가 대량 카드 · xhigh 41·$0.12 · high 38·$0.08"
+    },
+    {
+      "rank": 12,
       "name": "Claude Opus 5.5 (low)",
       "creator": "Anthropic",
       "intelligence": 42,
       "costPerTask": 0.55,
       "note": "저티어 보조 행 · AA 스냅샷 참고(~42·~$0.55)"
-    },
-    {
-      "rank": 12,
-      "name": "Mistral Large 4 Preview",
-      "creator": "Mistral",
-      "intelligence": 38,
-      "costPerTask": 1.13,
-      "note": "10-06 공개 프리뷰 · 1T 전체/49B 활성 · 가중치 이달 말 예정 · 벤더 벤치 강점 vs AA 종합 38"
     },
     {
       "rank": 13,
@@ -445,6 +445,14 @@
       "intelligence": 38,
       "costPerTask": 0.07,
       "note": "초저가·대량"
+    },
+    {
+      "rank": 14,
+      "name": "Mistral Large 4 Preview",
+      "creator": "Mistral",
+      "intelligence": 38,
+      "costPerTask": 1.13,
+      "note": "10-06 공개 프리뷰 · 1T 전체/49B 활성 · 가중치 이달 말 예정 · 벤더 벤치 강점 vs AA 종합 38"
     }
   ]
 }

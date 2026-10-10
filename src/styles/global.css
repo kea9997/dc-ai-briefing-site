@@ -1221,3 +1221,11 @@ article.post .btn-telegram {
     gap: 0.35rem 0.6rem;
   }
 }
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent-2);outline-offset:4px}
+h1,h2,h3{word-break:keep-all;overflow-wrap:anywhere}
+.nav a,.day-card .level-link{min-height:44px;display:inline-flex;align-items:center}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+/* Long source URLs and comparison tables stay inside the reading column. */
+article.post{min-width:0;overflow-wrap:anywhere}
+article.post table{display:block;max-width:100%;overflow-x:auto}
+article.post pre{max-width:100%;overflow-x:auto}

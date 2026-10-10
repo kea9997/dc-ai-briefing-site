@@ -72,7 +72,7 @@ r/ChatGPT의 “Unable to load message”, Pro 계정의 conversation load 실�
 
 ### Haiku 5.5 — 숫자 재고정 (보드 유지)
 
-**확인:** ≤100k 입력 $0.10·출력 $0.50 /1M, >100k면 전 요청 5×. AA live 기준 max 43·$0.21/task, xhigh 41·$0.12, high 38·$0.08. Sonnet 5.5 max 작업당 ~$5.46(캐시 인하 후). 같은 $0.21대에서 GPT-6.1 Sol medium(48) > Haiku max(43) — 크로스 벤더 대량 추천은 Sol medium 유지, Claude 레인 cheap만 Haiku.
+**확인:** ≤100k 입력 $0.10·출력 $0.50 /1M, >100k면 전 요청 5×. AA live 기준 max 43·$0.21/task, xhigh 41·$0.12, high 38·$0.08. Sonnet 5.5 max 작업당 \~$5.46(캐시 인하 후). 같은 $0.21대에서 GPT-6.1 Sol medium(48) > Haiku max(43) — 크로스 벤더 대량 추천은 Sol medium 유지, Claude 레인 cheap만 Haiku.
 
 
 ### G. 요금제 이동 담론 — 「필쫀쿠→비쫀쿠+클」과 하이쿠 워커
@@ -95,9 +95,9 @@ Clarity 등 이차 보도가 지적한 대로, 6× 가격에 최대 6×(API)·8�
 
 **보드 조치: `updated: 2026-10-08` 유지.** Ultrafast는 6× Standard service tier. Haiku·Sonnet 캐시는 어제 반영. 신규 가중치 출시·AA 순위 재편 없음. 상세 카드는 [모델 판세](/models/), 원 수치는 [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models).
 
-- **코딩·에이전트 / 가성비(확인):** GPT-6.1 Sol max ~52·~$0.72. **가장 좋음:** Opus 5.5 max 58·~$5.98(또는 Sonnet max 56·~$5.46이 실무 근접). **싸게:** Luna max ~38·~$0.07 / Claude 레인 Haiku 5.5 max 43·~$0.21.
+- **코딩·에이전트 / 가성비(확인):** GPT-6.1 Sol max \~52·\~$0.72. **가장 좋음:** Opus 5.5 max 58·\~$5.98(또는 Sonnet max 56·\~$5.46이 실무 근접). **싸게:** Luna max \~38·\~$0.07 / Claude 레인 Haiku 5.5 max 43·\~$0.21.
 - **글·긴 추론:** 가성비 6.1 Sol max, 최고 Opus/Sonnet, 싸게 Luna/Haiku. 채팅 6 Sol 체감이 불안정하면 중요본은 대조.
-- **대량:** **GPT-6.1 Sol medium 48·~$0.21**을 크로스 벤더 기본으로 유지(Haiku max 43보다 II↑). Haiku는 Claude 단일 스택·서브에이전트용.
+- **대량:** **GPT-6.1 Sol medium 48·\~$0.21**을 크로스 벤더 기본으로 유지(Haiku max 43보다 II↑). Haiku는 Claude 단일 스택·서브에이전트용.
 - **오늘만의 주의(미확인 해석 분리):** “Ultrafast=Astra 대체”, “6 채팅 영구 너프”, “크레딧 $200=현금 $200”는 보드에 넣지 않는다. Ultrafast는 Pro $500 게이트·6× 가격표를 먼저 읽을 것.
 
 
@@ -125,7 +125,7 @@ Clarity 등 이차 보도가 지적한 대로, 6× 가격에 최대 6×(API)·8�
 
 
 
-- **의미:** 경쟁 축이 ‘새 점수표 모델’에서 **서비스 티어·캐시·크레딧·특별 계약(CVP/스타트업)**으로 이동했다. 모델명만으로 capacity를 읽기 어렵다.
+- **의미:** 경쟁 축이 ‘새 점수표 모델’에서 <strong>서비스 티어·캐시·크레딧·특별 계약(CVP/스타트업)</strong>으로 이동했다. 모델명만으로 capacity를 읽기 어렵다.
 - **의미:** 국내 고관여층은 벤치 바깥의 자체 회귀 테스트(협력메이트)와 지출 분포 서사(a16z)로 응답 중이다. 둘 다 “공식 카피를 그대로 믿지 않는다”는 태도다.
 - **의미:** Ultrafast×instant steering 조합은 생산성과 함께 **잘못된 도구 호출의 벽시계 비용**도 키운다. 어제 하드 삭제 사고의 교훈(차단 후 재시도·권한 최소화)은 속도가 올라갈수록 더 비싸진다.
 - **바꾸지 말 것:** Ultrafast·Day4·크레딧 헤드라인만으로 보드 갱신·연간 결제·CVP 신청·Pro $500 승격을 자동 실행하지 말 것.

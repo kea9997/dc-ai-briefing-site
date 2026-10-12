@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>코드는 30% 늘었는데 소프트웨어는 그대로 — 원더 풀은 소넷과 동점이다 · 옵티웍 AI 데일리</title><meta name="description" content="메타 Full은 AA 56으로 Sonnet과 나란히 섰지만 API 밖에 있고, 하버드는 에이전트 도입이 리뷰 병목만 키웠다고 적었다. 접근권과 검증 비용이 같은 날의 공통 분모다."><meta name="naver-site-verification" content="9bf07dca926d48d6d104d8db1a76b5cf8cb6eb6a"><meta name="theme-color" content="#0B1220"><link rel="canonical" href="https://ai.optiwork.co.kr/posts/2026-10-13/advanced/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="옵티웍 AI 데일리 RSS" href="/rss.xml"><meta name="robots" content="index,follow,max-image-preview:large"><meta name="author" content="옵티웍 AI 데일리"><meta property="og:site_name" content="옵티웍 AI 데일리"><meta property="og:title" content="코드는 30% 늘었는데 소프트웨어는 그대로 — 원더 풀은 소넷과 동점이다 · 옵티웍 AI 데일리"><meta property="og:description" content="메타 Full은 AA 56으로 Sonnet과 나란히 섰지만 API 밖에 있고, 하버드는 에이전트 도입이 리뷰 병목만 키웠다고 적었다. 접근권과 검증 비용이 같은 날의 공통 분모다."><meta property="og:type" content="article"><meta property="og:url" content="https://ai.optiwork.co.kr/posts/2026-10-13/advanced/"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://ai.optiwork.co.kr/og-default.png"><meta name="twitter:image" content="https://ai.optiwork.co.kr/og-default.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="코드는 30% 늘었는데 소프트웨어는 그대로 — 원더 풀은 소넷과 동점이다 · 옵티웍 AI 데일리"><meta name="twitter:description" content="메타 Full은 AA 56으로 Sonnet과 나란히 섰지만 API 밖에 있고, 하버드는 에이전트 도입이 리뷰 병목만 키웠다고 적었다. 접근권과 검증 비용이 같은 날의 공통 분모다."><meta property="article:published_time" content="2026-10-13T00:00:00.000Z"><meta property="article:modified_time" content="2026-10-13T00:00:00.000Z"><script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"옵티웍 AI 데일리","alternateName":"Optiwork AI Daily","url":"https://ai.optiwork.co.kr","description":"옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.","inLanguage":"ko-KR","publisher":{"@type":"Organization","@id":"https://optiwork.co.kr/#organization","name":"Optiwork","url":"https://optiwork.co.kr"}},{"@context":"https://schema.org","@type":"NewsArticle","headline":"코드는 30% 늘었는데 소프트웨어는 그대로 — 원더 풀은 소넷과 동점이다","description":"메타 Full은 AA 56으로 Sonnet과 나란히 섰지만 API 밖에 있고, 하버드는 에이전트 도입이 리뷰 병목만 키웠다고 적었다. 접근권과 검증 비용이 같은 날의 공통 분모다.","datePublished":"2026-10-13T00:00:00.000Z","dateModified":"2026-10-13T00:00:00.000Z","inLanguage":"ko-KR","mainEntityOfPage":"https://ai.optiwork.co.kr/posts/2026-10-13/advanced/","author":{"@type":"Organization","name":"옵티웍 AI 데일리","url":"https://ai.optiwork.co.kr"},"publisher":{"@type":"Organization","name":"Optiwork","url":"https://optiwork.co.kr"},"isAccessibleForFree":true}]</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-XG5G6DGSWX"></script><script>(function(){const ga4 = "G-XG5G6DGSWX";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', ga4, { anonymize_ip: true });
+    })();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&#34;token&#34;:&#34;9a74a246645d43b8bb3bb291566feb71&#34;}"></script><link rel="stylesheet" href="/_astro/about.CmIVEnXy.css"></head> <body> <a class="skip" href="#main">본문으로 건너뛰기</a> <div class="shell"> <header class="topbar"> <a class="brand" href="/"> <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"> <path d="M18 40V24l14 16 14-16v16" stroke="#F5B942" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="32" cy="18" r="4" fill="#F5B942"></circle> </svg></span> <span class="brand-text"> <strong>옵티웍 AI 데일리</strong> <span>Optiwork AI Daily · by Optiwork</span> </span> </a> <div class="topbar-actions"> <nav class="nav" aria-label="주요 메뉴"> <a href="/">브리핑</a> <a href="/archive/">아카이브</a> <a href="/topics/">주제</a> <a href="/models/">모델 고르기</a> <a href="/about/">소개</a> <a href="/faq/">FAQ</a> <a href="/rss.xml">RSS</a> </nav> <a class="nav-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer"> 텔레그램 </a> </div> </header> <main id="main">  <a class="back" href="/">← 목록</a> <article class="post"> <div class="post-level-row"> <span class="level-badge level-advanced">고급</span> <a class="sibling-link" href="/posts/2026-10-13/beginner/">같은 날 초보 버전 보기 →</a> </div> <h1>코드는 30% 늘었는데 소프트웨어는 그대로 — 원더 풀은 소넷과 동점이다</h1> <p class="meta">2026년 10월 13일 · 옵티웍 AI 데일리 · 고급</p> <div class="share-bar share-bar-top" data-share-url="https://ai.optiwork.co.kr/posts/2026-10-13/advanced/" data-share-title="코드는 30% 늘었는데 소프트웨어는 그대로 — 원더 풀은 소넷과 동점이다"> <span class="share-bar-label">공유 · 구독</span> <div class="share-row" role="group" aria-label="공유 · 구독"> <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button> <a class="share-link share-telegram-share" href="https://t.me/share/url?url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-13%2Fadvanced%2F&text=%EC%BD%94%EB%93%9C%EB%8A%94%2030%25%20%EB%8A%98%EC%97%88%EB%8A%94%EB%8D%B0%20%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%8A%94%20%EA%B7%B8%EB%8C%80%EB%A1%9C%20%E2%80%94%20%EC%9B%90%EB%8D%94%20%ED%92%80%EC%9D%80%20%EC%86%8C%EB%84%B7%EA%B3%BC%20%EB%8F%99%EC%A0%90%EC%9D%B4%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC" target="_blank" rel="noopener noreferrer">텔레그램에 공유</a> <a class="share-link share-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">채널 구독</a> <a class="share-link share-x" href="https://twitter.com/intent/tweet?text=%EC%BD%94%EB%93%9C%EB%8A%94%2030%25%20%EB%8A%98%EC%97%88%EB%8A%94%EB%8D%B0%20%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%8A%94%20%EA%B7%B8%EB%8C%80%EB%A1%9C%20%E2%80%94%20%EC%9B%90%EB%8D%94%20%ED%92%80%EC%9D%80%20%EC%86%8C%EB%84%B7%EA%B3%BC%20%EB%8F%99%EC%A0%90%EC%9D%B4%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC&url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-13%2Fadvanced%2F" target="_blank" rel="noopener noreferrer">X에 공유</a> <button type="button" class="share-link share-native" data-native-share hidden>공유하기</button> </div> <span class="share-live" data-share-live aria-live="polite"></span> </div> <div class="tldr"> <strong>한 줄 요약 (GEO)</strong> 메타 Full은 AA 56으로 Sonnet과 나란히 섰지만 API 밖에 있고, 하버드는 에이전트 도입이 리뷰 병목만 키웠다고 적었다. 접근권과 검증 비용이 같은 날의 공통 분모다. </div> <div><h2>오늘 핵심 세 가지</h2>
+<ol>
+<li><strong>메타 Muse Wonder Full(max)이 AA Intelligence 56으로 Sonnet 5.5(max)와 동점 — 그러나 Muse Code 전용.</strong> Wonder(max) API는 52·작업당 $4.52($4/$20 /1M). AA 기사: Full Coding Agent Index 68(Sonnet 5.5 max와 동점, Opus 5.5 max 66), Wonder 63. Spark 1.3(max·48) 대비 Full +8 / Wonder +4, 6주 간격. HN 약 482점. 모델판을 10-13로 갱신. 점수 표만 보면 메타가 프론티어 클럽에 복귀했고, 구매 표만 보면 Full은 아직 ‘없는 모델’에 가깝다.</li>
+<li><strong>하버드 작업 논문(718사): 에이전트 도입 → 코드·커밋·PR↑, 이슈·에픽 완료≒0, 리뷰 시간 +49%.</strong> 생성 이득이 인간 리뷰에 흡수된다. 국내 추천 47 글(고아 node/python)과 QGIS QEP428(AI 코드 기여 금지)이 같은 축의 다른 스케일이다. “더 짜는 것”과 “더 내보내는 것”을 한 KPI로 묶으면 오늘의 함의를 놓친다.</li>
+<li><strong>티보: 투표 결과에 “confused”, Day7은 Sol 기본 컨텍스트 272k→500k + 구독 시 long-context fee 면제.</strong> 정책 투표와 엔지니어링 챌린지는 계층이 다르다. 국내는 옛 “5h 재도입 안 함” 캡처와 투표 후기가 각각 4천 조회대다. 운영자는 감정 서사와 적용된 패치를 나눠 기록해야 한다.</li>
+</ol>
+<h2>국내 — 개념글·인기글이 말한 것</h2>
+<h3>A. 티보 축: 투표 정치 / Day7 엔지니어링 / 요금 위계 밈</h3>
+<p><strong>확인(X):</strong></p>
+<ul>
+<li>투표 최종(10-12 02:22 KST 마감): no-5h 37.8% / 5h+2× 33.2% / results 29%, n≈240,643.</li>
+<li>후기(10-12 09:21 KST, ≈179만 노출): “2× 방향으로 훨씬 기울 줄 알았다… demand curve smoothing.”</li>
+<li>Day7(10-12 08:45 KST, ≈204만 노출): Codex/Work Sol default context 500k(←272k, ~80%). override 가능, hard max 1M. 후속 트윗: subscription draw에서 Sol long-context fee 미청구.</li>
+</ul>
+<p><strong>확인(국내 캡처·정리글):</strong> 「투표결과 혼란스럽다」(v≈4.3k, r16), 「진심으로 당황」(v≈4.4k, r21), 「5시간 제한 도입 안하겠다」(v≈4.1k, r21, 과거 공지 인용), 「7일차」(v≈3.7k, r14, 원문 번역·시리즈 링크). 「플거지들 아스트라…」(r23): Plus에서 Astra 회수·짧은 한도 농담. 댓글 스펙트럼은 위계·풍차·크레딧 전환.</p>
+<p><strong>해석:</strong> 투표 문항은 “UX 제약(5h) ↔ 주간 총량” 교환. 커뮤니티는 과거 “5h 재도입 안 함”을 규범 앵커로 읽고, 티보의 confused는 그 앵커가 작동했다는 역설적 증거로 소비된다. Day7은 교환 정치와 무관한 <strong>제품 표면 개선</strong>(compaction↓, 장기 작업). 둘을 인과로 묶지 말 것.</p>
+<p><strong>운영:</strong> Sol 500k가 기본이 되면 컨텍스트 비용 감각이 바뀐다. 구독 경로에서 long-context fee=0이면 ‘짧게 자르기’ 습관의 ROI가 달라짐 — 단, 주간 한도 자체는 별개. 사용량 스냅샷을 Day7 전후로 비교할 때만 체감 검증이 된다.</p>
+<h3>B. 메타 Wonder — 국내 신호는 약, 조건은 해외에서 먼저</h3>
+<p>수집 시각 국내 hot에 Wonder 심층 리뷰 부재. 새벽 단문 체감(“프롬프팅”)만. 교차는 해외 섹션. 국내 함의는 <strong>접근권 담론</strong>(학생 지원금 r34, 쌀먹 v≈4.3k, 플·프로 위계)과 맞닿음: 새 프론티어가 열려도 ‘누가 문을 통과하는가’.</p>
+<h3>C. 고아 프로세스 클리너 (r47) — 완료 신호의 OS 층</h3>
+<p><strong>확인:</strong> 세션 종료 후 node/python 잔류 → 전용 클리너(클로드 코드로 작성), 기본 무료·자동 유료, 미서명→SmartScreen. URL 공개.</p>
+<p><strong>연결:</strong> 10-12 ‘XX 삭제 도배’ = 문서/커밋 층의 과잉 증명. 오늘은 프로세스 층의 <strong>잔여 상태</strong>. 하버드의 “리뷰가 길어진다”는 조직 층의 잔여. 세 층 모두 ‘done’ 비트와 관측 가능 상태가 어긋남.</p>
+<p><strong>실무:</strong> (1) 도구별 teardown 스크립트/설정 확인 (2) 서명·평판 없는 바이너리는 업무 이미지에 금지 (3) 관측 모델≠청구 모델(어제 Haiku→Opus 하청)에 더해 <strong>관측 종료≠OS 종료</strong>.</p>
+<h3>D. SynthID 포렌식 밈</h3>
+<p><strong>확인(방법 스케치):</strong> 인물 앞머리 대각선 → 흰 캔버스의 다색·스펙트럼·RGB 과장 → OpenAI verify 링크. ChatGPT/Gemini 비가시 워터마크, 상호 비호환. iPhone 18 Pro HW 워터마크 주장은 미재검증.</p>
+<p><strong>함의:</strong> 생성 표시가 UX(거슬리는 획)로 드러나는 순간, 탐지는 ‘도구’가 아니라 ‘미학 버그’로 소비된다. 제출·공모 맥락에서는 정책 페이지가 1차, 육안 휴리스틱은 2차.</p>
+<h3>E. 장편 소설 8계층 소스</h3>
+<p><strong>확인:</strong> 설정 / 운영 / 스타일 / 인물 / 연속성(챕터) / 전체 시놉시스 / 상세 시놉시스 / 비주얼. 연계 댓글: 계층화 후에도 주기적 전수·무결성 패스 필요.</p>
+<p><strong>엔지니어링 대응:</strong> 사실 저장소(1)와 렌더 정책(3)과 상태(5)의 분리. 에이전트 워크플로의 “월드 모델 / 스타일 / 런타임 스테이트”와 동형. 실패 모드는 계층 부재가 아니라 <strong>갱신 주기 부재</strong>.</p>
+<h3>F. Archify — 렌더를 CLI로 외부화</h3>
+<p><strong>확인(인용 수치, 환경 의존):</strong> Sonnet 5.5 중앙값 사례 — HTML 직접 생성 vs MD→CLI 렌더, 출력 토큰 6.1×↓, wall 2.8×↑속도. 레포 tt-a1i/archify.</p>
+<p><strong>해석:</strong> 토큰 절감의 정석 — 모델에게 ‘최종 바이트 포맷’을 맡기지 않기. AesCode·레퍼런스 가이드(어제)와 같은 “기준 객체를 밖에 두기”. Coding Agent Index가 올라가도, HTML 슬롭을 모델이 쓰면 $/task와 지연이 동시에 오른다.</p>
+<h3>G. 쌀먹 리스트 — 수요 신호, 운영 비추천</h3>
+<p><strong>확인(게시글 서술):</strong> Hive($5→$100 보너스 주장), Sail/Experiential 월 $5 리필, Token Harbor :free 슬롯, OpenAI 호환으로 Harness/OpenCode에 연결. 단가 표는 글쓴이 시점.</p>
+<p><strong>위험 프레임:</strong> (1) ToS·지역·KYC 가변 (2) 10-12 DeepSeek 키 남용 제보와 같은 주 — 키·샌드박스 위생과 반대 방향의 ‘크레딧 파밍’ 유혹 (3) abliterated/uncensored 엔드포인트는 정책·안전 평가 밖. 브리핑은 <strong>추천하지 않음</strong>. 신호만: 가격 민감 사용자가 공식 구독 밖으로 이미 탐색 중.</p>
+<h3>H. 학생 지원금 (r34) · 정보글 놀이터 논쟁 (r23) · 유출 안내 UI (r18)</h3>
+<p>접근권 정치 / 커뮤니티 정체성 / 보안 UX 말투. 제도·사고 범위는 미확인. 대회(조회 ~5.9k)와 동시에 ‘정보글 피로’가 개념글이 된 점이 중요 — 품질 게이트(재현·기준일) 수요와 반정보글 정서가 공존.</p>
+<h3>I. Paseo 가이드 (r13)</h3>
+<p>Writer/Reviewer 역할 분리. 이미지 본문 → 명령 전수 미전사. 패턴만: 멀티 에이전트를 ‘팀’이 아니라 <strong>게이트가 있는 파이프라인</strong>으로 만들라는 어제 교훈의 국내 입문화.</p>
+<h2>해외 — 교차 확인</h2>
+<h3>Muse Wonder / Full (확인: Meta blog · AA article · VentureBeat · HN)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>Wonder Full (max)</th>
+<th>Wonder (max)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AA Intelligence</td>
+<td>56</td>
+<td>52</td>
+<td>Full = Sonnet 5.5 max 동점</td>
+</tr>
+<tr>
+<td>Cost/task</td>
+<td>n/a</td>
+<td>$4.52</td>
+<td>Full 비API</td>
+</tr>
+<tr>
+<td>Coding Agent Index</td>
+<td>68</td>
+<td>63</td>
+<td>AA 기사; Sonnet 68 / Opus 66</td>
+</tr>
+<tr>
+<td>Terminal-Bench 4.0</td>
+<td>57%(Full, vs Spark 33%)</td>
+<td>52%</td>
+<td>AA 기사</td>
+</tr>
+<tr>
+<td>가격</td>
+<td>Muse Code $50/$200 티어</td>
+<td>$4/$20 /1M (+cache $0.20)</td>
+<td>Opus와 토큰 단가 동형</td>
+</tr>
+<tr>
+<td>입력 모달</td>
+<td>text/image/audio/video</td>
+<td>동</td>
+<td>출력 text</td>
+</tr>
+<tr>
+<td>가중치</td>
+<td>비공개</td>
+<td>비공개</td>
+<td>Llama 개방 노선과 단절</td>
+</tr>
+</tbody></table>
+<p>AA: Full은 CritPt·GDP.pdf 1위권, GDPval·Briefcase·Automation·SciCode 상위. 지식(Omniscience) 약, 환각률은 동급 대비 낮음(Full 23% 주장). Wonder $/task가 Spark 대비 2.8×인 주원인: 토큰 단가↑ + 입력 토큰/task↑(7.69M).</p>
+<p><strong>제품 조건(VB):</strong> Muse Code 기본 Contributor(학습 사용) — 옵트아웃은 이후 제출분만. API Wonder는 Standard(비학습) 전용 주장. ZDR은 기능 제약(서버 상태·파일·웹검색 등). Active Memory / Active Focus는 벤더 서사 — 독립 장기 에이전트 평가와 분리.</p>
+<p><strong>보드 함의:</strong> ‘가장 좋음’ 기본값은 여전히 Opus 58. Full을 best에 올리지 않은 이유: <strong>호출 표면이 Muse Code로 잠김</strong>. value 자리는 Sol($0.72) 유지 — Wonder($4.52)는 지능 동급 Sol 대비 비싸.</p>
+<h3>Harvard / Jellyfish (확인: 논문 중계 · Ars · HN ≈284)</h3>
+<p>에이전트 도입 DiD: LoC +30%, commits +20%, PRs +23% / worker. Issues/Epics 완료 유의한 ↑ 없음(이슈 +0.12/worker-month vs baseline 3.67, SE 0.17). 리뷰 리드타임 +49%, changes-requested 비율 ≈2×, 댓글/PR +35%. 리뷰로 인력 재배분(+14% 리뷰 쪽)하나 고용 총량 유의 ↓ 없음. 데이터 종단 ~2026-03 — 장기 적응 여지. AI 리뷰 코멘트 비중 3월 기준 ~23%로 여전히 보조.</p>
+<p><strong>읽법:</strong> Coding Agent Index↑와 기업 산출↑를 잇는 다리에 <strong>인간 리뷰 capacity</strong>가 빠지면 단절. QGIS가 문을 닫은 이유(리뷰어 시간 추출)와 하버드가 측정한 병목이 동일 변수.</p>
+<h3>QGIS QEP428 (확인: 제안 병합·보도, HN ≈359)</h3>
+<p>qgis/qgis에 LLM/AI/agent-assisted code contribution 금지. 사후 발견 시 revert·권한 제재. “닫고 선택 개방” 의도(IDE 자동완성·번역 등은 후속 QEP). 탐지 자동화는 명시되지 않음 → 규범·신뢰 기반 집행.</p>
+<h3>기타</h3>
+<ul>
+<li>Karpathy funnel·METR HF·Anthropic 오인 제보·버클리 10분 끈기: 10-11/10-12에 소진 — 오늘은 재탕하지 않음.</li>
+<li>Reddit LocalLLaMA: QwenGyre RL, MiniCPM-V-4.7, Decision 3.0, RTX 5080 24GB 2027Q1 루머 등 — 로컬 메인 테마는 약함. 5090 Laptop 베이스라인 변경 신호 없음.</li>
+<li>r/OpenAI: ChatGPT for Financial Services, Astra 페이지, Tibo poll 재유통, unlimited resets vs limits.</li>
+<li>r/ClaudeAI: Muse Wonder vs Opus/Astra 벤치 밈, Projects를 “올해 최대 업데이트”로 보는 개인글, 5h→24h 루머성 제목(미확인).</li>
+</ul>
+<h3>국내 독자를 위한 Wonder 조건 체크리스트</h3>
+<p>벤치만 보면 Full이 Sonnet과 동점이라 “클로드 대신 메타”로 읽히기 쉽습니다. 제품 표면으로 옮기면 질문이 바뀝니다.</p>
+<ol>
+<li><strong>호출면:</strong> Full은 Muse Code. IDE·에이전트 루프를 메타 도구 안에 둘 수 있는가.</li>
+<li><strong>데이터면:</strong> Contributor 기본값이면 코드·프롬프트 학습 사용 가능. 옵트아웃 시점 이후만 적용되는지 확인.</li>
+<li><strong>비용면:</strong> Wonder API $/task ≈$4.52는 Sol max ≈$0.72의 약 6배. 지능 52 vs 52에서 가성비 논쟁은 거의 종료.</li>
+<li><strong>모달면:</strong> 이미지·오디오·비디오 입력은 강점 후보. 텍스트 코딩만이면 이점이 벤치에 덜 드러날 수 있음.</li>
+<li><strong>대체면:</strong> Active Memory/Focus는 벤더 서사. 하버드가 보여 준 것은 메모리 기능이 아니라 <strong>리뷰 capacity</strong>다. 기능을 켜도 리뷰 SLA가 그대로면 산출은 안 움직인다.</li>
+</ol>
+<h3>하버드를 국내 에이전트 운영에 꽂으면</h3>
+<p>숫자만 재진술하면 끝이다. 운영 언어로 바꾸면 다음이 남는다.</p>
+<ul>
+<li><strong>생성 KPI를 버리라</strong>는 뜻이 아니라, 생성 KPI 옆에 <code>time-to-merge</code>, <code>changes-requested rate</code>, <code>reviewer comments/PR</code>을 같은 대시보드에 두라는 뜻이다.</li>
+<li>국내 개념글의 고아 프로세스는 개인 스케일의 같은 그래프다. “세션 종료” 이벤트가 있어도 RSS·핸들·자식 프로세스가 남으면 머신이 느려지고, 사용자는 ‘AI가 무겁다’고 느낀다. teardown을 수락 기준에 넣지 않은 결과다.</li>
+<li>QGIS가 문을 닫은 것은 탐지 자신감이 아니라 리뷰어 시간 방어다. 사내 저장소에 동일한 규범을 문서로 남기지 않으면, 하버드형 병목이 ‘문화’로만 존재하고 측정되지 않는다.</li>
+</ul>
+<h3>Day7 Sol 500k가 바꾸는 것과 바꾸지 않는 것</h3>
+<p><strong>바뀜:</strong> Codex/Work 기본 컨텍스트, compaction 빈도, 구독 경로 long-context fee. 장기 리팩터·다중 파일 추적 작업의 마찰이 줄어들 가능성이 크다(티보 서술).</p>
+<p><strong>안 바뀜:</strong> 주간 한도 총량, 채팅 말투, Plus/Pro 위계, 5h 정책. 투표 후기(“confused”)는 요금 UX 정치이지 Day7의 원인이 아니다. 국내 댓글이 둘을 한 서사로 묶을 때, 운영자는 분리해서 읽어야 한다.</p>
+<p><strong>측정 제안:</strong> Day7 전후 동일 레포에서 (a) compaction 발생 횟수 (b) 세션당 입력 토큰 (c) 주간 % 소진 속도를 三日만 기록. 체감 “여유”가 한도 소진을 가속하는지도 같이 본다.</p>
+<h3>SynthID·Archify·8계층 소설 — 고급 한 줄씩</h3>
+<ul>
+<li><strong>SynthID:</strong> 비가시 표시가 가시 미학으로 새는 사례. 탐지 정책과 이미지 QA를 한 파이프라인에 둘 이유.</li>
+<li><strong>Archify:</strong> 모델 출력 언어를 ‘인간 가독 중간 표현’으로 고정하고 렌더는 결정적 도구에 맡김. Coding Agent Index가 높아도 HTML 슬롭을 허용하면 $/task가 다시 오른다.</li>
+<li><strong>8계층 소설:</strong> 월드 진실 / 렌더 정책 / 런타임 상태 분리. 에이전트 실패의 다수는 모델 크기보다 <strong>상태 갱신 주기</strong> 문제.</li>
+</ul>
+<h3>쌀먹 글을 보안·비용 관점에서만</h3>
+<p>게시글이 나열한 보너스·리필·:free 슬롯은 ‘가격 민감 수요’의 존재 증명이다. 동시에 (1) ToS 회피 유인 (2) 비공식 엔드포인트 공급망 (3) abliterated 모델의 정책 우회를 한 글에 모아 둔다. 10-12의 샌드박스 키 남용 제보와 같은 주에 읽으면, <strong>키 위생과 크레딧 파밍이 반대 방향의 유혹</strong>임이 드러난다. 조직 가이드에는 “비공식 크레딧 파밍 금지” 한 줄을 명시하는 편이 벤치 갱신보다 우선이다.</p>
+<h2>주제별 심화 — 한국어로 다시 쓰기</h2>
+<h3>왜 Full 동점이 ‘교체 신호’가 아닌가</h3>
+<p>Intelligence Index 56은 Sonnet 5.5 max와 같다. 그런데 Sonnet은 API·클로드 구독·클로드 코드 등 <strong>이미 열린 호출면</strong>이 여러 개다. Full은 Muse Code 상위 티어에 잠겨 있고 작업당 비용 수치도 없다. 보드에서 ‘가장 좋음’을 Opus에 남겨 둔 이유는 점수가 낮아서가 아니라, <strong>같은 점수를 내 워크플로에 붙일 수 있는 경로가 비대칭</strong>이기 때문이다. Wonder API(52·$4.52)는 열려 있지만 Sol(52·$0.72)과 점수가 같고 비용만 약 6배다. “메타가 돌아왔다”와 “내 기본 경로를 바꿔라” 사이에는 이 비대칭이 끼어 있다.</p>
+<p>벤처비트가 강조한 Contributor 기본값·ZDR 기능 제약은 벤치 표 바깥의 실제 도입 비용이다. 코드·고객 데이터를 넣는 조직이라면 Intelligence 2점 차이보다 학습 사용 조항이 먼저다. Active Memory·Active Focus는 데모 서사로는 강력하나, 하버드가 잰 병목은 메모리가 아니라 리뷰다. 기능을 켜도 리뷰어 시간이 그대로면 이슈 완료율은 안 움직인다.</p>
+<h3>하버드 숫자가 국내 에이전트 팀에 말하는 것</h3>
+<p>코드 줄 +30%、PR +23%는 ‘생산성’ 슬라이드에 올리기 좋은 숫자다. 같은 논문의 다른 줄 — 이슈 완료 유의차 없음, 리뷰 +49% — 을 같이 올리지 않으면 의사결정이 왜곡된다. 국내 게시판의 바이브코더 논쟁(어제)과 오늘 고아 프로세스 글은 개인 스케일에서 같은 왜곡을 보여 준다. 생성은 티켓을 닫는 느낌이 나고, 확인은 남는 일처럼 느껴진다.</p>
+<p>실무로 옮기면 세 가지다. 첫째, 에이전트 도입 실험의 성공 정의를 <code>LoC</code>가 아니라 <code>merged PR that closes an issue within SLA</code>로 둔다. 둘째, 리뷰어 수를 고정한 채 생성만 늘리는 실험을 금지한다 — 하버드에서 리뷰로 인력을 돌렸어도 고용 총량은 안 줄었다. 셋째, AI 리뷰 코멘트 비중(논문 시점 ~23%)을 과신하지 않는다. 아직 보조다.</p>
+<h3>QGIS 문 닫기와 ‘추출적 기여’</h3>
+<p>QEP428의 핵심 문장은 탐지기가 아니다. “리뷰어 시간을 추출하지 말라”는 규범이다. LLM이 쓴 코드를 인간이 읽지 않은 채 PR로 던지는 행위는, 하버드가 측정한 리뷰 부하를 오픈소스 유지보수자에게 전가한다. 사내에도 같은 규범을 문서화하지 않으면, 금지/허용이 팀장 취향으로 남고 측정되지 않는다. 탐지 자동화를 기다리다가 문을 여닫는 논쟁만 반복하는 것보다, “에이전트 PR은 인간이 재작성한 뒤에만”처럼 <strong>집행 가능한 한 줄</strong>이 먼저다.</p>
+<h3>티보 서사의 두 층위를 운영 일지에 나누어 적기</h3>
+<p>층위 A — 요금 UX 정치: 투표 문항, 결과, confused 트윗, 과거 5h 약속 캡처, 플·프로 위계 밈. 상태: <strong>미결정</strong>.
+층위 B — 제품 패치: Sol 500k, long-context fee 면제, compaction 감소 주장. 상태: <strong>적용됨(원문 기준)</strong>.</p>
+<p>국내 개념글은 A와 B를 한 감정으로 묶는다. “당황했으니 컨텍스트로 달랬다”는 서사는 읽기 좋지만 인과가 아니다. 운영 일지에는 A/B를 다른 행에 쓰고, A에 대한 액션(요금제 변경)은 동결, B에 대한 액션(장기 세션 재측정)만 허용하는 편이 안전하다.</p>
+<h3>완료 신호의 세 층 — 어제와 오늘을 잇기</h3>
+<table>
+<thead>
+<tr>
+<th>층</th>
+<th>어제(10-12) 사례</th>
+<th>오늘(10-13) 사례</th>
+<th>수락 기준 후보</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>문서/깃</td>
+<td>XX 삭제 도배</td>
+<td>—</td>
+<td>diff + 잔여 문자열 grep</td>
+</tr>
+<tr>
+<td>OS/런타임</td>
+<td>—</td>
+<td>고아 node/python</td>
+<td>teardown 훅·프로세스 목록</td>
+</tr>
+<tr>
+<td>조직/리뷰</td>
+<td>METR 없는 채점기(재순환)</td>
+<td>하버드 리뷰 +49%, QGIS 문 닫기</td>
+<td>리뷰 SLA·changes-requested</td>
+</tr>
+</tbody></table>
+<p>공통 처방은 ‘더 센 모델’이 아니라 <strong>관측 가능한 완료 정의</strong>다. Haiku가 Opus를 하청하던 어제 사례까지 합치면, 관측 모델·청구 모델·OS 잔여·리뷰 상태가 네 갈래로 어긋날 수 있다.</p>
+<h3>시도 후보를 실행 순서로 묶으면</h3>
+<p>오늘 시도 목록은 네 묶음으로 재배열하는 편이 낫다. (1) <strong>관측</strong> — Sol 500k·compaction·프로세스 teardown·리뷰 SLA. 비용 0에 가깝고 즉시 가능하다. (2) <strong>포맷</strong> — HTML 금지·MD 렌더·소설 계층·SynthID QA. 토큰과 미학 비용을 동시에 줄인다. (3) <strong>벤더 A/B</strong> — Wonder API 10티켓. Full은 Muse Code 안에서만. (4) <strong>규범</strong> — QGIS식 한 줄 정책·쌀먹 금지 조항. 벤치 갱신(10-13)은 (3)의 배경일 뿐, (1)(4)를 대체하지 않는다.</p>
+<p>로컬 베이스라인(RTX 5090 Laptop 24GB·64GB)은 오늘 국내·해외 모두 주제가 약해 보드·권고를 바꾸지 않았다. LocalLLaMA의 5080 24GB 2027Q1 루머는 시점이 멀고 미확인이다.</p>
+<h3>커뮤니티 온도계 (미확인 혼합)</h3>
+<p>해외 Reddit·HN은 Wonder 벤치와 “Full은 API 없음”에 먼저 반응했고, 국내은 티보·요금·접근권 글이 조회를 가져갔다. 같은 날짜라도 <strong>관심의 무게 중심이 다르다</strong>. 브리핑이 둘을 억지로 하나의 내러티브로 합치면, 국내 독자에게는 메타가 과대 포장되고 해외 독자(영문 원문)에게는 티보 감정선이 과해 보인다. 오늘은 의도적으로 축을 나란히 두되, 교차점은 ‘접근권’과 ‘확인 비용’ 두 개로만 묶었다.</p>
+<h2>목적별 모델 고르기 (한국어)</h2>
+<p><strong>모델판 갱신: 2026-10-13</strong> (직전 스냅샷 10-08). 트리거 = Muse Wonder/Full 출시. <a href="/models/">/models/</a> · <a href="https://artificialanalysis.ai/leaderboards/models">AA</a> · <a href="https://artificialanalysis.ai/articles/muse-wonder">AA 기사</a>.</p>
+<ul>
+<li><strong>확인(벤치):</strong> Opus 5.5 max 58·$5.98 / Sonnet 5.5 max 56·$5.46 / <strong>Wonder Full max 56·$/task n/a</strong> / Opus high 54·$1.82 / Astra max 53·$3.26 / Argon high 53·$1.99 / Fable 5.1 max 53·$7.63 / Sol max 52·$0.72 / <strong>Wonder max 52·$4.52</strong> / Sol medium 48·$0.21 / MiMo-V2.6-Pro 46·$0.13 / Haiku 5.5 max 43·$0.21 / Luna max 38·$0.07.</li>
+<li><strong>확인(벤치·AA 기사):</strong> Coding Agent — Full 68 · Sonnet 68 · Opus 66 · Wonder 63 · (참고) Spark 1.3 max 54.</li>
+<li><strong>미확인:</strong> “Full 없으면 메타 의미 없다”, “Sol이 여전히 구독 가성비 왕”, “Wonder $/task가 Opus에 가까워 실험용”. 구독 잔량·라우팅·거절률은 AA 밖.</li>
+</ul>
+<p><strong>고급 한 줄:</strong> 벤더 다변화 실험 예산이 있으면 Wonder API를 <strong>A/B 한 축</strong>으로만. 프로덕션 기본 경로는 Sol(가성비)·Sonnet/Opus(품질) 유지. Full은 Muse Code 안에서만 관측.</p>
+<h2>오늘이 의미하는 것 · 바꾸지 말 것</h2>
+<ul>
+<li><strong>의미:</strong> 프론티어 점수가 ‘구매 가능한 표면’과 분리되는 제품 전략(Full⊂Muse Code)이 메타에서도 재현됐다. Anthropic·OpenAI 구독 락인과 동형이며, 보드의 ‘가장 좋음’을 API 가용 모델에 묶어야 하는 이유를 다시 확인시킨다.</li>
+<li><strong>의미:</strong> Day7(컨텍스트·수수료)과 투표 후기(요금 UX 정치)를 분리해야 운영 판단이 가능하다. 국내 개념글은 둘을 한 서사로 묶는 경향이 있다.</li>
+<li><strong>의미:</strong> 에이전트 ROI의 병목이 생성에서 리뷰로 이동했다는 기업 데이터(하버드)와, 오픈소스의 문 닫기(QGIS), 개인의 OS 잔여(고아 프로세스), 어제 문서층의 과잉 완료 증명이 같은 변수 — <strong>확인 비용</strong> — 을 가리킨다.</li>
+<li><strong>의미:</strong> 국내 상위 감정은 접근권(학생 지원, 플·프로, 쌀먹)이다. 프론티어 출시 주에도 ‘누가 쓰느냐’가 ‘무엇이 나왔느냐’와 동시에 움직인다.</li>
+<li><strong>바꾸지 말 것:</strong> Full 56점만으로 기본 모델을 메타로 전환하지 말 것. Muse Code·Contributor·ZDR 제약을 계약 검토 전에 건너뛰지 말 것.</li>
+<li><strong>바꾸지 말 것:</strong> 쌀먹·미서명 클리너를 보안 경계 안에 들이지 말 것. 보너스 크레딧은 비용 항목이 아니라 공급망·약관 항목으로 취급.</li>
+<li><strong>바꾸지 말 것:</strong> Coding Agent Index 상승을 배포 빈도·이슈 완료율 KPI에 자동 반영하지 말 것. 리뷰 capacity·teardown·수락 기준을 먼저 계측할 것.</li>
+<li><strong>바꾸지 말 것:</strong> Sol 500k 확장을 “한도가 늘었다”로 오해하지 말 것. 컨텍스트≠주간 토큰 예산.</li>
+</ul>
+<h2>시도 후보</h2>
+<ol>
+<li><strong>Sol 500k 전후 compaction 로그 비교</strong> (동일 장기 세션 재현).</li>
+<li><strong>PR 리뷰 SLA 계측:</strong> AI 도입 전후 time-to-first-review / changes-requested 비율 (하버드 지표 축소판).</li>
+<li><strong>렌더 외부화:</strong> HTML 생성 금지 규칙 + MD→CLI (Archify류)로 $/task 측정.</li>
+<li><strong>Wonder API A/B:</strong> 동일 티켓 10건 Sol max vs Wonder max, 품질·비용·지연. Full은 Muse Code에서만 별도.</li>
+<li><strong>프로세스 teardown 체크리스트</strong>를 에이전트 종료 훅에 포함.</li>
+<li><strong>SynthID/verify</strong>를 디자인 QA 한 줄로 추가(제출물).</li>
+<li><strong>QGIS식 정책 초안:</strong> 내부 저장소에 “에이전트 PR은 인간 재작성 없이 금지/허용” 중 하나를 문서화 — 탐지 자동화 전에 규범부터.</li>
+<li><strong>모델판 동기화 확인:</strong> 홈·/models/가 10-13 JSON을 읽는지 빌드 후 스모크.</li>
+</ol>
+<h3>닫는 문장</h3>
+<p>오늘 판의 한 줄은 이것이다. <strong>점수가 같아도 문이 다르고, 코드가 늘어도 소프트웨어는 그대로일 수 있다.</strong> 문을 여는 쪽(API·구독·데이터 조항)과 확인을 사는 쪽(리뷰·teardown·수락 기준)을 먼저 고치면, 모델 교체는 그다음이다.</p>
+<h2>소스 범위</h2>
+<ul>
+<li><strong>국내:</strong> collect-dc.py 모바일 정상 — chatgpt+ai_utilize, candidates 58, errors [], 2026-10-13 07:58 KST. 개념/추천/고조회 본문·이미지 글 다수. Paseo·일부 캡처는 이미지 위주라 절차 전수 미전사.</li>
+<li><strong>해외:</strong> Reddit RSS UA — LL/OpenAI/ChatGPT/ML/singularity 200, ClaudeAI 429→Safari UA 200. HN top(Firebase). X: thsottiaux Day7·poll aftermath; Zuckerberg Muse Wonder 소개(인용). Meta research blog, AA live leaderboard·muse-wonder article, VentureBeat, Ars(Harvard), QGIS QEP428 보도.</li>
+<li><strong>원문:</strong> <a href="https://research.meta.ai/blog/muse-wonder">Meta Wonder</a> · <a href="https://artificialanalysis.ai/articles/muse-wonder">AA article</a> · <a href="https://x.com/thsottiaux/status/2109430343346581527">Tibo Day7</a> · <a href="https://x.com/thsottiaux/status/2109439315570999598">Tibo confused</a> · <a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/">Ars/Harvard</a> · <a href="/models/">/models/</a></li>
+</ul>
+</div> <div class="share-bar share-bar-bottom" data-share-url="https://ai.optiwork.co.kr/posts/2026-10-13/advanced/" data-share-title="코드는 30% 늘었는데 소프트웨어는 그대로 — 원더 풀은 소넷과 동점이다"> <span class="share-bar-label">공유 · 구독</span> <div class="share-row" role="group" aria-label="공유 · 구독"> <button type="button" class="share-link share-copy" data-copy-link>링크 복사</button> <a class="share-link share-telegram-share" href="https://t.me/share/url?url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-13%2Fadvanced%2F&text=%EC%BD%94%EB%93%9C%EB%8A%94%2030%25%20%EB%8A%98%EC%97%88%EB%8A%94%EB%8D%B0%20%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%8A%94%20%EA%B7%B8%EB%8C%80%EB%A1%9C%20%E2%80%94%20%EC%9B%90%EB%8D%94%20%ED%92%80%EC%9D%80%20%EC%86%8C%EB%84%B7%EA%B3%BC%20%EB%8F%99%EC%A0%90%EC%9D%B4%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC" target="_blank" rel="noopener noreferrer">텔레그램에 공유</a> <a class="share-link share-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">채널 구독</a> <a class="share-link share-x" href="https://twitter.com/intent/tweet?text=%EC%BD%94%EB%93%9C%EB%8A%94%2030%25%20%EB%8A%98%EC%97%88%EB%8A%94%EB%8D%B0%20%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%8A%94%20%EA%B7%B8%EB%8C%80%EB%A1%9C%20%E2%80%94%20%EC%9B%90%EB%8D%94%20%ED%92%80%EC%9D%80%20%EC%86%8C%EB%84%B7%EA%B3%BC%20%EB%8F%99%EC%A0%90%EC%9D%B4%EB%8B%A4%20%C2%B7%20%EC%98%B5%ED%8B%B0%EC%9B%8D%20AI%20%EB%8D%B0%EC%9D%BC%EB%A6%AC&url=https%3A%2F%2Fai.optiwork.co.kr%2Fposts%2F2026-10-13%2Fadvanced%2F" target="_blank" rel="noopener noreferrer">X에 공유</a> <button type="button" class="share-link share-native" data-native-share hidden>공유하기</button> </div> <span class="share-live" data-share-live aria-live="polite"></span> </div> <div class="post-end-cta"> <p class="post-end-cta-label">내일 아침에도 보려면</p> <a class="btn-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">
+텔레그램으로 매일 받기
+</a> </div> </article>  </main> <section class="net" aria-labelledby="net-heading"> <div class="net-head"> <p class="net-kicker">Optiwork</p> <h2 id="net-heading">AI 소식, 직접 활용해 보려면</h2> <p class="net-lead">옵티웍이 함께 운영합니다. 실행 환경을 살펴보고, 아이디어를 검토하고, 실제 적용 사례로 이어가세요.</p> </div> <div class="net-grid"> <a class="net-card" href="https://optiwork.co.kr" rel="noopener noreferrer"> <div class="net-card-top"> <strong class="net-name">Optiwork</strong> <span class="net-arrow" aria-hidden="true">↗</span> </div> <span class="net-host">optiwork.co.kr</span> <p class="net-blurb">제조·중소기업용 홈페이지·웹앱, AI 업무 자동화, ERP 연동과 IT 운영</p> </a><a class="net-card" href="https://idea.optiwork.co.kr" rel="noopener noreferrer"> <div class="net-card-top"> <strong class="net-name">아이디어 성적표</strong> <span class="net-arrow" aria-hidden="true">↗</span> </div> <span class="net-host">idea.optiwork.co.kr</span> <p class="net-blurb">사업 아이디어의 시장성·차별성·수익성·실행 난이도를 AI 성적표로 정리</p> </a><a class="net-card" href="https://llm.optiwork.co.kr" rel="noopener noreferrer"> <div class="net-card-top"> <strong class="net-name">로컬 LLM GPU 픽커</strong> <span class="net-arrow" aria-hidden="true">↗</span> </div> <span class="net-host">llm.optiwork.co.kr</span> <p class="net-blurb">엔비디아 GPU VRAM·AI 스펙과 신품·중고가로 로컬 LLM용 카드 고르기</p> </a> </div> <p class="net-lead"><a href="https://optiwork.co.kr/projects">옵티웍 전체 서비스와 개발 사례 →</a></p> </section> <footer class="footer"> <div><strong>옵티웍 AI 데일리</strong> — 국내·해외 AI 커뮤니티 하루 동향</div> <div class="footer-telegram"> <a class="btn-telegram" href="https://t.me/opti_ai_daily" target="_blank" rel="noopener noreferrer">
+텔레그램에서 매일 받기 · @opti_ai_daily </a> </div> <div><a href="/models/">모델 고르기</a> · <a href="/archive/">아카이브</a> · <a href="/topics/">주제</a> · <a href="/weekly/">주간</a></div> <div>본문 속 점선 용어는 클릭하면 쉬운 설명이 나옵니다. · <a href="https://optiwork.co.kr">Optiwork</a></div> <div>© 2026 Optiwork · <a href="https://optiwork.co.kr">optiwork.co.kr</a></div> </footer> </div> <script>
+document.addEventListener('click', (e) => {
+  const t = e.target;
+  if (!(t instanceof Element)) return;
+  const btn = t.closest('.term');
+  document.querySelectorAll('.term-pop').forEach((n) => n.remove());
+  if (!btn) return;
+  e.preventDefault();
+  const term = btn.getAttribute('data-term') || '';
+  const def = btn.getAttribute('data-def') || '';
+  const pop = document.createElement('div');
+  pop.className = 'term-pop';
+  pop.innerHTML = '<strong></strong><span></span>';
+  pop.querySelector('strong').textContent = term;
+  pop.querySelector('span').textContent = def;
+  document.body.appendChild(pop);
+  const r = btn.getBoundingClientRect();
+  let left = r.left, top = r.bottom + 8;
+  const pw = pop.offsetWidth, ph = pop.offsetHeight;
+  if (left + pw > window.innerWidth - 8) left = window.innerWidth - pw - 8;
+  if (left < 8) left = 8;
+  if (top + ph > window.innerHeight - 8) top = r.top - ph - 8;
+  pop.style.left = left + 'px';
+  pop.style.top = top + 'px';
+});
+</script> </body></html> <script>
+  (function () {
+    function wireShareBars() {
+      document.querySelectorAll('[data-share-url]').forEach(function (bar) {
+        if (bar.dataset.wired === '1') return;
+        bar.dataset.wired = '1';
+
+        var live = bar.querySelector('[data-share-live]');
+        var copyBtn = bar.querySelector('[data-copy-link]');
+        var nativeBtn = bar.querySelector('[data-native-share]');
+        var url = bar.dataset.shareUrl || window.location.href;
+        var title = bar.dataset.shareTitle || document.title;
+
+        if (nativeBtn && typeof navigator.share === 'function') {
+          nativeBtn.hidden = false;
+          nativeBtn.addEventListener('click', function () {
+            navigator.share({ title: title, url: url, text: title }).catch(function () {});
+          });
+        }
+
+        if (copyBtn) {
+          copyBtn.addEventListener('click', async function () {
+            var label = copyBtn.textContent;
+            try {
+              await navigator.clipboard.writeText(url);
+              copyBtn.textContent = '복사됨';
+              if (live) live.textContent = '링크가 복사되었습니다';
+            } catch (e) {
+              copyBtn.textContent = '복사 실패';
+              if (live) live.textContent = '복사에 실패했습니다';
+            }
+            window.setTimeout(function () {
+              copyBtn.textContent = label || '링크 복사';
+              if (live) live.textContent = '';
+            }, 1600);
+          });
+        }
+      });
+    }
+    wireShareBars();
+  })();
+</script>

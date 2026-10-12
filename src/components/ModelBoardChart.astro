@@ -28,7 +28,7 @@ const maxIntel = Math.max(...board.rows.map((r) => r.intelligence), 1);
         </div>
         <div class="mb-bar-nums">
           <span class="mb-intel">{row.intelligence}</span>
-          <span class="mb-cost">${row.costPerTask.toFixed(2)}</span>
+          <span class="mb-cost">{row.costPerTask == null ? '—' : `$` + row.costPerTask.toFixed(2)}</span>
         </div>
       </div>
     ))}
@@ -82,7 +82,7 @@ const maxIntel = Math.max(...board.rows.map((r) => r.intelligence), 1);
               <td>{row.name}</td>
               <td>{row.creator}</td>
               <td>{row.intelligence}</td>
-              <td>${row.costPerTask.toFixed(2)}</td>
+              <td>{row.costPerTask == null ? '—' : `$` + row.costPerTask.toFixed(2)}</td>
               <td>{row.note || '—'}</td>
             </tr>
           ))}

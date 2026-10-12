@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-08",
-  "updatedLabel": "2026-10-08 (서울)",
+  "updated": "2026-10-13",
+  "updatedLabel": "2026-10-13 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
-  "articleUrl": "https://www.anthropic.com/claude-haiku-5-5",
+  "articleUrl": "https://artificialanalysis.ai/articles/muse-wonder",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 10-08 갱신(신규 모델·가격 개편): 앤트로픽이 10-07 Claude Haiku 5.5를 내고 Sonnet 5.5 캐시 읽기 가격을 절반으로 내렸습니다. AA 라이브 기준 Haiku 5.5(max)는 지능 지수 43·작업당 약 $0.21, xhigh 41·약 $0.12, high 38·약 $0.08 — Claude만 쓰는 사람의 ‘싸게·대량’ 칸이 처음으로 Opus low($0.55)에서 Haiku로 내려왔습니다. Sonnet 5.5(max)는 점수 56 그대로에 작업당 약 $7.67 → 약 $5.46으로 낮아져 Opus max($5.98)보다 싸졌습니다. 종합 1위 Opus 5.5(58), GPT 쪽 최고 Astra(max·53), 코딩 가성비 앵커 GPT-6.1 Sol(max·52·약 $0.72), 대량 품질 바닥선 6.1 Sol(medium·48·약 $0.21), 초저가 Luna는 그대로입니다. 전체 탭 대량 칸은 같은 $0.21에 6.1 Sol medium(48)이 Haiku max(43)보다 높아 유지합니다.",
-  "codingNote": "AA 라이브(10-08 서울): GPT-6.1 Sol (max) II ~52 · 작업당 ~$0.72 — 코딩 가성비 앵커 유지(xhigh 51·$0.39, high 50·$0.32, medium 48·$0.21). Opus 5.5 max 58·$5.98, Sonnet 5.5 max 56·$5.46(10-07 캐시 읽기 가격 절반 뒤 $7.67에서 하락), Astra max 53·$3.26, Gemini 4 Argon (High) 53·$1.99(여전히 단계 롤아웃). 신규 Claude Haiku 5.5: max 43·$0.21 · xhigh 41·$0.12 · high 38·$0.08 · medium 34·$0.05 · low 29·$0.02, 출력 약 137~243 tok/s. 벤더 표: Terminal-Bench 4.0 39.2%(Sonnet 5.5 70.6%), FrontierCode 1.1 46.4%(GPT-6 Luna 42.4%) — 복잡한 에이전트 코딩은 여전히 Sonnet·Opus, Haiku는 서브에이전트·요약·분류용(벤더 설명). 가격: 입력 $0.10·출력 $0.50 /1M(프롬프트 10만 토큰 이하), 10만 초과 시 5배($0.50·$2.50).",
+  "takeaway": "할 일부터 고르세요. 10-13 갱신(대형 출시): 메타가 10-12 Muse Wonder·Muse Wonder Full을 냈습니다. AA 라이브 기준 Wonder Full(max)은 지능 지수 56으로 Sonnet 5.5(max)와 동점·Opus 5.5(58) 바로 아래지만, 작업당 비용 수치가 없고 Muse Code 구독에서만 쓸 수 있습니다. API로 열리는 Wonder(max)는 52·작업당 약 $4.52(입력 $4/출력 $20 /1M, 캐시 입력 $0.20)로 Astra(max·53·$3.26)·Sol(max·52·$0.72)보다 비쌉니다. 종합 1위는 그대로 Opus 5.5(58), 코딩 가성비 앵커는 GPT-6.1 Sol(max·52·약 $0.72), 대량 바닥선 6.1 Sol(medium·48·$0.21), Claude 싸게·대량 Haiku 5.5(max·43·$0.21), 초저가 Luna는 유지합니다. Coding Agent Index에서 Wonder Full(max)은 68로 Sonnet 5.5(max·68)·Opus 5.5(max·66)와 어깨를 나란히 합니다(AA 기사).",
+  "codingNote": "AA 라이브(10-13 서울): GPT-6.1 Sol (max) II ~52 · 작업당 ~$0.72 — 코딩 가성비 앵커 유지. Opus 5.5 max 58·$5.98, Sonnet 5.5 max 56·$5.46, Muse Wonder Full (max) 56·비용 미공개(Muse Code 전용), Astra max 53·$3.26, Gemini 4 Argon (High) 53·$1.99(단계 롤아웃), Muse Wonder (max) 52·$4.52. AA 기사: Wonder Full Coding Agent Index max 68(Muse Code), Wonder max 63 — Spark 1.3(max·54)에서 상승. 벤더·AA 수치를 분리해 읽고, Full은 API 미개방이므로 보드 ‘가장 좋음’ 기본값은 여전히 Opus.",
   "lanes": [
     {
       "id": "all",
@@ -51,14 +51,14 @@
             "short": "Opus 5.5",
             "why": "종합 Intelligence 1위(58). Sonnet 5.5(56)가 바짝 쫓지만, 절대 지능·깊은 에이전트는 여전히 Opus 우선.",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
-            "caveat": "비쌈. Sonnet max는 10-08 기준 작업당 ~$5.46으로 Opus보다 약간 싸고 점수는 2점 아래."
+            "caveat": "비쌈. Sonnet max(~$5.46)와 Muse Wonder Full(max·56, Muse Code 전용·비용 미공개)이 바짝 쫓음. API로 쓸 수 있는 Wonder(max·52·$4.52)는 Sol($0.72) 대비 가성비가 떨어짐."
           },
           "value": {
             "name": "GPT-6.1 Sol (max)",
             "short": "6.1 Sol",
             "why": "AA Intelligence ~52(Astra max 53 근접), 작업당 약 $0.72. 벤더도 에이전트 코딩·프로 업무에서 Astra에 가깝다고 주장(확인=벤더·AA 수치 분리).",
             "evidence": "AA Intelligence ~52 · 작업당 ~$0.72 · $2/$10 /1M",
-            "caveat": "Work/Codex 우선. 채팅 아이콘 없으면 문 옮기기. 자사 “near-Astra” ≠ 내 티켓 승률. Gemini 4 Argon(High·II~53·~$1.99)은 단계 롤아웃 — 내 계정에 보이기 전엔 보드만 참고."
+            "caveat": "Work/Codex 우선. 채팅 아이콘 없으면 문 옮기기. 자사 “near-Astra” ≠ 내 티켓 승률. Gemini 4 Argon(High·II~53·~$1.99)은 단계 롤아웃. Muse Wonder API(52·$4.52)는 Sol보다 비싸 ‘가성비’ 자리는 아님."
           },
           "cheap": {
             "name": "GPT-6 Luna (max)",
@@ -125,9 +125,9 @@
           "best": {
             "name": "Claude Opus 5.5 (max+fallback)",
             "short": "Opus 5.5",
-            "why": "Intelligence 58로 스냅샷 최고. 깊은 추론·긴 글에 우선. Sonnet 5.5(56)도 지식업무에서 Opus에 근접(AA).",
+            "why": "Intelligence 58로 스냅샷 최고. 깊은 추론·긴 글에 우선. Sonnet 5.5·Muse Wonder Full(max)이 56으로 바짝 쫓음(AA).",
             "evidence": "AA Intelligence 58 · 작업당 $5.98",
-            "caveat": "단가·작업당 비용 모두 상위. 초안은 싼 모델로 빼고 마무리만 Opus도 방법."
+            "caveat": "단가·작업당 비용 모두 상위. Wonder Full(max·56)은 Sonnet과 동점이지만 Muse Code 전용·API 없음. 초안은 싼 모델로 빼고 마무리만 Opus도 방법."
           },
           "value": {
             "name": "GPT-6.1 Sol (max)",
@@ -356,33 +356,33 @@
     },
     {
       "rank": 2,
+      "name": "Claude Sonnet 5.5 (max+fallback)",
+      "creator": "Anthropic",
+      "intelligence": 56,
+      "costPerTask": 5.46,
+      "note": "AA #2 · 작업당 $5.46"
+    },
+    {
+      "rank": 3,
       "name": "Claude Opus 5.5 (xhigh)",
       "creator": "Anthropic",
       "intelligence": 56,
       "costPerTask": 3.46
     },
     {
-      "rank": 3,
-      "name": "Claude Sonnet 5.5 (max+fallback)",
-      "creator": "Anthropic",
+      "rank": 4,
+      "name": "Muse Wonder Full (max)",
+      "creator": "Meta",
       "intelligence": 56,
-      "costPerTask": 5.46,
-      "note": "09-28 출시 · AA #2 · 10-07 캐시 읽기 가격 절반 → 작업당 $7.67→$5.46"
+      "costPerTask": null,
+      "note": "10-12 출시 · Muse Code 전용 · 작업당 비용 미공개 · Coding Agent ~68(AA 기사)"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Claude Opus 5.5 (high)",
       "creator": "Anthropic",
       "intelligence": 54,
       "costPerTask": 1.82
-    },
-    {
-      "rank": 5,
-      "name": "Gemini 4 Argon (High)",
-      "creator": "Google",
-      "intelligence": 53,
-      "costPerTask": 1.99,
-      "note": "10-01 발표 · AA II~53 · $/task~$1.99 · $2/$10 · 단계 롤아웃(사이버 파트너 우선) · 일반 개방 미완"
     },
     {
       "rank": 6,
@@ -393,29 +393,45 @@
     },
     {
       "rank": 7,
+      "name": "Gemini 4 Argon (High)",
+      "creator": "Google",
+      "intelligence": 53,
+      "costPerTask": 1.99,
+      "note": "단계 롤아웃 · 일반 개방 미완"
+    },
+    {
+      "rank": 8,
       "name": "Claude Fable 5.1 (max)",
       "creator": "Anthropic",
       "intelligence": 53,
       "costPerTask": 7.63
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "GPT-6.1 Sol (max)",
       "creator": "OpenAI",
       "intelligence": 52,
       "costPerTask": 0.72,
-      "note": "DevDay 09-29 · Astra(53) 근접 · $/task↓ · 코딩 가성비 앵커 · 10-05 기본 속도 약 50%↑(Tibo)"
+      "note": "코딩 가성비 앵커 · Day7 Codex/Work 기본 컨텍스트 500k"
     },
     {
-      "rank": 9,
+      "rank": 10,
+      "name": "Muse Wonder (max)",
+      "creator": "Meta",
+      "intelligence": 52,
+      "costPerTask": 4.52,
+      "note": "10-12 API 개방 · $4/$20 /1M · Coding Agent ~63(AA 기사)"
+    },
+    {
+      "rank": 11,
       "name": "GPT-6.1 Sol (medium)",
       "creator": "OpenAI",
       "intelligence": 48,
       "costPerTask": 0.21,
-      "note": "10-07 교체 · 대량 품질 바닥선 · GPT-6 Sol(max) 행은 AA 표에서 미표시"
+      "note": "대량 품질 바닥선"
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "MiMo-V2.6-Pro (open weights ref)",
       "creator": "Xiaomi",
       "intelligence": 46,
@@ -423,36 +439,20 @@
       "note": "오픈 웨이트 참고"
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "Claude Haiku 5.5 (max+fallback)",
       "creator": "Anthropic",
       "intelligence": 43,
       "costPerTask": 0.21,
-      "note": "10-07 출시 · Claude 최저가 대량 카드 · xhigh 41·$0.12 · high 38·$0.08"
+      "note": "Claude 최저가 대량 카드"
     },
     {
-      "rank": 12,
-      "name": "Claude Opus 5.5 (low)",
-      "creator": "Anthropic",
-      "intelligence": 42,
-      "costPerTask": 0.55,
-      "note": "저티어 보조 행 · AA 스냅샷 참고(~42·~$0.55)"
-    },
-    {
-      "rank": 13,
+      "rank": 14,
       "name": "GPT-6 Luna (max)",
       "creator": "OpenAI",
       "intelligence": 38,
       "costPerTask": 0.07,
       "note": "초저가·대량"
-    },
-    {
-      "rank": 14,
-      "name": "Mistral Large 4 Preview",
-      "creator": "Mistral",
-      "intelligence": 38,
-      "costPerTask": 1.13,
-      "note": "10-06 공개 프리뷰 · 1T 전체/49B 활성 · 가중치 이달 말 예정 · 벤더 벤치 강점 vs AA 종합 38"
     }
   ]
 }

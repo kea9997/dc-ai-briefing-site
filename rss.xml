@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[816B를 열어 준 날, 24GB 파일이 같이 떨어졌다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-16/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-16/advanced/</guid>
+  <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[Muse Spark Open과 Nemotron Bolt 24GB가 같은 UTC 하루에 공개됐고, 서울 새벽엔 ChatGPT 모바일 로그인 장애가 공식으로 찍혔다. 열어 준 가중치·맞춘 압축·멈춘 엔드포인트가 한 브리핑에 겹친다. 오늘의 변수는 벤치 1등이 아니라 실행 경로의 수명이다.]]></description>
+</item>
+<item>
+  <title><![CDATA[열어 준 건 816B인데, 새벽에 먼저 죽은 건 GPT였다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-16/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-16/beginner/</guid>
+  <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[메타가 미국 오픈웨이트 최대 모델을 풀고, 엔비디아는 24GB에 들어가는 볼트를 올렸다. 같은 밤 국내에선 GPT 로그인·연결이 한꺼번에 끊겼다. 열어 준 쪽과 멈춘 쪽이 하루를 나눴다.]]></description>
+</item>
+<item>
   <title><![CDATA[고정해 둔 gpt-5.5는 오늘 아침 조용히 다른 모델이 됐다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-10-15/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-10-15/advanced/</guid>

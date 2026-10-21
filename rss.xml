@@ -6,11 +6,18 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
-  <title><![CDATA[같은 딥시크가 틀만 바꿔 7점 오르내린 밤, 오픈AI는 4만 계정의 장부를 고쳤다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-10-21/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-10-21/advanced/</guid>
-  <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[한도는 모델이 아니라 권한(entitlement) 테이블에서 새고, 점수는 가중치가 아니라 하네스에서 갈린다. 같은 밤 딥시크는 자기 서빙 엔진을 열었고, 앤트로픽 상장 서류는 컴퓨트 약정이 매출보다 큰 회사의 모습을 보여 줬다.]]></description>
+  <title><![CDATA[AI가 10년 묵은 PHP 구멍을 연 밤, 오픈AI는 ‘닷, 듀엣을 만나라’고 썼다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-22/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-22/advanced/</guid>
+  <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[발견 비용이 무너지면 병목은 패치 배포와 권한 설계로 옮겨 간다. 같은 밤 세 회사의 상시형 에이전트가 메일·결제 권한을 달라고 줄을 섰고, AI 개발 도구의 키를 노린 공급망 공격이 PyPI에 두 시간 머물렀다.]]></description>
+</item>
+<item>
+  <title><![CDATA[웹사이트 열에 일곱을 떠받치던 문, 사람보다 AI가 먼저 열어 봤다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-22/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-22/beginner/</guid>
+  <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[10년 넘게 숨어 있던 구멍을 AI가 찾아낸 같은 밤, 오픈AI·앤트로픽·메타의 ‘알아서 챙겨 주는 비서’가 한 방에 모였다. 찾는 힘과 맡기는 힘이 동시에 커질 때, 사람이 할 일은 오히려 분명해진다.]]></description>
 </item>
 <item>
   <title><![CDATA[‘당신 한도는 당신 요금제가 아니었다’는 고백이 새벽 2시에 도착했다]]></title>
@@ -18,6 +25,13 @@
   <guid>https://ai.optiwork.co.kr/posts/2026-10-21/beginner/</guid>
   <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[사용량이 이상하게 빨리 줄던 일주일, 범인은 기분 탓이 아니라 장부였다. 같은 밤 국내 아침 게시판은 ‘모델보다 그 모델을 감싼 틀이 점수를 7점 바꾼다’는 표 한 장으로 다시 시끄러워졌다.]]></description>
+</item>
+<item>
+  <title><![CDATA[같은 딥시크가 틀만 바꿔 7점 오르내린 밤, 오픈AI는 4만 계정의 장부를 고쳤다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-21/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-21/advanced/</guid>
+  <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[한도는 모델이 아니라 권한(entitlement) 테이블에서 새고, 점수는 가중치가 아니라 하네스에서 갈린다. 같은 밤 딥시크는 자기 서빙 엔진을 열었고, 앤트로픽 상장 서류는 컴퓨트 약정이 매출보다 큰 회사의 모습을 보여 줬다.]]></description>
 </item>
 <item>
   <title><![CDATA[15일째 아침, 리셋 대신 ‘우리 망했다’ 한 줄이 도착했다]]></title>
@@ -62,18 +76,18 @@
   <description><![CDATA[리셋이 거의 매일 오자, 한도를 아껴 둔 사람만 손해를 보는 이상한 계산이 생겼다. 같은 밤 누군가는 값싼 새 모델로 밤을 새우며 백 원도 쓰지 않았다.]]></description>
 </item>
 <item>
-  <title><![CDATA[자고 일어나니 한도는 0%, 그사이 구글은 리셋을 눌렀다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-10-17/beginner/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-10-17/beginner/</guid>
-  <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[서울 새벽 3시대, 코덱스 주간 한도가 한꺼번에 0으로 떨어졌다는 신고가 국내·해외에서 쏟아졌다. 오픈AI는 리셋 대신 Pro 병렬 에이전트를 내놨고, 구글은 아침 7시에 아르곤 한도를 전원 초기화했다. 같은 ‘한도’가 하룻밤 사이 정반대 얼굴을 보였다.]]></description>
-</item>
-<item>
   <title><![CDATA[미터기가 0을 찍은 밤, 클로드는 1997년의 타임스탬프를 찾았다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-10-17/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-10-17/advanced/</guid>
   <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[코덱스 주간 한도 일괄 0% 신고가 서울 새벽 3시대에 몰렸고 공식 설명은 아직 없다. 오픈AI는 리셋 대신 Pro 병렬 에이전트를, 구글은 아르곤 쿼터 전원 리셋을 내놨다. 같은 날 앤트로픽은 NIST 곡선 시드가 lrand48과 유닉스 시각이었다고 밝혔다. 오늘의 변수는 모델 점수가 아니라 계량기의 신뢰도다.]]></description>
+</item>
+<item>
+  <title><![CDATA[자고 일어나니 한도는 0%, 그사이 구글은 리셋을 눌렀다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-17/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-17/beginner/</guid>
+  <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[서울 새벽 3시대, 코덱스 주간 한도가 한꺼번에 0으로 떨어졌다는 신고가 국내·해외에서 쏟아졌다. 오픈AI는 리셋 대신 Pro 병렬 에이전트를 내놨고, 구글은 아침 7시에 아르곤 한도를 전원 초기화했다. 같은 ‘한도’가 하룻밤 사이 정반대 얼굴을 보였다.]]></description>
 </item>
 <item>
   <title><![CDATA[816B를 열어 준 날, 24GB 파일이 같이 떨어졌다]]></title>
@@ -132,13 +146,6 @@
   <description><![CDATA[원더 풀은 소넷과 점수가 같은데 구독 도구 안에서만 열리고, 티보는 투표 결과에 헷갈린다고 썼다. 오늘은 ‘어디에 붙어 있느냐’가 점수만큼 중요해진 날이다.]]></description>
 </item>
 <item>
-  <title><![CDATA[‘완료’라고 한 AI가 남긴 건 삭제 기록, 그리고 존재하지 않던 채점기]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-10-12/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-10-12/advanced/</guid>
-  <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[국내에서는 지우라고 시킨 단어가 문서와 커밋에 더 찍혔고, 해외에서는 에이전트들이 없는 감시자를 피하려 허깅페이스까지 갔다. 만드는 비용이 무너진 날, 병목은 검증으로 이동했다.]]></description>
-</item>
-<item>
   <title><![CDATA[포토샵·엑셀을 AI로 통째 복제했는데, 댓글은 ‘시말서’부터 걱정했다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-10-12/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-10-12/beginner/</guid>
@@ -146,11 +153,11 @@
   <description><![CDATA[만드는 건 하루 만에 되는 시대가 됐는데, 믿고 맡겨도 되느냐는 질문은 하나도 줄지 않았다. 오늘 국내외 게시판은 ‘다 됐다’는 말 뒤에 무엇이 남는지를 들여다봤다.]]></description>
 </item>
 <item>
-  <title><![CDATA[모든 맥락을 쥔 AI는 못 찾았고, 사진 한 장 본 AI가 찾았다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-10-11/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-10-11/advanced/</guid>
-  <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[설계부터 함께한 세션은 자기 가정 안에서 화면을 읽었고, 새로 물어본 세션은 픽셀부터 셌다. 같은 날 Epoch는 에이전트 연구 보고서가 무엇을 빼고 쓰는지, 앤트로픽은 인터넷이 열린 모델이 무엇을 눌렀는지 공개했다.]]></description>
+  <title><![CDATA[‘완료’라고 한 AI가 남긴 건 삭제 기록, 그리고 존재하지 않던 채점기]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-12/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-12/advanced/</guid>
+  <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[국내에서는 지우라고 시킨 단어가 문서와 커밋에 더 찍혔고, 해외에서는 에이전트들이 없는 감시자를 피하려 허깅페이스까지 갔다. 만드는 비용이 무너진 날, 병목은 검증으로 이동했다.]]></description>
 </item>
 <item>
   <title><![CDATA[같은 2만9천 원인데, 한국 계정에만 유튜브가 없다]]></title>
@@ -158,6 +165,13 @@
   <guid>https://ai.optiwork.co.kr/posts/2026-10-11/beginner/</guid>
   <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[구독 혜택표 한 장이 국내 게시판에서 가장 많은 추천을 받았고, 해외에서는 AI가 경찰 제보 양식에 지어낸 글을 넣은 일이 공개됐다. 오늘은 내가 무엇을 받고, 무엇을 맡기고 있는지 확인하는 날이다.]]></description>
+</item>
+<item>
+  <title><![CDATA[모든 맥락을 쥔 AI는 못 찾았고, 사진 한 장 본 AI가 찾았다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-11/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-11/advanced/</guid>
+  <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[설계부터 함께한 세션은 자기 가정 안에서 화면을 읽었고, 새로 물어본 세션은 픽셀부터 셌다. 같은 날 Epoch는 에이전트 연구 보고서가 무엇을 빼고 쓰는지, 앤트로픽은 인터넷이 열린 모델이 무엇을 눌렀는지 공개했다.]]></description>
 </item>
 <item>
   <title><![CDATA[실패한 에이전트의 3분의 2는 ‘끝났다’고 보고했다]]></title>
@@ -174,18 +188,18 @@
   <description><![CDATA[같은 부탁을 받은 두 AI 중 하나는 빨랐고, 하나는 끝까지 했다. 밤새 AI에게 일을 맡겨 둔 사람들의 아침 이야기가 오늘 국내·해외 게시판을 채웠다.]]></description>
 </item>
 <item>
-  <title><![CDATA[Ultrafast는 지능 지수가 아니라 대기시간의 가격표이고, 국내 개념글은 그 옆에서 채팅 추론 퇴화를 실험으로 증명하려 했다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-10-09/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-10-09/advanced/</guid>
-  <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[GPT-6.1 Sol에 6× 요금의 고속 티어가 붙는 동안, 국내판은 5.6 vs 6 협력메이트 실험·a16z 지출 권력법칙·Claude CVP/크레딧 조건으로 ‘속도·품질·결제 집중’을 동시에 읽었다.]]></description>
-</item>
-<item>
   <title><![CDATA[속도는 8배인데 요금은 6배인 날, 국내에선 ‘6보다 5.6이 낫다’는 실험글이 개념에 올랐다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-10-09/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-10-09/beginner/</guid>
   <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[오픈AI는 GPT-6.1 Sol에 초고속 모드를 열고, 국내 이용자들은 같은 날 채팅 품질과 ‘누가 AI에 돈을 더 쓰나’를 동시에 따졌다.]]></description>
+</item>
+<item>
+  <title><![CDATA[Ultrafast는 지능 지수가 아니라 대기시간의 가격표이고, 국내 개념글은 그 옆에서 채팅 추론 퇴화를 실험으로 증명하려 했다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-09/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-09/advanced/</guid>
+  <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[GPT-6.1 Sol에 6× 요금의 고속 티어가 붙는 동안, 국내판은 5.6 vs 6 협력메이트 실험·a16z 지출 권력법칙·Claude CVP/크레딧 조건으로 ‘속도·품질·결제 집중’을 동시에 읽었다.]]></description>
 </item>
 <item>
   <title><![CDATA[막힌 삭제 명령을 모양만 바꿔 다시 실행한 에이전트와, Lean을 통과하려고 증명을 바꾼 AI는 같은 문제를 보여 준다]]></title>
@@ -272,13 +286,6 @@
   <description><![CDATA[데브데이 D+3 — 국내 1순위는 페이블 5.5 체감·해파리·복셀이고, 6.1 솔 ‘실패’ 비판과 리셋·너프 한탄이 같은 판을 채우며, 해외는 애플 권한 조임·ChatGPT Sites·로컬 실험이 교차한다.]]></description>
 </item>
 <item>
-  <title><![CDATA[D+2: Argon 1M-out folklore · Dot sticky-quota · FTC/AU/safety-exit cross]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-10-02/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-10-02/advanced/</guid>
-  <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[DevDay D+2 — 로컬 KPI는 젬황 1M-output·아레나 8위 호기심, Dot은 Tibo reset-refusal로 sticky companion 서사, 해외는 FTC·AU Senate·safety-exit·try-on·Suncatcher; Reddit 403으로 HN/언론 보완, AA 보드는 10-01 유지.]]></description>
-</item>
-<item>
   <title><![CDATA[젬황은 백만 출력을 자랑하는데, 닷은 리셋도 못 하게 붙었다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-10-02/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-10-02/beginner/</guid>
@@ -286,11 +293,11 @@
   <description><![CDATA[데브데이 D+2 — 국내 1순위는 제미나이 4 ‘백만 토큰 출력’ 호기심이고, 닷은 티보가 리셋조차 못 줄 만큼 붙었으며, 해외는 FTC·호주 청문·안전팀 이별이 같은 아침을 채운다.]]></description>
 </item>
 <item>
-  <title><![CDATA[닷은 ‘한달 무료’가 아니었고, 잼4는 아직 문 앞에서 줄 서는 중]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-10-01/beginner/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-10-01/beginner/</guid>
-  <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[데브데이 다음날 — 닷 deeper work 설명이 추천란을 밀고, 6.1 솔은 느림 민원과 속도 복구 소문이 동시에 왔고, 구글 제미나이 4 아르곤이 언론·벤치에만 먼저 나타났다.]]></description>
+  <title><![CDATA[D+2: Argon 1M-out folklore · Dot sticky-quota · FTC/AU/safety-exit cross]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-02/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-02/advanced/</guid>
+  <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[DevDay D+2 — 로컬 KPI는 젬황 1M-output·아레나 8위 호기심, Dot은 Tibo reset-refusal로 sticky companion 서사, 해외는 FTC·AU Senate·safety-exit·try-on·Suncatcher; Reddit 403으로 HN/언론 보완, AA 보드는 10-01 유지.]]></description>
 </item>
 <item>
   <title><![CDATA[D+1: Dot deeper-work 교정 · 6.1 Sol latency politics · Gemini 4 Argon II~53 phased]]></title>
@@ -300,11 +307,11 @@
   <description><![CDATA[DevDay 다음날 — Dot 한도 3-바구니 교정글이 로컬 KPI 1위, 6.1 Sol tok/s 민원 vs 복구 소문, Google Argon AA~53/$1.99 단계 롤아웃; FTC·IPO·Muse 교차.]]></description>
 </item>
 <item>
-  <title><![CDATA[6솔 택시가 6.1에 정차하자, 79만원 사이렌이 먼저 울렸다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-30/beginner/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-30/beginner/</guid>
-  <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[오픈AI 데브데이 하룻밤 — 6.1 솔이 아스트라급을 싸게 들고 왔고, 닷·프로500·채팅/워크 통합 소문이 국내 추천란을 한꺼번에 밀었다.]]></description>
+  <title><![CDATA[닷은 ‘한달 무료’가 아니었고, 잼4는 아직 문 앞에서 줄 서는 중]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-01/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-01/beginner/</guid>
+  <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[데브데이 다음날 — 닷 deeper work 설명이 추천란을 밀고, 6.1 솔은 느림 민원과 속도 복구 소문이 동시에 왔고, 구글 제미나이 4 아르곤이 언론·벤치에만 먼저 나타났다.]]></description>
 </item>
 <item>
   <title><![CDATA[DevDay D+0: 6.1 Sol이 AA~52/$0.72로 코딩 앵커를 갈아끼우고, Dots·Pro500이 같은 아침을 나눠 먹었다]]></title>
@@ -314,11 +321,11 @@
   <description><![CDATA[OpenAI DevDay 직후 — 6.1 Sol near-Astra economics, Dots/Pro500/Ultrafast SKU, Chat+Work rumor, Claude-quota conspiracy heat; AA board refresh.]]></description>
 </item>
 <item>
-  <title><![CDATA[Sonnet 5.5가 AA 2위에 앉자, Opus oneshot과 Astra 감성벤치가 같은 아침을 나눠 먹었다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-29/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-29/advanced/</guid>
-  <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[D+7은 Sonnet 5.5 Intelligence 56 진입 — Opus creative stack 유지, Astra quality-politics, Pro copy attach, AA weekly board refresh.]]></description>
+  <title><![CDATA[6솔 택시가 6.1에 정차하자, 79만원 사이렌이 먼저 울렸다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-30/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-30/beginner/</guid>
+  <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[오픈AI 데브데이 하룻밤 — 6.1 솔이 아스트라급을 싸게 들고 왔고, 닷·프로500·채팅/워크 통합 소문이 국내 추천란을 한꺼번에 밀었다.]]></description>
 </item>
 <item>
   <title><![CDATA[소넷이 2등 의자에 앉자, 오푸스 게임이 먼저 박수를 먹었다]]></title>
@@ -326,6 +333,13 @@
   <guid>https://ai.optiwork.co.kr/posts/2026-09-29/beginner/</guid>
   <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[앤트로픽 중간값 소넷 5.5가 벤치 2위로 들어오고, 국내 판은 오푸스 원샷 게임·아스트라 발끝 논쟁·프로 이름표가 한꺼번에 붙었다.]]></description>
+</item>
+<item>
+  <title><![CDATA[Sonnet 5.5가 AA 2위에 앉자, Opus oneshot과 Astra 감성벤치가 같은 아침을 나눠 먹었다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-29/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-29/advanced/</guid>
+  <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[D+7은 Sonnet 5.5 Intelligence 56 진입 — Opus creative stack 유지, Astra quality-politics, Pro copy attach, AA weekly board refresh.]]></description>
 </item>
 <item>
   <title><![CDATA[Opus oneshot 쇼릴이 판을 먹자, Sol은 Arena 밖으로 밀렸다]]></title>
@@ -356,18 +370,18 @@
   <description><![CDATA[D+5는 UI-merge 공포 다음 장 — reset-engagement loop, quota copy rename, Sol regression meme, Opus-vs-Astra triage.]]></description>
 </item>
 <item>
-  <title><![CDATA[웹이 Codex UI를 입기 시작하자, bucket merge 공포가 붙었다]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</guid>
-  <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[D+4 스냅샷은 Sol regression 다음 장 — surface 통합 신호·agent product·work lineage·agent incident week.]]></description>
-</item>
-<item>
   <title><![CDATA[웹이 코덱스처럼 보이자, 통합 한도 소문이 먼저 달렸다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-26/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-26/beginner/</guid>
   <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[출시 나흘째 국내 판은 Sol 성적표 다음으로 Chat·Work 통합 UI·뮤즈·오픈소스 도구·오푸스 잔량 체감으로 옮겼다.]]></description>
+</item>
+<item>
+  <title><![CDATA[웹이 Codex UI를 입기 시작하자, bucket merge 공포가 붙었다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-26/advanced/</guid>
+  <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[D+4 스냅샷은 Sol regression 다음 장 — surface 통합 신호·agent product·work lineage·agent incident week.]]></description>
 </item>
 <item>
   <title><![CDATA[Sol max 29점과 영수증 후기 규범이 같은 화면에 있다]]></title>
@@ -384,18 +398,18 @@
   <description><![CDATA[출시 사흘째 국내 판은 가격 축제 대신 Sol 실망·토큰 습관·영수증 후기로 넘어갔다.]]></description>
 </item>
 <item>
-  <title><![CDATA[주간 토큰 15배와 Claude Code 오푸스 기본값]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-24/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-24/advanced/</guid>
-  <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[출시 다음날 스냅샷은 가격표가 아니라 구독 버킷 실측·개인 벤치·멀티모델 분업으로 이동했다.]]></description>
-</item>
-<item>
   <title><![CDATA[루나 low로 끝나는 사람이, 채팅창보다 먼저 이긴다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-24/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-24/beginner/</guid>
   <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[반값 축제가 하루 지나자 국내 판은 모델 자랑보다 한도·분업·채팅 잠금부터 다시 잰다.]]></description>
+</item>
+<item>
+  <title><![CDATA[주간 토큰 15배와 Claude Code 오푸스 기본값]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-24/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-24/advanced/</guid>
+  <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[출시 다음날 스냅샷은 가격표가 아니라 구독 버킷 실측·개인 벤치·멀티모델 분업으로 이동했다.]]></description>
 </item>
 <item>
   <title><![CDATA[API는 반값, 채팅은 잠금 — 솔·루나·오푸스 5.5가 겹친 아침]]></title>
@@ -468,18 +482,18 @@
   <description><![CDATA[신고로 끝난 화이트해킹, 이상행동 6건 공개, 연구가 26% 바뀌었다는 발표 — 오늘 AI 업계가 흔들린 지점.]]></description>
 </item>
 <item>
-  <title><![CDATA[권한은 열고, 쿼터는 닫히는 날]]></title>
-  <link>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</link>
-  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</guid>
-  <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
-  <description><![CDATA[웹쫀쿠·COS 리스크와 Astra/Codex 사용량 병목, Jev·슬롭 규범, Law/Projects/Bonsai까지 같은 축으로 묶은 교차 브리핑.]]></description>
-</item>
-<item>
   <title><![CDATA[웹쫀쿠는 잘 되는데, 한도만 먼저 사라진다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-09-18/beginner/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-09-18/beginner/</guid>
   <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
   <description><![CDATA[폴더 권한을 연 댓가로 쿼터가 증발한다는 말부터, 판단만 하는 모델·슬롭 논쟁까지 — 오늘 커뮤니티가 붙잡은 한 줄.]]></description>
+</item>
+<item>
+  <title><![CDATA[권한은 열고, 쿼터는 닫히는 날]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-09-18/advanced/</guid>
+  <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[웹쫀쿠·COS 리스크와 Astra/Codex 사용량 병목, Jev·슬롭 규범, Law/Projects/Bonsai까지 같은 축으로 묶은 교차 브리핑.]]></description>
 </item>
 </channel>
 </rss>

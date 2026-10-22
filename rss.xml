@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[‘대충 짜도 AI가 유지보수한다’는 믿음, 버그 4,100개짜리 시험에선 고친 걸 다시 깼다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-23/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-23/advanced/</guid>
+  <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[국내에선 코드 품질과 개발자 자격을 두고 밤샘 논쟁이 붙었고, 같은 밤 공개된 자율 디버깅 벤치는 오래 돌릴수록 에이전트가 자기 수정을 되돌린다는 곡선을 내놨다.]]></description>
+</item>
+<item>
+  <title><![CDATA[“AI가 짠 코드는 더럽다”는 글에 2,700명이 몰린 밤, 사람들은 ‘그럼 나는 뭘 하는 사람이냐’고 물었다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-10-23/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-10-23/beginner/</guid>
+  <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[AI 덕에 누구나 프로그램을 만들 수 있게 된 바로 그 순간, ‘만든 사람’이라는 이름표를 누가 달 수 있느냐를 두고 밤새 다툼이 났다.]]></description>
+</item>
+<item>
   <title><![CDATA[AI가 10년 묵은 PHP 구멍을 연 밤, 오픈AI는 ‘닷, 듀엣을 만나라’고 썼다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-10-22/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-10-22/advanced/</guid>

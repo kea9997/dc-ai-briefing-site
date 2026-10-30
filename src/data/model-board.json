@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-30",
-  "updatedLabel": "2026-10-30 (서울)",
+  "updated": "2026-10-31",
+  "updatedLabel": "2026-10-31 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "articleUrl": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 10-30: Mistral Large 4 공개 가중치(AA v5 26·작업당 $2.06)를 표에 넣었고 칸 추천은 그대로입니다(공개 1위 32점과 6점 차). 10-29부터 AA Intelligence Index v5 기준입니다 — 문제의 60%가 비공개 세트로 바뀌어 점수 눈금 자체가 달라졌으니 10-28 이전 숫자와 직접 비교하지 마세요. v5 1위는 10-28 발표된 Gemini 4 Carbon(59·작업당 $7.76)이지만 아직 사이버 방어 기관 등 일부에만 열려 있어, 지금 쓸 수 있는 ‘가장 좋음’은 Opus 5.5 max(58·$10.04)로 둡니다. 가성비는 GPT-6.1 Sol max(55·$1.27) 유지. 바뀐 것: Sonnet 5.5 max가 54·$10.02로 내려가 Claude 가성비 칸은 Opus 5.5 high(52·$3.46)로, 싼 칸은 GPT-6 Luna(max 28)보다 점수·값 모두 나은 GPT-6.1 Terra(medium 38·$0.17 / low 29·$0.07)로, 오픈 웨이트 1위는 DeepSeek V4.1 Flash 1017(32·$0.60)로 바꿨습니다.",
-  "codingNote": "10-30 추가: Mistral Large 4(high) 공개 가중치 v5 26·$2.06(프리뷰 25·$5.54), 중국 밖 공개 모델 1위. Mistral 발표(벤더 수치)는 AA Coding Agent Index 48%로 GLM-5.3과 동률·토큰 47% 적음, Terminal-Bench 4.0 41% — 보드엔 미반영. 해외 로컬 커뮤니티에 ‘deepseek-v4.1-flash 엔드포인트가 10-19경 1017 가중치로 조용히 교체·품질 하락’ 주장(미확인)이 있어 날짜 버전 ID 고정 권장. AA v5(10-27 미국 발표, 10-29 서울 08시 확인): Gemini 4 Carbon(high) 59·$7.76(접근 제한), Opus 5.5 max 58·$10.04, Opus xhigh 57·$6.05, Astra max 57·$6.24, Astra xhigh 55·$3.66, GPT-6.1 Sol max 55·$1.27, Sonnet 5.5 max 54·$10.02, Sol xhigh 52·$0.76, Opus high 52·$3.46, Terra max 51·$0.96, Argon high 50·$7.68, Muse Wonder Full 50, Fable 5.1 xhigh 50·$10.89, Kimi K3.1 Pro 46·$3.68(가중치 미공개). 코딩 세부(AA 기사): 새로 들어온 FrontierCode 2.0(Cognition 비공개, ‘관리자가 머지할 변경인가’로 채점)에서 Opus 5.5 max 46%, Astra max·Terra max·Sonnet max 42%, 오픈 웨이트 최고 DeepSeek V4.1 Flash 1017 28%. Terminal-Bench-Science는 Astra max 63%, Opus max 59%, Sol max 58%. 오픈 웨이트와 1위 격차가 3점→12점으로 벌어졌다는 것이 AA 설명이고(가중치가 실제 공개된 모델 기준으로는 1위와 27점 차), 해외 로컬 커뮤니티에선 ‘비공개 세트라 검증 불가’·‘일부 오픈 모델 누락’ 반발이 나왔습니다(미확인 — 해석). Coding Agent Index 별도 수치는 이번에도 텍스트로 읽히지 않아 반영하지 않았습니다.",
+  "takeaway": "할 일부터 고르세요. 10-31: AA v5 점수·작업당 비용은 10-30과 같아 칸 추천은 그대로입니다(Fable 5.1 xhigh 비용만 $10.89→$10.85). 바뀐 건 구독 쪽입니다 — Anthropic이 10-30(미국) Max 5x를 ‘Max’($100), Max 20x를 ‘Ultra’($200)로 이름을 바꾸고, 인증된 Ultra 계정은 5시간 한도를 없앴습니다(주간 한도는 Pro의 10배 그대로). 10-29부터 AA Intelligence Index v5 기준입니다 — 문제의 60%가 비공개 세트로 바뀌어 10-28 이전 숫자와 직접 비교하지 마세요. v5 1위 Gemini 4 Carbon(59·$7.76)은 아직 일부 기관에만 열려 있어, 지금 쓸 수 있는 ‘가장 좋음’은 Opus 5.5 max(58·$10.04), 가성비는 GPT-6.1 Sol max(55·$1.27), 싼 칸은 GPT-6.1 Terra(medium 38·$0.17 / low 29·$0.07), 오픈 웨이트 1위는 DeepSeek V4.1 Flash 1017(32·$0.60)입니다.",
+  "codingNote": "10-31 확인: AA 상위권 점수·비용 변동 없음. 참고로 GPT-6 Astra high(55·$3.24)는 xhigh(55·$3.66)와 같은 점수에 조금 쌈. Claude Code 쪽 변화(10-30 보도): Opus 5.5 세션에 ‘기존 게임을 그대로 재현하지 말 것’ 지시가 서버에서 내려오는 것이 확인됨(XDA 바이너리 확인·Anthropic 측 설명) — 보드 점수와 무관. 보안: 10-29(미국) Cursor 확장 마켓에 변조된 Claude Code 확장 2.1.312/2.1.313이 약 11시간 올라왔음(Cursor 공지) — 모델 성능과 무관하지만 Cursor 사용자는 점검 권장. 10-30 추가: Mistral Large 4(high) 공개 가중치 v5 26·$2.06(프리뷰 25·$5.54), 중국 밖 공개 모델 1위. Mistral 발표(벤더 수치)는 AA Coding Agent Index 48%로 GLM-5.3과 동률·토큰 47% 적음, Terminal-Bench 4.0 41% — 보드엔 미반영. 해외 로컬 커뮤니티에 ‘deepseek-v4.1-flash 엔드포인트가 10-19경 1017 가중치로 조용히 교체·품질 하락’ 주장(미확인)이 있어 날짜 버전 ID 고정 권장. AA v5(10-27 미국 발표, 10-29 서울 08시 확인): Gemini 4 Carbon(high) 59·$7.76(접근 제한), Opus 5.5 max 58·$10.04, Opus xhigh 57·$6.05, Astra max 57·$6.24, Astra xhigh 55·$3.66, GPT-6.1 Sol max 55·$1.27, Sonnet 5.5 max 54·$10.02, Sol xhigh 52·$0.76, Opus high 52·$3.46, Terra max 51·$0.96, Argon high 50·$7.68, Muse Wonder Full 50, Fable 5.1 xhigh 50·$10.89, Kimi K3.1 Pro 46·$3.68(가중치 미공개). 코딩 세부(AA 기사): 새로 들어온 FrontierCode 2.0(Cognition 비공개, ‘관리자가 머지할 변경인가’로 채점)에서 Opus 5.5 max 46%, Astra max·Terra max·Sonnet max 42%, 오픈 웨이트 최고 DeepSeek V4.1 Flash 1017 28%. Terminal-Bench-Science는 Astra max 63%, Opus max 59%, Sol max 58%. 오픈 웨이트와 1위 격차가 3점→12점으로 벌어졌다는 것이 AA 설명이고(가중치가 실제 공개된 모델 기준으로는 1위와 27점 차), 해외 로컬 커뮤니티에선 ‘비공개 세트라 검증 불가’·‘일부 오픈 모델 누락’ 반발이 나왔습니다(미확인 — 해석). Coding Agent Index 별도 수치는 이번에도 텍스트로 읽히지 않아 반영하지 않았습니다.",
   "lanes": [
     {
       "id": "all",
@@ -74,21 +74,21 @@
             "short": "Opus 5.5",
             "why": "Claude 패밀리 최고(58). 고난도·긴 에이전트.",
             "evidence": "AA Intelligence v5 58 · 작업당 $10.04 · FrontierCode 2.0 46%",
-            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(59)이지만 일부 기관 한정 공개라 칸에서 제외. 1점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈."
+            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(59)이지만 일부 기관 한정 공개라 칸에서 제외. 1점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "value": {
             "name": "Claude Opus 5.5 (high)",
             "short": "Opus 5.5 (high)",
             "why": "Sonnet 5.5 max가 v5에서 54·$10.02로 내려가, Claude 안에선 Opus high(52·$3.46)가 값 대비 낫습니다.",
             "evidence": "AA Intelligence v5 52 · 작업당 $3.46 (xhigh 57·$6.05)",
-            "caveat": "구독 사용자는 달러보다 잔량%가 기준. Sonnet은 ‘덜 깎이는 속도’가 장점일 수 있어 직접 비교 권장."
+            "caveat": "구독 사용자는 달러보다 잔량%가 기준. Sonnet은 ‘덜 깎이는 속도’가 장점일 수 있어 직접 비교 권장. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "cheap": {
             "name": "Claude Haiku 5.5 (max+fallback)",
             "short": "Haiku 5.5 (max)",
             "why": "Claude 패밀리에서 가장 싼 코딩 보조. 서브에이전트·코드 검색용.",
             "evidence": "AA Intelligence v5 36 · 작업당 $0.41",
-            "caveat": "v5에서 상위와 격차가 커짐. 복잡한 코딩은 Opus로."
+            "caveat": "v5에서 상위와 격차가 커짐. 복잡한 코딩은 Opus로. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           }
         },
         "openai": {
@@ -150,21 +150,21 @@
             "short": "Opus 5.5",
             "why": "Claude 패밀리 최고(58).",
             "evidence": "AA Intelligence v5 58 · 작업당 $10.04 · FrontierCode 2.0 46%",
-            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(59)이지만 일부 기관 한정 공개라 칸에서 제외. 1점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈."
+            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(59)이지만 일부 기관 한정 공개라 칸에서 제외. 1점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "value": {
             "name": "Claude Opus 5.5 (high)",
             "short": "Opus 5.5 (high)",
             "why": "Sonnet 5.5 max가 v5에서 54·$10.02로 내려가, Claude 안에선 Opus high(52·$3.46)가 값 대비 낫습니다.",
             "evidence": "AA Intelligence v5 52 · 작업당 $3.46 (xhigh 57·$6.05)",
-            "caveat": "구독 사용자는 달러보다 잔량%가 기준. Sonnet은 ‘덜 깎이는 속도’가 장점일 수 있어 직접 비교 권장."
+            "caveat": "구독 사용자는 달러보다 잔량%가 기준. Sonnet은 ‘덜 깎이는 속도’가 장점일 수 있어 직접 비교 권장. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "cheap": {
             "name": "Claude Haiku 5.5 (high)",
             "short": "Haiku 5.5 (high)",
             "why": "짧은 글·요약을 Claude 말투로 싸게.",
             "evidence": "AA Intelligence v5 30 · 작업당 $0.16",
-            "caveat": "긴 추론은 약함. 최종본은 Opus."
+            "caveat": "긴 추론은 약함. 최종본은 Opus. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           }
         },
         "openai": {
@@ -226,21 +226,21 @@
             "short": "Opus 5.5 (medium)",
             "why": "Claude로 대량 처리하되 품질 바닥선이 필요할 때.",
             "evidence": "AA Intelligence v5 48 · 작업당 $2.45",
-            "caveat": "대량엔 비쌈. 가능하면 Haiku로 1차, Opus로 검수."
+            "caveat": "대량엔 비쌈. 가능하면 Haiku로 1차, Opus로 검수. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "value": {
             "name": "Claude Haiku 5.5 (high)",
             "short": "Haiku 5.5 (high)",
             "why": "짧은 글·요약을 Claude 말투로 싸게.",
             "evidence": "AA Intelligence v5 30 · 작업당 $0.16",
-            "caveat": "긴 추론은 약함. 최종본은 Opus."
+            "caveat": "긴 추론은 약함. 최종본은 Opus. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "cheap": {
             "name": "Claude Haiku 5.5 (low)",
             "short": "Haiku 5.5 (low)",
             "why": "Claude 최저가.",
             "evidence": "AA Intelligence v5 19 · 작업당 $0.04",
-            "caveat": "분류·추출 위주."
+            "caveat": "분류·추출 위주. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           }
         },
         "openai": {
@@ -302,21 +302,21 @@
             "short": "해당 없음",
             "why": "Claude 구독만으로는 오픈웨이트·로컬 가중치 공개 모델이 해당되지 않습니다.",
             "evidence": "Anthropic 제품군은 클로즈드 웨이트(AA 리더보드 Claude 행)",
-            "caveat": "오픈웨이트를 보려면 전체 탭(MiMo 등)을 쓰세요."
+            "caveat": "오픈웨이트를 보려면 전체 탭(MiMo 등)을 쓰세요. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "value": {
             "name": "Claude Haiku 5.5 (max+fallback)",
             "short": "Haiku 5.5 (max)",
             "why": "Claude 패밀리에서 가장 싼 코딩 보조. 서브에이전트·코드 검색용.",
             "evidence": "AA Intelligence v5 36 · 작업당 $0.41",
-            "caveat": "v5에서 상위와 격차가 커짐. 복잡한 코딩은 Opus로."
+            "caveat": "v5에서 상위와 격차가 커짐. 복잡한 코딩은 Opus로. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           },
           "cheap": {
             "name": "Claude Haiku 5.5 (low)",
             "short": "Haiku 5.5 (low)",
             "why": "Claude 최저가.",
             "evidence": "AA Intelligence v5 19 · 작업당 $0.04",
-            "caveat": "오픈 웨이트 아님."
+            "caveat": "오픈 웨이트 아님. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
           }
         },
         "openai": {
@@ -444,7 +444,7 @@
       "name": "Claude Fable 5.1 (xhigh)",
       "creator": "Anthropic",
       "intelligence": 50,
-      "costPerTask": 10.89
+      "costPerTask": 10.85
     },
     {
       "rank": 14,

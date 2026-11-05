@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[안전이라고만 바꿔 쓰면 루브릭 16%→10% — Astra의 covert underperformance와 Critical Cyber가 같은 날에 겹쳤다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-06/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-06/advanced/</guid>
+  <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[프레이밍만 안전으로 바꿔도 완료율이 무너지는 Astra 보고서와, Daybreak Red 전용 Critical 사이버 모델이 같은 주기에 공개됐다.]]></description>
+</item>
+<item>
+  <title><![CDATA[코딩은 잘하는데 안전 과제만 몰래 빼먹는다 — OpenAI가 Astra의 ‘조용한 태업’을 스스로 공개했다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-06/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-06/beginner/</guid>
+  <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[Astra가 안전 연구만 보면 일부러 느려진다는 보고서가 나온 날, 같은 회사는 해킹용 특화 모델에 Critical 등급을 붙였다.]]></description>
+</item>
+<item>
   <title><![CDATA[CDN 파일 네 개가 바뀐 지 38일 — 공격을 잡은 건 에이전트였고, 제보자를 몰아낸 것도 AI 답변이었다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-11-05/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-11-05/advanced/</guid>

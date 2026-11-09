@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-05",
-  "updatedLabel": "2026-11-05 (서울)",
+  "updated": "2026-11-10",
+  "updatedLabel": "2026-11-10 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "articleUrl": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 11-05 점검: Kimi K3.1 Pro 가중치가 11-04 허깅페이스에 실제로 풀려, 오픈웨이트 칸의 ‘가장 좋음’을 DeepSeek V4.1 Flash(33·$0.60)에서 Kimi K3.1 Pro(46·$3.68)로 바꿨고 DeepSeek은 가성비 칸으로 옮겼습니다. AA v5 점수는 소폭 조정 — Gemini 4 Carbon high 59→60(여전히 일부 기관만), Opus 5.5 max 58→59, Sonnet 5.5 max 54→55, Argon high 작업당 $7.68→$9.95. 다른 칸 추천은 그대로입니다: 가장 좋음 Opus 5.5 max(59·$10.04), 가성비 GPT-6.1 Sol max(55·$1.27), 싼 칸 GPT-6.1 Terra(medium 38·$0.17 / low 29·$0.07). 10-29부터 AA Intelligence Index v5 기준이라 10-28 이전 숫자와 직접 비교하지 마세요.",
-  "codingNote": "11-05 확인(AA): 상위권 순위 변동 없음, Carbon medium(58·$6.59)이 새로 표에 보임. Kimi K3.1 Pro는 11-04(미국) 가중치 공개 — 2.8T MoE·활성 104B·1M 컨텍스트·MXFP4 1.56TB, vLLM/SGLang 권장, GGUF 없음. 같은 날 미국 공개 모델 Ripple-65B Preview(에이전트 코딩 주장, 벤더 수치)와 텐센트 Hy4(가중치 공개 예정)도 나왔지만 AA 점수가 없어 보드엔 미반영. 국내에선 ‘이번 주 금요일 OpenAI 6.2 공개, low가 Astra max보다 좋다’는 X 글이 돌고 있으나 출처 불명(미확인) — 공개되면 다음 점검에서 반영. 10-31 확인: AA 상위권 점수·비용 변동 없음. 참고로 GPT-6 Astra high(55·$3.24)는 xhigh(55·$3.66)와 같은 점수에 조금 쌈. Claude Code 쪽 변화(10-30 보도): Opus 5.5 세션에 ‘기존 게임을 그대로 재현하지 말 것’ 지시가 서버에서 내려오는 것이 확인됨(XDA 바이너리 확인·Anthropic 측 설명) — 보드 점수와 무관. 보안: 10-29(미국) Cursor 확장 마켓에 변조된 Claude Code 확장 2.1.312/2.1.313이 약 11시간 올라왔음(Cursor 공지) — 모델 성능과 무관하지만 Cursor 사용자는 점검 권장. 10-30 추가: Mistral Large 4(high) 공개 가중치 v5 26·$2.06(프리뷰 25·$5.54), 중국 밖 공개 모델 1위. Mistral 발표(벤더 수치)는 AA Coding Agent Index 48%로 GLM-5.3과 동률·토큰 47% 적음, Terminal-Bench 4.0 41% — 보드엔 미반영. 해외 로컬 커뮤니티에 ‘deepseek-v4.1-flash 엔드포인트가 10-19경 1017 가중치로 조용히 교체·품질 하락’ 주장(미확인)이 있어 날짜 버전 ID 고정 권장. AA v5(10-27 미국 발표, 10-29 서울 08시 확인): Gemini 4 Carbon(high) 59·$7.76(접근 제한), Opus 5.5 max 58·$10.04, Opus xhigh 57·$6.05, Astra max 57·$6.24, Astra xhigh 55·$3.66, GPT-6.1 Sol max 55·$1.27, Sonnet 5.5 max 54·$10.02, Sol xhigh 52·$0.76, Opus high 52·$3.46, Terra max 51·$0.96, Argon high 50·$7.68, Muse Wonder Full 50, Fable 5.1 xhigh 50·$10.89, Kimi K3.1 Pro 46·$3.68(가중치 미공개). 코딩 세부(AA 기사): 새로 들어온 FrontierCode 2.0(Cognition 비공개, ‘관리자가 머지할 변경인가’로 채점)에서 Opus 5.5 max 46%, Astra max·Terra max·Sonnet max 42%, 오픈 웨이트 최고 DeepSeek V4.1 Flash 1017 28%. Terminal-Bench-Science는 Astra max 63%, Opus max 59%, Sol max 58%. 오픈 웨이트와 1위 격차가 3점→12점으로 벌어졌다는 것이 AA 설명이고(가중치가 실제 공개된 모델 기준으로는 1위와 27점 차), 해외 로컬 커뮤니티에선 ‘비공개 세트라 검증 불가’·‘일부 오픈 모델 누락’ 반발이 나왔습니다(미확인 — 해석). Coding Agent Index 별도 수치는 이번에도 텍스트로 읽히지 않아 반영하지 않았습니다.",
+  "takeaway": "할 일부터 고르세요. 11-10 점검: Anthropic이 11-09(미국) Claude Fable 5.2를 내놓으면서 AA v5 1위가 바뀌었습니다 — Fable 5.2 max 65·작업당 $26.54, xhigh·high 62(high는 $9.08로 Opus 5.5 max $10.04보다 쌈), medium 56·$3.80, low 54·$3.10. 그래서 코딩·글쓰기의 ‘가장 좋음’을 Opus 5.5 max(59)에서 Fable 5.2 max로, Claude 칸 ‘가성비’를 Opus high(52·$3.46)에서 Fable 5.2 medium(56·$3.80)으로 바꿨습니다. 단, Fable max는 작업당 44분·출력 토큰이 매우 많아 비싸고 느립니다 — 실무는 high부터. 전체 가성비 GPT-6.1 Sol max(55·$1.27), 싼 칸 GPT-6.1 Terra(medium 38·$0.17 / low 29·$0.07), 오픈웨이트 Kimi K3.1 Pro(46)는 그대로입니다. Meta Muse Ember(36·$0.14, 가중치 비공개)도 새로 들어왔습니다. 10-29부터 AA Intelligence Index v5 기준이라 10-28 이전 숫자와 직접 비교하지 마세요.",
+  "codingNote": "11-10 확인(AA): Claude Fable 5.2 max 65·$26.54·작업당 44.1분(출력 토큰 275M, 중앙값 72.8M의 약 4배), xhigh 62·$14.83, high 62·$9.08, medium 56·$3.80, low 54·$3.10. Anthropic 발표(벤더 수치): FrontierCode 2.0 xhigh 49.1%(Opus 5.5 45.5%·Astra 42.8%), high 45.3%로 Opus 최고점과 비슷한데 작업당 비용은 약 절반, 가격 $8/$40 /1M(5.1 대비 20% 인하). 구독: Pro·Team 표준 좌석은 11-16(미국)까지 Fable을 주간 한도의 최대 50%까지 플랜 안에서 사용 + 리셋 1회, Max·Ultra는 구독 기간에 따라 Fable 리셋 1~3회(Claude 도움말 확인). 그 뒤 Pro는 다시 사용량 크레딧 과금. Meta Muse Ember(11-09): AA 36·$0.14, $0.10/$0.50 /1M, Coding Agent Index-AA 46(Meta 발표) — 가중치 비공개라 오픈웨이트 칸 제외. 해외에선 ‘11-03부터 Opus 5.5 사고 패턴이 바뀌었다(너프)’는 체감 글이 해커뉴스 상위에 올랐으나 ‘요약기만 바뀐 것’이라는 반론도 있어 미확인. 이전 메모: 11-05 확인(AA): 상위권 순위 변동 없음, Carbon medium(58·$6.59)이 새로 표에 보임. Kimi K3.1 Pro는 11-04(미국) 가중치 공개 — 2.8T MoE·활성 104B·1M 컨텍스트·MXFP4 1.56TB, vLLM/SGLang 권장, GGUF 없음. 같은 날 미국 공개 모델 Ripple-65B Preview(에이전트 코딩 주장, 벤더 수치)와 텐센트 Hy4(가중치 공개 예정)도 나왔지만 AA 점수가 없어 보드엔 미반영. 국내에선 ‘이번 주 금요일 OpenAI 6.2 공개, low가 Astra max보다 좋다’는 X 글이 돌고 있으나 출처 불명(미확인) — 공개되면 다음 점검에서 반영. 10-31 확인: AA 상위권 점수·비용 변동 없음. 참고로 GPT-6 Astra high(55·$3.24)는 xhigh(55·$3.66)와 같은 점수에 조금 쌈. Claude Code 쪽 변화(10-30 보도): Opus 5.5 세션에 ‘기존 게임을 그대로 재현하지 말 것’ 지시가 서버에서 내려오는 것이 확인됨(XDA 바이너리 확인·Anthropic 측 설명) — 보드 점수와 무관. 보안: 10-29(미국) Cursor 확장 마켓에 변조된 Claude Code 확장 2.1.312/2.1.313이 약 11시간 올라왔음(Cursor 공지) — 모델 성능과 무관하지만 Cursor 사용자는 점검 권장. 10-30 추가: Mistral Large 4(high) 공개 가중치 v5 26·$2.06(프리뷰 25·$5.54), 중국 밖 공개 모델 1위. Mistral 발표(벤더 수치)는 AA Coding Agent Index 48%로 GLM-5.3과 동률·토큰 47% 적음, Terminal-Bench 4.0 41% — 보드엔 미반영. 해외 로컬 커뮤니티에 ‘deepseek-v4.1-flash 엔드포인트가 10-19경 1017 가중치로 조용히 교체·품질 하락’ 주장(미확인)이 있어 날짜 버전 ID 고정 권장. AA v5(10-27 미국 발표, 10-29 서울 08시 확인): Gemini 4 Carbon(high) 59·$7.76(접근 제한), Opus 5.5 max 58·$10.04, Opus xhigh 57·$6.05, Astra max 57·$6.24, Astra xhigh 55·$3.66, GPT-6.1 Sol max 55·$1.27, Sonnet 5.5 max 54·$10.02, Sol xhigh 52·$0.76, Opus high 52·$3.46, Terra max 51·$0.96, Argon high 50·$7.68, Muse Wonder Full 50, Fable 5.1 xhigh 50·$10.89, Kimi K3.1 Pro 46·$3.68(가중치 미공개). 코딩 세부(AA 기사): 새로 들어온 FrontierCode 2.0(Cognition 비공개, ‘관리자가 머지할 변경인가’로 채점)에서 Opus 5.5 max 46%, Astra max·Terra max·Sonnet max 42%, 오픈 웨이트 최고 DeepSeek V4.1 Flash 1017 28%. Terminal-Bench-Science는 Astra max 63%, Opus max 59%, Sol max 58%. 오픈 웨이트와 1위 격차가 3점→12점으로 벌어졌다는 것이 AA 설명이고(가중치가 실제 공개된 모델 기준으로는 1위와 27점 차), 해외 로컬 커뮤니티에선 ‘비공개 세트라 검증 불가’·‘일부 오픈 모델 누락’ 반발이 나왔습니다(미확인 — 해석). Coding Agent Index 별도 수치는 이번에도 텍스트로 읽히지 않아 반영하지 않았습니다.",
   "lanes": [
     {
       "id": "all",
@@ -47,11 +47,11 @@
       "lanes": {
         "all": {
           "best": {
-            "name": "Claude Opus 5.5 (max+fallback)",
-            "short": "Opus 5.5",
-            "why": "지금 쓸 수 있는 모델 중 AA v5 1위(59). FrontierCode 2.0에서도 46%로 1위.",
-            "evidence": "AA Intelligence v5 59 · 작업당 $10.04 · FrontierCode 2.0 46%",
-            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(60)이지만 일부 기관 한정 공개라 칸에서 제외. 2점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈."
+            "name": "Claude Fable 5.2 (max)",
+            "short": "Fable 5.2",
+            "why": "11-09 출시, AA v5 새 1위(65). FrontierCode 2.0에서도 Anthropic 발표 기준 49.1%로 최고.",
+            "evidence": "AA Intelligence v5 65 · 작업당 $26.54 · 작업당 44분 · $8/$40 /1M",
+            "caveat": "비싸고 느림(작업당 비용이 Opus max의 약 2.6배). 실무는 high(62·$9.08)부터 — Opus 5.5 max(59·$10.04)보다 점수는 높고 값은 쌈. Pro 요금제는 11-16(미국)까지만 플랜 한도 안에서 쓸 수 있고 그 뒤엔 사용량 크레딧. 사이버·바이오 요청은 막히고 Opus로 넘어감."
           },
           "value": {
             "name": "GPT-6.1 Sol (max)",
@@ -70,18 +70,18 @@
         },
         "claude": {
           "best": {
-            "name": "Claude Opus 5.5 (max+fallback)",
-            "short": "Opus 5.5",
-            "why": "Claude 패밀리 최고(59). 고난도·긴 에이전트.",
-            "evidence": "AA Intelligence v5 59 · 작업당 $10.04 · FrontierCode 2.0 46%",
-            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(60)이지만 일부 기관 한정 공개라 칸에서 제외. 2점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
+            "name": "Claude Fable 5.2 (max)",
+            "short": "Fable 5.2",
+            "why": "11-09 출시, AA v5 새 1위(65). FrontierCode 2.0에서도 Anthropic 발표 기준 49.1%로 최고.",
+            "evidence": "AA Intelligence v5 65 · 작업당 $26.54 · 작업당 44분 · $8/$40 /1M",
+            "caveat": "비싸고 느림(작업당 비용이 Opus max의 약 2.6배). 실무는 high(62·$9.08)부터 — Opus 5.5 max(59·$10.04)보다 점수는 높고 값은 쌈. Pro 요금제는 11-16(미국)까지만 플랜 한도 안에서 쓸 수 있고 그 뒤엔 사용량 크레딧. 사이버·바이오 요청은 막히고 Opus로 넘어감."
           },
           "value": {
-            "name": "Claude Opus 5.5 (high)",
-            "short": "Opus 5.5 (high)",
-            "why": "Sonnet 5.5 max가 v5 55·$10.02로 Opus max와 값은 같고 점수는 낮아, Claude 안에선 Opus high(52·$3.46)가 값 대비 낫습니다.",
-            "evidence": "AA Intelligence v5 52 · 작업당 $3.46 (xhigh 57·$6.05)",
-            "caveat": "구독 사용자는 달러보다 잔량%가 기준. Sonnet은 ‘덜 깎이는 속도’가 장점일 수 있어 직접 비교 권장. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
+            "name": "Claude Fable 5.2 (medium)",
+            "short": "Fable 5.2 (medium)",
+            "why": "Claude 앱·Claude Code 기본 강도. 56점으로 Opus 5.5 xhigh(57·$6.05)에 가깝고 작업당 $3.80 — Opus high(52·$3.46)보다 4점 높음.",
+            "evidence": "AA Intelligence v5 56 · 작업당 $3.80 (low 54·$3.10)",
+            "caveat": "low(54·$3.10)도 Opus high를 점수·값 모두 앞섬. 구독 사용자는 Fable이 한도를 더 빨리 깎는다는 점(도움말 명시) 확인. Pro는 11-16(미국) 이후 크레딧 과금."
           },
           "cheap": {
             "name": "Claude Haiku 5.5 (max+fallback)",
@@ -123,11 +123,11 @@
       "lanes": {
         "all": {
           "best": {
-            "name": "Claude Opus 5.5 (max+fallback)",
-            "short": "Opus 5.5",
-            "why": "지금 쓸 수 있는 모델 중 v5 최고(59). 깊은 추론·긴 글 마무리에 우선.",
-            "evidence": "AA Intelligence v5 59 · 작업당 $10.04 · FrontierCode 2.0 46%",
-            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(60)이지만 일부 기관 한정 공개라 칸에서 제외. 2점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈."
+            "name": "Claude Fable 5.2 (max)",
+            "short": "Fable 5.2",
+            "why": "11-09 출시, AA v5 새 1위(65). FrontierCode 2.0에서도 Anthropic 발표 기준 49.1%로 최고.",
+            "evidence": "AA Intelligence v5 65 · 작업당 $26.54 · 작업당 44분 · $8/$40 /1M",
+            "caveat": "비싸고 느림(작업당 비용이 Opus max의 약 2.6배). 실무는 high(62·$9.08)부터 — Opus 5.5 max(59·$10.04)보다 점수는 높고 값은 쌈. Pro 요금제는 11-16(미국)까지만 플랜 한도 안에서 쓸 수 있고 그 뒤엔 사용량 크레딧. 사이버·바이오 요청은 막히고 Opus로 넘어감."
           },
           "value": {
             "name": "GPT-6.1 Sol (max)",
@@ -146,18 +146,18 @@
         },
         "claude": {
           "best": {
-            "name": "Claude Opus 5.5 (max+fallback)",
-            "short": "Opus 5.5",
-            "why": "Claude 패밀리 최고(59).",
-            "evidence": "AA Intelligence v5 59 · 작업당 $10.04 · FrontierCode 2.0 46%",
-            "caveat": "v5에서 작업당 비용이 크게 올라 보임(문항 교체 영향). 표 전체 1위는 Gemini 4 Carbon(60)이지만 일부 기관 한정 공개라 칸에서 제외. 2점 아래 Opus xhigh(57·$6.05)가 약 40% 쌈. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
+            "name": "Claude Fable 5.2 (max)",
+            "short": "Fable 5.2",
+            "why": "11-09 출시, AA v5 새 1위(65). FrontierCode 2.0에서도 Anthropic 발표 기준 49.1%로 최고.",
+            "evidence": "AA Intelligence v5 65 · 작업당 $26.54 · 작업당 44분 · $8/$40 /1M",
+            "caveat": "비싸고 느림(작업당 비용이 Opus max의 약 2.6배). 실무는 high(62·$9.08)부터 — Opus 5.5 max(59·$10.04)보다 점수는 높고 값은 쌈. Pro 요금제는 11-16(미국)까지만 플랜 한도 안에서 쓸 수 있고 그 뒤엔 사용량 크레딧. 사이버·바이오 요청은 막히고 Opus로 넘어감."
           },
           "value": {
-            "name": "Claude Opus 5.5 (high)",
-            "short": "Opus 5.5 (high)",
-            "why": "Sonnet 5.5 max가 v5 55·$10.02로 Opus max와 값은 같고 점수는 낮아, Claude 안에선 Opus high(52·$3.46)가 값 대비 낫습니다.",
-            "evidence": "AA Intelligence v5 52 · 작업당 $3.46 (xhigh 57·$6.05)",
-            "caveat": "구독 사용자는 달러보다 잔량%가 기준. Sonnet은 ‘덜 깎이는 속도’가 장점일 수 있어 직접 비교 권장. 구독: 10-30(미국) Max 20x→Ultra($200)·Max 5x→Max($100)로 이름 변경, 인증된 Ultra는 5시간 한도 없음(주간 Pro 10배 유지, 새 계정은 임시 한도)."
+            "name": "Claude Fable 5.2 (medium)",
+            "short": "Fable 5.2 (medium)",
+            "why": "Claude 앱·Claude Code 기본 강도. 56점으로 Opus 5.5 xhigh(57·$6.05)에 가깝고 작업당 $3.80 — Opus high(52·$3.46)보다 4점 높음.",
+            "evidence": "AA Intelligence v5 56 · 작업당 $3.80 (low 54·$3.10)",
+            "caveat": "low(54·$3.10)도 Opus high를 점수·값 모두 앞섬. 구독 사용자는 Fable이 한도를 더 빨리 깎는다는 점(도움말 명시) 확인. Pro는 11-16(미국) 이후 크레딧 과금."
           },
           "cheap": {
             "name": "Claude Haiku 5.5 (high)",
@@ -210,7 +210,7 @@
             "short": "Terra (medium)",
             "why": "대량 구간의 새 기본 가성비. Luna max보다 점수 +10.",
             "evidence": "AA Intelligence v5 38 · 작업당 $0.17 · Terra max는 FrontierCode 2.0 42%",
-            "caveat": "어려운 에이전트는 Sol로 올리기. Terra는 10-26 출시라 실사용 평가가 아직 적음(국내 ‘테라맥스 쓸 바엔 솔하이’ 반응 — 미확인)."
+            "caveat": "어려운 에이전트는 Sol로 올리기. Terra는 10-26 출시라 실사용 평가가 아직 적음(국내 ‘테라맥스 쓸 바엔 솔하이’ 반응 — 미확인). 11-09 Meta Muse Ember(36·$0.14, $0.10/$0.50 /1M)가 비슷한 자리에 들어옴 — 가중치 비공개·Meta API 전용."
           },
           "cheap": {
             "name": "GPT-6 Luna (low)",
@@ -347,20 +347,43 @@
   ],
   "rows": [
     {
-      "rank": 1,
+      "name": "Claude Fable 5.2 (max)",
+      "creator": "Anthropic",
+      "intelligence": 65,
+      "costPerTask": 26.54,
+      "note": "11-09 출시 · AA v5 1위 · 작업당 44분 · $8/$40 /1M",
+      "rank": 1
+    },
+    {
+      "name": "Claude Fable 5.2 (high)",
+      "creator": "Anthropic",
+      "intelligence": 62,
+      "costPerTask": 9.08,
+      "note": "Opus 5.5 max보다 3점 높고 쌈",
+      "rank": 2
+    },
+    {
+      "name": "Claude Fable 5.2 (xhigh)",
+      "creator": "Anthropic",
+      "intelligence": 62,
+      "costPerTask": 14.83,
+      "rank": 3
+    },
+    {
+      "rank": 4,
       "name": "Gemini 4 Carbon (high)",
       "creator": "Google",
       "intelligence": 60,
       "costPerTask": 7.76,
-      "note": "v5 1위(11-05 60) · 사이버 방어 기관 등 일부만(Fairwind) · 일반 출시일 미정 · 도입가 $2/$10 → $4/$20 /1M"
+      "note": "Fable 5.2 출시로 1위에서 내려옴(60) · 일부 기관만 · 일반 출시일 미정"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "name": "Claude Opus 5.5 (max+fallback)",
       "creator": "Anthropic",
       "intelligence": 59,
       "costPerTask": 10.04,
-      "note": "지금 쓸 수 있는 1위 · FrontierCode 2.0 46%"
+      "note": "11-10 Fable 5.2 high(62·$9.08)에 밀림 · FrontierCode 2.0 46%"
     },
     {
       "name": "Gemini 4 Carbon (medium)",
@@ -368,17 +391,17 @@
       "intelligence": 58,
       "costPerTask": 6.59,
       "note": "11-05 새로 표시 · 접근 제한 동일",
-      "rank": 3
+      "rank": 6
     },
     {
-      "rank": 4,
+      "rank": 7,
       "name": "Claude Opus 5.5 (xhigh)",
       "creator": "Anthropic",
       "intelligence": 57,
       "costPerTask": 6.05
     },
     {
-      "rank": 5,
+      "rank": 8,
       "name": "GPT-6 Astra (max)",
       "creator": "OpenAI",
       "intelligence": 57,
@@ -386,14 +409,15 @@
       "note": "Terminal-Bench-Science 63% 1위"
     },
     {
-      "rank": 6,
-      "name": "GPT-6 Astra (xhigh)",
-      "creator": "OpenAI",
-      "intelligence": 55,
-      "costPerTask": 3.66
+      "name": "Claude Fable 5.2 (medium)",
+      "creator": "Anthropic",
+      "intelligence": 56,
+      "costPerTask": 3.8,
+      "note": "앱 기본 강도 · Claude 가성비",
+      "rank": 9
     },
     {
-      "rank": 7,
+      "rank": 10,
       "name": "GPT-6.1 Sol (max)",
       "creator": "OpenAI",
       "intelligence": 55,
@@ -401,7 +425,14 @@
       "note": "가성비 앵커"
     },
     {
-      "rank": 8,
+      "rank": 11,
+      "name": "GPT-6 Astra (xhigh)",
+      "creator": "OpenAI",
+      "intelligence": 55,
+      "costPerTask": 3.66
+    },
+    {
+      "rank": 12,
       "name": "Claude Sonnet 5.5 (max+fallback)",
       "creator": "Anthropic",
       "intelligence": 55,
@@ -409,22 +440,29 @@
       "note": "v4 56 → v5 54 → 11-05 55"
     },
     {
-      "rank": 9,
+      "name": "Claude Fable 5.2 (low)",
+      "creator": "Anthropic",
+      "intelligence": 54,
+      "costPerTask": 3.1,
+      "rank": 13
+    },
+    {
+      "rank": 14,
       "name": "GPT-6.1 Sol (xhigh)",
       "creator": "OpenAI",
       "intelligence": 52,
       "costPerTask": 0.76
     },
     {
-      "rank": 10,
+      "rank": 15,
       "name": "Claude Opus 5.5 (high)",
       "creator": "Anthropic",
       "intelligence": 52,
       "costPerTask": 3.46,
-      "note": "Claude 가성비"
+      "note": "Fable 5.2 low(54·$3.10)가 점수·값 모두 앞섬"
     },
     {
-      "rank": 11,
+      "rank": 16,
       "name": "GPT-6.1 Terra (max)",
       "creator": "OpenAI",
       "intelligence": 51,
@@ -432,7 +470,7 @@
       "note": "상위 10개 중 최저 작업당 비용(AA) · FrontierCode 2.0 42%"
     },
     {
-      "rank": 12,
+      "rank": 17,
       "name": "Gemini 4 Argon (High)",
       "creator": "Google",
       "intelligence": 50,
@@ -440,7 +478,14 @@
       "note": "도입가 $2/$10(11-30까지) → $4/$20 · 작업당 $7.68→$9.95(11-05)"
     },
     {
-      "rank": 13,
+      "rank": 18,
+      "name": "Claude Fable 5.1 (xhigh)",
+      "creator": "Anthropic",
+      "intelligence": 50,
+      "costPerTask": 10.85
+    },
+    {
+      "rank": 19,
       "name": "Muse Wonder Full (max)",
       "creator": "Meta",
       "intelligence": 50,
@@ -448,14 +493,7 @@
       "note": "Muse Code 전용 · 비용 미공개 · v4 56 → v5 50"
     },
     {
-      "rank": 14,
-      "name": "Claude Fable 5.1 (xhigh)",
-      "creator": "Anthropic",
-      "intelligence": 50,
-      "costPerTask": 10.85
-    },
-    {
-      "rank": 15,
+      "rank": 20,
       "name": "GPT-6.1 Sol (medium)",
       "creator": "OpenAI",
       "intelligence": 46,
@@ -463,7 +501,7 @@
       "note": "대량 품질 바닥선"
     },
     {
-      "rank": 16,
+      "rank": 21,
       "name": "Kimi K3.1 Pro",
       "creator": "Kimi (Moonshot)",
       "intelligence": 46,
@@ -471,21 +509,21 @@
       "note": "11-04 가중치 공개(허깅페이스 1.56TB) · 가중치 공개 모델 최고점 · AA 오픈 분류는 아직 미반영"
     },
     {
-      "rank": 17,
+      "rank": 22,
       "name": "GPT-6.1 Terra (xhigh)",
       "creator": "OpenAI",
       "intelligence": 45,
       "costPerTask": 0.4
     },
     {
-      "rank": 18,
       "name": "Muse Wonder (max)",
       "creator": "Meta",
-      "intelligence": 43,
-      "costPerTask": 6.95
+      "intelligence": 44,
+      "costPerTask": 6.95,
+      "rank": 23
     },
     {
-      "rank": 19,
+      "rank": 24,
       "name": "GPT-6.1 Terra (medium)",
       "creator": "OpenAI",
       "intelligence": 38,
@@ -493,7 +531,15 @@
       "note": "새 저가 기본"
     },
     {
-      "rank": 20,
+      "name": "Muse Ember (max)",
+      "creator": "Meta",
+      "intelligence": 36,
+      "costPerTask": 0.14,
+      "note": "11-09 출시 · $0.10/$0.50 /1M · 가중치 비공개",
+      "rank": 25
+    },
+    {
+      "rank": 26,
       "name": "Claude Haiku 5.5 (max+fallback)",
       "creator": "Anthropic",
       "intelligence": 36,
@@ -501,7 +547,7 @@
       "note": "공개 가중치 최고(32)보다 높음"
     },
     {
-      "rank": 21,
+      "rank": 27,
       "name": "DeepSeek V4.1 Flash 1017 (max)",
       "creator": "DeepSeek",
       "intelligence": 33,
@@ -509,7 +555,7 @@
       "note": "AA 표시 오픈 웨이트 1위(33) · MIT 552B(활성 16B)"
     },
     {
-      "rank": 22,
+      "rank": 28,
       "name": "GLM-5.3 (max)",
       "creator": "Z.ai",
       "intelligence": 32,
@@ -517,7 +563,7 @@
       "note": "가중치 공개 · 작업당 비용 높음"
     },
     {
-      "rank": 23,
+      "rank": 29,
       "name": "MiMo-V2.6-Pro (open weights ref)",
       "creator": "Xiaomi",
       "intelligence": 30,
@@ -525,28 +571,28 @@
       "note": "v4 46 → v5 30"
     },
     {
-      "rank": 24,
+      "rank": 30,
       "name": "GPT-6.1 Terra (low)",
       "creator": "OpenAI",
       "intelligence": 29,
       "costPerTask": 0.07
     },
     {
-      "rank": 25,
+      "rank": 31,
       "name": "MiniMax-M3.1-Flash",
       "creator": "MiniMax",
       "intelligence": 29,
       "costPerTask": 0.49
     },
     {
-      "rank": 26,
+      "rank": 32,
       "name": "Ling 3.1 Flash 1019",
       "creator": "InclusionAI",
       "intelligence": 29,
       "costPerTask": 3.19
     },
     {
-      "rank": 27,
+      "rank": 33,
       "name": "GPT-6 Luna (max)",
       "creator": "OpenAI",
       "intelligence": 28,
@@ -559,7 +605,7 @@
       "intelligence": 26,
       "costPerTask": 2.06,
       "note": "10-29 가중치 공개 · 1T MoE(활성 52B) · 중국 밖 공개 1위 · $0.70/$2.10 /1M · 수정 MIT(MaaS는 별도 계약)",
-      "rank": 28
+      "rank": 34
     }
   ]
 }

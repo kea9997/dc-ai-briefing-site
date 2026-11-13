@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-13",
-  "updatedLabel": "2026-11-13 (서울)",
+  "updated": "2026-11-14",
+  "updatedLabel": "2026-11-14 (서울)",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "articleUrl": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
   "metric": "Intelligence Index",
   "costMetric": "작업당 비용 (USD)",
-  "takeaway": "할 일부터 고르세요. 11-13 점검: Google이 11-12(미국) Gemini 4 Hydrogen을 내놨습니다(무료 Gemini 앱은 자동 선택, API·AI Studio 전 등급, Antigravity는 Pro·Ultra 유료). AA 확인값 — xhigh 54·작업당 $3.16, high(기본) 51·$1.87, medium 41·$0.80. 목적별 셀은 바꾸지 않았습니다: 같은 50점대에서 GPT-6.1 Sol max(55·$1.27)·Sol xhigh(52·$0.76)가 점수도 높고 더 쌉니다. Hydrogen의 자리는 ‘구글 생태계 안의 빠른 실행 모델’ — Argon(50·$4.97)을 점수·값 모두 대체합니다. 같은 날 AA 표시 작업당 비용이 Carbon high $7.76→$5.48, Argon $9.95→$4.97로 내려갔습니다(사유 미표시). 1위는 여전히 Claude Fable 5.2 max(65). 이전(11-11): Gemini 4 Carbon 일반 공개, 셀 유지. 10-29부터 AA Intelligence Index v5 기준이라 10-28 이전 숫자와 직접 비교하지 마세요.",
-  "codingNote": "11-13 확인(AA·Google 발표): Gemini 4 Hydrogen(11-12 미국) — AA v5 xhigh 54·$3.16·13.5분, high 51·$1.87·8.3분, medium 41·$0.80, low 27. 가격 $1.50/$7.50 /1M(1M 컨텍스트 균일). AA Coding Agent Index에는 아직 Hydrogen 조합이 없음. Google 발표(벤더 수치): Terminal-Bench 4.1 57%(3.8 Flash 18.2%), 3.8 Flash 대비 2.5배 빠름, Agent Arena 5위, 지어낸 주장 5배 이상 감소. Antigravity에 Orchestrator(Carbon이 계획·Hydrogen이 실행, Carbon 대비 할당량 24% 절약·19% 빠름 — 벤더 수치)는 Ultra부터. 국내 체감: ‘필터 오탐으로 게임 설정 수정도 막혔다’·‘공감 티키타카가 줄었다’(미확인). 같은 날 OpenAI는 Codex 적립 리셋(banked reset) 1회를 배포(Tibo 공지, 사용자가 직접 써야 한도가 찹니다). 11-11 확인(AA·Google 발표): Gemini 4 Carbon 일반 공개(11-10 미국) — 유료 Gemini API·Gemini for business 전체, Google AI Ultra($99.99 5x / $199.99 20x)의 Gemini 앱·AI 모드·Antigravity. Pro($19.99)는 Argon까지만. 가격 도입가 $2/$10 /1M(11-30까지) → 이후 $4/$20. AA v5: high 60·$7.76·작업당 26.0분·출력 토큰 205M(중앙값 72.8M의 약 2.8배), medium 58·$6.59, low 54·$7.19(정가 기준). AA Coding Agent Index v2.0(페이지 데이터): Antigravity CLI + Carbon high 약 59.4, Argon high 약 53.2, Codex + Astra max 약 54.7, Codex + Sol max 약 54.1; Claude Code + Fable 5.2는 아직 없음. Google 발표(벤더 수치): CursorBench 4.0·Perplexity WANDR·Zapier AutomationBench 1위 ‘차순위 대비 작업당 비용 2배 이상 저렴’, AA와 함께 만든 Multimodal Knowledge Agent(MKA) 2위. Antigravity에 /swarm(멀티 에이전트) 프리뷰. 같은 날 Anthropic은 유료 구독자 전원에게 ‘전체 모델·전체 한도 1회 리셋’(12-10 오후 2시 PT까지)을 지급 — 한도가 의도보다 빨리 깎이던 문제 수정 보상(@ClaudeDevs 공지). 11-10 확인(AA): Claude Fable 5.2 max 65·$26.54·작업당 44.1분(출력 토큰 275M, 중앙값 72.8M의 약 4배), xhigh 62·$14.83, high 62·$9.08, medium 56·$3.80, low 54·$3.10. Anthropic 발표(벤더 수치): FrontierCode 2.0 xhigh 49.1%(Opus 5.5 45.5%·Astra 42.8%), high 45.3%로 Opus 최고점과 비슷한데 작업당 비용은 약 절반, 가격 $8/$40 /1M(5.1 대비 20% 인하). 구독: Pro·Team 표준 좌석은 11-16(미국)까지 Fable을 주간 한도의 최대 50%까지 플랜 안에서 사용 + 리셋 1회, Max·Ultra는 구독 기간에 따라 Fable 리셋 1~3회(Claude 도움말 확인). 그 뒤 Pro는 다시 사용량 크레딧 과금. Meta Muse Ember(11-09): AA 36·$0.14, $0.10/$0.50 /1M, Coding Agent Index-AA 46(Meta 발표) — 가중치 비공개라 오픈웨이트 칸 제외. 해외에선 ‘11-03부터 Opus 5.5 사고 패턴이 바뀌었다(너프)’는 체감 글이 해커뉴스 상위에 올랐으나 ‘요약기만 바뀐 것’이라는 반론도 있어 미확인. 이전 메모: 11-05 확인(AA): 상위권 순위 변동 없음, Carbon medium(58·$6.59)이 새로 표에 보임. Kimi K3.1 Pro는 11-04(미국) 가중치 공개 — 2.8T MoE·활성 104B·1M 컨텍스트·MXFP4 1.56TB, vLLM/SGLang 권장, GGUF 없음. 같은 날 미국 공개 모델 Ripple-65B Preview(에이전트 코딩 주장, 벤더 수치)와 텐센트 Hy4(가중치 공개 예정)도 나왔지만 AA 점수가 없어 보드엔 미반영. 국내에선 ‘이번 주 금요일 OpenAI 6.2 공개, low가 Astra max보다 좋다’는 X 글이 돌고 있으나 출처 불명(미확인) — 공개되면 다음 점검에서 반영. 10-31 확인: AA 상위권 점수·비용 변동 없음. 참고로 GPT-6 Astra high(55·$3.24)는 xhigh(55·$3.66)와 같은 점수에 조금 쌈. Claude Code 쪽 변화(10-30 보도): Opus 5.5 세션에 ‘기존 게임을 그대로 재현하지 말 것’ 지시가 서버에서 내려오는 것이 확인됨(XDA 바이너리 확인·Anthropic 측 설명) — 보드 점수와 무관. 보안: 10-29(미국) Cursor 확장 마켓에 변조된 Claude Code 확장 2.1.312/2.1.313이 약 11시간 올라왔음(Cursor 공지) — 모델 성능과 무관하지만 Cursor 사용자는 점검 권장. 10-30 추가: Mistral Large 4(high) 공개 가중치 v5 26·$2.06(프리뷰 25·$5.54), 중국 밖 공개 모델 1위. Mistral 발표(벤더 수치)는 AA Coding Agent Index 48%로 GLM-5.3과 동률·토큰 47% 적음, Terminal-Bench 4.0 41% — 보드엔 미반영. 해외 로컬 커뮤니티에 ‘deepseek-v4.1-flash 엔드포인트가 10-19경 1017 가중치로 조용히 교체·품질 하락’ 주장(미확인)이 있어 날짜 버전 ID 고정 권장. AA v5(10-27 미국 발표, 10-29 서울 08시 확인): Gemini 4 Carbon(high) 59·$7.76(접근 제한), Opus 5.5 max 58·$10.04, Opus xhigh 57·$6.05, Astra max 57·$6.24, Astra xhigh 55·$3.66, GPT-6.1 Sol max 55·$1.27, Sonnet 5.5 max 54·$10.02, Sol xhigh 52·$0.76, Opus high 52·$3.46, Terra max 51·$0.96, Argon high 50·$7.68, Muse Wonder Full 50, Fable 5.1 xhigh 50·$10.89, Kimi K3.1 Pro 46·$3.68(가중치 미공개). 코딩 세부(AA 기사): 새로 들어온 FrontierCode 2.0(Cognition 비공개, ‘관리자가 머지할 변경인가’로 채점)에서 Opus 5.5 max 46%, Astra max·Terra max·Sonnet max 42%, 오픈 웨이트 최고 DeepSeek V4.1 Flash 1017 28%. Terminal-Bench-Science는 Astra max 63%, Opus max 59%, Sol max 58%. 오픈 웨이트와 1위 격차가 3점→12점으로 벌어졌다는 것이 AA 설명이고(가중치가 실제 공개된 모델 기준으로는 1위와 27점 차), 해외 로컬 커뮤니티에선 ‘비공개 세트라 검증 불가’·‘일부 오픈 모델 누락’ 반발이 나왔습니다(미확인 — 해석). Coding Agent Index 별도 수치는 이번에도 텍스트로 읽히지 않아 반영하지 않았습니다.",
+  "takeaway": "할 일부터 고르세요. 11-14 점검: 상위권 점수·작업당 비용 변동 없음. AA가 Qwen3.8-Flash-Next에 첫 점수를 매겼습니다 — 29점·작업당 $0.57(가중치 공개, 180B MoE·활성 6B). 같은 공개 진영의 DeepSeek V4.1 Flash(33·$0.60)보다 4점 낮고 값은 거의 같아 오픈웨이트 셀은 그대로입니다. 목적별 셀 변경 없음. 11-13 점검: Google이 11-12(미국) Gemini 4 Hydrogen을 내놨습니다(무료 Gemini 앱은 자동 선택, API·AI Studio 전 등급, Antigravity는 Pro·Ultra 유료). AA 확인값 — xhigh 54·작업당 $3.16, high(기본) 51·$1.87, medium 41·$0.80. 목적별 셀은 바꾸지 않았습니다: 같은 50점대에서 GPT-6.1 Sol max(55·$1.27)·Sol xhigh(52·$0.76)가 점수도 높고 더 쌉니다. Hydrogen의 자리는 ‘구글 생태계 안의 빠른 실행 모델’ — Argon(50·$4.97)을 점수·값 모두 대체합니다. 같은 날 AA 표시 작업당 비용이 Carbon high $7.76→$5.48, Argon $9.95→$4.97로 내려갔습니다(사유 미표시). 1위는 여전히 Claude Fable 5.2 max(65). 이전(11-11): Gemini 4 Carbon 일반 공개, 셀 유지. 10-29부터 AA Intelligence Index v5 기준이라 10-28 이전 숫자와 직접 비교하지 마세요.",
+  "codingNote": "11-14 확인(AA 모델 페이지): Qwen3.8-Flash-Next 29·작업당 $0.57·작업당 34.9분, 출력 토큰 156M(비교군 중앙값 104M), $0.15/$0.47 /1M, 256K 컨텍스트, Qwen Community License 1.0. Coding Agent Index 조합은 아직 없음. 11-13 밤(서울) Claude는 두 차례 광범위 장애(18:58~20:58 로그인, 22:09~00:38 claude.ai·API·Claude Code) — 점수와 무관. 11-13 확인(AA·Google 발표): Gemini 4 Hydrogen(11-12 미국) — AA v5 xhigh 54·$3.16·13.5분, high 51·$1.87·8.3분, medium 41·$0.80, low 27. 가격 $1.50/$7.50 /1M(1M 컨텍스트 균일). AA Coding Agent Index에는 아직 Hydrogen 조합이 없음. Google 발표(벤더 수치): Terminal-Bench 4.1 57%(3.8 Flash 18.2%), 3.8 Flash 대비 2.5배 빠름, Agent Arena 5위, 지어낸 주장 5배 이상 감소. Antigravity에 Orchestrator(Carbon이 계획·Hydrogen이 실행, Carbon 대비 할당량 24% 절약·19% 빠름 — 벤더 수치)는 Ultra부터. 국내 체감: ‘필터 오탐으로 게임 설정 수정도 막혔다’·‘공감 티키타카가 줄었다’(미확인). 같은 날 OpenAI는 Codex 적립 리셋(banked reset) 1회를 배포(Tibo 공지, 사용자가 직접 써야 한도가 찹니다). 11-11 확인(AA·Google 발표): Gemini 4 Carbon 일반 공개(11-10 미국) — 유료 Gemini API·Gemini for business 전체, Google AI Ultra($99.99 5x / $199.99 20x)의 Gemini 앱·AI 모드·Antigravity. Pro($19.99)는 Argon까지만. 가격 도입가 $2/$10 /1M(11-30까지) → 이후 $4/$20. AA v5: high 60·$7.76·작업당 26.0분·출력 토큰 205M(중앙값 72.8M의 약 2.8배), medium 58·$6.59, low 54·$7.19(정가 기준). AA Coding Agent Index v2.0(페이지 데이터): Antigravity CLI + Carbon high 약 59.4, Argon high 약 53.2, Codex + Astra max 약 54.7, Codex + Sol max 약 54.1; Claude Code + Fable 5.2는 아직 없음. Google 발표(벤더 수치): CursorBench 4.0·Perplexity WANDR·Zapier AutomationBench 1위 ‘차순위 대비 작업당 비용 2배 이상 저렴’, AA와 함께 만든 Multimodal Knowledge Agent(MKA) 2위. Antigravity에 /swarm(멀티 에이전트) 프리뷰. 같은 날 Anthropic은 유료 구독자 전원에게 ‘전체 모델·전체 한도 1회 리셋’(12-10 오후 2시 PT까지)을 지급 — 한도가 의도보다 빨리 깎이던 문제 수정 보상(@ClaudeDevs 공지). 11-10 확인(AA): Claude Fable 5.2 max 65·$26.54·작업당 44.1분(출력 토큰 275M, 중앙값 72.8M의 약 4배), xhigh 62·$14.83, high 62·$9.08, medium 56·$3.80, low 54·$3.10. Anthropic 발표(벤더 수치): FrontierCode 2.0 xhigh 49.1%(Opus 5.5 45.5%·Astra 42.8%), high 45.3%로 Opus 최고점과 비슷한데 작업당 비용은 약 절반, 가격 $8/$40 /1M(5.1 대비 20% 인하). 구독: Pro·Team 표준 좌석은 11-16(미국)까지 Fable을 주간 한도의 최대 50%까지 플랜 안에서 사용 + 리셋 1회, Max·Ultra는 구독 기간에 따라 Fable 리셋 1~3회(Claude 도움말 확인). 그 뒤 Pro는 다시 사용량 크레딧 과금. Meta Muse Ember(11-09): AA 36·$0.14, $0.10/$0.50 /1M, Coding Agent Index-AA 46(Meta 발표) — 가중치 비공개라 오픈웨이트 칸 제외. 해외에선 ‘11-03부터 Opus 5.5 사고 패턴이 바뀌었다(너프)’는 체감 글이 해커뉴스 상위에 올랐으나 ‘요약기만 바뀐 것’이라는 반론도 있어 미확인. 이전 메모: 11-05 확인(AA): 상위권 순위 변동 없음, Carbon medium(58·$6.59)이 새로 표에 보임. Kimi K3.1 Pro는 11-04(미국) 가중치 공개 — 2.8T MoE·활성 104B·1M 컨텍스트·MXFP4 1.56TB, vLLM/SGLang 권장, GGUF 없음. 같은 날 미국 공개 모델 Ripple-65B Preview(에이전트 코딩 주장, 벤더 수치)와 텐센트 Hy4(가중치 공개 예정)도 나왔지만 AA 점수가 없어 보드엔 미반영. 국내에선 ‘이번 주 금요일 OpenAI 6.2 공개, low가 Astra max보다 좋다’는 X 글이 돌고 있으나 출처 불명(미확인) — 공개되면 다음 점검에서 반영. 10-31 확인: AA 상위권 점수·비용 변동 없음. 참고로 GPT-6 Astra high(55·$3.24)는 xhigh(55·$3.66)와 같은 점수에 조금 쌈. Claude Code 쪽 변화(10-30 보도): Opus 5.5 세션에 ‘기존 게임을 그대로 재현하지 말 것’ 지시가 서버에서 내려오는 것이 확인됨(XDA 바이너리 확인·Anthropic 측 설명) — 보드 점수와 무관. 보안: 10-29(미국) Cursor 확장 마켓에 변조된 Claude Code 확장 2.1.312/2.1.313이 약 11시간 올라왔음(Cursor 공지) — 모델 성능과 무관하지만 Cursor 사용자는 점검 권장. 10-30 추가: Mistral Large 4(high) 공개 가중치 v5 26·$2.06(프리뷰 25·$5.54), 중국 밖 공개 모델 1위. Mistral 발표(벤더 수치)는 AA Coding Agent Index 48%로 GLM-5.3과 동률·토큰 47% 적음, Terminal-Bench 4.0 41% — 보드엔 미반영. 해외 로컬 커뮤니티에 ‘deepseek-v4.1-flash 엔드포인트가 10-19경 1017 가중치로 조용히 교체·품질 하락’ 주장(미확인)이 있어 날짜 버전 ID 고정 권장. AA v5(10-27 미국 발표, 10-29 서울 08시 확인): Gemini 4 Carbon(high) 59·$7.76(접근 제한), Opus 5.5 max 58·$10.04, Opus xhigh 57·$6.05, Astra max 57·$6.24, Astra xhigh 55·$3.66, GPT-6.1 Sol max 55·$1.27, Sonnet 5.5 max 54·$10.02, Sol xhigh 52·$0.76, Opus high 52·$3.46, Terra max 51·$0.96, Argon high 50·$7.68, Muse Wonder Full 50, Fable 5.1 xhigh 50·$10.89, Kimi K3.1 Pro 46·$3.68(가중치 미공개). 코딩 세부(AA 기사): 새로 들어온 FrontierCode 2.0(Cognition 비공개, ‘관리자가 머지할 변경인가’로 채점)에서 Opus 5.5 max 46%, Astra max·Terra max·Sonnet max 42%, 오픈 웨이트 최고 DeepSeek V4.1 Flash 1017 28%. Terminal-Bench-Science는 Astra max 63%, Opus max 59%, Sol max 58%. 오픈 웨이트와 1위 격차가 3점→12점으로 벌어졌다는 것이 AA 설명이고(가중치가 실제 공개된 모델 기준으로는 1위와 27점 차), 해외 로컬 커뮤니티에선 ‘비공개 세트라 검증 불가’·‘일부 오픈 모델 누락’ 반발이 나왔습니다(미확인 — 해석). Coding Agent Index 별도 수치는 이번에도 텍스트로 읽히지 않아 반영하지 않았습니다.",
   "lanes": [
     {
       "id": "all",
@@ -603,28 +603,36 @@
       "note": "v4 46 → v5 30"
     },
     {
-      "rank": 34,
+      "name": "Qwen3.8-Flash-Next",
+      "creator": "Alibaba (Qwen)",
+      "intelligence": 29,
+      "costPerTask": 0.57,
+      "note": "11-13 AA 첫 점수 · 가중치 공개 180B MoE(활성 6B) · $0.15/$0.47 /1M · 작업당 34.9분(느림)",
+      "rank": 34
+    },
+    {
+      "rank": 35,
       "name": "GPT-6.1 Terra (low)",
       "creator": "OpenAI",
       "intelligence": 29,
       "costPerTask": 0.07
     },
     {
-      "rank": 35,
+      "rank": 36,
       "name": "MiniMax-M3.1-Flash",
       "creator": "MiniMax",
       "intelligence": 29,
       "costPerTask": 0.49
     },
     {
-      "rank": 36,
+      "rank": 37,
       "name": "Ling 3.1 Flash 1019",
       "creator": "InclusionAI",
       "intelligence": 29,
       "costPerTask": 3.19
     },
     {
-      "rank": 37,
+      "rank": 38,
       "name": "GPT-6 Luna (max)",
       "creator": "OpenAI",
       "intelligence": 28,
@@ -637,7 +645,7 @@
       "intelligence": 26,
       "costPerTask": 2.06,
       "note": "10-29 가중치 공개 · 1T MoE(활성 52B) · 중국 밖 공개 1위 · $0.70/$2.10 /1M · 수정 MIT(MaaS는 별도 계약)",
-      "rank": 38
+      "rank": 39
     }
   ]
 }

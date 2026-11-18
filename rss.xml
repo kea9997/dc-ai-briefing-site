@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[Carbon과 같은 60점을 절반 시간에 냈는데, 토큰은 오히려 더 썼다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-19/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-19/advanced/</guid>
+  <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[Gemini 4 Neon은 AA Intelligence 61(3위)·Coding Agent Index 59로 Claude Code+Fable 5.2 xhigh와 같은 줄에 섰지만, 작업당 비용 절감은 전부 토큰 단가에서 나왔다. 같은 주 GPT-6.2는 ‘지시를 잘 주는 사람만 이득’이라는 평으로 굳어 가고, 보드의 가성비 칸은 여전히 6.1·6.2 Sol 몫이다.]]></description>
+</item>
+<item>
+  <title><![CDATA[구글은 더 싼 모델을 내놨는데, 자동차 운전은 비싼 형이 혼자 해냈다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-19/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-19/beginner/</guid>
+  <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[밤사이 나온 Gemini 4 Neon은 큰형 Carbon과 같은 점수를 더 싸고 빠르게 냈다. 그런데 같은 날 화제가 된 ‘AI에게 진짜 테슬라 운전시키기’ 실험에선 느린 Carbon만 코스를 끝까지 돌았다. 몇 달 전 놀림받던 구글이 갤러리 대화의 주인공이 됐다.]]></description>
+</item>
+<item>
   <title><![CDATA[Fable과 같은 62점을 3.6분의 1 값에 냈는데, 코딩 에이전트 표에선 전 세대가 이겼다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-11-18/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-11-18/advanced/</guid>

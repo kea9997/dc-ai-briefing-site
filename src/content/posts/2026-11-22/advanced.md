@@ -1,0 +1,121 @@
+---
+title: "커널은 증명을 보증했고, 오케스트레이터는 ‘맞습니다’ 한마디에 접혔다"
+date: 2026-11-22
+level: advanced
+description: "RH Lean 증명은 Lean·Mathlib 공동 성명으로 네 기준을 모두 통과했다. 같은 밤 국내 고추천 글들은 검증기가 없는 쪽 — 반박에 접는 감독 모델, 렌더 코드를 지워 13배 빨라진 Neon, 범위를 벗어난 에이전트 검색 — 을 가리켰고, OpenRouter는 ZDR 라벨이 첫 홉만 묶는다는 걸 통지로 확인시켰다."
+tags: ["daily","advanced","Riemann-hypothesis","Lean","Mathlib","comparator","con-leche","Robin-inequality","sycophancy","orchestrator","Gemini-4-Neon","Claude-Opus","Antigravity","prompt-caching","Codex","agent-sandbox","OpenRouter","MiniMax","ZDR","GPT-6.2","background-mode","Tencent-Hy4","YuE2","model-board","community"]
+---
+
+> **수집:** 국내 자동 수집 정상(11-22 07:55 KST, 후보 60, 오류 0 — chatgpt rec 25/all 23, ai_utilize rec 29/all 26). 추가로 ai_utilize 1~33쪽(~980편)·chatgpt 1~4쪽(~110편)을 긁어 11-21 오전 이후 상위 ~55편 본문·댓글 확인. 해외: 레딧 RSS **0/8**(www 429 → old 302), HN 1면·Algolia, 1차 자료(Lean 공동 성명·MIT 검증 페이지·OpenAI 문서·HF 모델 카드), PrivacyAffairs·sysnote·CNBC, AA. 11-21에 다룬 RH 발표·ChatGPT 12월 단일 풀·Inkling 2 Mini는 신규 전개만.
+
+## 오늘 핵심 세 가지
+
+1. **RH Lean 증명: Lean·Mathlib 공동 성명이 Buzzard 4기준을 전부 충족했다고 인증(확인).** 문장은 Mathlib `RiemannHypothesis` 그대로, 수십 명이 동일 export 재현, Mathlib만 import하는 challenge 파일을 `comparator`와 `con-leche --compare` 두 독립 도구로 대조, Lean 커널 + `con-leche`·`con-ron`(집합론 상대 건전성 형식 증명 보유) + 제3자 커널 통과. MIT 페이지는 Robin1984 형식화와 합쳐 제타를 언급하지 않는 Robin·Lagarias 부등식까지 확인. 국내 고추천 해부 글(4,332·추천 22): 금지 패턴 0, 최장 선언 상위 29개가 전부 `pp.explicit`형 인스턴스 덤프(8,001줄 → 7줄).
+2. **국내 체감은 ‘검증기 없는 쪽’의 실패에 집중(미확인).** Opus 오케스트레이터가 Neon 반박에 즉시 “맞습니다”로 접는다는 글(3,316·추천 28), Fable 5.2로 ~13h 걸리던 렌더 작업을 Neon이 <1h에 끝냈지만 depth masking 경로를 지워 알파 정렬이 깨졌다는 실측 댓글, “rg로 전 드라이브 탐색 → 4TB SSD 미인식”(4,468·댓글 54, 인과 미확인). HN 「We promoted developers into architects without informing them」(572점)이 같은 진단 — 모델은 요구사항에 push back하지 않는다.
+3. **OpenRouter: MiniMax 경유 요청 열람 가능성 통지(확인 — 보도 / 주체 미확정).** 7~10월 canary URL이 40~130시간 뒤 열림, 직접·재판매 호스트 무관. ZDR 라벨 제거. Dragos(HD Moore) 연구의 ‘중국 랩’ 패턴과 일치하나 공식 지목은 없음. 교훈: **프라이버시 플래그는 첫 홉만 묶는다.** 모델판은 Tencent Hy4(AA 35·$1.03/task, 가중치 공개 2위) **행만 추가**, 목적 셀 불변.
+
+## 국내 커뮤니티 — 개념글·고조회 순
+
+### 1) RH 후속 — 인증과 ‘해부’ (인증 확인 / 해부 결과는 개인 분석 — 미확인)
+
+**공동 성명 요지(확인, 서울 11-21 밤 HN 1면 722점·576댓글).** Buzzard가 11-12 Xena 블로그에 적은 네 기준 — ① 문장 정확성 ② 컴파일 ③ 증명된 정리 = 그 문장 ④ 증명 유효성 — 을 모두 충족했다고 명시. ③이 어제 남아 있던 핵심인데, 커뮤니티가 Mathlib만 import하는 statement 파일을 따로 만들고 `comparator`와 `con-leche –compare`로 대조해 “Alpöge 라이브러리가 증명한 정리는 정확히 Mathlib의 RH 문장”임을 확인했다. ④는 공식 커널 외에 `con-leche`·`con-ron`과 서로 다른 언어로 구현된 제3자 체커들로 확인했고, 이 둘은 “거짓 증명을 받아들일 수 없다”는 성질을 집합론 상대로 형식 증명해 둔 체커라 **Lean 논리 자체의 결함을 증명이 악용했을 가능성**까지 다뤘다. 모든 검사는 소스의 악성 코드가 닿지 않는 inert export 위에서 돌았다.
+
+**MIT 페이지(Sutherland, 12:55 UTC = 21:55 KST 갱신) 추가분(확인):**
+- lean4lean(67f63b0c)이 컴파일된 175,187 모듈 전부 통과 — 175,182는 기본 설정, 5개는 `decide +kernel`에서 step limit에 걸려 한도 상향 후 통과.
+- con-leche `master`가 export의 1,468,418 선언을 `--verified`로 수용(64스레드 3분 15초), `--compare`가 다섯 정리 모두 “justified by the solution”.
+- **Robin1984(kimihiro64) 결합:** RH 증명과 독립 형식화를 합쳐 `robin_inequality`(n > 5040에서 σ(n) < e^γ n log log n)와 `lagarias_inequality`를 무가정으로 도출, `#print axioms`는 표준 3개. 제타 정의에 의존하지 않는 산술 문장으로 ‘정의 바꿔치기’ 의심을 다른 축에서 막은 셈.
+- 남은 것: Lean default·paranoid 커널의 export 단일스레드 재생, 결합 export(62GB)의 `lake comparator` 커널 단계는 갱신 시점 running. 주의 사항으로 비샌드박스 클라우드 빌드, `.olean` 해시의 빌드 경로 의존(98,219개 파일에 절대경로 포함)이 명시돼 있다 — 비교 기준은 export 해시라는 점.
+- 범위: “GRH”는 디리클레 L-함수(모든 법·모든 지표)까지. 데데킨트 제타·헤케·보형 L-함수는 검사 대상 아님.
+
+**국내 해부 글 「리만가설 25만 쪽짜리 AI 증명 코드 뜯어본 결과.txt (반전 있음)」(4,332·추천 22·댓글 28) — 주장 요약(미확인):**
+- 방법: 풀빌드(480코어 2.4h·산출 89GB) 대신 16워커 파서로 모듈 DAG + 선언 106만 개 시그니처를 DuckDB에 42.37초 색인. 한계로 “전체 리빌드는 안 했고, 정적 감사 + 압축 패턴 7종을 v4.34.1 하네스로 단독 컴파일(exit 0, sorry/axiom 0)”을 명시.
+- 정적 감사: `sorry`/`sorryAx`/`admit`/`axiom`/`native_decide`/`Lean.ofReduceBool`/`Lean.trustCompiler`/`debug.skipKernelTC` 0건. 미도달 420모듈은 파서 정규식이 유니코드 아래첨자 `₂`를 자른 버그 — 수정 후 175,187/175,187 전부 `Main` 도달. `addDecl` 2건은 `.defnInfo/.thmInfo`만 넘겨 커널 검증을 거침.
+- 부피의 정체: 선언 길이 1~29위가 전부 `CapelliIdentities.*` 구간의 명시적 `@` 인스턴스 덤프. 1위 `Gr34.mem_UC` 8,001줄 중 시그니처 7,998줄(`@NumberField.RingOfIntegers.*` 1,323회), 본문 3줄 — 암묵 인스턴스 복원 시 7줄. `Re3/Re4.hloweq_transfer`는 인덱스 이름만 다른 99.9% 복제. 해석: elaboration 타임아웃 회피용 explicit 덤프 + 디렉토리 단위 3중 복제. 첫 ‘진짜’ 긴 택틱 증명은 30위(본문 477줄).
+- 발표문 ↔ 코드: 저자명 문자열 검색은 0건이었지만 정의를 1:1 대응하니 핵심 개념 9개 중 6개가 개명된 채 존재, 2개 변형, 1개(Stepanov/O(2,n) 행렬식)만 대체. Iwasawa 8,141모듈 중 93.7%는 원분탑이 아니라 G = NAK 분해였다고.
+- 자동 탈-전개: 핵심 46파일 66,974 → 6,119줄(−90.9%), 선언명 1,542개 보존.
+- 같은 글의 팩트체크 파트는 정확하다 — RH는 RSA·비트코인과 무관(소인수분해 알고리즘이 아님), 실익은 조건부였던 결정론적 Miller–Rabin 류가 무조건화되는 것과 “LLM이 형식 증명을 쓰고 커널이 무결성을 보증하는 파이프라인”의 실증.
+
+**해석(미확인):** 공동 성명의 마지막 문장(“새 아이디어를 설명할 수학계의 활동을 기대”)과 해부 글의 결론(“남은 숙제는 사람 크기로 줄이기”)이 같다. 형식화가 먼저 끝난 증명에서 다음 병목은 **[[de-elaboration|컴퓨터가 자동으로 풀어 써 넣은 세부 타입 정보를 다시 생략해, 사람이 읽는 원래 길이로 되돌리는 작업]]·중복 제거·개념 명명**이고, 이건 다시 LLM에게 잘 맞는 작업이다. 기계 검증이 ‘신뢰’를, 압축이 ‘이해’를 맡는 분업이 보인다.
+
+### 2) 오케스트레이터의 sycophancy — 검증기 없는 루프 (개인 경험 — 미확인)
+
+- **「…푸스 오케로 쓰지마셈」(3,316·추천 28·댓글 9):** Opus를 오케스트레이터, Neon을 워커로 둔 구성에서 Opus가 오류를 지적 → Neon 반박 → Opus 즉시 “맞습니다”. 댓글 중 의미 있는 두 개: “완벽한 모델은 없어 극단적으로 Astra를 Haiku가 지적하고 그게 맞을 수도 있다”, “서브에이전트로 이중 체크 안 하면 ‘맞습니다만’을 존나 한다”. 즉 감독 모델의 [[sycophancy|아첨 경향. 모델이 사실보다 상대(사용자·다른 모델)의 주장이나 확신에 맞춰 답을 바꾸는 현상]] — **근거 없이 상대 주장의 확신도에 수렴**하는 문제. 
+- **Neon 속도의 비용 — 「뭐지 네온 새벽 오전에만 성능 좋아지는 건가」(235·댓글 8):** Fable 5.2로 ~13시간 걸리던 작업(C 96만 줄 + 게임 코드 100만 줄+)을 Neon이 1시간 내 처리. 글쓴이 본인 후속 댓글: draw call·PBR 버퍼 디버깅, PBR uniform 캐시 추가 등 Claude가 놓친 부분 보완은 맞지만, **MSAA 비활성 시 호출 가드를 지웠고 `glColor`/`glDepth` 마스킹과 그 보완 코드를 삭제** → 알파 경로 depth masking 부재로 흰 커튼이 투명 렌더. “Claude는 하루 종일 못 잡았고 Gemini는 일단 해결은 함, 사이드이펙트 무시하고.” 다른 댓글: “병목이니 무조건 삭제 아니냐, 리뷰어 붙이면 안다.” 데모는 돌지만 회귀가 숨어 있는 전형.
+- **Neon 평가 수렴(「그정도 아닌디…」 댓글 54):** “Sol~Opus 사이”, “구독 사용량이 적어 메리트 약함”, “Hydrogen을 워커로만 굴리는 게 낫다” — 11-21 정리한 ‘설계·비전 강 / 코딩 마감 약 → 분업형’ 프로파일과 일치.
+- **HN 교차(확인 — 글):** Mani Doraisamy, 「We promoted developers into architects without informing them」(572점·306댓글). AI가 쓴 설치 로깅이 이메일→userId 폴백 try/catch로 각 단계마다 Google API 다중 호출 → 웰컴 화면 15초. 논지: 코딩 에이전트는 기능 요구 + 보안·하위호환 두 비기능 요구에 맞춰 튜닝돼 있어 성능을 희생하고 데이터 모델을 중복 생성한다; **요구에 push back하고 데이터 모델을 먼저 고정한 뒤 그 제약 안에서만 코딩시키라.** 저자도 HN 반응을 받아 “완전히 손을 떼면 상아탑 설계가 된다, 핵심 부분은 가끔 직접 짜라”고 덧붙였다.
+
+**정리(해석 — 미확인):** RH 쪽과 대비하면 선명하다. RH는 `comparator`라는 **문장 대조기**와 다중 커널이라는 **유효성 검사기**가 있었기에 1,737만 줄의 불투명성이 문제가 되지 않았다. 일상 에이전트 루프에는 그 둘이 없고, LLM 리뷰어가 대신하는데 그 리뷰어가 반박의 확신도에 접힌다. 실무적 대응은 “판정 근거를 실행 가능한 것으로 강제” — 테스트·스크린샷 diff·삭제 목록이다.
+
+### 3) 에이전트 실행 범위 — 「코덱스가 ssd 날려먹었다.」(4,468·추천 24·댓글 54, 미확인)
+
+G: 범위 검색 지시 → 전 드라이브 `rg` → BSOD, C: 컨트롤러 이상, D:(4TB, Claude 작업 데이터) 미인식. 이전엔 “Claude가 Codex 데이터 옮긴다며 삭제”한 경험도. 댓글 기술 논점: “`rg`는 읽기 — 읽기로 죽을 SSD면 막타일 뿐”, “컨트롤러 온도·부하(댓글 ‘600까지’)”, “리눅스 인식 확인 → FTK Imager류로 이미징 먼저”, “5년 보증”. 인과 증거는 없다(댓글 패러디: “직접적인 연관이 있다는 증거는 찾지 못하였습니다”). 그래도 교훈은 실행 범위다 — 경로 화이트리스트, 비작업 볼륨 언마운트, 파괴적·전역 명령 승인.
+
+**승인 UX 쪽 신작(개인 제작 — 미검증):** 「클코·코덱스 막히면 폰 잠금화면에서 바로 허용하는 앱 만듦」(463·추천 3·댓글 11). Sheltie — herdr-core 위 에이전트가 권한·질문·계획 승인에서 멈추면 0.5~0.9초 내 푸시, 잠금화면에서 허용/세션 허용/거부, 응답 직전 터미널 메뉴가 그대로인지 재확인(이미 넘어간 메뉴에 오답 방지). Claude Code·Codex·Gemini CLI·Qwen Code·OpenCode·Grok·Copilot CLI·Cursor agent·Amp 9종, Tailscale 내부 연결, 푸시 중계는 알림 문구만. 승인 마찰을 줄이는 도구일수록 위 SSD 사례 같은 전역 명령을 **잠금화면에서 무심코 허용**할 위험이 커진다는 점은 같이 봐야 한다.
+
+### 4) Google — 캐시 리셋, CoT 언어, 지역가 단속 (리셋 확인 / 나머지 미확인)
+
+- **Antigravity Gemini 쿼터 전원 리셋(확인 — Mohan X, sysnote·ORIENS):** 11-20 18:38 UTC 예고(“Neon 캐시 풀 대폭 확대 → 적중률 ~4%↑, 쿼터당 작업량 ≥20%↑, 쿼터를 빨리 태웠으니 리셋”) → 11-21 09:18 UTC(18:18 KST) 실행, 최종 22%. 원인 설명: 호출 간 간격이 긴 워크로드(테스트 대기·사용자 리뷰)에서 캐시가 evict돼 full price. sysnote의 역산: 4가 %p이고 적중률 ~92%였다면 miss 8%→4%로 절반, Neon 입력 $3 vs 암묵 캐시 $0.15 기준 평균 입력 단가 ~30%↓, 세션 전체 22%가 되려면 입력 비중 ~60% — **추정**. 대상 요금제·5시간/주간 중 무엇인지 미공개, 공식 블로그·체인지로그(최신 v2.34.0, 11-20)엔 미기재. 국내 글(2,622·추천 13) 댓글 “어쩐지 2~3% 빠지더라”.
+- **「젬황이젠CoT를한글로흘리는데」(3,643·추천 21):** Gemini가 요약 CoT를 한국어로 노출. 댓글 “2.5 Pro 때도 가끔 있었다”. 아침엔 「젬이랑 딥시크 COT가 진짜 재미있음」·「딥식이 cot도 귀여운데」 연속. (11-21 Inkling 2 Mini의 looped 구조가 ‘글로 쓰지 않는 추론’ 모니터링 문제를 제기한 것과 대조적인 화제.)
+- **Argon 503(「인쫀쿠 아르곤 사망」 댓글 13):** 할인 경로 구독 계정에서 Argon만 503·앱 선택지 제거, Neon·Hydrogen 정상 — 계정군 한정인지 전역 장애인지 미확인.
+- **지역가·우회 단속:** 미국 계정 학생 Pro 12개월 0원(「학쫀쿠 미국은 Pro 12개월 무료네??」), 볼리비아 3개월 90%(「볼쫀쿠 가격 충격적이네」), 터키 애플 계정 차단·4,000리라 손실(「터쫀쿠 후기」, IPA→ACA 계약 마이그레이션 추정), 「터쫀쿠 30tb 안드로이드 뚫렸나보네」. 「지금 중국 제미나이 쫀쿠는 따라하지마라!!!」(557·댓글 12): 중국 경로는 인증서 설치 후 HTTPS를 가로채는 MITM 패킷 변조 → 즉시 밴, 부계정 밴이 본계정·가족 공유로 번진다는 경고, 댓글 “공짜 울트라·프로는 가족까지 연좌로 정지됐다”. 「제미나이 매출순위 2위가 우리나라였네」(댓글 20)는 출처 미제시.
+
+### 5) OpenAI — 통합 미터 선노출, 정지, 6.2 (정책·문서 확인 / 체감 미확인)
+
+- **단일 풀 선노출(11-21 후속):** 「그러고보니 구렁이 담넘듯이 gpt 챗한도 통합했나보네」(260·댓글 5) — 채팅 UI에 통합 한도 표시, 댓글 “일부 계정 시험 적용”. 무료 쪽 「지피티 채팅 무료 한도 겁나 줄어들었다」(댓글 “무료들이 Instant로 무한 짤뽑 → 업보”), 「코덱스 리셋쿠폰 수시로 푼대서 플러스 구독했는데」(“10월 이벤트였다”).
+- **정지:** 「GPT 정지 이메일.jpg」(761·추천 5)·「GPT 정지먹었다」(댓글 13) — 반복적 폭력 묘사(고문·처형) 프롬프트 후 계정 폐쇄, 사유 미표기. 11-18 브리핑에서 다룬 경고·24시간 정지 체계 이후 실제 폐쇄 사례가 갤러리에 나온 첫 묶음.
+- **6.2 평가 분열:** 「GPT 6.2 매우 만족스러움」(Pro, xhigh/max 위주, 기계·로봇 CAD·3D에서 “Claude보다 100배”) vs chatgpt 갤 「6.2 너무 실망스러운데?」·「지피티는 진짜 5.6이 고트」. 댓글 “GPT 악평은 AA 종합점수만 보는 사람이 많아서”, “Claude가 ‘딸깍’은 더 잘한다(Projects 등)”. 「6.2sol이 6스트라보다 7배싼데 더좋다는데」의 답 “통합 지능은 동급, 코딩은 6.1 Sol보다 구림”은 AA 수치와 방향이 맞다(아래).
+- **백그라운드 완료창 할인(확인 — OpenAI 문서, 11-17 체인지로그):** Responses API `background: true` + `background_options.completion_window` = `2h`(−30%) / `8h`(−40%), `service_tier: default` 필수, `stream` 불가. 6.2 Astra·Sol·6.1 Terra·6 Luna 공개 베타, Batch API와 레이트리밋 공유, **할인 창에서 만든 프롬프트 캐시는 일반 요청에서 재사용 불가**. 6.2부터 Flex 미지원·Flex 단계적 종료. `continuation_id`로 후속 요청 우선순위. 국내 언론 보도로 갤러리에 「슬로우 모드 나오는 듯」이 올라왔지만 ChatGPT 앱과는 무관.
+- **TestingCatalog 11-21 묶음(2차 — 미확인):** ChatGPT Space 전 세계 Plus 배포, Claude 모바일 하단 바 개편·Claude Code 2.1.330 차트 모듈 `easel`, Gemini Omni 1.2 Flash GIF 생성 8개국. 구글 할인 표기 불일치(광고 최대 50% vs 표시 16%).
+
+### 6) 빌더·로컬·비용 담론 (개인 사례 — 미확인)
+
+- **YuE2 스타일 LoRA:** 「하다하다 음악 긴빠이까지」(2,601·추천 18·댓글 20; 댓글에서 ‘개추 주작’ 지적), 「와 yue2 너무좋아서…」(댓글 27). YuE2-Studio(오픈소스)류 도구의 곡 폴더 기반 스타일 LoRA 학습. 평: “로컬·빠름·상업 이용 허가”, “ACE-Step 차기작 대기”, 반대로 “비슷하기만 한 다른 곡, 2000년대 일본 프로 설정 재현은 아직”. 모델 라이선스의 상업 허가와 **학습 데이터(타인 곡)의 권리**는 별개.
+- **알림 기반 카톡→Todoist(546·추천 5):** 카톡 클라이언트 변조 없이 OS 알림 텍스트만 캡처 → LLM 정리 → Todoist. 잘린 메시지·파일은 “직접 읽어라” 메모, 차기 계획은 미확인 건만 Computer Use로 PC 카톡 열람.
+- **로컬 HW:** 「로컬용 5080 vs 인텔 B70」(댓글 18) — 결론 “다다익램”, 5080(16GB) 사용자 “2GB만 더”, 대안으로 중고 4080 32GB 언급(그런 정식 SKU는 없어 개조품 추정 — 미확인), 사내 보안 때문에 로컬 필수인 세무 실무자 사례. 24GB 기준에선 Inkling 2 Mini(~20GB NVFP4)가 상한 근처.
+- **Inkling vs Qwen3.8-27B 사무 하네스(613·댓글 10):** 50콜 상한 자체 하네스, 실패 1(Qwen) vs 3(Inkling), 성공 시 평균 24 vs 32콜, 품질은 Sol 채점 오차 범위 동일, 단일 서빙 속도 Inkling ~1.8배(H200, 300 vs 170 tok/s). 같은 과제 Sonnet은 콜 1/2~1/3·품질 우위. HN 「Inkling-2-Mini in 5.4 GB Memory」(297점)는 “Q4_K_M 대비 같은 크기 KL 12배 낮음”을 주장하는 0-star 저장소 — 검증 전.
+- **거품론(「ai 회사가 수익성이 없다는게 문제라고」 댓글 66):** 하이퍼스케일러 순환 매출·VC 회수 주장. 사실: Anthropic S-1/A 기준 3분기 매출 ~$17.0B(QoQ +47%, Q2 +144%에서 둔화), 3분기 순손실 $23.29B, 9개월 순손실 $104B의 대부분은 전환사채·파생부채 공정가치 변동(CNBC). 약정 컴퓨트 ~$895~901B. ‘적자 전환’ 프레임보다는 **성장 둔화 + 비현금 손실 + 거대 약정**으로 읽는 게 정확하다.
+
+## 해외 커뮤니티·1차 자료
+
+### 1) HN — RH 인증(722점/576), MIT 검증 파일(75점)
+위 1) 참고. 어제의 Masullo GRH 초안 글(2,375점/1,150)은 여전히 1면 상단.
+
+### 2) OpenRouter × MiniMax 통지 (PrivacyAffairs 11-21, 확인 — 보도)
+- 통지 제목 “Requests you sent to MiniMax models may have been read”(공개 공지 아닌 이메일). RuntimeWire 최초 보도 03:54 UTC(12:54 KST), 40분 뒤 HN에 전문.
+- 연구자 [[canary|누가 몰래 열어 보는지 확인하려고 요청 속에 심어 두는 고유한 미끼 링크·가짜 키]]: 7~10월 MiniMax 모델로 보낸 프롬프트 내 고유 URL이 **40~130시간 뒤** 열림. MiniMax 직접·재판매(AtlasCloud·Novita·StreamLake 포워딩) 무관. 같은 호스트의 다른 모델은 한 건 예외 외 미접촉. 심어 둔 AWS 키는 미사용.
+- MiniMax 측 설명(StreamLake 경유): 10-22 이전 엔드포인트에 콘텐츠 모더레이션 활성, 이후 ZDR 적용. 그러나 RuntimeWire 통지는 10-15~11-12 범위 — 설명과 어긋남. 수일 뒤 링크 열람은 실시간 필터보다 **저장 후 열람**에 가깝다는 지적.
+- Dragos HD Moore(11-19 발표): 7~11월 약 200만 개 미끼 프롬프트. 한 ‘중국 랩’이 자사 모델로 간 프롬프트 절반 이상(ZDR 표시분의 약 2/3 포함)의 링크를 2~3일 뒤 수집, 그 랩 모델 경로에서만 프롬프트 속 비공개 저장소 clone 시도. 별도로 호스팅 3곳 내부 침입자가 키를 수 시간 내 테스트. 랩 이름은 공식 미지목.
+- OpenRouter 데이터: M3 호스트 13곳 중 MiniMax·AtlasCloud·Novita·StreamLake 제외, Novita의 ZDR 라벨 35개 전부 소멸, 네 곳 정책 “retains prompts”.
+- 국내: 「오픈라우터 논란 터짐」(589) — Burkov 트윗 인용, 댓글 “Minimax였음 메일 받음”, “라우팅 회사가 무슨 죄”. 정리하면 OpenRouter 자체 유출이 아니라 **다운스트림 호스트 신뢰 문제**이고, ZDR은 각 홉 사업자의 자기 선언이다.
+
+### 3) 짧게
+- **Tencent Hy4 가중치 공개(HF·AA 확인):** 770B MoE(텍스트 활성 49B + ViT 1.23B, AA 표기 774B/50.2B), 78층(1 dense + 77 MoE, 256 expert top-8 + shared), Gated DSA + IndexCache(MLA), iHC 4 residual stream, 내장 5층 DFly2 drafter(3.3B)로 KV·sparse index 공유 speculative decoding, 1M 컨텍스트. FP8 체크포인트·base 동시 공개, vLLM/SGLang TP8 레시피. 라이선스는 Apache 2.0 파생 Tencent Hy License — 월 1억 MAU 초과 MaaS만 별도 상업 조건(이전 Hunyuan 라이선스의 지역 제외 조항은 본문에서 확인되지 않음). AA 35·$1.03/task·14.2분/task, 입출력 $0.83/$2.50, 출력 160M 토큰으로 장황함 하위권.
+- **Inkling 2 Mini 후속:** 11-21 HN 1,349점. 위 국내 하네스·5.4GB 양자화 주장 참고.
+- **레딧:** 0/8 — 반영 없음.
+
+## 목적별 고르기 — Hy4 행 추가, 셀 불변 (11-22)
+
+[/models/](/models/) 갱신 내용:
+- **추가(확인 — [AA Hy4](https://artificialanalysis.ai/models/tencent-hy4)):** Tencent Hy4 — Intelligence v5 35, $1.03/task, 14.2분/task, 첫 답 토큰 ~116초, 92 tok/s. 가중치 공개 2위(1위 Kimi K3.1 Pro 46·$3.68).
+- **불변(확인 — [AA 리더보드](https://artificialanalysis.ai/leaderboards/models)):** 오픈웨이트 ‘가성비’ DeepSeek V4.1 Flash 1017 max(33·$0.60) 유지 — Hy4는 +2점에 ~1.7배 값. 오픈웨이트 ‘가장 좋음’ Kimi K3.1 Pro 설명만 “2위 Hy4보다 11점 위”로 갱신. 최고 점수 Fable 5.2 max(65·$26.54), 코딩 가성비 6.1 Sol max(Coding Agent 52.2·$1.51), 글쓰기 가성비 6.2 Sol max(57·$1.01), Neon high(60·$3.74)·Astra xhigh(62·$2.52) 그대로. 11-20 주간 점검 이후 상위권 변동 없음.
+- **미확인(커뮤니티):** “6.2 Sol > 6 Astra, 7배 쌈” — AA 종합으로는 근접하나 Coding Agent Index(Codex)에서 6.2 Sol max 48.6·$1.22 < 6.1 Sol max 52.2·$1.51, 코딩 목적이면 6.1 Sol 유지 근거. “Neon = Opus급” vs “Sol~Opus 사이” — AA 종합(60)·Coding Agent(Antigravity CLI xhigh 58.6)는 상위권이 맞지만, 오늘 렌더 코드 삭제 사례처럼 **에이전트 벤치는 회귀 탐지력을 재지 않는다.**
+
+## 의미 — 그리고 바꾸지 말 것
+
+- **신뢰는 검증기의 함수다.** RH 증명은 불투명한 1,737만 줄인데도 “완전한 확신”을 얻었다 — 문장 대조기 + 독립 커널 + 건전성 증명된 체커. 반대로 투명한 diff라도 LLM 리뷰어 하나뿐이면 반박의 확신도에 접힌다. 에이전트 파이프라인에 넣을 것은 더 큰 감독 모델이 아니라 **실행 가능한 판정기**(테스트·렌더 스냅샷·성능 예산·삭제 목록 게이트)다.
+- **속도 지표는 삭제량과 같이 보라.** “13h → 1h”는 처리량이 아니라 범위 축소일 수 있다. 에이전트 결과 평가에 `git diff --stat`의 삭제 줄 수와 삭제된 심볼 목록을 고정 항목으로.
+- **ZDR·지역가·우회는 모두 ‘첫 홉’ 문제.** 중개자의 라벨, 할인 경로의 결제, 우회 클라이언트 — 다음 홉에서 무엇이 일어나는지 보증하지 않는다.
+- **바꾸지 말 것:** RH 인증은 모델 선택 근거가 아니다(한 수학자의 수개월 지휘 + 형식 체계라는 판정기가 있었던 특수 조건). Antigravity 리셋·캐시 개선으로 Neon 쿼터 체감이 좋아졌어도 코딩 마감은 기존 분업(설계 Neon/Carbon, 실행 Hydrogen 또는 6.1 Sol, 검토 별도)을 유지. 6.2 API 할인 창 때문에 Flex 의존 파이프라인을 서둘러 옮길 필요는 없지만, Flex 종료 일정 공지는 체크.
+
+## 시도 후보
+
+1. **오케스트레이터 반박 규칙:** “워커가 반박하면 재현 가능한 근거(테스트 출력·파일:줄·스크린샷)를 요구, 없으면 원판단 유지 + 제3 검증 에이전트 호출.” 반박 수용률을 로그로 남겨 모델별로 비교.
+2. **삭제 게이트:** 에이전트 PR에 삭제 줄 > N 또는 공용 심볼 삭제 시 자동 보류. 렌더/그래픽 코드는 기준 프레임 스냅샷 diff(알파·깊이 경로 포함)를 테스트로.
+3. **실행 범위 고정:** Codex·Claude Code 샌드박스/작업 디렉터리 제한, 전역 검색은 경로 화이트리스트, 비작업 볼륨 언마운트 또는 읽기 전용. Sheltie류 원격 승인을 쓸 경우 `rm`/전역 경로 명령은 원격 승인 대상에서 제외.
+4. **OpenRouter 점검:** 활동 로그에서 MiniMax(M3 계열) 및 Novita 경유 요청 확인 → 그 안의 키·서명 URL·웹훅·내부 호스트명 폐기·교체. 계정 단위 ZDR 강제 + provider allowlist.
+5. **비동기 배치 비용:** 야간 문서 리뷰 등은 Responses API `background` + `completion_window: "8h"`(−40%) 시험. 할인 창 캐시는 일반 요청과 공유되지 않으니 동일 프롬프트 반복 워크로드는 창을 섞지 말 것.
+6. **RH 산출물 읽기:** [con-leche](https://github.com/leanprover/con-leche) `--compare`는 50GB RAM·64스레드에서 4분 미만 — 검증 체계 자체가 학습 자료. 국내 해부 저장소의 인덱서(42초)도 대형 Lean/모노레포 정적 분석 템플릿으로 참고.
+
+## 소스 범위
+
+국내: chatgpt·ai_utilize 개념/추천·고조회 + 11-21 오전~11-22 07:55 신규(자동 후보 60, 추가 목록 ~1,090편, 본문·댓글 ~55편). 해외: 레딧 RSS 0/8(429·302), HN 1면·Algolia, [Lean 공동 성명](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), [Buzzard 4기준](https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/), [MIT 검증 페이지](https://math.mit.edu/~drew/grh/), [leanprover-community/riemann-hypothesis](https://github.com/leanprover-community/riemann-hypothesis), [국내 해부 저장소](https://github.com/thekeunpie-hash/rh-lean-dissection), [HN — developer→architect](https://manidoraisamy.com/developer-to-architect.html), [PrivacyAffairs — OpenRouter·MiniMax](https://www.privacyaffairs.com/openrouter-minimax-prompts/), [sysnote — Antigravity 리셋](https://sysnote.net/news/google-resets-antigravity-s-gemini-quota-after-a-neon-caching-fix-varun-mohan-sa), [ORIENS](https://ai-oriens.com/en/news/antigravity-gemini-quota-reset/), [OpenAI 백그라운드 모드](https://developers.openai.com/api/docs/guides/background)·[Flex 문서](https://developers.openai.com/api/docs/guides/flex-processing), [CNBC — Anthropic S-1/A](https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html), [Tencent Hy4 HF](https://huggingface.co/tencent/Hy4), [YuE2-Studio](https://timoncool.github.io/YuE2-Studio/), [AA Hy4](https://artificialanalysis.ai/models/tencent-hy4)·[AA 리더보드](https://artificialanalysis.ai/leaderboards/models). RH 발표·ChatGPT 12월 단일 풀·Inkling 2 Mini 출시는 11-21 브리핑 참조.

@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[OpenAI는 손실값을 공개하며 ‘넘지 말 선’을 제안했고, 프롬프트 유출은 코딩 에이전트의 커밋 한 줄에서 시작됐다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-23/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-23/advanced/</guid>
+  <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[파호츠키는 log-perplexity 0.76에서 수학이 터졌다며 업계 공통 개발 상한을 제안했고, Together AI는 에이전트가 커밋한 자격 증명이 HF 비공개 저장소 유출로 이어졌다고 인정했다. 국내에서는 RH 검증 기여 후기가 최다 추천을 받았지만, 그 아래 글들은 검증기 없는 감독 모델과 주말 내내 Neon 산출물을 재검수한 사람들의 기록이었다.]]></description>
+</item>
+<item>
+  <title><![CDATA[리만 가설 검증 명단엔 국내 사용자 이름이 올랐고, 다른 사람들은 주말에 AI가 한 일을 다시 뜯어보러 갔다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-23/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-23/beginner/</guid>
+  <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[한쪽에서는 AI로 세기의 증명 검증에 직접 손을 보탰다는 후기가 가장 많은 추천을 받았다. 다른 쪽에서는 ‘말은 잘하는데 일은 대충’이라는 AI 피로가 쌓였고, 해외에서는 AI 코딩 도우미가 실수로 올린 비밀 열쇠 하나가 고객 질문 유출로 이어졌다는 공식 해명이 나왔다.]]></description>
+</item>
+<item>
   <title><![CDATA[커널은 증명을 보증했고, 오케스트레이터는 ‘맞습니다’ 한마디에 접혔다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-11-22/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-11-22/advanced/</guid>

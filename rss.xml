@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[Claude는 사람 검토 없이 VP ≠ VNP를 올렸고, GLM은 벤치마크 없이 루프 트랜스포머를 올렸다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-24/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-24/advanced/</guid>
+  <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[같은 날 두 연구소가 ‘검증은 나중’ 방식으로 공개했다. 하나는 Lean 커널·comparator를 붙여 신뢰를 기계에 위임했고, 하나는 점수 없이 아키텍처만 내놨다. 국내에서는 엔비디아 CEO 복귀가 추천 상위를 쓸었지만, 그 아래 실무 글은 여전히 ‘파일을 안 읽는 에이전트’를 어떻게 묶을지에 관한 것이었다.]]></description>
+</item>
+<item>
+  <title><![CDATA[쫓겨났던 젠슨 황은 열흘 만에 돌아왔고, 한국 사용자는 메타의 최고 모델 앞에서 문을 닫혔다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-24/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-24/beginner/</guid>
+  <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[엔비디아 주가가 하루 31% 뛴 날, 국내 사용자들은 웃으면서도 ‘요즘 AI가 일을 대충 한다’는 말을 멈추지 않았다. 그리고 해외에서는 사람이 한 번도 검토하지 않은 AI의 수학 증명이 공개됐다.]]></description>
+</item>
+<item>
   <title><![CDATA[OpenAI는 손실값을 공개하며 ‘넘지 말 선’을 제안했고, 프롬프트 유출은 코딩 에이전트의 커밋 한 줄에서 시작됐다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-11-23/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-11-23/advanced/</guid>

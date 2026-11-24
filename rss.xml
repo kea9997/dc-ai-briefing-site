@@ -6,6 +6,20 @@
   <description>옵티웍 AI 데일리 — 국내·해외 AI 커뮤니티 동향을 매일 한국어로 정리하는 브리핑. Optiwork AI Daily.</description>
   <language>ko</language>
   <item>
+  <title><![CDATA[같은 증명이 5시간 반 차이로 두 번 올라왔고, 같은 모델은 하네스만 바꿔도 작업당 값이 다섯 배 넘게 벌어졌다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-25/advanced/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-25/advanced/</guid>
+  <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[결과물보다 기본값이 문제였던 하루였다. T3 Code의 telemetry는 내용 유출이 아니라 opt-out 기본값과 계정 해시가 쟁점이었고, Fable 5.2의 ownership 문장은 효과가 문서로 확인된 만큼 토큰과 의도치 않은 diff를 키웠다. AA는 하네스가 점수보다 비용을 더 많이 움직인다는 첫 통제 비교를 내놨다.]]></description>
+</item>
+<item>
+  <title><![CDATA[‘이 코드는 네 거야’ 한 줄에 AI가 집을 고치기 시작했고, 공짜 코딩 앱은 뒤에서 숫자를 세고 있었다]]></title>
+  <link>https://ai.optiwork.co.kr/posts/2026-11-25/beginner/</link>
+  <guid>https://ai.optiwork.co.kr/posts/2026-11-25/beginner/</guid>
+  <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+  <description><![CDATA[AI에게 주인 의식을 주는 문장 하나가 국내 추천글을 휩쓴 날, 사람들이 믿고 쓰던 무료 코딩 앱은 ‘기본으로 켜진 수집’ 때문에 도마에 올랐다. 해외에서는 같은 수학 증명이 반나절 차이로 두 회사에서 나왔다.]]></description>
+</item>
+<item>
   <title><![CDATA[Claude는 사람 검토 없이 VP ≠ VNP를 올렸고, GLM은 벤치마크 없이 루프 트랜스포머를 올렸다]]></title>
   <link>https://ai.optiwork.co.kr/posts/2026-11-24/advanced/</link>
   <guid>https://ai.optiwork.co.kr/posts/2026-11-24/advanced/</guid>
